@@ -1,4 +1,6 @@
 <script>
+  import Stripes from '../stripes/stripes.svelte'
+  
   export let showSkew
 </script>
 
@@ -18,6 +20,7 @@
     </div>
     <slot></slot>
   </div>
+  <Stripes />
   {#if showSkew}
     <div class="skew"><p><div class="stripes"><span></span><span></span><span></span><span></span></div></div>
   {/if}
