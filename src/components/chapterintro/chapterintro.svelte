@@ -29,7 +29,7 @@
     margin: 8rem 0 3rem;
   }
   .superscript {
-    margin: 0 0 0.75rem;
+    margin: 0 0 0.25rem;
     font-family: var(--monospace);
     font-size: 0.938rem;
     color: var(--c-secondary);
@@ -39,9 +39,12 @@
   }
   h1,
   h2 {
-    font-weight: 900;
+    margin-top: 0;
     color: var(--c-text);
-    margin: 0 0 1.5rem;
+    font-size: 1.75rem;
+    @media (min-width: 1024px) {
+      font-size: 2.875rem;
+    }
   }
   p {
     font-size: 1.25rem;

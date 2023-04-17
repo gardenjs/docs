@@ -23,12 +23,12 @@
     width: 100%;
     max-width: 980px;
     // margin: auto;
-    margin: 4rem auto 0;
+    margin: 1rem auto 0;
     @media (min-width: 768px) {
-      margin-top: 6rem;
+      margin-top: 2rem;
     }
     @media (min-width: 1024px) {
-      margin-top: 8rem;
+      margin-top: 3rem;
     }
     z-index: 3;
   }
