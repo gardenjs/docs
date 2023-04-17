@@ -11,7 +11,7 @@
   <p><strong>Vertreten durch:</strong><br>
   Robin Danzinger, Martin Farkas</p>
   <h2>Kontakt</h2>
-  <p>Martin Farkas<br>Telefon: 0721/1450085<br>
+  <p>Martin Farkas<br>
   E-Mail: info@websites-graphix.com</p>
   <h2>EU-Streitschlichtung</h2>
   <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
