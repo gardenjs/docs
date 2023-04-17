@@ -26,23 +26,24 @@ blockquote {
   .quote {
     max-width: 100% !important;
     font-size: 1.25rem;
-    @media (min-width: 768px) {
-      font-size: 1.75rem !important;
-    }
     color: var(--c-headlines);
     font-weight: 800;
     font-style: italic;
     text-align: left !important;
+    @media (min-width: 768px) {
+      font-size: 1.75rem !important;
+    }
   }
   .author {
     display: block;
     margin: 0.75rem 0 0;
     font-family: var(--monospace);
     font-size: 1.125rem;
+    color: var(--c-secondary);
+    text-align: right !important;
     @media (min-width: 768px) {
       font-size: 1.25rem;
     }
-    color: var(--c-secondary);
   }
 }
 </style>
