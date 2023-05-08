@@ -22,7 +22,7 @@
   </div>
   <Stripes />
   {#if showSkew}
-    <div class="skew"><p><div class="stripes"><span></span><span></span><span></span><span></span></div></div>
+    <div class="skew"><div class="stripes"><span></span><span></span><span></span><span></span></div></div>
   {/if}
 </header>
 
@@ -52,10 +52,10 @@
   }
   .header_container {
     position: relative;
-    z-index: 3;
     width: 100%;
     max-width: 980px;
     margin: auto;
+    z-index: 3;
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -92,7 +92,7 @@
         a.github {
           .icon {
             font-size: 1.25rem;
-            color: var(--navbar-icon);
+            color: var(--c-navbar-icon);
           }
         }
         #toggle-mode {
