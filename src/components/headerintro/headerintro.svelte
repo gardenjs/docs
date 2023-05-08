@@ -1,11 +1,7 @@
-<script>
-  import Stripes from '../stripes/stripes.svelte'
-</script>
-
 <div class="header_intro">
   <div class="header_text">
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span>Harvest.</span></div>
-    <h1 class="h1">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</h1>
+    <p class="h1">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
     <div class="btn-header">
       <a class="btn-docu" href="https://github.com/rabbitdevelopment/garden" title="watch garden demo" target="_blank">Documentation</a>
       <a href=".#" title="watch garden demo" target="_blank">Watch Demo</a>
@@ -22,7 +18,6 @@
       </picture>
     </div>
   </div>
-  <Stripes />
 </div>
 
 <style lang="scss">
