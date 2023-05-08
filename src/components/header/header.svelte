@@ -22,7 +22,7 @@
   </div>
   <Stripes />
   {#if showSkew}
-    <div class="skew"><div class="stripes"><span></span><span></span><span></span><span></span></div></div>
+    <div class="skew"><Stripes /></div>
   {/if}
 </header>
 

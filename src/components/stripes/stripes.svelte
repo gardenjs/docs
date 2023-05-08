@@ -13,7 +13,7 @@
   max-width: 980px;
   height: 100%;
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 2;
   @media (min-width: 768px) {
     grid-template-columns: repeat(4,1fr);
   }
