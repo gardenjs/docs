@@ -49,6 +49,9 @@ p {
     font-size: 1.125rem;
   }
 }
-.text a {
-  color: var(--c-primary);
+.text {
+  font-family: var(--monospace);
+    a {
+    color: var(--c-primary);
+    }
 }
