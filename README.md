@@ -1,8 +1,7 @@
-# This is the official garden marketing website
+# Garden's landing page
 
-## Garden is a fast alternative to the popular Component Explorer Storybook
+The Storybook alternative [Garden](https://github.com/rabbitdevelopment/garden) is a lightweight and superfast component library explorer for UI development, testing and documentation. Garden's landing page can be found [here](https://garden.rabbitdevelopment.com/) and the actual Garden demo is [here](https://gardendemo.rabbitdevelopment.com/).
 
-To show Garden in action, we render the components of our website in Garden. Click here for the [demo](https://gardendemo.rabbitdevelopment.com/). Here you can see the complete repository of the Svelte installation with website and including the garden. So you can see how Garden can be used in the project. Garden works similarly in Vue or React projects.
-A documentation for Garden can be found [here](https://github.com/rabbitdevelopment/garden).
+ Use this repository as a code demo for implementing Garden in a project, rendering components to the Garden app in the browser, and defining stories. We use Svelte as the JS framework here, which then works in a similar way for Vue and React.
 
-### Happy Gardening :)
+Happy Gardening :)
