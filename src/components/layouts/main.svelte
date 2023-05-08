@@ -16,13 +16,13 @@
 .main {
   position: relative;
   overflow: hidden;
+  margin: -1px 0 0;
   padding: 0 2rem;
   background-color: var(--c-website-bg);
   .main_container {
     position: relative;
     width: 100%;
     max-width: 980px;
-    // margin: auto;
     margin: 1rem auto 0;
     @media (min-width: 768px) {
       margin-top: 2rem;
@@ -33,8 +33,10 @@
     z-index: 3;
   }
   .vegetables {
+    position: relative;
     margin: 4rem auto;
     max-width: 980px;
+    z-index: 6;
     @media (min-width: 768px) {
       margin-top: 6rem;
     }
