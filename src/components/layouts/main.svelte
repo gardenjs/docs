@@ -22,7 +22,7 @@
   .main_container {
     position: relative;
     width: 100%;
-    max-width: 980px;
+    max-width: var(--w-website);
     margin: 1rem auto 0;
     @media (min-width: 768px) {
       margin-top: 2rem;
@@ -35,7 +35,7 @@
   .vegetables {
     position: relative;
     margin: 4rem auto;
-    max-width: 980px;
+    max-width: var(--w-website);
     z-index: 6;
     @media (min-width: 768px) {
       margin-top: 6rem;

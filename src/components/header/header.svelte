@@ -35,7 +35,7 @@
   background-color: var(--c-website-bg);
   z-index: 2;
   @media (min-width: 1680px) {
-    max-height: 980px;
+    max-height: var(--w-website);
   }
   .skew {
     position: absolute;
@@ -53,7 +53,7 @@
   .header_container {
     position: relative;
     width: 100%;
-    max-width: 980px;
+    max-width: var(--w-website);
     margin: auto;
     z-index: 3;
     .navbar {

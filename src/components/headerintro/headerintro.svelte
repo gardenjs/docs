@@ -31,8 +31,8 @@
     @media (min-width: 768px) {
       width: 50vw;
     }
-    @media (min-width: 1080px) {
-      width: 33.75rem;
+    @media (min-width: 1140px) {
+      width: 570px;
     }
     .slogan {
       display: block;

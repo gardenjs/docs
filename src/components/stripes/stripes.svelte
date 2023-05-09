@@ -10,7 +10,7 @@
   bottom: 0;
   left: 50%;
   width: 100%;
-  max-width: 980px;
+  max-width: var(--w-website);
   height: 100%;
   transform: translateX(-50%);
   z-index: 2;
@@ -23,7 +23,7 @@
         border-left: 1px dashed rgba(53, 62, 100, 0.2);
       }
     }
-    @media (min-width: 980px) {
+    @media (min-width: 1140px) {
       &:first-of-type {
         border-left: 1px solid rgba(53, 62, 100, 0.1);
         border-right: 1px dashed rgba(53, 62, 100, 0.2);

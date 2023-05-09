@@ -31,7 +31,7 @@ footer {
   .footer_container {
     position: relative;
     width: 100%;
-    max-width: 980px;
+    max-width: var(--w-website);
     margin: 0 auto;
     padding: 2rem 0;
     color: var(--c-footer-text);
