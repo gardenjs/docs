@@ -1,5 +1,5 @@
 <script>
-  import Header from '../header/header.svelte'
+  import Header from '../header/Header.svelte'
   import Headerintro from '../headerintro/Headerintro.svelte'
   import Main from '../layouts/Main.svelte'
   import ChapterIntro from '../chapterintro/Chapterintro.svelte'
