@@ -1,8 +1,8 @@
 <script>
-  import Header from '../header/header.svelte'
-  import Footer from '../footer/footer.svelte'
+  import Header from '../header/Header.svelte'
+  import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header />
+<Header showStripes />
 <slot></slot>
 <Footer />

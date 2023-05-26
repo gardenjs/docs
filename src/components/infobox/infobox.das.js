@@ -1,6 +1,6 @@
 export default {
   name: 'Infobox',
-  file: './infobox.svelte',
+  file: './Infobox.svelte',
   description: 'Box with h3 title and paragraph.',
   examples: [
     {story: "Box with title and text", input: {title: "This is a title", text: "This is the text."}},

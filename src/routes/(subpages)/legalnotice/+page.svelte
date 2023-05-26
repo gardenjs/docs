@@ -1,8 +1,8 @@
 <script>
-  import Main from '../../../components/layouts/main.svelte'
+  import Main from '../../../components/layouts/Main.svelte'
 </script>
 
-<Main>
+<Main showStripes>
   <div class="text">
     <h1>Impressum</h1>
     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>

@@ -1,6 +1,6 @@
 export default {
   name: 'Homepage',
-  file: './homepage.svelte',
+  file: './Homepage.svelte',
   description: 'Homepage.',
   examples: [
     {story: "Homepage"}

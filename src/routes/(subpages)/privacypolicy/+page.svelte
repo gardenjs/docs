@@ -1,5 +1,5 @@
 <script>
-  import Main from '../../../components/layouts/main.svelte'
+  import Main from '../../../components/layouts/Main.svelte'
 </script>
 
 <Main>

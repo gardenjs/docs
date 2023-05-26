@@ -1,19 +1,19 @@
 <script>
-  import Header from '../header/header.svelte'
-  import Headerintro from '../headerintro/headerintro.svelte'
-  import Main from '../layouts/main.svelte'
-  import ChapterIntro from '../chapterintro/chapterintro.svelte'
-  import Subchapter from '../subchapter/subchapter.svelte'
-  import Logos from '../logos/logos.svelte'
-  import Blockquote from '../blockquote/blockquote.svelte'
-  import Infobox from '../infobox/infobox.svelte'
-  import Footer from '../footer/footer.svelte'
+  import Header from '../header/Header.svelte'
+  import Headerintro from '../headerintro/Headerintro.svelte'
+  import Main from '../layouts/Main.svelte'
+  import ChapterIntro from '../chapterintro/Chapterintro.svelte'
+  import Subchapter from '../subchapter/Subchapter.svelte'
+  import Logos from '../logos/Logos.svelte'
+  import Blockquote from '../blockquote/Blockquote.svelte'
+  import Infobox from '../infobox/Infobox.svelte'
+  import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header showSkew>
+<Header showStripes showSkew>
   <Headerintro />
 </Header>
-<Main>
+<Main showStripes>
   <ChapterIntro
     superscript="This is Garden"
     pagetitle="An UI component library explorer for JS Frameworks"

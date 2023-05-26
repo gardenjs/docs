@@ -1,6 +1,6 @@
 export default {
   name: 'Chapter',
-  file: './chapter.svelte',
+  file: './Chapter.svelte',
   description: 'Main chapter intro with h2 title and paragraph.',
   examples: [
     {story: "Intro with superscript, h2 title and intro text", input: {superscript: "Superscript", title: "This is the chapter title", intro: "This is the text. This is the text. This is the text. This is the text. This is the text."}},

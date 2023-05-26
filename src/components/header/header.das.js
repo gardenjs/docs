@@ -1,6 +1,6 @@
 export default {
   name: 'Header',
-  file: './header.svelte',
+  file: './Header.svelte',
   description: 'Header with Logo and icons with github link and mode switch.',
   examples: [
     {story: "Website header without skew", input: { }},

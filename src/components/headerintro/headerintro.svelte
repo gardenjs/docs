@@ -3,7 +3,7 @@
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span>Harvest.</span></div>
     <p class="h1">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
     <div class="btn-header">
-      <a class="btn-docu" href="https://github.com/rabbitdevelopment/garden" title="watch garden demo" target="_blank">Documentation</a>
+      <a class="btn-docu" href="/documentation" title="go to docs">Documentation</a>
       <a href=".#" title="watch garden demo" target="_blank">Watch Demo</a>
     </div>
   </div>
@@ -13,7 +13,7 @@
         <div class="menu-circle"></div>
       </div>
       <picture>
-        <source srcset="src/assets/images/screenshot_garden-dark.jpg" media="(prefers-color-scheme:dark)">
+        <source srcset="src/assets/images/screenshot_garden-dark.jpg" media="all" data-media="(prefers-color-scheme:light)">
         <img src="src/assets/images/screenshot_garden.jpg" alt="Screenshot Garden app">
       </picture>
     </div>
