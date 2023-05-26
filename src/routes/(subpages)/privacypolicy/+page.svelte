@@ -2,6 +2,10 @@
   import Main from '../../../components/layouts/Main.svelte'
 </script>
 
+<svelte:head>
+	<title>testtestets</title>
+</svelte:head>
+
 <Main>
   <div class="text">
     <h1>Datenschutz&shy;erkl&auml;rung</h1>
