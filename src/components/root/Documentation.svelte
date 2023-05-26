@@ -93,53 +93,18 @@
   overflow: hidden;
 }
 .sidebar {
+  display: none;
   position: relative;
-  width: 25%;
-  overflow: hidden;
+  @media (min-width: 768px) {
+    display: block;
+    width: 25%;
+    overflow: hidden;
+  }
 }
 .content {
-  width: 75%;
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    @media (min-width: 1024px) {
-      font-size: 1.875rem;
-    }
-  }
-  h2 {
-    margin: 1rem auto 0.5rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    @media (min-width: 1024px) {
-      font-size: 1.5rem;
-    }
-  }
-  h3 {
-    font-size: 1.125rem;
-    font-weight: 500;
-    @media (min-width: 1024px) {
-      font-size: 1.375rem;
-    }
-  }
-  p {
-    font-size: 1rem;
-    @media (min-width: 768px) {
-      font-size: 1.125rem;
-    }
-  }
-  ol, ul {
-    li { 
-      font-size: 1rem;
-      @media (min-width: 768px) {
-        font-size: 1.125rem;
-      }
-    }
-  }
-  code {
-    font-size: 0.813rem;
-    @media (min-width: 768px) {
-      font-size: 1rem;
-    }
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 75%;
   }
 }
 </style>

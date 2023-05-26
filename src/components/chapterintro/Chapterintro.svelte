@@ -42,6 +42,7 @@
     margin-top: 0;
     color: var(--c-text);
     font-size: 1.75rem;
+    font-weight: 800;
     @media (min-width: 1024px) {
       font-size: 2.875rem;
     }

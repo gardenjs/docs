@@ -35,8 +35,10 @@ footer {
     position: relative;
     width: 100%;
     max-width: var(--w-website);
-    margin: auto;
-    padding: 2rem 0;
+    margin: 1rem auto;
+    @media (min-width: 768px) {
+      margin: 2rem auto;
+    }
     font-size: 0.813rem;
     color: var(--c-footer-text);
     text-align: center;
@@ -44,6 +46,8 @@ footer {
       justify-content: space-between;
       flex-direction: row;
       text-align: left;
+    }
+    @media (min-width: 1024px) {
       font-size: 1rem;
     }
     .footer_copyright {
@@ -79,7 +83,7 @@ footer {
             font-size: 0.813rem;
             color: var(--c-footer-text);
             text-decoration: none;
-            @media (min-width: 768px) {
+            @media (min-width: 1024px) {
               font-size: 1rem;
             }
           }

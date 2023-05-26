@@ -17,10 +17,11 @@
   h3 {
     margin: 1.25rem 0 1rem;
     font-size: 1.2rem;
+    font-weight: 700;
     @media (min-width: 768px) {
       font-size: 1.3rem;
     }
-    @media (min-width: 1280px) {
+    @media (min-width: 1024px) {
       margin: 2.25em 0 1rem;
       font-size: 1.75rem;
     }

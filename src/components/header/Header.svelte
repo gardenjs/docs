@@ -38,17 +38,17 @@
       <div class="navbar-btns">
         <button id="toggle-mode" class="toggle-mode" title="Toggle Website Theme" on:click={toggleTheme}>
           {#if currentTheme === 'light'}
-          <svg width="30" viewBox="0 0 32 32" height="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16 0c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16C0 7.163 7.162 0 16 0zm-.001 7c-4.937 0-9 4.062-9 9 0 4.936 4.063 8.999 9 8.999s9-4.063 9-9a6.365 6.365 0 01-4.484 1.848c-3.492 0-6.364-2.872-6.364-6.364 0-1.678.664-3.292 1.848-4.483z" fill="#2d466c" fill-rule="evenodd"/></svg>
+          <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16 0c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16C0 7.163 7.162 0 16 0zm-.001 7c-4.937 0-9 4.062-9 9 0 4.936 4.063 8.999 9 8.999s9-4.063 9-9a6.365 6.365 0 01-4.484 1.848c-3.492 0-6.364-2.872-6.364-6.364 0-1.678.664-3.292 1.848-4.483z" fill="#2d466c" fill-rule="evenodd"/></svg>
           {:else}
-          <svg width="30" viewBox="0 0 32 32" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm0 22.2a1 1 0 00-1 1V25a1 1 0 002 0v-1.8a1 1 0 00-1-1zm5.801-1.813a1 1 0 00-1.414 1.414l1.269 1.27a1 1 0 001.414-1.415zm-10.188 0a1 1 0 00-1.414 0l-1.27 1.269a1 1 0 001.415 1.414l1.27-1.269a1 1 0 000-1.414zM16 12.4a3.6 3.6 0 100 7.2 3.6 3.6 0 000-7.2zM8.8 15H7a1 1 0 000 2h1.8a1 1 0 000-2zM25 15h-1.8a1 1 0 000 2H25a1 1 0 000-2zm-1.93-6.07a1 1 0 00-1.414 0l-1.27 1.269a1 1 0 001.415 1.414l1.27-1.269a1 1 0 000-1.414zm-12.726 0a1 1 0 00-1.414 1.414l1.269 1.27a1 1 0 001.414-1.415zM16 6a1 1 0 00-1 1v1.8a1 1 0 002 0V7a1 1 0 00-1-1z" fill="#a5bad9" fill-rule="evenodd"/></svg>
+          <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm0 22.2a1 1 0 00-1 1V25a1 1 0 002 0v-1.8a1 1 0 00-1-1zm5.801-1.813a1 1 0 00-1.414 1.414l1.269 1.27a1 1 0 001.414-1.415zm-10.188 0a1 1 0 00-1.414 0l-1.27 1.269a1 1 0 001.415 1.414l1.27-1.269a1 1 0 000-1.414zM16 12.4a3.6 3.6 0 100 7.2 3.6 3.6 0 000-7.2zM8.8 15H7a1 1 0 000 2h1.8a1 1 0 000-2zM25 15h-1.8a1 1 0 000 2H25a1 1 0 000-2zm-1.93-6.07a1 1 0 00-1.414 0l-1.27 1.269a1 1 0 001.415 1.414l1.27-1.269a1 1 0 000-1.414zm-12.726 0a1 1 0 00-1.414 1.414l1.269 1.27a1 1 0 001.414-1.415zM16 6a1 1 0 00-1 1v1.8a1 1 0 002 0V7a1 1 0 00-1-1z" fill="#a5bad9" fill-rule="evenodd"/></svg>
           {/if}
         </button>
         <a class="github" href="https://github.com/rabbitdevelopment/garden" title="Garden Github Repository" target="_blank">
-          <svg class="icon" role="img" height="30" viewBox="0 0 80 80" width="30" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" fill="currentColor"><path d="M39.996 0C17.908 0 0 18.362 0 41.014c0 18.12 11.46 33.49 27.355 38.916 2.001.375 2.73-.891 2.73-1.98 0-.97-.034-3.552-.053-6.973-11.127 2.477-13.474-5.499-13.474-5.499-1.82-4.736-4.442-5.997-4.442-5.997-3.632-2.545.275-2.495.275-2.495 4.015.292 6.126 4.227 6.126 4.227 3.568 6.267 9.364 4.457 11.642 3.41.364-2.652 1.395-4.46 2.54-5.484-8.882-1.035-18.221-4.555-18.221-20.27 0-4.477 1.56-8.138 4.118-11.005-.413-1.038-1.785-5.207.39-10.854 0 0 3.36-1.103 11.001 4.204 3.19-.909 6.613-1.364 10.014-1.38 3.396.016 6.82.471 10.014 1.38 7.637-5.307 10.989-4.204 10.989-4.204 2.183 5.647.81 9.816.398 10.854 2.563 2.867 4.113 6.528 4.113 11.004 0 15.756-9.354 19.223-18.265 20.238 1.437 1.266 2.716 3.769 2.716 7.596 0 5.48-.05 9.904-.05 11.249 0 1.098.72 2.374 2.751 1.974C68.55 74.489 80 59.128 80 41.014 80 18.362 62.09 0 39.996 0" /></svg>
+          <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M15.015 0C6.723 0 0 6.894 0 15.398c0 6.803 4.302 12.573 10.27 14.61.75.14 1.025-.334 1.025-.743 0-.365-.013-1.334-.02-2.618-4.178.93-5.059-2.065-5.059-2.065-.683-1.778-1.668-2.252-1.668-2.252-1.362-.955.104-.936.104-.936 1.507.11 2.3 1.587 2.3 1.587 1.34 2.353 3.515 1.673 4.37 1.28.137-.996.525-1.674.954-2.058-3.334-.389-6.84-1.71-6.84-7.61 0-1.681.585-3.056 1.545-4.132-.155-.39-.67-1.955.147-4.075 0 0 1.26-.414 4.13 1.579a14.03 14.03 0 013.76-.518c1.275.005 2.56.176 3.759.518 2.867-1.993 4.126-1.579 4.126-1.579.82 2.12.304 3.685.15 4.075.961 1.076 1.543 2.45 1.543 4.13 0 5.917-3.512 7.218-6.857 7.599.54.476 1.02 1.415 1.02 2.852 0 2.057-.02 3.718-.02 4.223 0 .413.27.891 1.034.741 5.963-2.04 10.261-7.808 10.261-14.608C30.034 6.894 23.31 0 15.015 0"/></svg>
         </a>
         {#if showSidenav}
           <button id="toggle-nav" class="toggle-nav" aria-haspopup="menu" title="Navigation">
-            <svg  class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
           </button>
         {/if}
       </div>
@@ -97,7 +97,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 2rem 0 2rem;
+      margin: 0.75rem 0;
+      @media (min-width: 768px) {
+        margin: 1rem 0;
+      }
+      @media (min-width: 1024px) {
+        margin: 2rem 0;
+      }
       height: 60px;
       a.logo {
         position: relative;

@@ -2,8 +2,12 @@
   import Main from '../../../components/layouts/Main.svelte'
 </script>
 
+<svelte:head>
+	<title>Garden Component Explorer :: Legal Notice</title>
+</svelte:head>
+
 <Main showStripes>
-  <div class="text">
+  <div>
     <h1>Impressum</h1>
     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
     <p>Rabbit Development<br>
