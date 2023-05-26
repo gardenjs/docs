@@ -1,9 +1,13 @@
 <script>
-  import Main from '../../../components/layouts/main.svelte'
+  import Main from '../../../components/layouts/Main.svelte'
 </script>
 
-<Main>
-  <div class="text">
+<svelte:head>
+	<title>Garden Component Explorer :: Privacy Policy</title>
+</svelte:head>
+
+<Main showStripes>
+  <div>
     <h1>Datenschutz&shy;erkl&auml;rung</h1>
     <h2>1. Datenschutz auf einen Blick</h2>
     <h3>Allgemeine Hinweise</h3> <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.</p>

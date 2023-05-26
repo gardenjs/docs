@@ -18,9 +18,7 @@
   --c-text-box:           var(--c-website-bg);
 
   --w-website:            1140px;
-  --monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  --icon-toggle-mode: url('/src/assets/icons/moon.svg');
-}
+  --monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;}
 
 [data-theme="dark"] {
   --c-primary:           hsl(185, 100%, 35%);
@@ -38,6 +36,4 @@
   --c-app-border:        hsl(168, 8%, 76%);
   --c-bg-box:              var(--c-text);
   --c-text-box:            var(--c-website-bg);
-
-  --icon-toggle-mode: url('/src/assets/icons/sun.svg');
 }
