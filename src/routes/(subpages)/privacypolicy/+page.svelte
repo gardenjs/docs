@@ -3,10 +3,10 @@
 </script>
 
 <svelte:head>
-	<title>testtestets</title>
+	<title>Garden Component Explorer :: Privacy Policy</title>
 </svelte:head>
 
-<Main>
+<Main showStripes>
   <div class="text">
     <h1>Datenschutz&shy;erkl&auml;rung</h1>
     <h2>1. Datenschutz auf einen Blick</h2>
