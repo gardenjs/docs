@@ -4,5 +4,5 @@
 </script>
 
 <Header />
-<slot>main content here ...</slot>
+<slot></slot>
 <Footer />

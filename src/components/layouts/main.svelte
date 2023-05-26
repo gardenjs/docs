@@ -4,7 +4,7 @@
 
 <main class="main">
   <div class="main_container">
-    <slot>content here ...</slot>
+    <slot></slot>
   </div>
   <div class="vegetables">
     <img src="src/assets/images/vegetables.svg" alt="Screenshot Garden app">
