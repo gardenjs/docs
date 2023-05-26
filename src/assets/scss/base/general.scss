@@ -19,7 +19,6 @@ body {
   accent-color: var(--c-primary);
 }
 
-// remove default margin
 blockquote,
 dl,
 dd,
@@ -36,19 +35,16 @@ pre {
   margin: 0;
 }
 
-// links width text-decoration
 a {
   text-decoration-skip-ink: auto;
 }
 
-// responsive layouts
 img, picture, embed, object, video {
 	max-width: 100%;
 	width: auto;
 	height: auto;
 }
 
-// make images easier to work with
 img,
 video,
 canvas,
@@ -60,7 +56,6 @@ object {
   border: none;
 }
 
-// inherit fonts for inputs and buttons
 input,
 button,
 textarea,
@@ -68,7 +63,6 @@ select {
   font: inherit;
 }
 
-// remove all animations and transitions for people that prefer not to see them
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -78,9 +72,4 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-// ie
-main {
-  display: block;
 }
