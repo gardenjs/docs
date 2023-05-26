@@ -55,4 +55,7 @@ ol, ul {
 }
 a {
   color: var(--c-primary);
+  &:hover {
+    color: var(--c-primary-lighter);
+  }
 }
