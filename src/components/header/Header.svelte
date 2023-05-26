@@ -125,14 +125,14 @@
           display: inline-block;
           position: absolute;
           top: 50%;
-          margin: 0 0 0 0.75rem;
+          padding: 0 0 0 0.75rem;
           transform: translateY(-50%);
           font-weight: 800;
           font-size: 1.5rem;
           white-space: nowrap;
           transition: color 0.2s;
           @media (min-width: 768px) {
-            margin: 0 0 0 1rem;
+            padding: 0 0 0 1rem;
             font-size: 1.875rem;
           }
           @media (min-width: 1024px) {
