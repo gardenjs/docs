@@ -1,6 +1,6 @@
 <script>
   import '../../assets/scss/main.scss'
-  import Subpage from '../../components/root/Subpage.svelte'
+  import Subpage from '../../components/layouts/Subpage.svelte'
 </script>
 
 <Subpage>

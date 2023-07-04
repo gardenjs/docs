@@ -3,7 +3,7 @@
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span>Harvest.</span></div>
     <p class="h1">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
     <div class="btn-header">
-      <a class="btn-docu" href="/documentation" title="go to docs">Documentation</a>
+      <a class="btn-docs" href="/docs" title="go to docs">Documentation</a>
       <a href=".#" title="watch garden demo" target="_blank">Watch Demo</a>
     </div>
   </div>
@@ -90,7 +90,7 @@
           transition: 0.2s;
         }
       }
-      a.btn-docu {
+      a.btn-docs {
         background-color: var(--c-primary);
         &:hover,
         &:focus {
