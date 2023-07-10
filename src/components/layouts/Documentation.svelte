@@ -1,21 +1,20 @@
 <script>
   import Header from '../header/Header.svelte'
-  import LeftRight from '../layouts/LeftRight.svelte'
   import Sidenav from '../sidenav/Sidenav.svelte'
   import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header showSidenav />
+<Header />
 <div class="main">
   <div class="main_container">
-    <LeftRight>
-      <div slot="left" class="sidebar">
+    <div class="leftright">
+      <div class="sidebar">
         <Sidenav />
       </div>
-      <div slot="right" class="content">
+      <div class="content">
         <slot></slot>
       </div>
-    </LeftRight>
+    </div>
   </div>
 </div>
 <Footer />
@@ -25,19 +24,36 @@
   position: relative;
   padding-bottom: 4rem;
   overflow: hidden;
+  .main_container {
+    margin-top: 1rem;
+  }
 }
-.sidebar {
-  display: none;
-  position: relative;
-  @media (min-width: 768px) {
-    display: block;
+@media (max-width: 767px) {
+  .sidebar {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .content {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .leftright {
+    position: relative;
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .sidebar {
+    position: relative;
+    margin: 0;
     width: 25%;
     overflow: hidden;
   }
-}
-.content {
-  width: 100%;
-  @media (min-width: 768px) {
+  .content {
     width: 75%;
   }
 }
