@@ -28,7 +28,7 @@
   font-weight: 800;
 }
 .sidenav {
-  @media (max-width: 767px) {
+  @media (max-width: 767px) or (max-height: 449px) {
     .nav_label {
       margin: 0 0 0.25rem 0.75rem;
       text-align: center;
@@ -62,7 +62,7 @@
       }
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (min-height: 450px) {
     position: fixed;
     overflow-y: scroll;
     margin: 0 0 4rem;

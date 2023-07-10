@@ -28,7 +28,7 @@
     margin-top: 1rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) or (max-height: 449px) {
   .sidebar {
     position: relative;
     margin-bottom: 2rem;
@@ -37,7 +37,7 @@
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 450px) {
   .leftright {
     position: relative;
     display: flex;
