@@ -24,24 +24,36 @@ blockquote {
     color: var(--c-primary);
   }
   .quote {
-    max-width: 100% !important;
-    font-size: 1.25rem;
+    max-width: 100%;
+    font-size: 1rem;
     color: var(--c-headlines);
     font-weight: 800;
     font-style: italic;
-    text-align: left !important;
+    text-align: left;
+    @media (min-width: 450px) {
+      font-size: 1.25rem;
+    }
     @media (min-width: 768px) {
-      font-size: 1.75rem !important;
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 1.75rem;
     }
   }
   .author {
     display: block;
     margin: 0.75rem 0 0;
     font-family: var(--monospace);
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     color: var(--c-secondary);
-    text-align: right !important;
+    text-align: right;
+    @media (min-width: 450px) {
+      font-size: 1rem;
+    }
     @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+    @media (min-width: 1280px) {
       font-size: 1.25rem;
     }
   }
