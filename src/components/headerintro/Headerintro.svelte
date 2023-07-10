@@ -1,7 +1,7 @@
 <div class="header_intro">
   <div class="header_text">
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span>Harvest.</span></div>
-    <p class="h1">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
+    <p class="slogan_subtext">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
     <div class="btn-header">
       <a class="btn-docs" href="/docs" title="go to docs">Documentation</a>
       <a href=".#" title="watch garden demo" target="_blank">Watch Demo</a>
@@ -37,25 +37,37 @@
     .slogan {
       display: block;
       margin: 0 0 1.25rem;
-      font-size: 3.75rem;
+      font-size: 1.25rem;
       font-weight: 900;
       text-align: center;
       line-height: 1.005;
+      @media (min-width: 280px) {
+        font-size: 2.25rem;
+      }
+      @media (min-width: 450px) {
+        font-size: 3rem;
+      }
       @media (min-width: 768px) {
-        font-size: 5.5rem;
+        font-size: 3.75rem;
         text-align: left;
         span {
           display: block;
         }
       }
+      @media (min-width: 1280px) {
+        font-size: 5.5rem;
+      }
     }
-    .h1 {
+    .slogan_subtext {
       display: block;
       margin: 0.5rem 0 1.75rem;
       width: 100%;
-      font-size: 1.125rem;
+      font-size: 1rem;
       font-weight: 400;
       text-align: center;
+      @media (min-width: 450px) {
+        font-size: 1.125rem;
+      }
       @media (min-width: 768px) {
         font-size: 1.25rem;
         text-align: left;
@@ -63,13 +75,18 @@
     }
     .btn-header {
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      @media (min-width: 350px) {
+        flex-direction: row;
+      }
       margin: 0 0 6rem;
       @media (min-width: 768px) {
         justify-content: flex-start;
       }
       a {
-        margin: 0 1rem 0 0;
+        display: block;
+        margin: 0 0 1rem;
         padding: 0.375rem 1.25rem;
         font-family: var(--monospace);
         color: var(--c-website-bg);
@@ -83,6 +100,12 @@
         background-color: var(--c-text);
         border-radius: 1.5rem;
         transition: 0.2s;
+        @media (min-width: 350px) {
+          margin: 0;
+          &:first-of-type {
+            margin-right: 1rem;
+          }
+        }
         &:hover,
         &:focus {
           background-color: var(--c-secondary-lighter);
@@ -100,20 +123,31 @@
     }
   }
   // header img
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .header_img {
       display: none;
     }
   }
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     .header_img {
+      position: relative;
+      width: 2000px;
+      margin: 0 0 0 5rem;
+      img {
+        width: auto;
+        height: 100%;
+        max-height: 780px;
+      }
+      @media (min-width: 1680px) {
+        width: 50vw;
+      }
       .app {
-        background-color: var(--c-app-bg);
         display: flex;
         flex-direction: column;
         position: relative;
         width: 100%;
         height: 100%;
+        background-color: var(--c-app-bg);
         border-radius: 0.563rem;
         backdrop-filter: blur(1.25rem);
         box-shadow: 0 0.475rem 1.5rem 0.25rem rgba(0,0,0,.3);
@@ -123,12 +157,9 @@
           flex-shrink: 0;
           height: 1.875rem;
           width: 100%;
-          border-bottom: 1px solid var(--c-app-border);
           padding: 0 0.75rem;
           white-space: nowrap;
-          @media screen and (max-width: 480px) {
-            padding: 0 16px;
-          }
+          border-bottom: 1px solid var(--c-app-border);
           .menu-circle {
             width: 0.688rem;
             height: 0.688rem;
@@ -142,25 +173,6 @@
           }
         }
       }
-    }
-  }
-  @media (min-width: 769px) and (max-width: 1680px) {
-    .header_img {
-      position: relative;
-      overflow: hidden;
-      width: 2000px;
-      margin: 0 0 0 5rem;
-      img {
-        width: auto;
-        height: 100%;
-        max-height: 780px;
-      }
-    }
-  }
-  @media (min-width: 1680px) {
-    .header_img {
-      width: 50vw;
-      margin: 0 0 0 5rem;
     }
   }
 }

@@ -15,20 +15,12 @@
   background-color: var(--c-bg-box);
   h3 {
     margin: 0 0 0.5rem;
-    font-size: 1.125rem;
     color: var(--c-text-box);
-    @media (min-width: 768px) {
-      font-size: 1.25rem;
-    }
   }
   p {
     color: var(--c-text-box);
     margin: 0;
-    font-size: 1rem;
     line-height: 1.4;
-    @media (min-width: 768px) {
-      font-size: 1.125rem;
-    }
   }
 }
 </style>

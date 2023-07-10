@@ -28,13 +28,21 @@
   }
   p {
     padding: 0 0 0 2rem;
-    border-left: 0.375rem solid var(--c-primary);
+    border-left: 0.25rem solid var(--c-primary);
     font-size: 1.125rem;
+    font-size: 1rem;
+    @media (min-width: 450px) {
+      font-size: 1.125rem;
+    }
     @media (min-width: 768px) {
       font-size: 1.25rem;
     }
     @media (min-width: 1024px) {
       max-width: calc(100% * 0.75);
+      border-left-width: 0.375rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 1.5rem;
     }
   }
 }
