@@ -22,7 +22,6 @@
   overflow: hidden;
   margin: -1px 0 0;
   padding: 0 1rem;
-  background-color: var(--c-website-bg);
 }
 :global(.main_container) {
   position: relative;
