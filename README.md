@@ -5,3 +5,7 @@ The Storybook alternative [Garden](https://github.com/rabbitdevelopment/garden) 
  Use this repository as a code demo for implementing Garden in a project, rendering components to the Garden app in the browser, and defining stories. We use Svelte here, which then works in a similar way for Vue and React.
 
 Happy Gardening :)
+
+## Todos
+
+- [Bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the home page.
