@@ -2,7 +2,7 @@
 
 Garden is an alternative to Storybook as component library explorer for UI development, testing and documentation. Garden is significantly faster than comparable tools - regardless of the project size. Svelte, Vue and React are currently supported, but other frameworks should also be easily connectable to Garden.
 
-But not only Garden works faster, but also working with Garden: Both outputting components in Garden and defining stories with Garden is very easy, fast and clear.
+But not only Garden works faster, but also working with Garden: Both outputting components in Garden and defining stories with Garden is very easy, fast and clear. For a clean project, the documentation and the creation of stories are created separately from the components themselves.
 
 The barrier to entry is very low: Garden focuses on the essential requirements of development without sacrificing essential functions.
 

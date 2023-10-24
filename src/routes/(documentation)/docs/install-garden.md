@@ -1,6 +1,6 @@
 # Install Garden
 
-Install Garden inside your Svelte/Vue/React project root follow the installation routine:
+Install Garden inside your Svelte/Vue/React project root and follow the installation routine:
 
 ```console
 npm install --save-dev garden
