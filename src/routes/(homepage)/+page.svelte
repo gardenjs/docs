@@ -22,7 +22,7 @@
     paragraph="Garden is a Svelte app and thus benefits from its super speed. Garden starts almost instantly within 2s. In action, code changes in Garden are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." />
   <Subchapter
     title="Use Garden with your favorite JS framework"
-    paragraph="Use Garden out of the box with Svelte, Vue and React or simply integrate it into your favorite framework. You can even use Garden out of the box even in a multiframework project, - Storybook can't do that." />
+    paragraph="Use Garden out of the box with Svelte, Vue and React or simply integrate it into your favorite framework. You can even use Garden out of the box even in a multiframework project - Storybook can't do that." />
   <Logos />
   <Blockquote
     quote="«Building a frontend is like gardening. Grow your components and pages, maintain them and control their growth. Build great products and reap the rewards of your work!»"
