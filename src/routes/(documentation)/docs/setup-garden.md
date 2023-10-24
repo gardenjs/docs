@@ -6,10 +6,12 @@ After the installation you will find in the root directory the Garden configurat
 
 ```js
 export default {
-  "destination": ".garden/", // do not rename to garden
 
   // Define the server port:
   "serverport": 3010,
+
+  // Stop auto opening garden on start:
+  "no_open_browser": true,
 
   // This title is displayed above the navigation:
   "project_title": "My project name",
@@ -44,7 +46,7 @@ export default {
   // "onThemeChange" function below accordingly.
   "themes": [
     {name: 'default', stageBg: 'white'},
-    {name: 'dark', stageBg: '#101010'},
+    {name: 'dark', stageBg: '#101010'}, // manually set default active theme on start {active: true, name: 'dark', stageBg: '#101010'},
     {name: 'light', stageBg: '#eee'}
   ],
   "themeHandler": onThemeChange
