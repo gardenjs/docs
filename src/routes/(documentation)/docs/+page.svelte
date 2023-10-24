@@ -1,9 +1,3 @@
-<svelte:head>
-	<title>Garden Component Explorer :: Documentation</title>
-  <meta name="description" content="This is the documentation of Garden, the fast storybook alternative for React, Vue and Svelte projects." />
-</svelte:head>
-
-<!-- import der md dateien durch mdsvex -->
 <script>
 import Introduction from './indroduction.md'
 import Install from './install-garden.md'
@@ -14,6 +8,11 @@ import Docs from './write-docs.md'
 import Screenshottests from './screenshot-test.md'
 
 </script>
+
+<svelte:head>
+	<title>Garden Component Explorer :: Documentation</title>
+  <meta name="description" content="This is the documentation of Garden, the fast storybook alternative for React, Vue and Svelte projects." />
+</svelte:head>
 
 <div id="introduction" class="md_file">
   <Introduction />
