@@ -1,11 +1,13 @@
-# Garden's landing page
+# Garden website
 
-The Storybook alternative [Garden](https://github.com/rabbitdevelopment/garden) is a lightweight and superfast component library explorer for UI development, testing and documentation. Garden's landing page can be found [here](https://garden.rabbitdevelopment.com/) and the actual Garden demo is [here](https://gardendemo.rabbitdevelopment.com/).
+[Garden](https://github.com/rabbitdevelopment/garden) is a lightweight and superfast component library explorer for UI development, testing and documentation.
 
- Use this repository as a code demo for implementing Garden in a project, rendering components to the Garden app in the browser, and defining stories. We use Svelte here, which then works in a similar way for Vue and React.
+This is the [Garden website](https://garden.rabbitdevelopment.com/) with the documentation and this is the website as a [Garden demo](https://gardendemo.rabbitdevelopment.com/).
+
+You can view this repository as a code demo of Garden. We use Svelte here which then works in a similar way for other supported Frameworks like Vue and React.
 
 Happy Gardening :)
 
 ## Todos
 
-- [Bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the home page.
+- [Bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the homepage.
