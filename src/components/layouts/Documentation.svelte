@@ -4,7 +4,7 @@
   import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header />
+<Header isSticky />
 <div class="main">
   <div class="main_container">
     <div class="leftright">
@@ -25,7 +25,8 @@
   padding-bottom: 4rem;
   overflow: hidden;
   .main_container {
-    margin-top: 1rem;
+    margin: 1rem auto 0;
+    max-width: var(--w-website);
   }
 }
 @media (max-width: 767px) or (max-height: 449px) {

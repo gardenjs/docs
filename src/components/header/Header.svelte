@@ -1,6 +1,10 @@
 <script>
   import Stripes from '../stripes/Stripes.svelte'
   
+  export let isSticky = false
+  let sticky = 'is-sticky'
+  let scroll = ''
+
   export let showStripes = false
   export let showSkew = false
   let currentTheme = 'light'
@@ -27,7 +31,9 @@
 
 </script>
 
-<header class="header">
+<header class="header {isSticky? sticky : scroll}">
+
+<!-- <header class="header"> -->
   <div class="header_container">
     <div class="navbar">
       <a class="logo" href="/" title="start">
@@ -76,6 +82,11 @@
   z-index: 2;
   @media (min-width: 1680px) {
     max-height: var(--w-website);
+  }
+  &.is-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9;
   }
   .skew {
     display: none;

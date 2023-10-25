@@ -3,6 +3,6 @@
   import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header showStripes />
+<Header showStripes isSticky />
 <slot></slot>
 <Footer />
