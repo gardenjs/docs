@@ -1,6 +1,7 @@
 <script>
   import Header from '../header/Header.svelte'
   import Sidenav from '../sidenav/Sidenav.svelte'
+  import Vegetables from '../vegetables/Vegetables.svelte'
   import Footer from '../footer/Footer.svelte'
 </script>
 
@@ -13,6 +14,7 @@
       </div>
       <div class="content">
         <slot></slot>
+        <Vegetables />
       </div>
     </div>
   </div>
