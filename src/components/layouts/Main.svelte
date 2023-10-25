@@ -26,8 +26,8 @@
 :global(.main_container) {
   position: relative;
   width: 100%;
-  max-width: var(--w-website);
   margin: 3rem auto 0;
+  max-width: var(--w-website);
   z-index: 3;
 }
 .vegetables {
