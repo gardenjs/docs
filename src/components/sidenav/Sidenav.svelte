@@ -6,7 +6,7 @@
     { href: "#output-of-components", label: "Output of Components" },
     { href: "#stories", label: "Stories" },
     { href: "#write-docs", label: "Write docs" },
-    { href: "#screenshot-tests", label: "Screenshot Test" }
+    // { href: "#screenshot-tests", label: "Screenshot Test" }
   ];
 </script>
 

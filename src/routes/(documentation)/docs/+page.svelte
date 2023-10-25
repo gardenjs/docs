@@ -32,9 +32,9 @@ import Screenshottests from './screenshot-test.md'
 <div id="write-docs" class="md_file">
   <Docs />
 </div>
-<div id="screenshot-tests" class="md_file">
+<!-- <div id="screenshot-tests" class="md_file">
   <Screenshottests />
-</div>
+</div> -->
 
 
 <style>
