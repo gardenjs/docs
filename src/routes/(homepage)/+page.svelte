@@ -36,7 +36,7 @@
       paragraph="Keep track of the countless components even in large projects and ensure the quality of your work." />
     <Infobox
       title="Usability"
-      paragraph="The navigation maps the file structure of your project. Use the search form to find your component in the navigation." />
+      paragraph="A well thought-out concept, simple operation and numerous small features help to make everyday development work easier." />
     <Infobox
       title="Representation"
       paragraph="Preview components in different viewport sizes and orientations or in a separate browser window. The size of the stage is shown in pixel size." />
