@@ -24,7 +24,7 @@
 <style lang="scss">
 .nav_label {
   font-size: 1rem;
-  color:  var(--c-text);
+  color: var(--c-text);
   font-weight: 800;
 }
 .sidenav {
