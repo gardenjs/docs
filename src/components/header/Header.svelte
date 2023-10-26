@@ -38,7 +38,7 @@
     <div class="navbar">
       <a class="logo" href="/" title="start">
         <img src="src/assets/icons/logo.svg" alt="Logo">
-        <span class="logo_label">Garden</span>
+        <span class="logo_label">Garden.js</span>
       </a>
       <nav class="navbar_nav">
         <ul>
