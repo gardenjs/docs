@@ -5,7 +5,7 @@
     { href: "#setup-garden", label: "Setup Garden" },
     { href: "#output-of-components", label: "Output of Components" },
     { href: "#stories", label: "Stories" },
-    { href: "#write-docs", label: "Write docs" },
+    { href: "#add-notes", label: "Add notes" },
     // { href: "#screenshot-tests", label: "Screenshot Test" }
   ];
 </script>

@@ -4,7 +4,7 @@ import Install from './install-garden.md'
 import Setup from './setup-garden.md'
 import Output from './output-of-components.md'
 import Stories from './stories.md'
-import Docs from './write-docs.md'
+import Notes from './add-notes.md'
 import Screenshottests from './screenshot-test.md'
 
 </script>
@@ -29,8 +29,8 @@ import Screenshottests from './screenshot-test.md'
 <div id="stories" class="md_file">
   <Stories />
 </div>
-<div id="write-docs" class="md_file">
-  <Docs />
+<div id="add-notes" class="md_file">
+  <Notes />
 </div>
 <!-- <div id="screenshot-tests" class="md_file">
   <Screenshottests />

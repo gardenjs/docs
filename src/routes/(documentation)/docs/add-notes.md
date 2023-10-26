@@ -1,14 +1,14 @@
-# Write Docs
+# Add notes
 
-You can add text to each component, for example detailed documentation. Also code blocks with text highlighting is possible. These texts are then displayed in the panel at "Description".
+You can add text to each component, for example a short note or a detailed documentation. Also code blocks with text highlighting is possible. These texts are then displayed in the panel at "Description".
 
 You can either write plain text or markdown directly into foo.da.js, or you can specify a path to a markdown file.
 
 ```js
 export default {
-  name: 'Chapter',
-  file: './Chapter.svelte',
-  description: "./chapter.md",
+  name: 'Foo',
+  file: './Foo.svelte',
+  description: "./foo.md",
 }
 ```
 
