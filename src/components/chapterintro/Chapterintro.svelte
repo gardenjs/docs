@@ -3,9 +3,14 @@
   export let pagetitle = ''
   export let title = ''
   export let intro = ''
+
+  export let isPagetitle = false
+  let haspagetitle = ''
+  let hasnotpagetitle = 'mt'
+
 </script>
 
-<div class="chapter">
+<div class="chapter {isPagetitle? haspagetitle : hasnotpagetitle}">
   {#if superscript}
     <div class="superscript">{superscript}</div>
   {/if}
@@ -27,6 +32,15 @@
   }
   @media (min-width: 1024px) {
     margin: 0 0 3rem;
+  }
+  &.mt {
+    margin: 4rem 0 0;
+    @media (min-width: 768px) {
+      margin: 6rem 0 0;
+    }
+    @media (min-width: 1024px) {
+      margin: 8rem 0 0;
+    }
   }
   .superscript {
     margin: 0 0 0.25rem;
