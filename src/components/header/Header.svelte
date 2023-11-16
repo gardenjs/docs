@@ -32,13 +32,11 @@
 </script>
 
 <header class="header {isSticky? sticky : scroll}">
-
-<!-- <header class="header"> -->
   <div class="header_container">
     <div class="navbar">
       <a class="logo" href="/" title="start">
         <img src="src/assets/icons/logo.svg" alt="Logo">
-        <span class="logo_label">Garden.js</span>
+        <span class="logo_label">GardenJS</span>
       </a>
       <nav class="navbar_nav">
         <ul>
@@ -183,7 +181,7 @@
               margin: 0;
             }
             a {
-              font-weight: 600;
+              font-weight: 500;
               border-bottom: 2px solid var(--c-primary);
               &.github {
                 border: none
