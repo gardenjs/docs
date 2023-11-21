@@ -11,7 +11,6 @@
 </script>
 
 <nav class="sidenav">
-  <div class="nav_label">v.1.0.x</div>
   <ul>
     {#each links as link}
       <li>
@@ -22,17 +21,8 @@
 </nav>
 
 <style lang="scss">
-.nav_label {
-  font-size: 1rem;
-  color: var(--c-text);
-  font-weight: 800;
-}
 .sidenav {
   @media (max-width: 767px) or (max-height: 449px) {
-    .nav_label {
-      margin: 0 0 0.25rem 0.75rem;
-      text-align: center;
-    }
     ul {
       text-align: center;
       li {
@@ -49,7 +39,7 @@
           background-color: var(--c-text);
           border-radius: 1.5rem;
           transition: 0.2s;
-          @media (min-width: 768px) {
+          @media (min-width: 840px) {
             font-size: 1rem;
           }
           &:hover,
@@ -62,7 +52,7 @@
       }
     }
   }
-  @media (min-width: 768px) and (min-height: 450px) {
+  @media (min-width: 840px) and (min-height: 450px) {
     position: fixed;
     overflow-y: scroll;
     margin: 0 0 4rem;
