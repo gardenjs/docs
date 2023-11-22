@@ -21,18 +21,26 @@
 </div>
 
 <style lang="scss">
+@use "sass:math";
 .header_intro {
-  @media (min-width: 768px) {
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  @media (min-width: 1312px) {
+    padding: 0 1rem;
+    max-width: var(--w-website);
+  }
+  @media (min-width: 840px) {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
   .header_text {
     margin: 4.5rem 0 0;
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       width: 50vw;
     }
-    @media (min-width: 1140px) {
-      width: 570px;
+    @media (min-width: 960px) {
+      width: 580px;
     }
     .slogan {
       display: block;
@@ -47,7 +55,7 @@
       @media (min-width: 450px) {
         font-size: 3rem;
       }
-      @media (min-width: 768px) {
+      @media (min-width: 840px) {
         font-size: 3.75rem;
         text-align: left;
         span {
@@ -68,7 +76,7 @@
       @media (min-width: 450px) {
         font-size: 1.125rem;
       }
-      @media (min-width: 768px) {
+      @media (min-width: 840px) {
         font-size: 1.25rem;
         text-align: left;
       }
@@ -80,8 +88,7 @@
       @media (min-width: 350px) {
         flex-direction: row;
       }
-      margin: 0 0 6rem;
-      @media (min-width: 768px) {
+      @media (min-width: 840px) {
         justify-content: flex-start;
       }
       a {
@@ -91,7 +98,7 @@
         font-family: var(--monospace);
         color: var(--c-website-bg);
         font-size: 0.875rem;
-        @media (min-width: 768px) {
+        @media (min-width: 840px) {
           font-size: 1rem;
         }
         text-align: center;
@@ -123,12 +130,12 @@
     }
   }
   // header img
-  @media (max-width: 767px) {
+  @media (max-width: 839px) {
     .header_img {
       display: none;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 840px) {
     .header_img {
       position: relative;
       width: 2000px;
