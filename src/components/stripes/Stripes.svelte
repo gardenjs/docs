@@ -1,38 +1,91 @@
-<div class="stripes"><span></span><span></span><span></span><span></span></div>
+<div class="stripes">
+  <div class="stripes_container">
+    <div class="stripe stripe-1"></div>
+    <div class="stripe stripe-2"></div>
+    <div class="stripe stripe-3"></div>
+    <div class="stripe stripe-4"></div>
+    <div class="stripe stripe-5"></div>
+    <div class="stripe stripe-6"></div>
+    <div class="stripe stripe-7"></div>
+    <div class="stripe stripe-8"></div>
+    <div class="stripe stripe-9"></div>
+  </div>
+</div>
 
 <style lang="scss">
 .stripes {
   position: absolute;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
   width: 100%;
-  max-width: var(--w-website);
   height: 100%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
   z-index: 2;
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(4,1fr);
+}
+.stripes_container {
+  position: relative;
+  @media (min-width: 600px) {
+    display: grid;
+    grid: 1fr/repeat(8,1fr);
+    grid-gap: 0.063rem;
+    width: 100%;
+    height: 100%;
   }
-  span {
-    @media (min-width: 768px) {
-      &:nth-of-type(3) {
-        border-left: 1px dashed rgba(53, 62, 100, 0.2);
-      }
-    }
-    @media (min-width: 1140px) {
-      &:first-of-type {
-        border-left: 1px solid rgba(53, 62, 100, 0.1);
-        border-right: 1px dashed rgba(53, 62, 100, 0.2);
-      }
-      &:last-of-type {
-        border-left: 1px dashed rgba(53, 62, 100, 0.2);
-        border-right: 1px solid rgba(53, 62, 100, 0.1);
-      }
-    }
+  // @media (min-width: 840px) {
+  //   grid: 1fr/repeat(4,1fr);
+  // }
+  // @media (min-width: 960px) {
+  //   grid: 1fr/repeat(6,1fr);
+  // }
+  @media (min-width: 1280px) {
+    margin: auto;
+    max-width: var(--w-website);
+    grid: 1fr/repeat(8,1fr);
   }
+  @media (min-width: 600px) {
+    .stripe {
+      width: 0.063rem;
+      background: linear-gradient(180deg,var(--c-stripes-dashed),var(--c-stripes-dashed) 50%,transparent 0,transparent);
+      background-size: 0.063rem 0.75rem;
+    }
+    .stripe-1,
+    .stripe-9 {
+      background: var(--c-stripes-solid);
+    }
+    .stripe-9 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+    }
+    // .stripe-3,
+    // .stripe-4,
+    // .stripe-5,
+    // .stripe-6,
+    // .stripe-7,
+    // .stripe-8 {
+    //   display: none;
+    // }
+  }
+  // @media (min-width: 840px) {
+  //   .stripe-3,
+  //   .stripe-4 {
+  //     display: block;
+  //   }
+  // }
+  // @media (min-width: 960px) {
+  //   .stripe-4,
+  //   .stripe-5,
+  //   .stripe-6 {
+  //     display: block;
+  //   }
+  // }
+  // @media (min-width: 1280px) {
+  //   .stripe-7,
+  //   .stripe-8 {
+  //     display: block;
+  //   }
+  // }
 }
 </style>
