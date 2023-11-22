@@ -8,4 +8,4 @@
   <Headerintro />
 </Header>
 <slot></slot>
-<Footer />
+<Footer showStripes />
