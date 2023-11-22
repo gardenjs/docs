@@ -11,17 +11,17 @@
 <style lang="scss">
 .subchapter {
   margin: 0 0 2rem;
-  @media (min-width: 768px) {
+  @media (min-width: 840px) {
     margin: 0 0 3rem;
   }
   h3 {
     margin: 1.25rem 0 1rem;
     font-size: 1.2rem;
     font-weight: 700;
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       font-size: 1.3rem;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 960px) {
       margin: 2.25em 0 1rem;
       font-size: 1.75rem;
     }
@@ -34,11 +34,11 @@
     @media (min-width: 450px) {
       font-size: 1.125rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       font-size: 1.25rem;
     }
-    @media (min-width: 1024px) {
-      max-width: calc(100% * 0.75);
+    @media (min-width: 960px) {
+      max-width: calc(100% * 0.8333);
       border-left-width: 0.375rem;
     }
     @media (min-width: 1280px) {

@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
 }
 .cols-3 {
-  @media (min-width: 768px) {
+  @media (min-width: 840px) {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
@@ -11,7 +11,7 @@
   }
   grid-row-gap: 1rem;
   margin-bottom: 1rem;
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

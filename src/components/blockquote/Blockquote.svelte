@@ -12,10 +12,10 @@
 <style lang="scss">
 blockquote {
   margin: 2rem 0;
-  @media (min-width: 768px) {
+  @media (min-width: 840px) {
     margin: 3rem 0;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     margin: 5rem 0;
   }
   .icon {
@@ -33,7 +33,7 @@ blockquote {
     @media (min-width: 450px) {
       font-size: 1.25rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       font-size: 1.5rem;
     }
     @media (min-width: 1280px) {
@@ -50,7 +50,7 @@ blockquote {
     @media (min-width: 450px) {
       font-size: 1rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       font-size: 1.125rem;
     }
     @media (min-width: 1280px) {

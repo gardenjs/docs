@@ -27,18 +27,18 @@
 <style lang="scss">
 .chapter {
   margin: 0 0 2rem;
-  @media (min-width: 768px) {
+  @media (min-width: 840px) {
     margin: 0  0 3rem;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     margin: 0 0 3rem;
   }
   &.mt {
     margin: 4rem 0 0;
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       margin: 6rem 0 0;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 960px) {
       margin: 8rem 0 0;
     }
   }
@@ -60,10 +60,10 @@
     color: var(--c-text);
     font-size: 1.25rem;
     font-weight: 800;
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       font-size: 1.75rem;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 960px) {
       font-size: 2.875rem;
     }
   }
@@ -72,7 +72,7 @@
     @media (min-width: 450px) {
       font-size: 1.125rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       font-size: 1.25rem;
     }
     @media (min-width: 1280px) {
