@@ -12,7 +12,7 @@
 	<meta name="description" content="This is the documentation of Garden, the fast storybook alternative for React, Vue and Svelte projects." />
 </svelte:head>
 
-<Main showStripes>
+<Main hasHeaderintro showStripes>
   <ChapterIntro isPagetitle
     superscript="This is Garden"
     pagetitle="An UI component library explorer for JS Frameworks"
@@ -67,10 +67,10 @@
 <style lang="scss">
   .cols-3 {
     margin: 0 0 2rem;
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       margin: 0 0 3rem;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 960px) {
       margin: 0 0 5rem;
     }
   }
