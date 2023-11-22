@@ -40,7 +40,7 @@
     width: 100%;
   }
 }
-@media (min-width: 768px) and (min-height: 450px) {
+@media (min-width: 840px) and (min-height: 450px) {
   .leftright {
     position: relative;
     display: flex;
