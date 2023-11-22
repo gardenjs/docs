@@ -5,4 +5,4 @@
 
 <Header showStripes isSticky />
 <slot></slot>
-<Footer />
+<Footer showStripes />
