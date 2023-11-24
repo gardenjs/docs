@@ -6,28 +6,28 @@
 </script>
 
 <Header isSticky />
-<div class="main">
-  <div class="main_container">
+<div class="mainaside">
+  <div class="mainaside_container">
     <div class="leftright">
       <div class="sidebar">
         <Sidenav />
       </div>
       <div class="content">
         <slot></slot>
-        <Vegetables />
       </div>
     </div>
   </div>
 </div>
+<Vegetables />
 <Footer />
 
 <style lang="scss">
-.main {
+.mainaside {
   position: relative;
-  padding-bottom: 4rem;
   overflow: hidden;
-  .main_container {
+  .mainaside_container {
     margin: 1rem auto 0;
+    padding: 0 1.5rem;
     max-width: var(--w-website);
   }
 }
