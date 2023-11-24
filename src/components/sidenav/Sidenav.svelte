@@ -22,7 +22,7 @@
 
 <style lang="scss">
 .sidenav {
-  @media (max-width: 767px) or (max-height: 449px) {
+  @media (max-width: 839px) or (max-height: 449px) {
     ul {
       text-align: center;
       li {
