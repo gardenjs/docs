@@ -45,6 +45,6 @@ import Screenshottests from './screenshot-test.md'
   margin-top: -10rem;
 }
 .md_file:last-of-type {
-  margin-bottom: 10rem;
+  margin-bottom: 0;
 }
 </style>
