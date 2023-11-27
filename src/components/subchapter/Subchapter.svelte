@@ -39,7 +39,6 @@
     }
     @media (min-width: 960px) {
       padding: 0 0 0 1.5rem;
-      max-width: calc(100% * 0.8333);
       border-left-width: 0.375rem;
     }
     @media (min-width: 1280px) {
