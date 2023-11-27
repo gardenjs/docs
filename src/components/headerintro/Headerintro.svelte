@@ -2,7 +2,7 @@
   <div class="header_text">
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span>Harvest.</span></div>
     <p class="slogan_subtext">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
-    <div class="btn-header">
+    <div class="header_links">
       <a class="btn-docs" href="/docs" title="go to docs">Documentation</a>
       <a href=".#" title="watch garden demo" target="_blank">Watch Demo</a>
     </div>
@@ -34,20 +34,21 @@
     padding: 0;
   }
   .header_text {
-    margin: 4rem 0 0;
-    @media (min-width: 600px) and (max-width: 839px) {
-      margin: 3.5rem calc(100% / math.div(12, 1) + 0.5rem);
+    margin: 3rem 0 0;
+    @media (min-width: 600px) {
+      margin: 3rem calc(100% / math.div(12, 1)) 0;
+      padding: 0 0.5rem 0 0.625rem;
     }
-    @media (min-width: 840px) and (max-width: 959px) {
-      margin: 3.5rem calc(100% / math.div(12, 2) + 0.5rem);
+    @media (min-width: 840px) {
+      margin: 3rem calc(100% / math.div(12, 2)) 0;
     }
     @media (min-width: 960px) {
-      margin: 4.5rem 5rem 0 0;
-      padding: 0 0.5rem;
+      margin: 4rem 0 0;
       width: calc(((100vw - 2rem) / 12) * 5);
     }
     @media (min-width: 1312px) {
-      width: calc((1280px * 5) / 12);
+      margin-left: calc((1280px * 2) / 12);
+      width: calc((1280px / 12) * 4);
     }
     .slogan {
       display: block;
@@ -88,19 +89,14 @@
         text-align: left;
       }
     }
-    .btn-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      @media (min-width: 350px) {
-        flex-direction: row;
-      }
-      @media (min-width: 960px) {
-        justify-content: flex-start;
+    .header_links {
+      @media (min-width: 480px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 1rem;
       }
       a {
         display: block;
-        margin: 0 0 1rem;
         padding: 0.375rem 1.25rem;
         font-family: var(--monospace);
         color: var(--c-website-bg);
@@ -114,12 +110,6 @@
         background-color: var(--c-text);
         border-radius: 1.5rem;
         transition: 0.2s;
-        @media (min-width: 350px) {
-          margin: 0;
-          &:first-of-type {
-            margin-right: 1rem;
-          }
-        }
         &:hover,
         &:focus {
           background-color: var(--c-secondary-lighter);
@@ -128,10 +118,14 @@
         }
       }
       a.btn-docs {
+        margin: 0 0 0.5rem;
         background-color: var(--c-primary);
         &:hover,
         &:focus {
           background-color: var(--c-primary-lighter);
+        }
+        @media (min-width: 480px) {
+          margin: 0;
         }
       }
     }
@@ -146,7 +140,7 @@
     .header_img {
       position: relative;
       width: 2000px;
-      margin: 0;
+      margin: 0 0 0 5rem;
       img {
         width: auto;
         height: 100%;

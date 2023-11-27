@@ -76,10 +76,12 @@
 @use "sass:math";
 .header {
   position: relative;
-  max-height: 780px;
   background-color: var(--c-website-bg);
   overflow: hidden;
   z-index: 2;
+  @media (min-width: 960px) {
+    max-height: 780px;
+  }
   &.is-sticky {
     position: sticky;
     top: 0;
@@ -116,9 +118,9 @@
           bottom: 0rem;
           left: 0;
           width: 100%;
-          height: 0.063rem;
+          height: 1px;
           background-image: linear-gradient(90deg, var(--c-stripes-dashed), var(--c-stripes-dashed) 50%,transparent 0,transparent);
-          background-size: 0.75rem 0.063rem;
+          background-size: 12px 1px;
         }
       }
       .navbar_container {

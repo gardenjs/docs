@@ -34,7 +34,7 @@
   overflow: hidden;
   z-index: 3;
   @media (min-width: 600px) {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     &::before {
       position: absolute;
       content: '';
@@ -52,7 +52,7 @@
     justify-content: center;
     position: relative;
     margin: 1rem auto;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     width: 100%;
     font-size: 0.813rem;
     color: var(--c-footer-text);

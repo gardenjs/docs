@@ -26,16 +26,13 @@
       width: 50%;
     }
     @media (min-width: 600px) {
-      margin: 0 calc(((100vw - 2rem) / 12) * 3);
-      width: calc(100vw / 2);
+      padding: 0 0.5rem 0 0.625rem;
+      width: calc(((100vw - 2rem) / 12) * 6);;
     }
     @media (min-width: 840px) {
-      margin: 0 calc(((100vw - 2rem) / 12) * 4);
-      width: calc(100vw / 3);
+      width: calc(((100vw - 2rem) / 12) * 4);
     }
     @media (min-width: 1312px) {
-      margin: 0;
-      padding: 0 0.5rem;
       width: calc((1280px * 4) / 12);
     }
   }

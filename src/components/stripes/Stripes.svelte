@@ -31,7 +31,7 @@
   @media (min-width: 600px) {
     display: grid;
     grid: 1fr/repeat(12,1fr);
-    grid-gap: 0.063rem;
+    grid-gap: 1px;
     width: 100%;
     height: 100%;
   }
@@ -41,9 +41,9 @@
   }
   @media (min-width: 600px) {
     .stripe {
-      width: 0.063rem;
+      width: 1px;
       background: linear-gradient(180deg,var(--c-stripes-dashed),var(--c-stripes-dashed) 50%,transparent 0,transparent);
-      background-size: 0.063rem 0.75rem;
+      background-size: 1px 12px;
     }
     .stripe-1,
     .stripe-13 {
