@@ -76,7 +76,6 @@
 @use "sass:math";
 .header {
   position: relative;
-  background-color: var(--c-website-bg);
   overflow: hidden;
   z-index: 2;
   @media (min-width: 960px) {
