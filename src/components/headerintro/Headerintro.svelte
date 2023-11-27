@@ -141,6 +141,10 @@
       position: relative;
       width: 2000px;
       margin: 0 0 0 5rem;
+      margin-left: calc((100vw / 12) + 0.625rem);
+      @media (min-width: 1280px) {
+        margin-left: calc((1280px / 12) + 0.625rem);
+      }
       img {
         width: auto;
         height: 100%;
