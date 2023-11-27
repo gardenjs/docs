@@ -34,6 +34,7 @@
   overflow: hidden;
   z-index: 3;
   @media (min-width: 600px) {
+    padding: 0 0.5rem;
     &::before {
       position: absolute;
       content: '';
@@ -51,7 +52,7 @@
     justify-content: center;
     position: relative;
     margin: 1rem auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
     width: 100%;
     font-size: 0.813rem;
     color: var(--c-footer-text);
@@ -59,7 +60,6 @@
     @media (min-width: 840px) {
       justify-content: space-between;
       flex-direction: row;
-      margin: 2rem auto;
       text-align: left;
     }
     @media (min-width: 960px) {
@@ -69,6 +69,7 @@
       margin: 2rem auto;
     }
     @media (min-width: 1312px) {
+      padding: 0.5rem;
       max-width: var(--w-website);
     }
     .footer_copyright {
@@ -84,7 +85,7 @@
         padding: 0 0.75rem 0 0;
         .icon {
           margin-right: 1rem;
-          fill: var(--c-secondary);
+          fill: var(--c-primary-lighter);
         }
       }
     }

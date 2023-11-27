@@ -87,7 +87,7 @@
   }
   .skew {
     display: none;
-    @media (min-width: 840px) {
+    @media (min-width: 960px) {
       display: block;
       position: absolute;
       content: '';
@@ -108,8 +108,8 @@
     .navbar {
       position: relative;
       overflow: height;
-      padding: 0 1rem;
       @media (min-width: 600px) {
+        padding: 0 1rem;
         &::after {
           position: absolute;
           content: '';
@@ -127,7 +127,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
-        padding: 1rem;
+        padding: 0.5rem;
         @media (min-width: 480px) {
           flex-direction: row;
           justify-content: space-between;
@@ -137,11 +137,11 @@
         }
         @media (min-width: 1280px) {
           width: 100%;
-          max-width: var(--w-website);
-          height: 100px;
+          padding: 0 0.5rem;
+          height: 6rem;
         }
         @media (min-width: 1312px) {
-          padding: 0 1rem;
+          max-width: var(--w-website);
         }
         a.logo {
           position: relative;
@@ -157,7 +157,7 @@
             display: inline-block;
             width: 65px;
             height: 36px;
-            @media (min-width: 960px) {
+            @media (min-width: 840px) {
               width: 80%;
               height: auto;
             }

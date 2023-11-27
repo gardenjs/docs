@@ -20,8 +20,14 @@ blockquote {
   }
   .icon {
     margin: 0 0 0.75rem;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     color: var(--c-primary);
+    @media (min-width: 840px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 2rem;
+    }
   }
   .quote {
     max-width: 100%;

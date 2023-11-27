@@ -57,11 +57,14 @@
     superscript="Our story"
     title="Why another tool like Storybook?" />
   <Subchapter
-    title="We're late to the party"
-    paragraph="Storybook is the top dog and a very powerful, great tool. So why Garden? Garden was created as a practice project to better understand the then-new framework Svelte. Right off the bat, Garden was significantly faster than Storybook and its alternatives. From then on, we used Garden for all our projects. So Garden was constantly maintained and extended with more features. By now, Garden is mature and has all the essential features needed to build, test and document UI components.  Garden is comparatively easy to develop further and also does a few things better than the alternatives. So it would be a shame not to make Garden available to everyone." />
+    title="A brief insight into the development of Garden"
+    paragraph="Storybook is the top dog and a very powerful, great tool. So why Garden? Garden was initially developt as a practice project to better understand the then-new framework Svelte. Right off the bat, Garden was significantly faster than Storybook and all its alternatives. From then on, we used Garden for all our projects. So Garden was constantly maintained and extended with more features. Garden now has all the essential functions needed to create, test and document UI components and is also comparatively easy to maintain and further develop. Garden also does some things better than the alternatives. So we're late to the party but it would be a shame not to make Garden available to everyone." />
   <Subchapter
     title="Contributions and donations are welcome"
     paragraph="Garden is actively maintained. We will integrate some useful features in the future and are open for further requests. We are happy about your support. Please report bugs on Github." />
+  <Subchapter
+    title="Sponsors"
+    paragraph="Become a sponsor to give us more scope for further development. We are grateful for this and will publish your logo and website URL in our README on Github and here on the garden website/documentation." />
 </Main>
 
 <style lang="scss">

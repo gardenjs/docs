@@ -21,16 +21,15 @@
 
 <style lang="scss">
 @use "sass:math";
-:global(.main) {
+.main {
   position: relative;
   overflow: hidden;
-  padding: 0 1rem;
-  @media (min-width: 840px) {
-    padding: 0 1rem;
-  }
-  @media (min-width: 960px) {
-    padding: 0;
-  }
+  // @media (min-width: 840px) {
+  //   padding: 0 1rem;
+  // }
+  // @media (min-width: 960px) {
+  //   padding: 0;
+  // }
   &.has-intro {
     padding-top: 2rem;
     @media (min-width: 960px) {
@@ -41,21 +40,23 @@
     }
   }
 }
-:global(.main_container) {
+.main_container {
   position: relative;
   margin: 3rem auto 0;
+  padding: 0 1rem;
   z-index: 3;
+  @media (min-width: 600px) {
+    padding: 0 1.5rem;
+  }
   @media (min-width: 840px) {
-    margin-right: calc((100%) / 8);
-    margin-left: calc((100%) / 8);
+    margin: 3rem calc((100vw - 1.5rem) / 12) 0;
   }
   @media (min-width: 960px) {
-    margin-right: calc((100% - 2rem) / 7);
-    margin-left: calc((100% - 2rem) / 7);
+    margin: 3rem calc(((100vw - 1.5rem) / 12) * 2) 0;
   }
   @media (min-width: 1312px) {
-    margin: auto;
-    width: 960px;
+    margin: 3rem auto 0;
+    width: calc(((1280px + 3rem) / 12) * 8);
   }
 }
 </style>

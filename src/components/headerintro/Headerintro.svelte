@@ -23,24 +23,31 @@
 <style lang="scss">
 @use "sass:math";
 .header_intro {
-  width: 100%;
   margin: auto;
-  padding: 0 2rem;
-  @media (min-width: 1312px) {
-    padding: 0 1rem;
-    max-width: var(--w-website);
-  }
-  @media (min-width: 840px) {
+  padding: 0 1rem;
+  @media (min-width: 960px) {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
+  @media (min-width: 1312px) {
+    width: var(--w-website);
+    padding: 0;
+  }
   .header_text {
-    margin: 4.5rem 0 0;
-    @media (min-width: 840px) {
-      width: 50vw;
+    margin: 4rem 0 0;
+    @media (min-width: 600px) and (max-width: 839px) {
+      margin: 3.5rem calc(100% / math.div(12, 1) + 0.5rem);
+    }
+    @media (min-width: 840px) and (max-width: 959px) {
+      margin: 3.5rem calc(100% / math.div(12, 2) + 0.5rem);
     }
     @media (min-width: 960px) {
-      width: 580px;
+      margin: 4.5rem 5rem 0 0;
+      padding: 0 0.5rem;
+      width: calc(((100vw - 2rem) / 12) * 5);
+    }
+    @media (min-width: 1312px) {
+      width: calc((1280px * 5) / 12);
     }
     .slogan {
       display: block;
@@ -55,7 +62,7 @@
       @media (min-width: 450px) {
         font-size: 3rem;
       }
-      @media (min-width: 840px) {
+      @media (min-width: 960px) {
         font-size: 3.75rem;
         text-align: left;
         span {
@@ -76,7 +83,7 @@
       @media (min-width: 450px) {
         font-size: 1.125rem;
       }
-      @media (min-width: 840px) {
+      @media (min-width: 960px) {
         font-size: 1.25rem;
         text-align: left;
       }
@@ -88,7 +95,7 @@
       @media (min-width: 350px) {
         flex-direction: row;
       }
-      @media (min-width: 840px) {
+      @media (min-width: 960px) {
         justify-content: flex-start;
       }
       a {
@@ -130,23 +137,26 @@
     }
   }
   // header img
-  @media (max-width: 839px) {
+  @media (max-width: 959px) {
     .header_img {
       display: none;
     }
   }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .header_img {
       position: relative;
       width: 2000px;
-      margin: 0 0 0 5rem;
+      margin: 0;
       img {
         width: auto;
         height: 100%;
         max-height: 780px;
+        @media (min-width: 2200px) {
+          max-height: 100%;
+        }
       }
       @media (min-width: 1680px) {
-        width: 50vw;
+        width: 60vw;
       }
       .app {
         display: flex;

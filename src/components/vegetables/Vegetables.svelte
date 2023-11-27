@@ -17,22 +17,26 @@
     width: 100%;
     margin-top: 8rem;
   }
-  @media (min-width: 1312px) {
+  @media (min-width: 1344px) {
     max-width: var(--w-website);
   }
   img {
-    margin: 0 2rem;
-    width: 280px;
-    @media (min-width: 600px) {
-      margin: 0 calc(100% / 4);
-      width: 100%;
+    width: 66.6%;
+    @media (min-width: 480px) {
+      width: 50%;
     }
-    @media (min-width: 960px) {
-      margin: 0 calc((100% + 2rem) / 4);
+    @media (min-width: 600px) {
+      margin: 0 calc(((100vw - 2rem) / 12) * 3);
+      width: calc(100vw / 2);
+    }
+    @media (min-width: 840px) {
+      margin: 0 calc(((100vw - 2rem) / 12) * 4);
+      width: calc(100vw / 3);
     }
     @media (min-width: 1312px) {
-      margin: 0 calc(100% / 4);
-      width: calc(100% / 2);
+      margin: 0;
+      padding: 0 0.5rem;
+      width: calc((1280px * 4) / 12);
     }
   }
 }
