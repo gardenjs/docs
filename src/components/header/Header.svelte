@@ -109,6 +109,7 @@
     .navbar {
       position: relative;
       overflow: height;
+      background-color: var(--c-website-bg);
       @media (min-width: 600px) {
         padding: 0 1rem;
         &::after {
