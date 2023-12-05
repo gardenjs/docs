@@ -1,14 +1,16 @@
-# gardenjs.org
+# Gardenjs documentation
 
-[Garden](https://github.com/rabbitdevelopment/garden) is a lightweight and superfast component library explorer for UI development, testing and documentation.
+[Gardenjs](https://github.com/rabbitdevelopment/garden) is a lightweight and superfast component library explorer for UI development, testing and documentation.
 
-This repository contains the [website](https://garden.rabbitdevelopment.com/) with the documentation and this is a [Garden demo](https://gardendemo.rabbitdevelopment.com/) from this website. You can use this repository as a code demo of Garden. We use Svelte here which then works the same way for other supported frameworks like Vue and React (Garden can also be easily extended for other JS frameworks).
+This repository contains the [documentation](https://github.com/rabbitdevelopment/garden). The Gardenjs demo from this documentation you can find [here](https://gardendemo.rabbitdevelopment.com/).
+
+You can use this repository as a code demo of Garden. We use Svelte here which then works the same way for other supported frameworks like Vue and React (Gardenjs can also be easily extended for other JS frameworks).
 
 Happy Gardening :)
 
 ## Sponsors
 
-Garden is an open source project and is licensed under the MIT license. Become a sponsor to give us more scope for further development. We are grateful for this and will publish your logo and website URL in our README on Github and on our website/documentation.
+Gardenjs is an open source project and is licensed under the MIT license. Become a sponsor to give us more scope for further development. We are grateful for this and will publish your logo and website URL in our README on Github and on our website/documentation.
 
 ## Contributing
 
