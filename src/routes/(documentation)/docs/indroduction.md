@@ -1,16 +1,16 @@
 # Introduction
 
-Garden is an alternative to Storybook as component library explorer for UI development, testing and documentation. Garden is significantly faster than comparable tools - regardless of the project size. Svelte, Vue and React are currently supported, but other frameworks should also be easily connectable to Garden.
+Gardenjs is an alternative to Storybook as component library explorer for UI development, testing and documentation. Gardenjs is significantly faster than comparable tools - regardless of the project size. Svelte, Vue and React are currently supported, but other frameworks should also be easily connectable to Garden.
 
-But not only Garden works faster, but also working with Garden: Both outputting components in Garden and defining stories with Garden is very easy, fast and clear. For a clean project, the documentation and the creation of stories are created separately from the components themselves.
+But not only Gardenjs works faster, but also working with Garden: Both outputting components in Gardenjs and defining stories with Gardenjs is very easy, fast and clear. For a clean project, the documentation and the creation of stories are created separately from the components themselves.
 
-The barrier to entry is very low: Garden focuses on the essential requirements of development without sacrificing essential functions.
+The barrier to entry is very low: Gardenjs focuses on the essential requirements of development without sacrificing essential functions.
 
 ## Features
 
-Garden is a slim alternative to the top dog, but it already has a nice features.
+Gardenjs is a slim alternative to the top dog, but it already has a nice features.
 
-* The output of components in Garden is defined in extra files, as well as stories or infotexts/docus. Thus the components remain completely pure.
+* The output of components in Gardenjs is defined in extra files, as well as stories or infotexts/docus. Thus the components remain completely pure.
 * Stories can be defined to each component/layout and accessed directly.
 * Page tree with all components/layouts. Additional page trees can also be included, e.g. to separate components and layouts.
 * Keyword search in the page tree.
@@ -31,6 +31,6 @@ We cover many of the features here in the documentation, but be sure to check ou
 
 ## What's next?
 
-The whole thing runs stably and extremely fast, is suitable for projects of all sizes and will be maintained in its current form. We have also already created a list of additional tasks and features for upcoming versions. Whether we add that and even roll it out to more frameworks like Solid also has to do with how Garden is received by you guys out there and whether we'll get support if necessary.
+The whole thing runs stably and extremely fast, is suitable for projects of all sizes and will be maintained in its current form. We have also already created a list of additional tasks and features for upcoming versions. Whether we add that and even roll it out to more frameworks like Solid also has to do with how Gardenjs is received by you guys out there and whether we'll get support if necessary.
 
 We look forward to your ideas, advice and support.

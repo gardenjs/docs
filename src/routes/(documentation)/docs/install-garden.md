@@ -1,16 +1,16 @@
 # Install Garden
 
-Install Garden inside your Svelte/Vue/React project root and follow the installation routine:
+Install Gardenjs inside your Svelte/Vue/React project root and follow the installation routine:
 
 ```console
 npm install --save-dev garden
 ```
 
-In the root directory you will now find your Garden configuration file 'garden.config.js' to adapt Garden to your project needs  (see chapter "Setup").
+In the root directory you will now find your Gardenjs configuration file 'garden.config.js' to adapt Gardenjs to your project needs  (see chapter "Setup").
 
 ## Initialize Garden
 
-Initialize Garden in the root of the project directory:
+Initialize Gardenjs in the root of the project directory:
 
 ```bash
 run initGarden
@@ -18,7 +18,7 @@ run initGarden
 
 ## Run Garden
 
-Run `serveGarden` from the root of the project. Garden then opens automatically in the browser. More usual: add `serveGarden` to your `package.json` as follows and start Garden via `npm run garden`:
+Run `serveGarden` from the root of the project. Gardenjs then opens automatically in the browser. More usual: add `serveGarden` to your `package.json` as follows and start Gardenjs via `npm run garden`:
 
 ```json
   "scripts": {

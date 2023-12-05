@@ -8,31 +8,31 @@
 </script>
 
 <svelte:head>
-	<title>Garden Component Library Explorer</title>
-	<meta name="description" content="This is the documentation of Garden, the fast storybook alternative for React, Vue and Svelte projects." />
+	<title>Gardenjs Component Library Explorer</title>
+	<meta name="description" content="This is the documentation of Gardenjs, the fast storybook alternative for React, Vue and Svelte projects." />
 </svelte:head>
 
 <Main hasHeaderintro showStripes>
   <ChapterIntro isPagetitle
     superscript="This is Garden"
     pagetitle="An UI component library explorer for JS Frameworks"
-    intro="Garden is the showroom for what you grow: The explorer represents each UI component of your design system in isolation. Garden is developed for projects of any size. Garden is open source under the MIT license and free." />
+    intro="Gardenjs is the showroom for what you grow: The explorer represents each UI component of your design system in isolation. Gardenjs is developed for projects of any size. Gardenjs is open source under the MIT license and free." />
   <Blockquote
     quote="«Building a frontend is like gardening. Grow your components and pages, maintain them and control their growth. Build great products and reap the rewards of your work!»"
     author="John Doe, coder & gardener" />
   <Subchapter
-    title="In Garden, your components grow at the speed of light"
-    paragraph="Garden is a Svelte app and thus benefits from its super speed. Garden starts almost instantly within 2s. In action, code changes in Garden are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." />
+    title="In Gardenjs, your components grow at the speed of light"
+    paragraph="Gardenjs is a Svelte app and thus benefits from its super speed. Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." />
   <Subchapter
-    title="Use Garden with your favorite JS framework"
-    paragraph="Use Garden out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Garden as well. Or support us to integrate more frameworks." />
+    title="Use Gardenjs with your favorite JS framework"
+    paragraph="Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." />
   <Logos />
   <Subchapter
-    title="Use Garden in multiframework projects"
-    paragraph="You can use Garden out of the box even in a multiframework project - Storybook and others can't do that." />
+    title="Use Gardenjs in multiframework projects"
+    paragraph="You can use Gardenjs out of the box even in a multiframework project - Storybook and others can't do that." />
   <ChapterIntro
-    superscript="Garden overview"
-    title="Benefits from the Garden UI Explorer" />
+    superscript="Gardenjs overview"
+    title="Benefits from the Gardenjs UI Explorer" />
   <div class="cols-3">
     <Infobox
       title="Organisation"
@@ -58,13 +58,13 @@
     title="Why another tool like Storybook?" />
   <Subchapter
     title="A brief insight into the development of Garden"
-    paragraph="Storybook is the top dog and a very powerful, great tool. So why Garden? Garden was initially developt as a practice project to better understand the then-new framework Svelte. Right off the bat, Garden was significantly faster than Storybook and all its alternatives. From then on, we used Garden for all our projects. So Garden was constantly maintained and extended with more features. Garden now has all the essential functions needed to create, test and document UI components and is also comparatively easy to maintain and further develop. Garden also does some things better than the alternatives. So we're late to the party but it would be a shame not to make Garden available to everyone." />
+    paragraph="Storybook is the top dog and a very powerful, great tool. So why Garden? Gardenjs was initially developt as a practice project to better understand the then-new framework Svelte. Right off the bat, Gardenjs was significantly faster than Storybook and all its alternatives. From then on, we used Gardenjs for all our projects. So Gardenjs was constantly maintained and extended with more features. Gardenjs now has all the essential functions needed to create, test and document UI components and is also comparatively easy to maintain and further develop. Gardenjs also does some things better than the alternatives. So we're late to the party but it would be a shame not to make Gardenjs available to everyone." />
   <Subchapter
     title="Contributions and donations are welcome"
-    paragraph="Garden is actively maintained. We will integrate some useful features in the future and are open for further requests. We are happy about your support. Please report bugs on Github." />
+    paragraph="Gardenjs is actively maintained. We will integrate some useful features in the future and are open for further requests. We are happy about your support. Please report bugs on Github." />
   <Subchapter
     title="Sponsors"
-    paragraph="Become a sponsor to give us more scope for further development. We are grateful for this and will publish your logo and website URL in our README on Github and here on the garden website/documentation." />
+    paragraph="Become a sponsor to give us more scope for further development. We are grateful for this and will publish your logo and website URL in our README on Github and here on the Gardenjs website/documentation." />
 </Main>
 
 <style lang="scss">

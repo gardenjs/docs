@@ -31,4 +31,4 @@ While "story" is used as navigation title in the panel, you define the value of 
 </div>
 ```
 
-So the component files remain completely pure. The output of the components in Garden is done externally in foo.das.js, as well as the definition of the stories or the documentation (see chapter "Write docs").
+So the component files remain completely pure. The output of the components in Gardenjs is done externally in foo.das.js, as well as the definition of the stories or the documentation (see chapter "Write docs").

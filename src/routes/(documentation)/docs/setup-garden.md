@@ -1,8 +1,8 @@
 # Setup Garden
 
-## Configure Garden with project-specific settings
+## Configure Gardenjs with project-specific settings
 
-After the installation you will find in the root directory the Garden configuration file 'garden.config.js'. Take a look at the file for a quick overview of the options already implemented. Here you can also make your own individual adjustments with JavaScript, e.g. to switch between your different themes. Please take the explanation of the possible settings from the comments:
+After the installation you will find in the root directory the Gardenjs configuration file 'garden.config.js'. Take a look at the file for a quick overview of the options already implemented. Here you can also make your own individual adjustments with JavaScript, e.g. to switch between your different themes. Please take the explanation of the possible settings from the comments:
 
 ```js
 export default {
@@ -10,7 +10,7 @@ export default {
   // Define the server port:
   "serverport": 3010,
 
-  // Stop auto opening garden on start:
+  // Stop auto opening Gardenjs on start:
   "no_open_browser": true,
 
   // This title is displayed above the navigation:

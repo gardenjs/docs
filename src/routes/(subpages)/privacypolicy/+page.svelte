@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Garden Component Explorer :: Privacy Policy</title>
+	<title>Gardenjs Component Explorer :: Privacy Policy</title>
 </svelte:head>
 
 <Main showStripes>

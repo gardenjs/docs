@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Garden Component Explorer :: Legal Notice</title>
+	<title>Gardenjs Component Explorer :: Legal Notice</title>
 </svelte:head>
 
 <Main showStripes>

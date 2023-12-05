@@ -5,13 +5,13 @@ import Setup from './setup-garden.md'
 import Output from './output-of-components.md'
 import Stories from './stories.md'
 import Notes from './add-notes.md'
-import Screenshottests from './screenshot-test.md'
+// import Screenshottests from './screenshot-test.md'
 
 </script>
 
 <svelte:head>
-	<title>Garden Component Explorer :: Documentation</title>
-  <meta name="description" content="This is the documentation of Garden, the fast storybook alternative for React, Vue and Svelte projects." />
+	<title>Gardenjs Component Explorer :: Documentation</title>
+  <meta name="description" content="This is the documentation of Gardenjs, the fast storybook alternative for React, Vue and Svelte projects." />
 </svelte:head>
 
 <div id="introduction" class="md_file">
