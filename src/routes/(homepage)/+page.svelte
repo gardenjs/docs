@@ -14,7 +14,7 @@
 
 <Main hasHeaderintro showStripes>
   <ChapterIntro isPagetitle
-    superscript="This is Garden"
+    superscript="This is Gardenjs"
     pagetitle="An UI component library explorer for JS Frameworks"
     intro="Gardenjs is the showroom for what you grow: The explorer represents each UI component of your design system in isolation. Gardenjs is developed for projects of any size. Gardenjs is open source under the MIT license and free." />
   <Blockquote
@@ -33,7 +33,7 @@
   <ChapterIntro
     superscript="Gardenjs overview"
     title="Benefits from the Gardenjs UI Explorer" />
-  <div class="cols-3">
+  <div class="infoboxes">
     <Infobox
       title="Organisation"
       paragraph="Keep track of the countless components even in large projects and ensure the quality of your work." />
@@ -57,7 +57,7 @@
     superscript="Our story"
     title="Why another tool like Storybook?" />
   <Subchapter
-    title="A brief insight into the development of Garden"
+    title="A brief insight into the development of Gardenjs"
     paragraph="Storybook is the top dog and a very powerful, great tool. So why Garden? Gardenjs was initially developt as a practice project to better understand the then-new framework Svelte. Right off the bat, Gardenjs was significantly faster than Storybook and all its alternatives. From then on, we used Gardenjs for all our projects. So Gardenjs was constantly maintained and extended with more features. Gardenjs now has all the essential functions needed to create, test and document UI components and is also comparatively easy to maintain and further develop. Gardenjs also does some things better than the alternatives. So we're late to the party but it would be a shame not to make Gardenjs available to everyone." />
   <Subchapter
     title="Contributions and donations are welcome"
@@ -68,13 +68,19 @@
 </Main>
 
 <style lang="scss">
-  .cols-3 {
-    margin: 0 0 2rem;
-    @media (min-width: 840px) {
-      margin: 0 0 3rem;
-    }
-    @media (min-width: 960px) {
-      margin: 0 0 5rem;
-    }
+.infoboxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin: 0 0 2rem;
+  @media (min-width: 840px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
   }
+  @media (min-width: 960px) {
+    margin: 0 0 5rem;
+  }
+}
 </style>
