@@ -1,3 +1,7 @@
+<script>
+  import Stripes from '../stripes/Stripes.svelte'
+</script>
+
 <div class="header_intro">
   <div class="header_text">
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span>Harvest.</span></div>
@@ -19,12 +23,15 @@
     </div>
   </div>
 </div>
+<Stripes />
 
 <style lang="scss">
 @use "sass:math";
 .header_intro {
+  position: relative;
   margin: auto;
   padding: 0 1rem;
+  z-index: 3;
   @media (min-width: 960px) {
     display: grid;
     grid-template-columns: repeat(2,1fr);

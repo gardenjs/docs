@@ -37,7 +37,7 @@
       <div class="navbar_container">
         <a class="logo" href="/" title="go to start">
           <img src="src/assets/icons/logo.svg" alt="Logo">
-          <span class="logo_label">GardenJS</span>
+          <span class="logo_label">Gardenjs</span>
         </a>
         <nav class="navbar_nav">
           <ul>
@@ -59,8 +59,11 @@
               </a>
             </li>
           </ul>
-        </nav>
+        </nav>      
       </div>
+      {#if showStripes}
+        <Stripes />
+      {/if}
     </div>
     <slot></slot>
   </div>
@@ -124,12 +127,14 @@
         }
       }
       .navbar_container {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto;
         padding: 0.5rem;
+        z-index: 9;
         @media (min-width: 480px) {
           flex-direction: row;
           justify-content: space-between;
