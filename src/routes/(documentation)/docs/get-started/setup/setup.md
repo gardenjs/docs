@@ -1,4 +1,4 @@
-# Setup Garden
+# Setup Gardenjs
 
 ## Configure Gardenjs with project-specific settings
 
