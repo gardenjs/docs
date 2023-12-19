@@ -7,7 +7,6 @@
 </script>
 
 <nav class="sidenav">
-  <div class="sidenav_title">Documentation</div>
   <ul>
     <li class="single-item">
       <a href="/docs">About Gardenjs</a>
@@ -34,9 +33,6 @@
 <style lang="scss">
 .sidenav {
   @media (max-width: 839px) {
-    .sidenav_title {
-      display: none;
-    }
     ul {
       text-align: center;
       li {
@@ -67,17 +63,9 @@
     }
   }
   @media (min-width: 840px) {
-    .sidenav_title {
-      display: block;
-      margin-bottom: 1rem;
-      font-size: 1.125rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.125rem;
-    }
     position: fixed;
     overflow-y: scroll;
-    margin: 0 0 4rem;
+    margin: 4rem 0 4rem;
     ul {
       display: block;
       li {
@@ -86,10 +74,10 @@
         }
         a {
           padding: 0.25rem 0;
-          font-size: 0.938rem;
+          font-size: 0.875rem;
           color: var(--c-text);
           line-height: 1.3;
-          font-weight: 700;
+          font-weight: 600;
           text-decoration: none;
           letter-spacing: 0.125rem;
           &:hover {

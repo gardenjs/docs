@@ -42,7 +42,7 @@
         <nav class="navbar_nav">
           <ul>
             <li>
-              <a href="/docs" title="go to docs">Docs</a>
+              <a href="/docs" title="documentation">Docs</a>
             </li>
             <li>
               <button id="toggle-mode" class="toggle-mode" title="Toggle Website Theme" on:click={toggleTheme}>
@@ -197,27 +197,23 @@
             align-items: center;
             justify-content: flex-end;
             li {
-              margin-left: 1.5rem;
+              margin-left: 1rem;
               &:first-of-type {
-                margin: 0;
+                margin: 0 1.5rem 0 0;
               }
               a {
-                font-weight: 500;
-                border-bottom: 2px solid var(--c-primary);
-                &.github {
-                  border: none
-                }
+                font-size: 1rem;
               }
               button.toggle-mode,
               a.github {
                 .icon {
-                  font-size: 1rem;
+                  font-size: 0.875rem;
                   color: var(--c-navbar-icon);
                   @media (min-width: 840px) {
-                    font-size: 1.125rem;
+                    font-size: 1rem;
                   }
                   @media (min-width: 960px) {
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                   }
                 }
               }
