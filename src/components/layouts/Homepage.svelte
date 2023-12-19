@@ -4,7 +4,7 @@
   import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header showStripes showSkew>
+<Header showSkew>
   <Headerintro />
 </Header>
 <slot></slot>
