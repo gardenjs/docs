@@ -1,28 +1,42 @@
 <script>
   const links = [
-    { href: "#introduction", label: "Introduction" },
-    { href: "#install-garden", label: "Install Garden" },
-    { href: "#setup-garden", label: "Setup Garden" },
-    { href: "#output-of-components", label: "Output of Components" },
-    { href: "#stories", label: "Stories" },
-    { href: "#add-notes", label: "Add notes" },
-    // { href: "#screenshot-tests", label: "Screenshot Test" }
+    { href: "/docs/get-started/install", label: "Install" },
+    { href: "/docs/get-started/setup", label: "Setup" },
+    { href: "/docs/get-started/output", label: "Output" },
   ];
 </script>
 
 <nav class="sidenav">
+  <div class="sidenav_title">Documentation</div>
   <ul>
-    {#each links as link}
-      <li>
-        <a href={link.href}>{link.label}</a>
-      </li>
-    {/each}
+    <li class="single-item">
+      <a href="/docs">About Gardenjs</a>
+    </li>
+    <li>
+      <a href=/docs/get-started/install>Get Started</a>
+      <ul>
+        {#each links as link}  
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        {/each}
+      </ul>
+    </li>  
+    <li class="single-item">
+      <a href="/docs/stories">Stories</a>
+    </li>
+    <li class="single-item">
+      <a href="/docs/documentation/add-notes">Add Notes</a>
+    </li>
   </ul>
 </nav>
 
 <style lang="scss">
 .sidenav {
-  @media (max-width: 839px) or (max-height: 449px) {
+  @media (max-width: 839px) {
+    .sidenav_title {
+      display: none;
+    }
     ul {
       text-align: center;
       li {
@@ -52,23 +66,45 @@
       }
     }
   }
-  @media (min-width: 840px) and (min-height: 450px) {
+  @media (min-width: 840px) {
+    .sidenav_title {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.125rem;
+    }
     position: fixed;
     overflow-y: scroll;
     margin: 0 0 4rem;
     ul {
       display: block;
       li {
+        &.single-item {
+          margin: 0 0 1rem;
+        }
         a {
-          padding: 0.5rem 2.5rem 0.5rem 0;
-          font-size: 1rem;
-          color: var(--c-primary);
+          padding: 0.25rem 0;
+          font-size: 0.938rem;
+          color: var(--c-text);
           line-height: 1.3;
-          font-weight: 400;
+          font-weight: 700;
           text-decoration: none;
-          border-right: 0.25rem solid transparent;
+          letter-spacing: 0.125rem;
           &:hover {
-            color: var(--c-primary-lighter);
+            color: var(--c-primary);
+          }
+        }
+        ul {
+          margin: 0 0 1rem;
+          li {
+            a {
+              padding-left: 0.75rem;
+              font-weight: 400;
+              transition: 0.2s;
+              border-left: 1px solid var(--c-text);
+            }
           }
         }
       }
