@@ -1,12 +1,10 @@
 <script>
-  import Stripes from '../stripes/Stripes.svelte'
   import Vegetables from '../vegetables/Vegetables.svelte'
 
   export let hasHeaderintro = false
   let intro = 'has-intro'
   let margin = ''
 
-  export let showStripes = false
 </script>
 
 <div class="main {hasHeaderintro? intro : margin}">
@@ -14,9 +12,6 @@
     <slot></slot>
   </div>
   <Vegetables />
-  {#if showStripes}
-    <Stripes />
-  {/if}
 </div>
 
 <style lang="scss">

@@ -1,11 +1,9 @@
 <script>
-  import Stripes from '../stripes/Stripes.svelte'
   
   export let isSticky = false
   let sticky = 'is-sticky'
   let scroll = ''
 
-  export let showStripes = false
   export let showSkew = false
   let currentTheme = 'light'
 
@@ -61,18 +59,9 @@
           </ul>
         </nav>      
       </div>
-      {#if showStripes}
-        <Stripes />
-      {/if}
     </div>
     <slot></slot>
   </div>
-  {#if showStripes}
-    <Stripes />
-  {/if}
-  {#if showSkew}
-    <div class="skew"><Stripes /></div>
-  {/if}
 </header>
 
 <style lang="scss">
@@ -122,7 +111,6 @@
           left: 0;
           width: 100%;
           height: 1px;
-          background-image: linear-gradient(90deg, var(--c-stripes-dashed), var(--c-stripes-dashed) 50%,transparent 0,transparent);
           background-size: 12px 1px;
         }
       }

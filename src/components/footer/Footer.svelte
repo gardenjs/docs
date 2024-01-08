@@ -1,7 +1,4 @@
 <script>
-  import Stripes from '../stripes/Stripes.svelte'
-
-  export let showStripes = false
   let now = new Date()
 </script>
 
@@ -22,9 +19,6 @@
       </nav>
     </div>
   </div>
-  {#if showStripes}
-    <Stripes />
-  {/if}
 </footer>
 
 <style lang="scss">
@@ -42,7 +36,6 @@
       left: 0;
       width: 100%;
       height: 0.063rem;
-      background-image: linear-gradient(90deg, var(--c-stripes-dashed), var(--c-stripes-dashed) 50%,transparent 0,transparent);
       background-size: 0.75rem 0.063rem;
     }
   }

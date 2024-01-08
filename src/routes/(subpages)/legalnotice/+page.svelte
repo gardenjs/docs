@@ -6,7 +6,7 @@
 	<title>Gardenjs Component Explorer :: Legal Notice</title>
 </svelte:head>
 
-<Main showStripes>
+<Main>
   <div>
     <h1>Impressum</h1>
     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>

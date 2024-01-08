@@ -12,7 +12,7 @@
 	<meta name="description" content="This is the documentation of Gardenjs, the fast storybook alternative for React, Vue and Svelte projects." />
 </svelte:head>
 
-<Main hasHeaderintro showStripes>
+<Main hasHeaderintro>
   <ChapterIntro isPagetitle
     superscript="This is Gardenjs"
     pagetitle="An UI component library explorer for JS Frameworks"
