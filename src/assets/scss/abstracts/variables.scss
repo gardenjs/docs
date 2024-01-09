@@ -17,7 +17,8 @@
   --c-bg-box:             var(--c-secondary-dark);
   --c-text-box:           var(--c-website-bg);
 
-  --w-website:            1280px;
+  --w-website-wide:            1280px;
+  --w-website-slim:            840px;
   --monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;}
 
 [data-theme="dark"] {
