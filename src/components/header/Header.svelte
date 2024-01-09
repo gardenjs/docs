@@ -1,5 +1,4 @@
 <script>
-  
   export let isSticky = false
   let sticky = 'is-sticky'
   let scroll = ''
@@ -62,152 +61,141 @@
     </div>
     <slot></slot>
   </div>
+  {#if showSkew}
+    <div class="skew"></div>
+  {/if}
 </header>
 
 <style lang="scss">
-@use "sass:math";
-.header {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-  @media (min-width: 960px) {
-    max-height: 780px;
-  }
-  &.is-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 9;
-  }
-  .skew {
-    display: none;
-    @media (min-width: 960px) {
-      display: block;
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 300px;
-      bottom: -300px;
-      left: 0;
-      right: 0;
-      transform: skewY(-3deg);
-      transform-origin: top left;
-      background-color: var(--c-website-bg);
-      z-index: 4;
-    }
-  }
-  .header_container {
+  @use "sass:math";
+  .header {
     position: relative;
-    z-index: 3;
-    .navbar {
-      position: relative;
-      overflow: height;
-      background-color: var(--c-website-bg);
-      @media (min-width: 600px) {
-        padding: 0 1rem;
-        &::after {
-          position: absolute;
-          content: '';
-          bottom: 0rem;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background-size: 12px 1px;
-        }
+    overflow: hidden;
+    @media (min-width: 960px) {
+      max-height: 780px;
+    }
+    &.is-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+    }
+    .skew {
+      display: none;
+      @media (min-width: 960px) {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 300px;
+        bottom: -300px;
+        left: 0;
+        right: 0;
+        transform: skewY(-3deg);
+        transform-origin: top left;
+        background-color: var(--c-website-bg);
+        z-index: 4;
       }
-      .navbar_container {
+    }
+    .header_container {
+      position: relative;
+      padding: 0.75rem 1.5rem 0;
+      @media (min-width: 480px) {
+        padding-top: 0;
+      }
+      .navbar {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        padding: 0.5rem;
-        z-index: 9;
-        @media (min-width: 480px) {
-          flex-direction: row;
-          justify-content: space-between;
-        }
-        @media (min-width: 960px) {
-          height: 84px;
-        }
-        @media (min-width: 1280px) {
-          width: 100%;
-          padding: 0 0.5rem;
-          height: 6rem;
-        }
-        @media (min-width: 1312px) {
-          max-width: var(--w-website);
-        }
-        a.logo {
+        overflow: height;
+        background-color: var(--c-website-bg);
+        .navbar_container {
           position: relative;
-          display: inline-flex;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           align-items: center;
-          color: var(--c-primary);
-          text-decoration: none;
-          @media (max-width: 479px) {
-            margin: 0 0 0.75rem;
-            width: 191px;
+          margin: auto;
+          @media (min-width: 480px) {
+            flex-direction: row;
+            justify-content: space-between;
+            height: 4rem;
           }
-          img {
-            display: inline-block;
-            width: 65px;
-            height: 36px;
-            @media (min-width: 840px) {
-              width: 80%;
-              height: auto;
-            }
-            @media (min-width: 1280px) {
-              width: 100%;
-            }
-          }  
-          .logo_label {
-            padding: 0 0 0 0.75rem;
-            font-weight: 800;
-            font-size: 1.5rem;
-            white-space: nowrap;
-            transition: color 0.2s;
-            @media (min-width: 960px) {
-              padding: 0 0 0 1rem;
-              font-size: 1.875rem;
-            }
-            @media (min-width: 1280px) {
-              font-size: 2.5rem;
-            }
+          @media (min-width: 960px) {
+            height: 5.25rem;
           }
-          &:hover .logo_label {
-            color: var(--c-primary-lighter);
-            transition: color 0.2s;
+          @media (min-width: 1280px) {
+            max-width: var(--w-website-wide);
+            height: 6rem;
           }
-        }
-        .navbar_nav {
-          ul {
+          a.logo {
+            position: relative;
             display: inline-flex;
             align-items: center;
-            justify-content: flex-end;
-            li {
-              margin-left: 1rem;
-              &:first-of-type {
-                margin: 0 1.5rem 0 0;
+            color: var(--c-primary);
+            text-decoration: none;
+            @media (max-width: 479px) {
+              margin: 0 0 0.75rem;
+              width: 191px;
+            }
+            img {
+              display: inline-block;
+              width: 65px;
+              height: 36px;
+              @media (min-width: 960px) {
+                width: 80%;
+                height: auto;
               }
-              a {
-                font-size: 1rem;
+              @media (min-width: 1280px) {
+                width: 100%;
               }
-              button.toggle-mode,
-              a.github {
-                .icon {
-                  font-size: 0.875rem;
-                  color: var(--c-navbar-icon);
-                  @media (min-width: 840px) {
-                    font-size: 1rem;
-                  }
-                  @media (min-width: 960px) {
-                    font-size: 1rem;
+            }  
+            .logo_label {
+              padding: 0 0 0 0.75rem;
+              font-weight: 800;
+              font-size: 1.5rem;
+              white-space: nowrap;
+              transition: color 0.2s;
+              @media (min-width: 960px) {
+                padding: 0 0 0 1rem;
+                font-size: 1.875rem;
+              }
+              @media (min-width: 1280px) {
+                font-size: 2.5rem;
+              }
+            }
+            &:hover .logo_label {
+              color: var(--c-primary-lighter);
+              transition: color 0.2s;
+            }
+          }
+          .navbar_nav {
+            ul {
+              display: inline-flex;
+              align-items: center;
+              justify-content: flex-end;
+              li {
+                margin-left: 1rem;
+                &:first-of-type {
+                  margin: 0 1.5rem 0 0;
+                }
+                a {
+                  font-size: 1rem;
+                }
+                button.toggle-mode,
+                a.github {
+                  .icon {
+                    font-size: 0.875rem;
+                    color: var(--c-navbar-icon);
+                    @media (min-width: 840px) {
+                      font-size: 1rem;
+                    }
+                    @media (min-width: 960px) {
+                      font-size: 1rem;
+                    }
                   }
                 }
-              }
-              button.toggle-mode {
-                cursor: pointer;
-                background-color: transparent;
+                button.toggle-mode {
+                  cursor: pointer;
+                  background-color: transparent;
+                }
               }
             }
           }
@@ -215,5 +203,4 @@
       }
     }
   }
-}
 </style>

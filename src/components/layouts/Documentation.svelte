@@ -42,7 +42,7 @@
     }
     @media (min-width: 1312px) {
       padding: 0 0.625rem;
-      max-width: var(--w-website)
+      max-width: var(--w-website-wide)
     }
     .sidebar {
       margin-bottom: 2rem;

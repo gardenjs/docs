@@ -31,27 +31,23 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
-  @media (min-width: 1312px) {
-    width: var(--w-website);
-    padding: 0;
+  @media (min-width: 1280px) {
+    width: var(--w-website-wide);
   }
   .header_text {
     margin: 3rem 0 0;
-    @media (min-width: 600px) {
-      margin: 3rem calc(100% / math.div(12, 1)) 0;
-      padding: 0 0.5rem 0 0.625rem;
-    }
-    @media (min-width: 840px) {
-      margin: 3rem calc(100% / math.div(12, 2)) 0;
-    }
-    @media (min-width: 960px) {
-      margin: 4rem 0 0;
-      width: calc(((100vw - 2rem) / 12) * 5);
-    }
-    @media (min-width: 1312px) {
-      margin-left: calc((1280px * 2) / 12);
-      width: calc((1280px / 12) * 4);
-    }
+    max-width: var(--w-website-slim);
+    // @media (min-width: 600px) {
+    //   margin: 3rem calc(100% / math.div(12, 1)) 0;
+    //   padding: 0 0.5rem 0 0.625rem;
+    // }
+    // @media (min-width: 840px) {
+    //   margin: 3rem calc(100% / math.div(12, 2)) 0;
+    // }
+    // @media (min-width: 960px) {
+    //   margin: 4rem 0 0;
+    //   width: calc(((100vw - 2rem) / 12) * 5);
+    // }
     .slogan {
       display: block;
       margin: 0 0 1.25rem;
