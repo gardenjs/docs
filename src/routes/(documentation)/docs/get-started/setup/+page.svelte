@@ -10,16 +10,3 @@
 <div class="md_file">
   <Setup />
 </div>
-
-
-<style>
-.md_file {
-  padding-top: 10rem;
-}
-.md_file:first-of-type {
-  margin-top: -10rem;
-}
-.md_file:last-of-type {
-  margin-bottom: 0;
-}
-</style>
