@@ -2,15 +2,16 @@
   import Headernav from '../headernav/Headernav.svelte'
   import Headerintro from '../headerintro/Headerintro.svelte'
 
-  export let isSticky = false
+  export let isFixed = false
   export let showHeaderintro = false
   export let showSkew = false
 
-  let sticky = 'is-sticky'
+  let fixed = 'is-fixed'
   let scroll = ''
+
 </script>
 
-<header class="header {isSticky? sticky : scroll}">
+<header class="header {isFixed? fixed : scroll}">
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">
@@ -34,29 +35,14 @@
   .header {
     position: relative;
     overflow: hidden;
+    width: 100%;
     @media (min-width: 960px) {
       max-height: 780px;
     }
-    &.is-sticky {
-      position: sticky;
+    &.is-fixed {
+      position: fixed;
       top: 0;
       z-index: 9;
-    }
-    .skew {
-      display: none;
-      @media (min-width: 960px) {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 300px;
-        bottom: -300px;
-        left: 0;
-        right: 0;
-        transform: skewY(-3deg);
-        transform-origin: top left;
-        background-color: var(--c-website-bg);
-      }
     }
     .header_container {
       position: relative;
@@ -126,6 +112,22 @@
             }
           }
         }
+      }
+    }
+    .skew {
+      display: none;
+      @media (min-width: 960px) {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 300px;
+        bottom: -300px;
+        left: 0;
+        right: 0;
+        transform: skewY(-3deg);
+        transform-origin: top left;
+        background-color: var(--c-website-bg);
       }
     }
   }

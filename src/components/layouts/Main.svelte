@@ -1,26 +1,39 @@
 <script>
-  import Vegetables from '../vegetables/Vegetables.svelte'
-
   export let hasHeaderintro = false
-  let intro = 'has-intro'
-  let margin = ''
 
+  let intro = ''
+  let margintop = 'has-mt'
 </script>
 
-<div class="main {hasHeaderintro? intro : margin}">
+<div class="main {hasHeaderintro? intro : margintop}">
   <div class="main_container">
     <slot></slot>
   </div>
-  <Vegetables />
 </div>
 
 <style lang="scss">
   .main {
     position: relative;
     overflow: hidden;
-    padding: 6rem 1.5rem 0;
+    padding: 0 1.5rem;
     @media (min-width: 480px) {
-      padding: 6rem 3rem 0;
+      margin: 4rem 0 0;
+      &.has-mt {
+        margin: 6.5rem 0 0;
+      }
+      padding: 0 3rem;
+    }
+    @media (min-width: 960px) {
+      margin: 5.25rem 0 0;
+      &.has-mt {
+        margin: 8.5rem 0 0;
+      }
+    }
+    @media (min-width: 1280px) {
+      margin: 6rem 0 0;
+      &.has-mt {
+        margin: 8.5rem 0 0;
+      }
     }
   }
   .main_container {

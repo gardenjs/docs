@@ -1,8 +1,10 @@
 <script>
   import Header from '../header/Header.svelte'
+  import Vegetables from '../vegetables/Vegetables.svelte'
   import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header isSticky />
-  <slot></slot>
+<Header isFixed />
+<slot></slot>
+<Vegetables />
 <Footer />
