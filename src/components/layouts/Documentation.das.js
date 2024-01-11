@@ -1,8 +1,8 @@
 export default {
   name: 'Documentation',
   file: './Documentation.svelte',
-  description: 'Documentation.',
+  description: 'Page layout for docs with vertical nav left & content area right.',
   examples: [
-    {story: "Documentation"}
+    // {story: "Layout for the Documentation pages"}
   ]
 }

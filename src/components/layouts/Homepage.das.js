@@ -1,8 +1,8 @@
 export default {
   name: 'Homepage',
   file: './Homepage.svelte',
-  description: 'Homepage.',
+  description: 'Page layout for the homepage.',
   examples: [
-    {story: "Homepage"}
+    // {story: "Layout for the Homepage"}
   ]
 }
