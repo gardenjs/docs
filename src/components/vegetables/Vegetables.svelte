@@ -3,13 +3,11 @@
 </div>
 
 <style lang="scss">
-@use "sass:math";
   .vegetables {
     display: flex;
     justify-content: center;
     position: relative;
     margin: 4rem auto;
-    z-index: 6;
     @media (min-width: 960px) {
       margin-top: 6rem;
     }

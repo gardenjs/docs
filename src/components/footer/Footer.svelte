@@ -27,7 +27,7 @@
     background-color: var(--c-footer-bg);
     overflow: hidden;
     @media (min-width: 600px) {
-      padding: 0 1.5rem;
+      padding: 0 2rem;
     }
     .footer_container {
       display: flex;

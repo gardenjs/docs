@@ -4,5 +4,5 @@
 </script>
 
 <Header isSticky />
-<slot></slot>
+  <slot></slot>
 <Footer />
