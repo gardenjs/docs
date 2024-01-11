@@ -6,7 +6,7 @@
   ];
 </script>
 
-<nav class="sidenav">
+<nav class="sidenav_nav">
   <ul>
     <li class="single-item">
       <a href="/docs">About</a>
@@ -28,23 +28,19 @@
       <a href="/docs/documentation/add-notes">Add Notes</a>
     </li>
     <li class="single-item">
-      <a href="/">Add Frameworks</a>
+      <a href="/">Add JS Frameworks</a>
     </li>
   </ul>
 </nav>
 
 <style lang="scss">
-  .sidenav {
+  .sidenav_nav {
     @media (max-width: 839px) {
       display: none;
     }
     @media (min-width: 840px) {
       position: fixed;
       overflow-y: scroll;
-      margin: 2rem 0 4rem;
-      @media (min-width: 960px) {
-        margin: 5rem 0 4rem;
-      }
       ul {
         display: block;
         li {
@@ -55,10 +51,10 @@
             padding: 0.25rem 0;
             font-size: 0.875rem;
             color: var(--c-text);
-            line-height: 1.3;
+            line-height: 1.2;
             font-weight: 600;
             text-decoration: none;
-            letter-spacing: 0.125rem;
+            letter-spacing: 0.063rem;
             &:hover {
               color: var(--c-primary);
             }
