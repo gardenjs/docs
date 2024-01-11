@@ -22,7 +22,6 @@
 <style lang="scss">
   .mainaside {
     position: relative;
-    overflow: hidden;
     padding: 0 2rem;
     @media (min-width: 480px) {
       margin: 6.5rem 0 0;
@@ -43,10 +42,17 @@
       @media (min-width: 840px) {
         display: flex;
         justify-content: space-between;
-        row-gap: 2rem;
+        column-gap: 2rem;
       }
       .sidenav {
+        @media (max-width: 839px) {
+          display: none;
+        }
         @media (min-width: 840px) {
+          position: relative;
+          overflow: hidden;
+          transform: translate3d(0,0,0); // respect overflow hidden for the child element that is fixed
+          width: 100%;
           max-width: calc((100% / 12) * 3);
         }
       }
