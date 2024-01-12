@@ -36,6 +36,7 @@
 <style lang="scss">
   .mainaside {
     position: relative;
+    margin: 8rem 0 0;
     padding: 0 2rem;
     @media (min-width: 480px) {
       margin: 6.5rem 0 0;
