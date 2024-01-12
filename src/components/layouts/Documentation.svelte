@@ -8,8 +8,6 @@
   function handleToggleMobilenav() {
     showMobilenav = !showMobilenav
   }
-
-  
 </script>
 
 <Header isFixed hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />

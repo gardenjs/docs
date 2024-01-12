@@ -1,7 +1,7 @@
 <script>
-    import { createEventDispatcher } from "svelte";
-
-const dispatch = createEventDispatcher();
+  import { createEventDispatcher } from "svelte";
+  
+  const dispatch = createEventDispatcher();
   const links = [
     { href: "/docs/get-started/install", label: "Install" },
     { href: "/docs/get-started/setup", label: "Setup" },
@@ -42,9 +42,6 @@ const dispatch = createEventDispatcher();
 
 <style lang="scss">
   .sidenav {
-    // @media (max-width: 839px) {
-    //   display: none;
-    // }
     position: fixed;
     overflow-y: scroll;
     ul {
