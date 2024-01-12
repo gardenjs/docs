@@ -47,10 +47,6 @@
     }
     .header_container {
       position: relative;
-      padding: 0.75rem 2rem 0;
-      @media (min-width: 480px) {
-        padding-top: 0;
-      }
       .navbar {
         background-color: var(--c-website-bg);
         .navbar_container {
@@ -58,10 +54,12 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          padding: 0.75rem 2rem 0;
           @media (min-width: 480px) {
             flex-direction: row;
             justify-content: space-between;
             margin: auto;
+            padding-top: 0;
             height: 4rem;
           }
           @media (min-width: 960px) {
