@@ -1,69 +1,116 @@
 <script>
   import Header from '../header/Header.svelte'
   import Sidenav from '../sidenav/Sidenav.svelte'
-  import Main from '../../components/layouts/Main.svelte'
   import Footer from '../footer/Footer.svelte'
+  import Vegetables from '../vegetables/Vegetables.svelte'
+
+  let showMobilenav = false
+  function handleToggleMobilenav() {
+    showMobilenav = !showMobilenav
+  }
 </script>
 
-<Header isSticky />
+<Header isFixed hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
 <div class="mainaside">
   <div class="mainaside_container">
-    <div class="sidebar">
-      <Sidenav />
+    <div class="sidebar {showMobilenav ? 'show' : ''}">
+       {#if showMobilenav}
+        <button class="close" on:click={() => showMobilenav = false}></button>
+      {/if}
+      <Sidenav on:toggleMobilenav={handleToggleMobilenav}/>
     </div>
     <div class="content">
       <slot></slot>
     </div>
   </div>
 </div>
-<Main />
+<Vegetables />
 <Footer />
+{#if showMobilenav}
+  <div class="backdrop" on:click={handleToggleMobilenav} on:keypress={handleToggleMobilenav} tabindex="-1" role="button"></div>
+{/if}
+
 
 <style lang="scss">
-.mainaside {
-  position: relative;
-  overflow: hidden;
-  .mainaside_container {
+  .mainaside {
     position: relative;
-    margin: 1rem auto 0;
-    padding: 0;
-    width: 100%;
-    padding: 0.5rem;
-    overflow: hidden;
-    z-index: 3;
-    @media (min-width: 600px) {
+    margin: 8rem 0 0;
+    padding: 0 2rem;
+    @media (min-width: 480px) {
+      margin: 6.5rem 0 0;
+    }
+    @media (min-width: 960px) {
+      margin: 7rem 0 0;
+    }
+    @media (min-width: 1280px) {
+      margin: 8.5rem 0 0;
+    }
+    .mainaside_container {
+      position: relative;
+      margin: auto;
       padding: 0;
-      max-width: calc(100% - 3.25rem);
-    }
-    @media (min-width: 840px) {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    @media (min-width: 1312px) {
-      padding: 0 0.625rem;
-      max-width: var(--w-website)
-    }
-    .sidebar {
-      margin-bottom: 2rem;
-      @media (min-width: 840px) {
-        width: 100%;
-        max-width: calc(((100% - 0.5rem) / 12) * 3);
-      }
-      @media (min-width: 1312px) {
-        width: calc((100% / 12) * 3);
-      }
-    }
-    .content {
       width: 100%;
+      max-width: var(--w-website-slim);
+      overflow: hidden;
       @media (min-width: 840px) {
-        width: 100%;
-        max-width: calc(((100% - 0.375rem) / 12) * 9);
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
       }
-      @media (min-width: 1312px) {
-        width: calc((100% / 12) * 9);
+      .sidebar {
+        @media (max-width: 839px) {
+          position: fixed;
+          top: 0rem;
+          right: 0rem;
+          bottom: 0rem;
+          padding: 0 1rem;
+          width: 100%;
+          height: calc(100vh - 4rem);
+          background-color: var(--c-website-bg);
+          border-radius: 0.625rem;
+          box-shadow: 0 0 0.75rem rgba(0,0,0,.2);
+          translate: 100vw 0;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          z-index: 99999;
+          @media (min-width: 480px) {
+            top: 0.5rem;
+            right: 0.5rem;
+            bottom: 0.5rem;
+            max-width: 280px;
+            translate: calc(100vw + 382px) 0;
+          }
+        }
+        &.show {
+          translate: 0 0;
+        }
+        @media (min-width: 840px) {
+          position: relative;
+          overflow: hidden;
+          transform: translate3d(0,0,0); // respect overflow hidden for the child element that is fixed
+          width: 100%;
+          max-width: calc((100% / 12) * 3);
+        }
+      }
+      .content {
+        width: 100%;
+        @media (min-width: 840px) {
+          max-width: calc((100% / 12) * 9);
+        }
       }
     }
   }
-}
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--c-website-bg);
+    opacity: 0.6;
+    z-index: 99998;
+    @media (min-width: 840px) {
+      display: none;
+    }
+  }
 </style>

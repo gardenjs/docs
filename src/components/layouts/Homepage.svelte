@@ -1,11 +1,10 @@
 <script>
   import Header from '../header/Header.svelte'
-  import Headerintro from '../headerintro/Headerintro.svelte'
+  import Vegetables from '../vegetables/Vegetables.svelte'
   import Footer from '../footer/Footer.svelte'
 </script>
 
-<Header showSkew>
-  <Headerintro />
-</Header>
+<Header showHeaderintro showSkew />
 <slot></slot>
-<Footer showStripes />
+<Vegetables />
+<Footer />

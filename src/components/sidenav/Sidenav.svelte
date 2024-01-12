@@ -1,71 +1,49 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+  
+  const dispatch = createEventDispatcher();
   const links = [
     { href: "/docs/get-started/install", label: "Install" },
     { href: "/docs/get-started/setup", label: "Setup" },
     { href: "/docs/get-started/output", label: "Output" },
   ];
+
+  function handleClick() {
+   dispatch("toggleMobilenav")
+  }
 </script>
 
 <nav class="sidenav">
   <ul>
     <li class="single-item">
-      <a href="/docs">About Gardenjs</a>
+      <a href="/docs" on:click={handleClick}>About</a>
     </li>
     <li>
-      <a href=/docs/get-started/install>Get Started</a>
+      <a href="/docs/get-started/install" on:click={handleClick}>Get Started</a>
       <ul>
         {#each links as link}  
           <li>
-            <a href={link.href}>{link.label}</a>
+            <a href={link.href} on:click={handleClick}>{link.label}</a>
           </li>
         {/each}
       </ul>
     </li>  
     <li class="single-item">
-      <a href="/docs/stories">Stories</a>
+      <a href="/docs/stories" on:click={handleClick}>Stories</a>
     </li>
     <li class="single-item">
-      <a href="/docs/documentation/add-notes">Add Notes</a>
+      <a href="/docs/documentation/add-notes" on:click={handleClick}>Add Notes</a>
+    </li>
+    <li class="single-item">
+      <a href="/" on:click={handleClick}>Add JS Frameworks</a>
     </li>
   </ul>
 </nav>
 
 <style lang="scss">
-.sidenav {
-  @media (max-width: 839px) {
-    ul {
-      text-align: center;
-      li {
-        display: inline-flex; 
-        a {
-          display: block;
-          margin: 0.25rem 0.375rem;
-          padding: 0.25rem 1rem;
-          font-family: var(--monospace);
-          color: var(--c-website-bg);
-          font-size: 0.75rem;
-          text-align: center;
-          text-decoration: none;
-          background-color: var(--c-text);
-          border-radius: 1.5rem;
-          transition: 0.2s;
-          @media (min-width: 840px) {
-            font-size: 1rem;
-          }
-          &:hover,
-          &:focus {
-            background-color: var(--c-secondary-lighter);
-            box-shadow: 0 .175rem .5rem 0 rgba(0,0,0,.4);
-            transition: 0.2s;
-          }
-        }
-      }
-    }
-  }
-  @media (min-width: 840px) {
+  .sidenav {
     position: fixed;
     overflow-y: scroll;
-    margin: 4rem 0 4rem;
     ul {
       display: block;
       li {
@@ -76,10 +54,10 @@
           padding: 0.25rem 0;
           font-size: 0.875rem;
           color: var(--c-text);
-          line-height: 1.3;
+          line-height: 1.2;
           font-weight: 600;
           text-decoration: none;
-          letter-spacing: 0.125rem;
+          letter-spacing: 0.063rem;
           &:hover {
             color: var(--c-primary);
           }
@@ -98,5 +76,4 @@
       }
     }
   }
-}
 </style>

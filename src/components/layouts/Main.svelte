@@ -1,48 +1,47 @@
 <script>
-  import Stripes from '../stripes/Stripes.svelte'
-  import Vegetables from '../vegetables/Vegetables.svelte'
-
   export let hasHeaderintro = false
-  let intro = 'has-intro'
-  let margin = ''
 
-  export let showStripes = false
+  let intro = ''
+  let margintop = 'has-mt'
 </script>
 
-<div class="main {hasHeaderintro? intro : margin}">
+<div class="main {hasHeaderintro? intro : margintop}">
   <div class="main_container">
     <slot></slot>
   </div>
-  <Vegetables />
-  {#if showStripes}
-    <Stripes />
-  {/if}
 </div>
 
 <style lang="scss">
-@use "sass:math";
-.main {
-  position: relative;
-  overflow: hidden;
-  padding: 6rem 0 0;
-}
-.main_container {
-  position: relative;
-  margin: auto;
-  padding: 0 1rem;
-  z-index: 3;
-  @media (min-width: 600px) {
-    padding: 0 1.5rem 0 1.625rem;
+  .main {
+    position: relative;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    @media (min-width: 480px) {
+      margin: 4rem 0 0;
+      &.has-mt {
+        margin: 6.5rem 0 0;
+      }
+      padding: 0 3rem;
+    }
+    @media (min-width: 960px) {
+      margin: 5.25rem 0 0;
+      &.has-mt {
+        margin: 8.5rem 0 0;
+      }
+    }
+    @media (min-width: 1280px) {
+      margin: 6rem 0 0;
+      &.has-mt {
+        margin: 8.5rem 0 0;
+      }
+    }
   }
-  @media (min-width: 840px) {
-    margin: 0 calc((100vw - 1.5rem) / 12);
+  .main_container {
+    position: relative;
+    width: 100%;
+    @media (min-width: 840px) {
+      margin: auto;
+      max-width: var(--w-website-slim);
+    }
   }
-  @media (min-width: 960px) {
-    margin: 0 calc(((100vw - 1.5rem) / 12) * 2);
-  }
-  @media (min-width: 1312px) {
-    margin: auto;
-    width: calc(((1280px + 3rem) / 12) * 8);
-  }
-}
 </style>

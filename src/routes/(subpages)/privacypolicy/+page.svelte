@@ -6,7 +6,7 @@
 	<title>Gardenjs Component Explorer :: Privacy Policy</title>
 </svelte:head>
 
-<Main showStripes>
+<Main>
   <div>
     <h1>Datenschutz&shy;erkl&auml;rung</h1>
     <h2>1. Datenschutz auf einen Blick</h2>

@@ -3,7 +3,7 @@
 Install Gardenjs inside your Svelte/Vue/React project root and follow the installation routine:
 
 ```console
-npm install --save-dev garden
+npm install --save-dev gardenjs
 ```
 
 In the root directory you will now find your Gardenjs configuration file 'garden.config.js' to adapt Gardenjs to your project needs  (see chapter "Setup").

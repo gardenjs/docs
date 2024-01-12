@@ -25,59 +25,56 @@
 </div>
 
 <style lang="scss">
-.chapter {
-  margin: 0 0 2rem;
-  @media (min-width: 840px) {
-    margin: 0  0 3rem;
-  }
-  @media (min-width: 960px) {
-    margin: 0 0 3rem;
-  }
-  &.mt {
-    margin: 4rem 0 0;
+  .chapter {
+    margin: 0 0 2rem;
     @media (min-width: 840px) {
-      margin: 6rem 0 0;
+      margin: 0  0 3rem;
     }
-    @media (min-width: 960px) {
-      margin: 8rem 0 0;
+    &.mt {
+      margin: 4rem 0 0;
+      @media (min-width: 840px) {
+        margin: 6rem 0 0;
+      }
+      @media (min-width: 960px) {
+        margin: 8rem 0 0;
+      }
     }
-  }
-  .superscript {
-    margin: 0 0 0.25rem;
-    font-family: var(--monospace);
-    font-size: 0.75rem;
-    color: var(--c-secondary);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.125rem;
-    @media (min-width: 450px) {
-      font-size: 0.938rem;
+    .superscript {
+      margin: 0 0 0.25rem;
+      font-family: var(--monospace);
+      font-size: 0.75rem;
+      color: var(--c-secondary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.125rem;
+      @media (min-width: 450px) {
+        font-size: 0.938rem;
+      }
     }
-  }
-  h1,
-  h2 {
-    margin-top: 0;
-    color: var(--c-text);
-    font-size: 1.25rem;
-    font-weight: 800;
-    @media (min-width: 840px) {
-      font-size: 1.75rem;
-    }
-    @media (min-width: 960px) {
-      font-size: 2.875rem;
-    }
-  }
-  p {
-    font-size: 1rem;
-    @media (min-width: 450px) {
-      font-size: 1.125rem;
-    }
-    @media (min-width: 840px) {
+    h1,
+    h2 {
+      margin-top: 0;
+      color: var(--c-text);
       font-size: 1.25rem;
+      font-weight: 800;
+      @media (min-width: 840px) {
+        font-size: 1.75rem;
+      }
+      @media (min-width: 960px) {
+        font-size: 2.875rem;
+      }
     }
-    @media (min-width: 1280px) {
-      font-size: 1.5rem;
+    p {
+      font-size: 1rem;
+      @media (min-width: 450px) {
+        font-size: 1.125rem;
+      }
+      @media (min-width: 840px) {
+        font-size: 1.25rem;
+      }
+      @media (min-width: 1280px) {
+        font-size: 1.5rem;
+      }
     }
   }
-}
 </style>

@@ -1,8 +1,8 @@
 export default {
   name: 'Subpage',
   file: './subpage.svelte',
-  description: 'Imprint.',
+  description: 'Page layout with main column for content.',
   examples: [
-    {story: "Subpages"}
+    // {story: "Layout for Subpages"}
   ]
 }

@@ -16,10 +16,9 @@
   --c-app-border:       hsl(216, 41%, 5%);
   --c-bg-box:             var(--c-secondary-dark);
   --c-text-box:           var(--c-website-bg);
-  --c-stripes-dashed:     hsl(185, 40%, 80%);
-  --c-stripes-solid:      hsl(185, 40%, 85%);
 
-  --w-website:            1280px;
+  --w-website-wide:            1280px;
+  --w-website-slim:            840px;
   --monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;}
 
 [data-theme="dark"] {
@@ -38,6 +37,4 @@
   --c-app-border:        hsl(168, 8%, 76%);
   --c-bg-box:              var(--c-text);
   --c-text-box:            var(--c-website-bg);
-  --c-stripes-dashed:     hsl(216, 21%, 30%);
-  --c-stripes-solid:      hsl(216, 21%, 23%);
 }
