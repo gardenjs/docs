@@ -5,6 +5,7 @@
   export let isFixed = false
   export let showHeaderintro = false
   export let showSkew = false
+  export let showMobilenav = false
 
   let fixed = 'is-fixed'
   let scroll = ''
@@ -19,7 +20,7 @@
           <img src="src/assets/icons/logo.svg" alt="Logo">
           <span class="logo_label">Gardenjs</span>
         </a>
-        <Headernav />
+        <Headernav on:toggleMobilenav {showMobilenav} />
       </div>
     </div>
     {#if showHeaderintro}

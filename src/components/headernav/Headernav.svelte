@@ -1,10 +1,8 @@
 <script>
-  export let active = true
+  import { createEventDispatcher } from "svelte";
 
-  function toggleMobilenav() {
-    active = !active
-    showMobilenav()
-  }
+  const dispatch = createEventDispatcher();
+  export let showMobilenav = false
 
   let currentTheme = 'light'
 
@@ -27,6 +25,10 @@
       })
     })
   };
+
+  function handleToggleMobilenav() {
+    dispatch("toggleMobilenav", {})
+  }
 </script>
 
 <nav class="navbar_nav">
@@ -49,7 +51,7 @@
       </a>
     </li>
     <li class="navicon">
-      <button class="menu" on:click={toggleMobilenav} title={active ? 'Collapse menu' : 'Expand menu'}>
+      <button class="menu" on:click={handleToggleMobilenav} title={showMobilenav ? 'Collapse menu' : 'Expand menu'}>
         <svg class="icon" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
       </button>
     </li>
@@ -84,7 +86,7 @@
         }
         @media (min-width: 840px) {
           &.navicon {
-            display: none;
+            display: none;            
           }
         }
       }
