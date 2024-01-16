@@ -14,9 +14,6 @@
 <div class="mainaside">
   <div class="mainaside_container">
     <div class="sidebar {showMobilenav ? 'show' : ''}">
-       {#if showMobilenav}
-        <button class="close" on:click={() => showMobilenav = false}></button>
-      {/if}
       <Sidenav on:toggleMobilenav={handleToggleMobilenav}/>
     </div>
     <div class="content">
@@ -48,9 +45,9 @@
     .mainaside_container {
       position: relative;
       margin: auto;
-      padding: 0;
+      padding: 0 2rem;
       width: 100%;
-      max-width: var(--w-website-slim);
+      max-width: var(--w-website-wide);
       overflow: hidden;
       @media (min-width: 840px) {
         display: flex;
