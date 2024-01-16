@@ -7,7 +7,7 @@ During installation, the configuration file “garden.config.js” is copied to 
 | Option | Type | Description |
 |--- |--- | --- |
 | `serverport` | Positive number | Default: `3010` <br> Define the server port. |
-| `devmodus: false` | Boolean |  Default: `false` <br> For garden development purposes only. |
+| `devmodus` | Boolean |  Default: `false` <br> For garden development purposes only. |
 | `no_open_browser` | Boolean |  Default: `true` <br> Stops auto opening Gardenjs on start. |
 | `project_title` | String, Text |  Default: `My project name`<br> Title is displayed above the navigation. |
 | `welcome_page` | Path | Set a path to your own start page, e.g. `/src/foo.svelte`. |
