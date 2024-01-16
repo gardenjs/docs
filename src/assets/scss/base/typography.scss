@@ -66,6 +66,15 @@ a {
     color: var(--c-primary-lighter);
   }
 }
+p code {
+  font-size: 0.75rem;
+  @media (min-width: 450px) {
+    font-size: 0.875rem;
+  }
+  @media (min-width: 840px) {
+    font-size: 1rem;
+  }
+}
 code {
   font-family: var(--monospace);
 }

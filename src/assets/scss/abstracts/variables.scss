@@ -1,6 +1,4 @@
 :root {
-  // --c-primary:          hsl(168, 41%, 50%);
-  // --c-primary-lighter:  hsl(168, 41%, 70%);
   --c-primary:           hsl(185, 100%, 35%);
   --c-primary-lighter:   hsl(185, 100%, 40%);
   --c-primary-bg:        hsl(168, 41%, 95%);
@@ -8,6 +6,7 @@
   --c-secondary-dark:    hsl(216, 41%, 30%);
   --c-secondary-lighter: hsl(216, 41%, 40%);
   --c-website-bg:        hsl(38, 100%, 96%);
+  --c-website-code-bg:   hsl(38, 80%, 90%);
   --c-navbar-icon:         var(--c-secondary-dark);
   --c-text:                var(--c-secondary-dark);
   --c-footer-bg:           var(--c-website-bg);
@@ -28,10 +27,11 @@
   --c-secondary:         hsl(216, 41%, 53%);
   --c-secondary-dark:    hsl(216, 41%, 30%);
   --c-secondary-lighter: hsl(216, 41%, 40%);
-  --c-website-bg:        hsl(216, 41%, 15%);
+  --c-website-bg:        hsl(216, 41%, 12%);
+  --c-website-code-bg:   hsl(216, 15%, 25%);
   --c-navbar-icon:       hsl(216, 41%, 75%);
-  --c-text:              hsl(216, 41%, 75%);
-  --c-footer-bg:         hsl(216, 41%, 15%);
+  --c-text:              hsl(216, 70%, 87%);
+  --c-footer-bg:           var(--c-website-bg);
   --c-footer-text:       hsl(216, 41%, 75%);
   --c-app-bg:            hsl(168, 8%, 96%);
   --c-app-border:        hsl(168, 8%, 76%);
