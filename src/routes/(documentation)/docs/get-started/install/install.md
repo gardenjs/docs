@@ -1,6 +1,6 @@
 # Install Gardenjs
 
-Install Gardenjs inside your project root and follow the installation routine:
+Make sure [Vite](https://vitejs.dev/) is installed. Then install Gardenjs inside your project root and follow the installation routine:
 
 ```console
 npm install --save-dev gardenjs
