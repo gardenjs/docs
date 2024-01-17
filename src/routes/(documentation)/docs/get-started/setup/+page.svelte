@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Setup :: Gardenjs Docs</title>
-  <meta name="description" content="This is the documentation of Gardenjs, the fast storybook alternative for React, Vue and Svelte projects." />
+  <meta name="description" content="How to configure Gardenjs for your project. Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React." />
 </svelte:head>
 
 <div class="md_file">

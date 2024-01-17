@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>About Gardenjs Component Explorer :: Gardenjs Docs</title>
-  <meta name="description" content="This is the documentation of Gardenjs, the fast storybook alternative for React, Vue and Svelte projects." />
+	<title>Garden Docs :: Gardenjs UI Component Explorer</title>
+  <meta name="description" content="Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React." />
 </svelte:head>
 
 <div class="md_file">
