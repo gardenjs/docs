@@ -1,6 +1,10 @@
 # Output of components/layouts
 
-Gardenjs respects the directory structure of your project: Several components can be bundled in one folder, in separate folders and in subfolders. First you have to define one or more root directories of your components in garden.config.js, e.g.:
+Gardenjs respects the directory structure of your project. Several components can be bundled in one folder, in separate folders and in subfolders. This is how your components are output in Gardenjs:
+
+## Step 1: Define the page tree structure for the component menu
+
+First you have to define one or more root directories of your components in **garden.config.js**. Each entry creates a page tree in the components menu. Components in subfolders are displayed at a lower level in the page tree.
 
 ```js
  "structure": {
@@ -9,7 +13,11 @@ Gardenjs respects the directory structure of your project: Several components ca
   },
 ```
 
-To output components in Gardenjs, you don't need to change anything in the component file itself, so your component remains pure. Now create a component.das.js for each component you want to display in Garden. For example, this file looks like this:
+However, without the next step, nothing is output yet.
+
+## Step 2: Register each component to view it
+
+Now create a file **foo.das.js** for each component you want to display in Gardenjs. Name them like the components themselves and save each one next to the corresponding component. These files look like this:
 
 ```js
 export default {
@@ -19,6 +27,8 @@ export default {
 }
 ```
 
-The description is optional and is output in the panel under the component in the "Notes" tab. As an alternative to the description text, you can also use markdown or specify a markdown file like `description: "./foo.md",` (see chapter "write docs").
+`description` is optional and is output in the panel under the component in the "Notes" tab. More infos <a href="/docs/add-notes">here</a>.
 
-In the next step, you also write the stories for the respective component in this file (see chapter "strories").
+## Next: Register stories (optional)
+
+Stories are optional and will also be managed in the registration files if required. More infos <a href="/docs/stories">here</a>.

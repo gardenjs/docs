@@ -1,6 +1,6 @@
-# Configure Gardenjs with project-specific settings
+# Setting up Gardenjs
 
-During installation, the configuration file “garden.config.js” is copied to the root directory. Project-specific settings for Gardenjs are stored here. Individual adjustments can also be made in this file.
+During installation, the configuration file **garden.config.js** is copied to the root directory. Project-specific settings are adjusted here.
 
 ## Options
 
@@ -28,7 +28,7 @@ During installation, the configuration file “garden.config.js” is copied to 
 
 ## Theme Function
 
-The following theme function is integrated as default. Adapt it to your own needs.
+The following theme function is integrated as default. Adapt it to your own needs and adjust the option `themeHandler` if necessary.
 
 ```js
 function onThemeChange(theme) {

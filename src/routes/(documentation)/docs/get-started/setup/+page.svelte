@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Setup :: Gardenjs Docs</title>
+	<title>Setting up :: Gardenjs Docs</title>
   <meta name="description" content="How to configure Gardenjs for your project. Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React." />
 </svelte:head>
 

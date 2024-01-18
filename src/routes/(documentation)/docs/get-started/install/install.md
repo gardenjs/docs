@@ -1,16 +1,18 @@
 # Install Gardenjs
 
-Make sure [Vite](https://vitejs.dev/) is installed. Then install Gardenjs inside your project root and follow the installation routine:
+Make sure [Vite](https://vitejs.dev/) is installed!
+
+Then install Gardenjs inside your project root and follow the installation routine:
 
 ```console
 npm install --save-dev gardenjs
 ```
 
-In the root directory you will now find your Gardenjs configuration file 'garden.config.js' to adapt Gardenjs to your project needs  (see chapter "Setup").
+In the root directory you will now find the Gardenjs configuration file **garden.config.js**.
 
-## Run Garden
+## Run Gardenjs
 
-Add `Gardenjs` to your `package.json` as follows and start Gardenjs via `npm run garden`:
+Add Gardenjs to your **package.json** as follows and start Gardenjs via `npm run garden`:
 
 ```json
   "scripts": {
@@ -18,4 +20,8 @@ Add `Gardenjs` to your `package.json` as follows and start Gardenjs via `npm run
   },
 ```
 
-The browser address is `http://localhost:<serverport>/garden`. The server port is defined in `garden.config.js`, the default setting is 3010.
+The default browser address is <mark>http://localhost:3010/garden</mark>. The server port is defined in **garden.config.js** and can be adjusted there.
+
+## Setting up Gardenjs
+
+Project-specific settings are made in the file **garden.config.js**. More infos <a href="/docs/get-started/setup">here</a>.
