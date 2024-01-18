@@ -1,3 +1,0 @@
-# Screenshot Test
-
-## Coming soon...
