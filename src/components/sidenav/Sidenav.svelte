@@ -32,10 +32,10 @@
       <a href="/docs/stories" on:click={handleClick}>Stories</a>
     </li>
     <li class="single-item">
-      <a href="/docs/documentation/add-notes" on:click={handleClick}>Add Notes</a>
+      <a href="/docs/add-notes" on:click={handleClick}>Add Notes</a>
     </li>
     <li class="single-item">
-      <a href="/" on:click={handleClick}>Add JS Frameworks</a>
+      <a href="/docs/add-frameworks" on:click={handleClick}>Add JS Frameworks</a>
     </li>
   </ul>
 </nav>
