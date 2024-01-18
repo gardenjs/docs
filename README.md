@@ -24,5 +24,9 @@ Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas from [Rabbit Dev
 
 ## Todo´s
 
-- [Bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the homepage.
-- [Task] Add class active to current page in sidebar nav.
+- [bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the homepage.
+- [task] Add class active to current page in sidebar nav.
+- [task] Split components & layouts.
+- [task] Add Gardenjs, display each component & write stories.
+- [docs] Add "Add js frameworks".
+- [docs] Check content before releasing docs.
