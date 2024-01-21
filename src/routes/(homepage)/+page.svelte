@@ -54,11 +54,8 @@
       paragraph="Add any additional information to your components and stories and keep track of all components and for the whole team." />
   </div>
   <ChapterIntro
-    superscript="Our story"
-    title="Why another tool like Storybook?" />
-  <Subchapter
-    title="A brief insight into the development of Gardenjs"
-    paragraph="Storybook is the top dog and a very powerful, great tool. So why Garden? Gardenjs was initially developt as a practice project to better understand the then-new framework Svelte. Right off the bat, Gardenjs was significantly faster than Storybook and all its alternatives. From then on, we used Gardenjs for all our projects. So Gardenjs was constantly maintained and extended with more features. Gardenjs now has all the essential functions needed to create, test and document UI components and is also comparatively easy to maintain and further develop. Gardenjs also does some things better than the alternatives. So we're late to the party but it would be a shame not to make Gardenjs available to everyone." />
+    superscript="If you like Gardenjs"
+    title="We look forward to your help" />
   <Subchapter
     title="Contributions and donations are welcome"
     paragraph="Gardenjs is actively maintained. We will integrate some useful features in the future and are open for further requests. We are happy about your support. Please report bugs on Github." />
