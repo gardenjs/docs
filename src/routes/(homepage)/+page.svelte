@@ -2,7 +2,7 @@
 	import Main from '../../layouts/Main.svelte'
   import ChapterIntro from '../../components/chapterintro/Chapterintro.svelte'
   import Subchapter from '../../components/subchapter/Subchapter.svelte'
-  import Logogallery from '../../components/Logogallery/Logogallery.svelte'
+  import Logogallery from '../../components/logogallery/Logogallery.svelte'
   import Blockquote from '../../components/blockquote/Blockquote.svelte'
   import Infobox from '../../components/infobox/Infobox.svelte'
 </script>
