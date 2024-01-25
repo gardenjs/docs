@@ -1,5 +1,5 @@
 <script>
-  import Setup from './setup.md'
+  import Settings from './settings.md'
 </script>
 
 <svelte:head>
@@ -8,5 +8,5 @@
 </svelte:head>
 
 <div class="md_file">
-  <Setup />
+  <Settings />
 </div>

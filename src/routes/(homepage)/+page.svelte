@@ -1,5 +1,5 @@
 <script>
-	import Main from '../../components/layouts/Main.svelte'
+	import Main from '../../layouts/Main.svelte'
   import ChapterIntro from '../../components/chapterintro/Chapterintro.svelte'
   import Subchapter from '../../components/subchapter/Subchapter.svelte'
   import Logos from '../../components/logos/Logos.svelte'

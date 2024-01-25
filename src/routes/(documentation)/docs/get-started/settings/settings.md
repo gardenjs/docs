@@ -1,10 +1,10 @@
 # Setting up Gardenjs
 
-During installation, the configuration file **garden.config.js** is copied to the root directory. Project-specific settings are adjusted here.
+During installation, the configuration file **garden.config.js** is generated in the root directory. All project-specific settings are made here.
 
-## Options
+## Arguments
 
-| Option | Type | Description |
+| Argument | Type | Description |
 |--- |--- | --- |
 | `serverport` | Positive number | Default: `3010` <br> Define the server port. |
 | `devmodus` | Boolean |  Default: `false` <br> For garden development purposes only. |
@@ -24,7 +24,17 @@ During installation, the configuration file **garden.config.js** is copied to th
 | `themes`: `active` | Boolean | Set the default theme on start: `active: 'true',`. Optionally, if it is empty, the first entry in the list is automatically used as the default. |
 | `themeHandler` | String |  Default: `onThemeChange` <br> If `themes` is used this adjusts the function below. If necessary, the function must be changed. |
 
-<br>
+## Pagetree
+
+The source folder of the components was queried during installation. It is also possible to display several page trees one below the other. With the `structure` option, you can define a finer granulation of the page tree and integrate components from different directories.
+
+```js
+ "structure": {
+    "layouts": "/src/layout/",
+    "components": "/src/components/",
+  },
+```
+
 
 ## Theme Function
 

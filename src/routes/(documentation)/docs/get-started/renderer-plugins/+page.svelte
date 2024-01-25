@@ -1,5 +1,5 @@
 <script>
-  import Addframeworks from './add-frameworks.md'
+  import Rendererplugins from './renderer-plugins.md'
 </script>
 
 <svelte:head>
@@ -8,5 +8,5 @@
 </svelte:head>
 
 <div class="md_file">
-  <Addframeworks />
+  <Rendererplugins />
 </div>
