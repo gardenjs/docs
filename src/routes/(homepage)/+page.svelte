@@ -2,7 +2,7 @@
 	import Main from '../../layouts/Main.svelte'
   import ChapterIntro from '../../components/chapterintro/Chapterintro.svelte'
   import Subchapter from '../../components/subchapter/Subchapter.svelte'
-  import Logos from '../../components/logos/Logos.svelte'
+  import Logogallery from '../../components/Logogallery/Logogallery.svelte'
   import Blockquote from '../../components/blockquote/Blockquote.svelte'
   import Infobox from '../../components/infobox/Infobox.svelte'
 </script>
@@ -26,7 +26,7 @@
   <Subchapter
     title="Use Gardenjs with your favorite JS framework"
     paragraph="Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." />
-  <Logos />
+  <Logogallery />
   <Subchapter
     title="Use Gardenjs in multiframework projects"
     paragraph="You can use Gardenjs out of the box even in a multiframework project - Storybook and others can't do that." />

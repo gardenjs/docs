@@ -19,12 +19,12 @@
       display: inline-block;
       margin: 1rem;
       .icon {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         @media (min-width: 960px) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         @media (min-width: 1280px) {
-          font-size: 2.5rem;
+          font-size: 1.75rem;
         }
       }
     }
