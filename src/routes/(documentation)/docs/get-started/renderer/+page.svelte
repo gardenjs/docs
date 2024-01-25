@@ -1,5 +1,5 @@
 <script>
-  import Rendererplugins from './renderer-plugins.md'
+  import Renderer from './renderer.md'
 </script>
 
 <svelte:head>
@@ -8,5 +8,5 @@
 </svelte:head>
 
 <div class="md_file">
-  <Rendererplugins />
+  <Renderer />
 </div>
