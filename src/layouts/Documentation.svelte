@@ -60,20 +60,19 @@
           top: 0rem;
           right: 0rem;
           bottom: 0rem;
-          padding: 0 1rem;
+          padding: 2rem 1.5rem;
           width: 100%;
           height: calc(100vh - 4rem);
           background-color: var(--c-website-bg);
-          border-radius: 0.625rem;
           box-shadow: 0 0 0.75rem rgba(0,0,0,.2);
           translate: 100vw 0;
           overflow-y: scroll;
           overflow-x: hidden;
           z-index: 99999;
           @media (min-width: 480px) {
-            top: 0.5rem;
-            right: 0.5rem;
-            bottom: 0.5rem;
+            top: 0rem;
+            right: 0rem;
+            bottom: 0rem;
             max-width: 280px;
             translate: calc(100vw + 382px) 0;
           }
