@@ -1,6 +1,6 @@
 <script>
   import '../../assets/scss/main.scss'
-  import Homepage from '../../components/layouts/Homepage.svelte'
+  import Homepage from '../../layouts/Homepage.svelte'
 </script>
 
 <Homepage>

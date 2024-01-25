@@ -1,8 +1,8 @@
 <script>
-  import Header from '../header/Header.svelte'
-  import Sidenav from '../sidenav/Sidenav.svelte'
-  import Footer from '../footer/Footer.svelte'
-  import Vegetables from '../vegetables/Vegetables.svelte'
+  import Header from '../components/header/Header.svelte'
+  import Sidenav from '../components/sidenav/Sidenav.svelte'
+  import Footer from '../components/footer/Footer.svelte'
+  import Vegetables from '../components/vegetables/Vegetables.svelte'
 
   let showMobilenav = false
   function handleToggleMobilenav() {

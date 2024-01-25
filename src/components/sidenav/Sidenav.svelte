@@ -4,8 +4,9 @@
   const dispatch = createEventDispatcher();
   const links = [
     { href: "/docs/get-started/install", label: "Install" },
-    { href: "/docs/get-started/setup", label: "Setup" },
-    { href: "/docs/get-started/output", label: "Output" },
+    { href: "/docs/get-started/settings", label: "Settings" },
+    { href: "/docs/get-started/examples", label: "Examples / Stories" },
+    { href: "/docs/get-started/renderer-plugins", label: "Renderer Plugins" },
   ];
 
   function handleClick() {
@@ -27,15 +28,9 @@
           </li>
         {/each}
       </ul>
-    </li>  
-    <li class="single-item">
-      <a href="/docs/stories" on:click={handleClick}>Stories</a>
     </li>
     <li class="single-item">
       <a href="/docs/add-notes" on:click={handleClick}>Add Notes</a>
-    </li>
-    <li class="single-item">
-      <a href="/docs/add-frameworks" on:click={handleClick}>Add JS Frameworks</a>
     </li>
   </ul>
 </nav>
