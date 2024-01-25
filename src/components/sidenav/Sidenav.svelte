@@ -5,12 +5,11 @@
   const links = [
     { href: "/docs/get-started/install", label: "Install" },
     { href: "/docs/get-started/settings", label: "Settings" },
-    { href: "/docs/get-started/examples", label: "Examples (Stories)" },
-    { href: "/docs/get-started/renderer", label: "Add Renderer" }
+    { href: "/docs/get-started/examples", label: "Examples (Stories)" }
   ];
 
   function handleClick() {
-   dispatch("toggleMobilenav")
+    dispatch("toggleMobilenav")
   }
 </script>
 
@@ -28,6 +27,9 @@
           </li>
         {/each}
       </ul>
+    </li>
+    <li class="single-item">
+      <a href="/docs/renderer" on:click={handleClick}>Add Renderer</a>
     </li>
     <li class="single-item">
       <a href="/docs/notes" on:click={handleClick}>Add Notes</a>
