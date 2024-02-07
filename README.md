@@ -20,7 +20,7 @@ We look forward to your feedback, please report any bugs. We also welcome contri
 
 [MIT](https://opensource.org/license/mit/)
 
-Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas from [Rabbit Development](https://www.rabbitdevelopment.de).
+Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by [Rabbit Development](https://www.rabbitdevelopment.de).
 
 ## Todo´s
 
