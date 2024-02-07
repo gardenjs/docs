@@ -3,6 +3,6 @@ export default {
   file: './Headernav.svelte',
   description: 'Header/topbar navigation.',
   examples: [
-    // {story: "Headernav"}
+    // {title: "Headernav"}
   ]
 }

@@ -3,6 +3,6 @@ export default {
   file: './Footer.svelte',
   description: 'Website Footer.',
   examples: [
-    {story: "Website footer"}
+    {title: "Website footer"}
   ]
 }

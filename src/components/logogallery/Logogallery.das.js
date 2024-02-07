@@ -3,6 +3,6 @@ export default {
   file: './Logogallery.svelte',
   description: './Logogallery.md',
   examples: [
-    {story: "Logo gallery"}
+    {title: "Logo gallery"}
   ]
 }

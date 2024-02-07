@@ -22,9 +22,9 @@ To define "examples", you now need to add `examples` here as shown in the exampl
 
 ```js
 examples: [
-    {story: "Default", input: {foo: "Lorem", bar: "ipsum dolor", foobar: "sit amet",}},
-    {story: "Something", input: {foo: "Lorem ipsum", bar: "dolor sit amet"}},
-    {story: "Something else", input: {foo: "Lorem"}},
+    {title: "Default", input: {foo: "Lorem", bar: "ipsum dolor", foobar: "sit amet",}},
+    {title: "Something", input: {foo: "Lorem ipsum", bar: "dolor sit amet"}},
+    {title: "Something else", input: {foo: "Lorem"}},
   ]
 ```
 
@@ -40,15 +40,15 @@ export default {
   file: './Sectionintro.svelte',
   description: 'Section intro with H2 heading, optional with superscript and teaser text.',
   examples: [
-    {story: "Section intro with superscript, H2 heading and intro text", input: {superscript: "Superscript", heading: "This is the section title", teaser: "This is the text. This is the text. This is the text. This is the text. This is the text."}},
-    {story: "Section intro with H2 heading and intro text", input: {heading: "This is the section title", teaser: "This is the text. This is the text. This is the text. This is the text. This is the text."}},
-    {story: "Section intro with H2 heading with superscript", input: {superscript: "Superscript", heading: "This is the section title"}},
-    {story: "Section intro with H2 heading", input: { heading: "This is the section title"}}
+    {title: "Section intro with superscript, H2 heading and intro text", input: {superscript: "Superscript", heading: "This is the section title", teaser: "This is the text. This is the text. This is the text. This is the text. This is the text."}},
+    {title: "Section intro with H2 heading and intro text", input: {heading: "This is the section title", teaser: "This is the text. This is the text. This is the text. This is the text. This is the text."}},
+    {title: "Section intro with H2 heading with superscript", input: {superscript: "Superscript", heading: "This is the section title"}},
+    {title: "Section intro with H2 heading", input: { heading: "This is the section title"}}
   ]
 }
 ```
 
-While "story" is used as navigation title in the panel, you define the value of the respective fields with "input".
+While "title" is used as navigation title in the panel, you define the value of the respective fields with "input".
 
 <br>
 

@@ -3,6 +3,6 @@ export default {
   file: './Vegetables.svelte',
   description: 'Vegetable illustration for the end of the content area.',
   examples: [
-    {story: "Box with title and text"},
+    {title: "Box with title and text"},
   ]
 }

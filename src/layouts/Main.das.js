@@ -3,6 +3,6 @@ export default {
   file: './Main.svelte',
   description: 'Main column wrapper as part of all page layouts.',
   examples: [
-    // {story: "Container for main content of page layouts"}
+    // {title: "Container for main content of page layouts"}
   ]
 }

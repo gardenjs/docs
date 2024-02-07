@@ -3,6 +3,6 @@ export default {
   file: './Homepage.svelte',
   description: 'Page layout for the homepage.',
   examples: [
-    // {story: "Layout for the Homepage"}
+    // {title: "Layout for the Homepage"}
   ]
 }
