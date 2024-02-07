@@ -33,15 +33,18 @@
   .mainaside {
     position: relative;
     margin: 8rem 0 0;
-    padding: 0 2rem;
     @media (min-width: 480px) {
       margin: 6.5rem 0 0;
     }
     @media (min-width: 960px) {
       margin: 7rem 0 0;
     }
+    @media (min-width: 1100px) {
+      margin: 7rem auto 0;
+      max-width: 1100px;
+    }
     @media (min-width: 1280px) {
-      margin: 8.5rem 0 0;
+      margin: 8.5rem auto 0;
     }
     .mainaside_container {
       position: relative;
@@ -49,7 +52,6 @@
       padding: 0 2rem;
       width: 100%;
       max-width: var(--w-website-wide);
-      overflow: hidden;
       @media (min-width: 840px) {
         display: flex;
         justify-content: space-between;
@@ -82,17 +84,23 @@
           translate: 0 0;
         }
         @media (min-width: 840px) {
-          position: relative;
-          overflow: hidden;
-          transform: translate3d(0,0,0); // respect overflow hidden for the child element that is fixed
-          width: 100%;
-          max-width: calc((100% / 12) * 3);
+          position: sticky;
+          align-self: start; // parent is flex so this is needed for position: sticky to work
+          top: 6.5rem;
+          @media (min-width: 960px) {
+            top: 7rem;
+          }
+          @media (min-width: 1280px) {
+            top: 8.5rem;
+          }
+          width: 25%;
+          max-width: 300px;
         }
       }
       .content {
-        width: 100%;
         @media (min-width: 840px) {
-          max-width: calc((100% / 12) * 9);
+          width: 75%;
+          max-width: 800px;
         }
       }
     }
