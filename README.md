@@ -16,12 +16,6 @@ Gardenjs is an open source project and is licensed under the MIT license. Become
 
 We look forward to your feedback, please report any bugs. We also welcome contributions.
 
-## License
-
-[MIT](https://opensource.org/license/mit/)
-
-Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by [Rabbit Development](https://www.rabbitdevelopment.de).
-
 ## Todo´s
 
 - [bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the homepage.
@@ -30,3 +24,6 @@ Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by [
 - [task] Add Gardenjs, display each component & write stories.
 - [docs] Add "Add js frameworks".
 - [docs] Check content before releasing docs.
+
+---
+Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by [Rabbit Development](https://www.rabbitdevelopment.de).
