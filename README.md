@@ -25,6 +25,7 @@ We look forward to your feedback, please report any bugs. We also welcome contri
 - [docs] Add "Add js frameworks".
 - [docs] Check content before releasing docs.
 - [task] privacy policy: hosting Github?
+- [task] change gardenjs screenshot in header with gardenjs docs example.
 
 ---
 Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by [Rabbit Development](https://www.rabbitdevelopment.de).
