@@ -57,11 +57,8 @@
     superscript="If you like Gardenjs"
     title="We look forward to your help" />
   <Subchapter
-    title="Contributions and donations are welcome"
+    title="Contributions are welcome"
     paragraph="Gardenjs is actively maintained. We will integrate some useful features in the future and are open for further requests. We are happy about your support. Please report bugs on Github." />
-  <Subchapter
-    title="Sponsors"
-    paragraph="Become a sponsor to give us more scope for further development. We are grateful for this and will publish your logo and website URL in our README on Github and here on the Gardenjs website/documentation." />
 </Main>
 
 <style lang="scss">
