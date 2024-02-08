@@ -24,6 +24,7 @@ We look forward to your feedback, please report any bugs. We also welcome contri
 - [task] Add Gardenjs, display each component & write stories.
 - [docs] Add "Add js frameworks".
 - [docs] Check content before releasing docs.
+- [task] privacy policy: hosting Github?
 
 ---
 Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by [Rabbit Development](https://www.rabbitdevelopment.de).
