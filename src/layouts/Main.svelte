@@ -15,7 +15,11 @@
   .main {
     position: relative;
     overflow: hidden;
+    margin: 2rem 0 0;
     padding: 0 1.5rem;
+    &.has-mt {
+      margin: 8rem 0 0;
+    }
     @media (min-width: 480px) {
       margin: 4rem 0 0;
       &.has-mt {

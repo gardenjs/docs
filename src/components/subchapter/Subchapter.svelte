@@ -10,19 +10,19 @@
 
 <style lang="scss">
   .subchapter {
-    margin: 0 0 2rem;
+    margin: 1.5rem 0 0;
     @media (min-width: 840px) {
-      margin: 0 0 3rem;
+      margin: 2rem 0 0;
     }
     h3 {
-      margin: 1.25rem 0 1rem;
+      margin: 0 0 1rem;
       font-size: 1.2rem;
       font-weight: 700;
       @media (min-width: 840px) {
         font-size: 1.3rem;
       }
       @media (min-width: 960px) {
-        margin: 2.25em 0 1rem;
+        margin: 0 0 1rem;
         font-size: 1.75rem;
       }
     }

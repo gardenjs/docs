@@ -24,9 +24,10 @@
 <style lang="scss">
   .footer {
     position: relative;
+    padding: 0 1.5rem;
     background-color: var(--c-footer-bg);
     overflow: hidden;
-    @media (min-width: 600px) {
+    @media (min-width: 480px) {
       padding: 0 2rem;
     }
     .footer_container {
@@ -55,14 +56,20 @@
           order: 1;
         }
         .footer_copyright-container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0 0.75rem 0 0;
+          @media (min-width: 840px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 0.75rem 0 0;
+          }
           .icon {
-            margin-right: 0.75rem;
-            fill: var(--c-primary);
-            font-size: 0.875rem;
+            display: none;
+            @media (min-width: 840px) {
+              display: block;
+              margin-right: 0.75rem;
+              fill: var(--c-primary);
+              font-size: 0.75rem;
+            }
           }
         }
       }
