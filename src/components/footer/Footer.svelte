@@ -37,7 +37,7 @@
       font-size: 0.813rem;
       color: var(--c-footer-text);
       text-align: center;
-      @media (min-width: 840px) {
+      @media (min-width: 1280px) {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
@@ -49,11 +49,11 @@
       }
       .footer_copyright {
         order: 2;
-        @media (min-width: 840px) {
+        @media (min-width: 1280px) {
           order: 1;
         }
         .footer_copyright-container {
-          @media (min-width: 840px) {
+          @media (min-width: 1280px) {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -61,10 +61,10 @@
           }
           .icon {
             display: none;
-            @media (min-width: 840px) {
+            @media (min-width: 1280px) {
               display: block;
               margin-right: 0.75rem;
-              fill: var(--c-primary);
+              fill: var(--c-link);
               font-size: 0.75rem;
             }
           }
@@ -84,7 +84,7 @@
       }
       .footer_nav {
         order: 1;
-        @media (min-width: 840px) {
+        @media (min-width: 1280px) {
           order: 2;
           text-align: right;
         }
