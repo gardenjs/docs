@@ -1,6 +1,6 @@
 <div class="header_intro">
   <div class="header_text">
-    <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span>Harvest.</span></div>
+    <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span><i>Harvest</i>.</span></div>
     <p class="slogan_subtext">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
     <div class="header_links">
       <a class="btn-docs" href="/docs" title="go to docs">Documentation</a>
@@ -40,9 +40,14 @@
         display: block;
         margin: 0 0 1.25rem;
         font-size: 1.25rem;
-        font-weight: 900;
+        color: var(--c-headline);
+        font-weight: 400;
+        @supports (font-variation-settings: normal) {
+          font-family: 'Vollkorn', serif;
+          font-variation-settings: 'wght' 400;
+        }
         text-align: center;
-        line-height: 1.005;
+        line-height: 1;
         @media (min-width: 280px) {
           font-size: 2.25rem;
         }
@@ -57,7 +62,7 @@
           }
         }
         @media (min-width: 1280px) {
-          font-size: 5.5rem;
+          font-size: 6rem;
         }
       }
       .slogan_subtext {
@@ -65,7 +70,11 @@
         margin: 0.5rem 0 1.75rem;
         width: 100%;
         font-size: 1rem;
-        font-weight: 400;
+        color: var(--c-text-light);
+        font-weight: 500;
+        @supports (font-variation-settings: normal) {
+          font-variation-settings: 'wght' 500;
+        }
         text-align: center;
         @media (min-width: 450px) {
           font-size: 1.125rem;
@@ -84,12 +93,12 @@
         a {
           display: block;
           padding: 0.375rem 1.25rem;
-          font-family: var(--monospace);
           color: var(--c-website-bg);
           font-size: 0.875rem;
           @media (min-width: 840px) {
             font-size: 1rem;
           }
+          text-transform: uppercase;
           text-align: center;
           font-weight: 500;
           text-decoration: none;
@@ -98,13 +107,14 @@
           transition: 0.2s;
           &:hover,
           &:focus {
-            background-color: var(--c-secondary-lighter);
+            background-color: var(--c-secondary);
             box-shadow: 0 .175rem .5rem 0 rgba(0,0,0,.4);
             transition: 0.2s;
           }
         }
         a.btn-docs {
           margin: 0 0 0.5rem;
+          color: var(--c-btntxt-docs);
           background-color: var(--c-primary);
           &:hover,
           &:focus {
@@ -125,7 +135,7 @@
     @media (min-width: 960px) {
       .header_img {
         position: relative;
-        width: 2000px;
+        width: 960px;
         margin: 0 0 0 5rem;
         img {
           width: auto;
@@ -134,9 +144,6 @@
           @media (min-width: 2200px) {
             max-height: 100%;
           }
-        }
-        @media (min-width: 1680px) {
-          width: 60vw;
         }
         .app {
           display: flex;
@@ -147,7 +154,6 @@
           background-color: var(--c-app-bg);
           border-radius: 0.563rem;
           backdrop-filter: blur(1.25rem);
-          box-shadow: 0 0.475rem 1.5rem 0.25rem rgba(0,0,0,.3);
           .app_header {
             display: flex;
             align-items: center;

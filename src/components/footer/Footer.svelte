@@ -24,18 +24,15 @@
 <style lang="scss">
   .footer {
     position: relative;
-    padding: 0 1.5rem;
     background-color: var(--c-footer-bg);
     overflow: hidden;
-    @media (min-width: 480px) {
-      padding: 0 2rem;
-    }
     .footer_container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
       margin: 1rem auto;
+      padding: 0 2rem;
       width: 100%;
       font-size: 0.813rem;
       color: var(--c-footer-text);
@@ -80,13 +77,9 @@
       a {
         display: inline-block;
         font-size: 0.813rem;
-        color: var(--c-primary);
         text-decoration: none;
         @media (min-width: 960px) {
           font-size: 0.938rem;
-        }
-        &:hover {
-          color: var(--c-primary-lighter);
         }
       }
       .footer_nav {

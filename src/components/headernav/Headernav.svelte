@@ -75,7 +75,16 @@
         button,
         a {
           font-size: 1rem;
+          color: var(--c-text);
+          text-transform: uppercase;
           line-height: 1;
+          font-weight: 500;
+          @supports (font-variation-settings: normal) {
+            font-variation-settings: 'wght' 500;
+          }
+          @media (min-width: 960px) {
+            font-size: 1.125rem;
+          }
           .icon {
             font-size: 0.875rem;
             color: var(--c-navbar-icon);
@@ -83,7 +92,7 @@
               font-size: 1rem;
             }
             @media (min-width: 960px) {
-              font-size: 1rem;
+              font-size: 1.125rem;
             }
           }
         }

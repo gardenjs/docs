@@ -1,40 +1,65 @@
 :root {
-  --c-primary:           hsl(185, 100%, 35%);
-  --c-primary-lighter:   hsl(185, 100%, 40%);
-  --c-primary-bg:        hsl(168, 41%, 95%);
-  --c-secondary:         hsl(216, 41%, 53%);
-  --c-secondary-dark:    hsl(216, 41%, 30%);
-  --c-secondary-lighter: hsl(216, 41%, 40%);
-  --c-website-bg:        hsl(38, 100%, 96%);
-  --c-website-code-bg:   hsl(38, 80%, 90%);
-  --c-navbar-icon:         var(--c-secondary-dark);
-  --c-text:                var(--c-secondary-dark);
-  --c-footer-bg:           var(--c-website-bg);
-  --c-footer-text:         var(--c-secondary-dark);
-  --c-app-bg:           hsl(216, 41%, 15%);
-  --c-app-border:       hsl(216, 41%, 5%);
-  --c-bg-box:             var(--c-secondary-dark);
-  --c-text-box:           var(--c-website-bg);
+  --c-primary:           hsl(185, 70%, 80%);
+  --c-primary-lighter:   hsl(185, 70%, 85%);
+  --c-secondary:         hsl(216, 25%, 50%);
+  --c-secondary-dark:    hsl(216, 40%, 20%);
 
-  --w-website-wide:            1280px;
-  --w-website-slim:            840px;
-  --monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;}
+  --c-website-bg:        hsl(36, 20%, 95%);
+  --c-website-code-bg:   hsl(185, 100%, 92%);
+  --c-navbar-icon:       var(--c-secondary-dark);
+  --c-border:            hsl(216, 10%, 80%);
+  --c-card-bg:           hsl(0, 0%, 100%);
+  --c-card-bg-hl:         var(--c-primary-lighter);
+  --c-prism-bg:          #161b22;
+  --c-table-bg:          transparent;
+
+  --c-headline:          var(--c-secondary-dark);
+  --c-text:              var(--c-secondary-dark);
+  --c-text-light:        var(--c-secondary);
+  --c-link:              hsl(185, 100%, 40%);
+  --c-link-hl:           hsl(185, 70%, 45%);
+  --c-table:             var(--c-secondary-dark);
+  --c-btntxt-docs:       var(--c-text);
+
+  --c-footer-bg:         var(--c-website-bg);
+  --c-footer-text:       var(--c-text-light);
+
+  --c-app-bg:            hsl(216, 41%, 15%);
+  --c-app-border:        hsl(216, 41%, 5%);
+
+  --w-website-wide:      1280px;
+  --w-website-slim:       840px;
+
+  --b-radius:            1rem;
+
+  --monospace:           "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
 
 [data-theme="dark"] {
-  --c-primary:           hsl(185, 100%, 45%);
-  --c-primary-lighter:   hsl(185, 100%, 70%);
-  --c-primary-bg:        hsl(168, 41%, 95%);
-  --c-secondary:         hsl(216, 41%, 53%);
-  --c-secondary-dark:    hsl(216, 41%, 30%);
-  --c-secondary-lighter: hsl(216, 41%, 40%);
+  --c-secondary:         hsl(216, 25%, 80%);
+  --c-secondary-dark:    hsl(216, 25%, 75%);
+
   --c-website-bg:        hsl(216, 41%, 12%);
-  --c-website-code-bg:   hsl(216, 15%, 25%);
-  --c-navbar-icon:       hsl(216, 41%, 75%);
-  --c-text:              hsl(216, 70%, 87%);
+  --c-website-code-bg:   hsl(185, 70%, 20%);
+  --c-prism-bg:          hsl(216, 25%, 25%);
+  --c-table-bg:          hsl(216, 25%, 25%);
+
+  --c-navbar-icon:       var(--c-secondary-dark);
+  --c-border:            var(--c-text);
+  --c-card-bg:           transparent;
+  --c-card-bg-hl:        hsl(216, 25%, 25%);
+
+  --c-headline:          var(--c-secondary-dark);
+  --c-text:              var(--c-secondary-dark);
+  --c-text-light:        var(--c-secondary-dark);
+  --c-link:              hsl(185, 100%, 70%);
+  --c-link-hl:           hsl(185, 100%, 80%);
+  --c-table:             hsl(216, 25%, 97%);
+  --c-btntxt-docs:       var(--c-website-bg);
+
   --c-footer-bg:           var(--c-website-bg);
-  --c-footer-text:       hsl(216, 41%, 75%);
+  --c-footer-text:       hsl(216, 70%, 87%);
+
   --c-app-bg:            hsl(168, 8%, 96%);
   --c-app-border:        hsl(168, 8%, 76%);
-  --c-bg-box:              var(--c-text);
-  --c-text-box:            var(--c-website-bg);
 }

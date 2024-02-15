@@ -1,11 +1,14 @@
 <script>
   export let hasHeaderintro = false
+  export let isWide = false
 
   let intro = ''
   let margintop = 'has-mt'
+  let iswide = ''
+  let home = 'is-wide'
 </script>
 
-<div class="main {hasHeaderintro? intro : margintop}">
+<div class="main {hasHeaderintro? intro : margintop} {isWide? home : iswide}">
   <div class="main_container">
     <slot></slot>
   </div>
@@ -25,7 +28,7 @@
       &.has-mt {
         margin: 6.5rem 0 0;
       }
-      padding: 0 3rem;
+      padding: 0 2rem;
     }
     @media (min-width: 960px) {
       margin: 5.25rem 0 0;
@@ -39,13 +42,19 @@
         margin: 8.5rem 0 0;
       }
     }
-  }
-  .main_container {
-    position: relative;
-    width: 100%;
-    @media (min-width: 840px) {
-      margin: auto;
-      max-width: var(--w-website-slim);
+    .main_container {
+      position: relative;
+      padding: 0 2rem;
+      width: 100%;
+      @media (min-width: 840px) {
+        margin: auto;
+        max-width: var(--w-website-slim);
+      }
+    }
+    &.is-wide {
+      .main_container {
+        max-width: var(--w-website-wide);
+      }
     }
   }
 </style>

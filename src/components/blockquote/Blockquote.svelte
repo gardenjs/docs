@@ -11,12 +11,15 @@
 
 <style lang="scss">
   .blockquote {
-    margin: 2rem 0;
+    margin: 0 0 2rem;
+    padding: 2rem 0;
+    border-top: 5px solid var(--c-text);
+    border-bottom: 5px solid var(--c-text);
     @media (min-width: 840px) {
-      margin: 3rem 0;
+      margin: 0 0 3rem;
     }
     @media (min-width: 960px) {
-      margin: 5rem 0;
+      margin: 0 0 5rem;
     }
     .icon {
       margin: 0 0 0.75rem;
@@ -32,10 +35,12 @@
     .quote {
       max-width: 100%;
       font-size: 1rem;
-      color: var(--c-headlines);
+      color: var(--c-headline);
       font-weight: 800;
+      @supports (font-variation-settings: normal) {
+        font-variation-settings: 'wght' 800;
+      }
       font-style: italic;
-      text-align: left;
       @media (min-width: 450px) {
         font-size: 1.25rem;
       }
@@ -48,10 +53,13 @@
     }
     .author {
       display: block;
-      margin: 0.75rem 0 0;
-      font-family: var(--monospace);
+      margin: 0;
       font-size: 0.875rem;
       color: var(--c-secondary);
+      font-weight: 500;
+      @supports (font-variation-settings: normal) {
+        font-variation-settings: 'wght' 500;
+      }
       text-align: right;
       @media (min-width: 450px) {
         font-size: 1rem;

@@ -4,7 +4,6 @@
 
   export let isFixed = false
   export let showHeaderintro = false
-  export let showSkew = false
   export let showMobilenav = false
   export let hasMobilenavicon = false
 
@@ -28,9 +27,6 @@
       <Headerintro />
     {/if}
   </div>
-  {#if showSkew}
-    <div class="skew"></div>
-  {/if}
 </header>
 
 <style lang="scss">
@@ -74,7 +70,11 @@
             position: relative;
             display: inline-flex;
             align-items: center;
-            color: var(--c-primary);
+            color: var(--c-text);
+            font-weight: 800;
+            @supports (font-variation-settings: normal) {
+              font-variation-settings: 'wght' 800;
+            }
             text-decoration: none;
             @media (max-width: 479px) {
               margin: 0 0 0.75rem;
@@ -112,22 +112,6 @@
             }
           }
         }
-      }
-    }
-    .skew {
-      display: none;
-      @media (min-width: 960px) {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 300px;
-        bottom: -300px;
-        left: 0;
-        right: 0;
-        transform: skewY(-3deg);
-        transform-origin: top left;
-        background-color: var(--c-website-bg);
       }
     }
   }

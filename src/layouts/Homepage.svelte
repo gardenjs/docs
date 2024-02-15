@@ -5,7 +5,7 @@
   import Footer from '../components/footer/Footer.svelte'
 </script>
 
-<Header showHeaderintro showSkew />
+<Header showHeaderintro />
 <slot></slot>
 <Vegetables />
 <Footer />

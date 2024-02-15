@@ -52,7 +52,10 @@
           font-size: 0.875rem;
           color: var(--c-text);
           line-height: 1.2;
-          font-weight: 600;
+          font-weight: 500;
+          @supports (font-variation-settings: normal) {
+            font-variation-settings: 'wght' 500;
+          }
           text-decoration: none;
           letter-spacing: 0.063rem;
           &:hover {
