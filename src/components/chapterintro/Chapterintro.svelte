@@ -33,10 +33,10 @@
     &.mt {
       margin: 4rem 0 0;
       @media (min-width: 840px) {
-        margin: 6rem 0 0;
+        margin: 5rem 0 0;
       }
       @media (min-width: 960px) {
-        margin: 8rem 0 0;
+        margin: 6rem 0 0;
       }
     }
     .superscript {
@@ -50,16 +50,16 @@
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 600;
       }
-      @media (min-width: 450px) {
+      @media (min-width: 840px) {
         font-size: 0.938rem;
       }
     }
     h1,
     h2 {
       margin-top: 0;
-      font-size: 1.25rem;
+      font-size: 1.75rem;
       @media (min-width: 840px) {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
       }
       @media (min-width: 960px) {
         font-size: 3.75rem;

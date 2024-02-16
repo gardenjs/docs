@@ -38,6 +38,12 @@
       <a href="/docs" title="documentation">Docs</a>
     </li>
     <li>
+      <a class="github" href="https://github.com/rabbitdevelopment/garden" title="Garden Github Repository" target="_blank">
+        <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M15.015 0C6.723 0 0 6.894 0 15.398c0 6.803 4.302 12.573 10.27 14.61.75.14 1.025-.334 1.025-.743 0-.365-.013-1.334-.02-2.618-4.178.93-5.059-2.065-5.059-2.065-.683-1.778-1.668-2.252-1.668-2.252-1.362-.955.104-.936.104-.936 1.507.11 2.3 1.587 2.3 1.587 1.34 2.353 3.515 1.673 4.37 1.28.137-.996.525-1.674.954-2.058-3.334-.389-6.84-1.71-6.84-7.61 0-1.681.585-3.056 1.545-4.132-.155-.39-.67-1.955.147-4.075 0 0 1.26-.414 4.13 1.579a14.03 14.03 0 013.76-.518c1.275.005 2.56.176 3.759.518 2.867-1.993 4.126-1.579 4.126-1.579.82 2.12.304 3.685.15 4.075.961 1.076 1.543 2.45 1.543 4.13 0 5.917-3.512 7.218-6.857 7.599.54.476 1.02 1.415 1.02 2.852 0 2.057-.02 3.718-.02 4.223 0 .413.27.891 1.034.741 5.963-2.04 10.261-7.808 10.261-14.608C30.034 6.894 23.31 0 15.015 0"/></svg>
+        <span>Source</span>
+      </a>
+    </li>
+    <li>
       <button id="toggle-mode" class="toggle-mode" title="Toggle Website Theme" on:click={toggleTheme}>
       {#if currentTheme === 'light'}
       <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16 0c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16C0 7.163 7.162 0 16 0zm-.001 7c-4.937 0-9 4.062-9 9 0 4.936 4.063 8.999 9 8.999s9-4.063 9-9a6.365 6.365 0 01-4.484 1.848c-3.492 0-6.364-2.872-6.364-6.364 0-1.678.664-3.292 1.848-4.483z" fill="#2d466c" fill-rule="evenodd"/></svg>
@@ -46,15 +52,10 @@
       {/if}
       </button>
     </li>
-    <li>
-      <a class="github" href="https://github.com/rabbitdevelopment/garden" title="Garden Github Repository" target="_blank">
-        <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M15.015 0C6.723 0 0 6.894 0 15.398c0 6.803 4.302 12.573 10.27 14.61.75.14 1.025-.334 1.025-.743 0-.365-.013-1.334-.02-2.618-4.178.93-5.059-2.065-5.059-2.065-.683-1.778-1.668-2.252-1.668-2.252-1.362-.955.104-.936.104-.936 1.507.11 2.3 1.587 2.3 1.587 1.34 2.353 3.515 1.673 4.37 1.28.137-.996.525-1.674.954-2.058-3.334-.389-6.84-1.71-6.84-7.61 0-1.681.585-3.056 1.545-4.132-.155-.39-.67-1.955.147-4.075 0 0 1.26-.414 4.13 1.579a14.03 14.03 0 013.76-.518c1.275.005 2.56.176 3.759.518 2.867-1.993 4.126-1.579 4.126-1.579.82 2.12.304 3.685.15 4.075.961 1.076 1.543 2.45 1.543 4.13 0 5.917-3.512 7.218-6.857 7.599.54.476 1.02 1.415 1.02 2.852 0 2.057-.02 3.718-.02 4.223 0 .413.27.891 1.034.741 5.963-2.04 10.261-7.808 10.261-14.608C30.034 6.894 23.31 0 15.015 0"/></svg>
-      </a>
-    </li>
     {#if hasMobilenavicon}
       <li class="navicon">
         <button class="menu" on:click={handleToggleMobilenav} title={showMobilenav ? 'Collapse menu' : 'Expand menu'}>
-          <svg class="icon" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+          <svg class="icon" role="img" width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
         </button>
       </li>
     {/if}
@@ -67,32 +68,49 @@
       display: flex;
       align-items: center;
       li {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         line-height: 1;
-        &:first-of-type {
-          margin: 0 1.5rem 0 0;
-        }
         button,
         a {
-          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          font-size: 0.875rem;
           color: var(--c-text);
           text-transform: uppercase;
           line-height: 1;
           font-weight: 500;
           @supports (font-variation-settings: normal) {
-            font-variation-settings: 'wght' 500;
+            font-variation-settings: 'wght' 600;
           }
           @media (min-width: 960px) {
+            font-size: 1rem;
+          }
+          @media (min-width: 1280px) {
             font-size: 1.125rem;
           }
           .icon {
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             color: var(--c-navbar-icon);
-            @media (min-width: 840px) {
-              font-size: 1rem;
+          }
+          &.github {
+            .icon {
+              display: none;
+              @media (min-width: 840px) {
+                display: block;
+                margin-right: 0.25rem;
+              }
             }
-            @media (min-width: 960px) {
-              font-size: 1.125rem;
+          }
+          &.toggle-mode,
+          &.navicon {
+            .icon {
+              font-size: 0.938rem;
+              @media (min-width: 840px) {
+                font-size: 1rem;
+              }
+              @media (min-width: 960px) {
+                font-size: 1.125rem;
+              }
             }
           }
         }

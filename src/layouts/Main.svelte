@@ -26,25 +26,20 @@
     @media (min-width: 480px) {
       margin: 4rem 0 0;
       &.has-mt {
-        margin: 6.5rem 0 0;
+        margin: 8rem 0 0;
       }
-      padding: 0 2rem;
     }
     @media (min-width: 960px) {
       margin: 5.25rem 0 0;
       &.has-mt {
-        margin: 8.5rem 0 0;
+        margin: 10rem 0 0;
       }
     }
     @media (min-width: 1280px) {
       margin: 6rem 0 0;
-      &.has-mt {
-        margin: 8.5rem 0 0;
-      }
     }
     .main_container {
       position: relative;
-      padding: 0 2rem;
       width: 100%;
       @media (min-width: 840px) {
         margin: auto;

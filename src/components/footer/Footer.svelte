@@ -1,8 +1,13 @@
 <script>
   let now = new Date()
+
+  export let hasBordertop = false
+
+  let bordertop = 'has-bt'
+  let noborder = ''
 </script>
 
-<footer class="footer">
+<footer class="footer {hasBordertop? bordertop : noborder}">
   <div class="footer_container">
     <div class="footer_copyright">
       <div class="footer_copyright-container">
@@ -24,15 +29,18 @@
 <style lang="scss">
   .footer {
     position: relative;
+    padding: 0 1.5rem;
     background-color: var(--c-footer-bg);
     overflow: hidden;
+    &.has-bt {
+      border-top: 1px solid var(--c-border);
+    }
     .footer_container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
       margin: 1rem auto;
-      padding: 0 2rem;
       width: 100%;
       font-size: 0.813rem;
       color: var(--c-footer-text);

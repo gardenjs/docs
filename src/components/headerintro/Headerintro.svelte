@@ -3,8 +3,8 @@
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span><i>Harvest</i>.</span></div>
     <p class="slogan_subtext">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
     <div class="header_links">
-      <a class="btn-docs" href="/docs" title="go to docs">Documentation</a>
-      <a href=".#" title="watch garden demo" target="_blank">Watch Demo</a>
+      <a href="/docs" class="btn-docs" title="documentation">Documentation</a>
+      <a href=".#" title="Watch Gardenjs demo" target="_blank">Watch Demo</a>
     </div>
   </div>
   <div class="header_img">
@@ -25,21 +25,20 @@
   .header_intro {
     position: relative;
     margin: auto;
-    padding: 0 1.5rem;
     @media (min-width: 960px) {
       display: grid;
-      grid-template-columns: repeat(2,500px 1fr);
+      grid-template-columns: repeat(2,540px 1fr);
     }
     @media (min-width: 1280px) {
       width: var(--w-website-wide);
     }
     .header_text {
-      margin: 3rem 0 0;
+      margin: 2rem 0 0;
       padding: 0 0 1rem;
       .slogan {
         display: block;
         margin: 0 0 1.25rem;
-        font-size: 1.25rem;
+        font-size: 2.5rem;
         color: var(--c-headline);
         font-weight: 400;
         @supports (font-variation-settings: normal) {
@@ -47,22 +46,19 @@
           font-variation-settings: 'wght' 400;
         }
         text-align: center;
-        line-height: 1;
+        line-height: 0.8;
         @media (min-width: 280px) {
-          font-size: 2.25rem;
+          font-size: 3.25rem;
         }
         @media (min-width: 450px) {
-          font-size: 3rem;
+          font-size: 4rem;
         }
         @media (min-width: 960px) {
-          font-size: 3.75rem;
+          font-size: 7rem;
           text-align: left;
           span {
             display: block;
           }
-        }
-        @media (min-width: 1280px) {
-          font-size: 6rem;
         }
       }
       .slogan_subtext {

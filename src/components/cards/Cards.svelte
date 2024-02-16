@@ -17,7 +17,10 @@
 <style lang="scss">
   .card {
     margin: 0;
-    padding: 2rem;
+    padding: 1.5rem;
+    @media (min-width: 840px) {
+      padding: 2rem;
+    } 
     background-color: var(--c-card-bg);
     border: 1px solid var(--c-border);
     border-radius: var(--b-radius);
@@ -29,14 +32,14 @@
       }
     }
     h3 {
-      margin: 0 0 1rem;
-      font-size: 1.2rem;
+      margin: 0 0 0.75rem;
+      font-size: 1rem;
       font-weight: 600;
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 600;
       }
       @media (min-width: 840px) {
-        font-size: 1.3rem;
+        font-size: 1.375rem;
       }
       @media (min-width: 960px) {
         margin: 0 0 1rem;
@@ -45,7 +48,7 @@
       }
     }
     p {
-      line-height: 1.5;
+      line-height: 1.6;
       &:last-of-type {
         margin: 0;
       }

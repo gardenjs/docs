@@ -1,15 +1,15 @@
 :root {
-  --c-primary:           hsl(185, 70%, 80%);
-  --c-primary-lighter:   hsl(185, 70%, 85%);
+  --c-primary:           hsl(185, 100%, 50%);
+  --c-primary-lighter:   hsl(185, 100%, 55%);
   --c-secondary:         hsl(216, 25%, 50%);
   --c-secondary-dark:    hsl(216, 40%, 20%);
 
-  --c-website-bg:        hsl(36, 20%, 95%);
+  --c-website-bg:        hsl(65, 10%, 97%);
   --c-website-code-bg:   hsl(185, 100%, 92%);
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-border:            hsl(216, 10%, 80%);
   --c-card-bg:           hsl(0, 0%, 100%);
-  --c-card-bg-hl:         var(--c-primary-lighter);
+  --c-card-bg-hl:         hsl(185, 100%, 85%);
   --c-prism-bg:          #161b22;
   --c-table-bg:          transparent;
 
@@ -17,7 +17,7 @@
   --c-text:              var(--c-secondary-dark);
   --c-text-light:        var(--c-secondary);
   --c-link:              hsl(185, 100%, 40%);
-  --c-link-hl:           hsl(185, 70%, 45%);
+  --c-link-hl:           hsl(185, 100%, 45%);
   --c-table:             var(--c-secondary-dark);
   --c-btntxt-docs:       var(--c-text);
 
@@ -27,7 +27,7 @@
   --c-app-bg:            hsl(216, 41%, 15%);
   --c-app-border:        hsl(216, 41%, 5%);
 
-  --w-website-wide:      1280px;
+  --w-website-wide:      1440px;
   --w-website-slim:       840px;
 
   --b-radius:            1rem;
@@ -36,18 +36,19 @@
 }
 
 [data-theme="dark"] {
+  --c-primary:           hsl(185, 100%, 80%);
+  --c-primary-lighter:   hsl(185, 100%, 85);
   --c-secondary:         hsl(216, 25%, 80%);
   --c-secondary-dark:    hsl(216, 25%, 75%);
 
   --c-website-bg:        hsl(216, 41%, 12%);
   --c-website-code-bg:   hsl(185, 70%, 20%);
-  --c-prism-bg:          hsl(216, 25%, 25%);
-  --c-table-bg:          hsl(216, 25%, 25%);
-
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-border:            var(--c-text);
   --c-card-bg:           transparent;
   --c-card-bg-hl:        hsl(216, 25%, 25%);
+  --c-prism-bg:          hsl(216, 25%, 25%);
+  --c-table-bg:          hsl(216, 25%, 25%);
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);

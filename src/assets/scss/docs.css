@@ -1,0 +1,9 @@
+/* h1,h2,h3,h4,h5,p,li,a,th,td {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+h1,h2,h3,h4 {
+  font-weight: 800;
+  @supports (font-variation-settings: normal) {
+    font-variation-settings: 'wght' 800;
+  }
+} */

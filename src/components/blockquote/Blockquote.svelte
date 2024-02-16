@@ -12,9 +12,10 @@
 <style lang="scss">
   .blockquote {
     margin: 0 0 2rem;
-    padding: 2rem 0;
-    border-top: 5px solid var(--c-text);
-    border-bottom: 5px solid var(--c-text);
+    padding: 2rem;
+    border: 1px solid var(--c-border);
+    border-radius: 1rem;
+    background-color: var(--c-card-bg);
     @media (min-width: 840px) {
       margin: 0 0 3rem;
     }
@@ -35,7 +36,7 @@
     .quote {
       max-width: 100%;
       font-size: 1rem;
-      color: var(--c-headline);
+      color: var(--c-text-light);
       font-weight: 800;
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 800;
@@ -55,7 +56,7 @@
       display: block;
       margin: 0;
       font-size: 0.875rem;
-      color: var(--c-secondary);
+      color: var(--c-text);
       font-weight: 500;
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 500;

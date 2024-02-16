@@ -3,6 +3,7 @@
   import Headerintro from '../headerintro/Headerintro.svelte'
 
   export let isFixed = false
+  export let isDocs = false
   export let showHeaderintro = false
   export let showMobilenav = false
   export let hasMobilenavicon = false
@@ -10,9 +11,12 @@
   let fixed = 'is-fixed'
   let scroll = ''
 
+  let ifdocs = 'is-docs'
+  let notdocs = ''
+
 </script>
 
-<header class="header {isFixed? fixed : scroll}">
+<header class="header {isFixed? fixed : scroll} {isDocs? ifdocs : notdocs}">
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">
@@ -33,10 +37,8 @@
   .header {
     position: relative;
     overflow: hidden;
+    padding: 0 1.5rem;
     width: 100%;
-    @media (min-width: 960px) {
-      max-height: 780px;
-    }
     &.is-fixed {
       position: fixed;
       top: 0;
@@ -51,20 +53,20 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 0.75rem 2rem 0;
-          @media (min-width: 480px) {
+          padding: 1rem 0 0;
+          @media (min-width: 580px) {
             flex-direction: row;
             justify-content: space-between;
             margin: auto;
             padding-top: 0;
-            height: 4rem;
+            height: 6rem;
           }
           @media (min-width: 960px) {
-            height: 5.25rem;
+            height: 8rem;
           }
           @media (min-width: 1280px) {
             max-width: var(--w-website-wide);
-            height: 6rem;
+            height: 10rem;
           }
           a.logo {
             position: relative;
@@ -76,7 +78,7 @@
               font-variation-settings: 'wght' 800;
             }
             text-decoration: none;
-            @media (max-width: 479px) {
+            @media (max-width: 579px) {
               margin: 0 0 0.75rem;
               width: 191px;
             }
@@ -111,6 +113,23 @@
               transition: color 0.2s;
             }
           }
+        }
+      }
+    }
+    // docs only
+    &.is-docs {
+      @media (min-width: 580px) {
+        border-bottom: 1px solid var(--c-border);
+      }
+      .navbar_container {
+        @media (min-width: 580px) {
+          height: 4rem !important;
+        }
+        @media (min-width: 960px) {
+          height: 5.5rem !important;
+        }
+        @media (min-width: 1280px) {
+          height: 5.5rem !important;
         }
       }
     }
