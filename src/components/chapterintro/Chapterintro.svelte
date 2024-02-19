@@ -60,6 +60,10 @@
       margin-top: 0;
       font-family: 'Vollkorn', serif;
       font-size: 1.75rem;
+      font-weight: 600;
+      @supports (font-variation-settings: normal) {
+        font-variation-settings: 'wght' 600 !important;
+      }
       @media (min-width: 840px) {
         font-size: 2.5rem;
       }
