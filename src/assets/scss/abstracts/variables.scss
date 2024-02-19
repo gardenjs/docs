@@ -51,14 +51,13 @@
   --c-card-bg:           transparent;
   --c-card-bg-hl:        hsl(216, 25%, 25%);
   --c-prism-bg:          hsl(216, 25%, 25%);
-  --c-table-bg:          hsl(216, 25%, 25%);
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);
   --c-text-light:        var(--c-secondary-dark);
   --c-link:              hsl(185, 100%, 70%);
   --c-link-hl:           hsl(185, 100%, 80%);
-  --c-table:             hsl(216, 25%, 97%);
+  --c-table:             var(--c-secondary);
   --c-btntxt-docs:       var(--c-website-bg);
 
   --c-footer-bg:           var(--c-website-bg);
