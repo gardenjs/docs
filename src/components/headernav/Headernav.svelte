@@ -64,12 +64,23 @@
 
 <style lang="scss">
   .navbar_nav {
+    font-family: 'Spline Sans Mono';
     ul {
       display: flex;
       align-items: center;
       li {
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         line-height: 1;
+        a {
+          padding: 0.5rem 0.75rem;
+          @media (min-width: 960px) {
+            padding: 0.75rem;
+          }
+          &:hover {
+            background-color: hsl(65, 10%, 89%);;
+            border-radius: 0.5rem;
+          }
+        }
         button,
         a {
           display: flex;
@@ -103,6 +114,7 @@
           }
           &.toggle-mode,
           &.navicon {
+            padding-left: 1rem;
             .icon {
               font-size: 0.938rem;
               @media (min-width: 840px) {

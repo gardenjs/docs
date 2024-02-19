@@ -13,6 +13,7 @@
   .blockquote {
     margin: 0 0 2rem;
     padding: 2rem;
+    font-family: 'Spline Sans Mono';
     border: 1px solid var(--c-border);
     border-radius: 1rem;
     background-color: var(--c-card-bg);

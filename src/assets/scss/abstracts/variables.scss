@@ -1,6 +1,8 @@
 :root {
-  --c-primary:           hsl(185, 100%, 50%);
-  --c-primary-lighter:   hsl(185, 100%, 55%);
+  // --c-primary:           hsl(185, 100%, 50%);
+  --c-primary:           hsl(185, 80%, 75%);
+  // --c-primary-lighter:   hsl(185, 100%, 55%);
+  --c-primary-hl:        hsl(185, 80%, 65%);
   --c-secondary:         hsl(216, 25%, 50%);
   --c-secondary-dark:    hsl(216, 40%, 20%);
 
@@ -9,7 +11,8 @@
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-border:            hsl(216, 10%, 80%);
   --c-card-bg:           hsl(0, 0%, 100%);
-  --c-card-bg-hl:         hsl(185, 100%, 85%);
+  // --c-card-bg-hl:         hsl(185, 100%, 85%);
+  --c-card-bg-hl:         hsl(185, 80%, 88%);
   --c-prism-bg:          #161b22;
   --c-table-bg:          transparent;
 
@@ -36,8 +39,8 @@
 }
 
 [data-theme="dark"] {
-  --c-primary:           hsl(185, 100%, 80%);
-  --c-primary-lighter:   hsl(185, 100%, 85);
+  --c-primary:           hsl(185, 80%, 65%);
+  --c-primary-hl:        hsl(185, 80%, 75%);
   --c-secondary:         hsl(216, 25%, 80%);
   --c-secondary-dark:    hsl(216, 25%, 75%);
 

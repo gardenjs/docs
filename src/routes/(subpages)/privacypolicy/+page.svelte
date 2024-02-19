@@ -35,3 +35,12 @@
     <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
   </div>
 </Main>
+
+<style>
+  h1, h2, h3, h4 {
+    font-family: 'Vollkorn', serif;
+  }
+  p, li {
+    font-family: 'Spline Sans Mono';
+  }
+</style>

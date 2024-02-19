@@ -75,7 +75,7 @@
             color: var(--c-text);
             font-weight: 800;
             @supports (font-variation-settings: normal) {
-              font-variation-settings: 'wght' 800;
+              font-variation-settings: 'wght' 900;
             }
             text-decoration: none;
             @media (max-width: 579px) {
@@ -107,10 +107,6 @@
               @media (min-width: 1280px) {
                 font-size: 2.5rem;
               }
-            }
-            &:hover .logo_label {
-              color: var(--c-primary-lighter);
-              transition: color 0.2s;
             }
           }
         }

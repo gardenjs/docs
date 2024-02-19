@@ -18,6 +18,7 @@
   .card {
     margin: 0;
     padding: 1.5rem;
+    font-family: 'Spline Sans Mono';
     @media (min-width: 840px) {
       padding: 2rem;
     } 
@@ -33,10 +34,11 @@
     }
     h3 {
       margin: 0 0 0.75rem;
+      font-family: 'Vollkorn', serif;
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 800;
       @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 600;
+        font-variation-settings: 'wght' 800;
       }
       @media (min-width: 840px) {
         font-size: 1.375rem;

@@ -42,7 +42,7 @@ pre[class*="language-"] {
   margin: .5em 0;
   overflow: auto;
   background: var(--c-prism-bg);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 :not(pre) > code[class*="language-"] {
   padding: .1em .3em;

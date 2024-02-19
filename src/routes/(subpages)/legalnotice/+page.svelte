@@ -24,3 +24,12 @@
     <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
   </div>
 </Main>
+
+<style>
+   h1, h2 {
+    font-family: 'Vollkorn', serif;
+  }
+  p {
+    font-family: 'Spline Sans Mono';
+  }
+</style>

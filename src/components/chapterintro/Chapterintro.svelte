@@ -27,6 +27,7 @@
 <style lang="scss">
   .chapter {
     margin: 0 0 2rem;
+    font-family: 'Spline Sans Mono';
     @media (min-width: 840px) {
       margin: 0  0 3rem;
     }
@@ -57,6 +58,7 @@
     h1,
     h2 {
       margin-top: 0;
+      font-family: 'Vollkorn', serif;
       font-size: 1.75rem;
       @media (min-width: 840px) {
         font-size: 2.5rem;

@@ -25,6 +25,7 @@
   .header_intro {
     position: relative;
     margin: auto;
+    font-family: 'Spline Sans Mono';
     @media (min-width: 960px) {
       display: grid;
       grid-template-columns: repeat(2,540px 1fr);
@@ -38,11 +39,11 @@
       .slogan {
         display: block;
         margin: 0 0 1.25rem;
+        font-family: 'Vollkorn', serif;
         font-size: 2.5rem;
         color: var(--c-headline);
         font-weight: 400;
         @supports (font-variation-settings: normal) {
-          font-family: 'Vollkorn', serif;
           font-variation-settings: 'wght' 400;
         }
         text-align: center;
@@ -104,7 +105,7 @@
           &:hover,
           &:focus {
             background-color: var(--c-secondary);
-            box-shadow: 0 .175rem .5rem 0 rgba(0,0,0,.4);
+            // box-shadow: 0 .175rem .5rem 0 rgba(0,0,0,.4);
             transition: 0.2s;
           }
         }
@@ -114,7 +115,7 @@
           background-color: var(--c-primary);
           &:hover,
           &:focus {
-            background-color: var(--c-primary-lighter);
+            background-color: var(--c-primary-hl);
           }
           @media (min-width: 480px) {
             margin: 0;
