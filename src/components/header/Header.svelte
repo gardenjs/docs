@@ -73,7 +73,7 @@
             display: inline-flex;
             align-items: center;
             color: var(--c-text);
-            font-weight: 800;
+            font-weight: 900;
             @supports (font-variation-settings: normal) {
               font-variation-settings: 'wght' 900;
             }

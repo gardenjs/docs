@@ -1,6 +1,5 @@
 <script>
   import '../assets/scss/main.scss'
-  import '../assets/scss/docs.css'
   import Header from '../components/header/Header.svelte'
   import Sidenav from '../components/sidenav/Sidenav.svelte'
   import Footer from '../components/footer/Footer.svelte'
