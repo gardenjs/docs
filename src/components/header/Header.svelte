@@ -1,6 +1,7 @@
 <script>
   import Headernav from '../headernav/Headernav.svelte'
   import Headerintro from '../headerintro/Headerintro.svelte'
+  import Logo from '../../assets/icons/logo.svg'
 
   export let isFixed = false
   export let isDocs = false
@@ -21,7 +22,7 @@
     <div class="navbar">
       <div class="navbar_container">
         <a class="logo" href="/" title="go to start">
-          <img src="src/assets/icons/logo.svg" alt="Logo">
+          <img src="{Logo}" alt="Logo">
           <span class="logo_label">Gardenjs</span>
         </a>
         <Headernav on:toggleMobilenav {showMobilenav} {hasMobilenavicon} />

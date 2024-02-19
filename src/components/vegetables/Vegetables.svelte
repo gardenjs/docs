@@ -1,5 +1,9 @@
+<script>
+  import Vegetables from '../../assets/icons/vegetables.svg'
+</script>
+
 <div class="vegetables">
-  <img src="src/assets/icons/vegetables.svg" alt="Vegetable illustration">
+  <img src="{Vegetables}" alt="Vegetable illustration">
 </div>
 
 <style lang="scss">
