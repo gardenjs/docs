@@ -78,10 +78,15 @@
     gap: 1.5rem;
   }
 }
-@media (min-width: 840px) {
+@media (min-width: 600px) {
   .cards-2cols {
     grid-template-columns: repeat(2, 1fr);
   }
+  .cards-3cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
   .cards-3cols {
     grid-template-columns: repeat(3, 1fr);
   }
