@@ -8,10 +8,6 @@ You can use this repository as a code demo of Gardenjs. We use Svelte here which
 
 Happy Gardening :)
 
-## Contributing
-
-We look forward to your feedback, please report any bugs. We also welcome contributions.
-
 ## Todo´s
 
 - [bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the homepage.
