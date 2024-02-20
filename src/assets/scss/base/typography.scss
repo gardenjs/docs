@@ -80,9 +80,6 @@ ul {
 a {
   color: var(--c-link);
   font-weight: 500;
-  @supports (font-variation-settings: normal) {
-    font-variation-settings: 'wght' 500;
-  }
   &:hover {
     color: var(--c-link-hl);
   }
@@ -90,9 +87,6 @@ a {
 b,
 strong {
   font-weight: 600;
-  @supports (font-variation-settings: normal) {
-    font-variation-settings: 'wght' 600;
-  }
 }
 p code {
   padding: 0.125rem;
