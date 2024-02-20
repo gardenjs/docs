@@ -21,6 +21,7 @@
   --c-text-light:        var(--c-secondary);
   --c-link:              hsl(185, 100%, 40%);
   --c-link-hl:           hsl(185, 100%, 45%);
+  --c-link-bg:           hsl(65, 10%, 89%);
   --c-table:             var(--c-secondary-dark);
   --c-btntxt-docs:       var(--c-text);
 
@@ -57,6 +58,7 @@
   --c-text-light:        var(--c-secondary-dark);
   --c-link:              hsl(185, 100%, 70%);
   --c-link-hl:           hsl(185, 100%, 80%);
+  --c-link-bg:           var(--c-card-bg-hl);
   --c-table:             var(--c-secondary);
   --c-btntxt-docs:       var(--c-website-bg);
 
