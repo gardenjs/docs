@@ -112,8 +112,7 @@
               }
             }
           }
-          &.toggle-mode,
-          &.navicon {
+          .toggle-mode {
             padding-left: 1rem;
             .icon {
               font-size: 0.938rem;
@@ -126,9 +125,10 @@
             }
           }
         }
-        @media (min-width: 840px) {
-          &.navicon {
-            display: none;            
+        &.navicon {
+          margin-left: 2rem;
+          @media (min-width: 840px) {
+            display: none;
           }
         }
       }
