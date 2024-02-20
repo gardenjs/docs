@@ -39,7 +39,7 @@
 
 <style lang="scss">
   .sidenav {
-    position: fixed;
+    position: sticky;
     overflow-y: scroll;
     ul {
       display: block;
@@ -48,28 +48,25 @@
           margin: 0 0 1rem;
         }
         a {
-          padding: 0.25rem 0;
-          font-size: 0.875rem;
+          // margin: 0 2rem 0 0;
+          padding: 0.375rem 0.5rem;
+          font-size: 0.938rem;
           color: var(--c-text);
           line-height: 1.2;
-          font-weight: 500;
-          @supports (font-variation-settings: normal) {
-            font-variation-settings: 'wght' 500;
-          }
+          font-weight: 700;
           text-decoration: none;
           letter-spacing: 0.063rem;
           &:hover {
-            color: var(--c-primary);
+            background-color: var(--c-link-bg);
+            border-radius: 0.5rem;
           }
         }
         ul {
           margin: 0 0 1rem;
           li {
             a {
-              padding-left: 0.75rem;
               font-weight: 400;
               transition: 0.2s;
-              border-left: 1px solid var(--c-text);
             }
           }
         }

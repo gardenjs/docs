@@ -52,7 +52,7 @@
           top: 0rem;
           right: 0rem;
           bottom: 0rem;
-          padding: 2rem 1.5rem;
+          padding: 2rem 0;
           width: 100%;
           height: 100vh;
           background-color: var(--c-website-bg);
@@ -65,8 +65,8 @@
             top: 0rem;
             right: 0rem;
             bottom: 0rem;
-            max-width: 280px;
-            translate: calc(100vw + 280px) 0;
+            max-width: 300px;
+            translate: calc(100vw + 300px) 0;
             transition: 0.2s;
           }
           &.show {
@@ -79,8 +79,8 @@
           @media (min-width: 960px) {
             padding-top: 7.5rem;
           }
-          width: 25%;
-          max-width: 300px;
+          padding-right: 2rem;
+          width: 260px;
         }
       }
     }
@@ -90,8 +90,7 @@
         padding: 6rem 0 0;
       }
       @media (min-width: 840px) {
-        width: 75%;
-        max-width: 800px;
+        width: calc(100% - 260px);
         border-left: 1px solid var(--c-border);
         padding-left: 1.5rem;
       }
