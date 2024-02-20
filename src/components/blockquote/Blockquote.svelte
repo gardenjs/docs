@@ -47,10 +47,10 @@
         font-size: 1.25rem;
       }
       @media (min-width: 840px) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
       @media (min-width: 1280px) {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
     }
     .author {

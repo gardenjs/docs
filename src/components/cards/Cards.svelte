@@ -41,11 +41,11 @@
         font-variation-settings: 'wght' 800;
       }
       @media (min-width: 840px) {
-        font-size: 1.375rem;
+        font-size: 1.25rem;
       }
       @media (min-width: 960px) {
         margin: 0 0 1rem;
-        font-size: 1.5rem;
+        font-size: 1.375rem;
         text-transform: uppercase;;
       }
     }

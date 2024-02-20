@@ -68,7 +68,7 @@
         font-size: 2.5rem;
       }
       @media (min-width: 960px) {
-        font-size: 3.75rem;
+        font-size: 3.375rem;
       }
     }
     p {
