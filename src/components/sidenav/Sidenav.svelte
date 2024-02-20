@@ -45,11 +45,10 @@
       display: block;
       li {
         &.single-item {
-          margin: 0 0 1rem;
+          margin: 0 0 0.5rem;
         }
         a {
-          // margin: 0 2rem 0 0;
-          padding: 0.375rem 0.5rem;
+          padding: 0.5rem;
           font-size: 0.938rem;
           color: var(--c-text);
           line-height: 1.2;
@@ -65,6 +64,7 @@
           margin: 0 0 1rem;
           li {
             a {
+              padding: 0.375rem 0.5rem;
               font-weight: 400;
               transition: 0.2s;
             }
