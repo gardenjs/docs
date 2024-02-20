@@ -1,3 +1,8 @@
+<script>
+  import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.jpg'
+  import ScreenshotLightmode from '../../assets/images/screenshot_garden.jpg'
+</script>
+
 <div class="header_intro">
   <div class="header_text">
     <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span><i>Harvest</i>.</span></div>
@@ -13,8 +18,8 @@
         <div class="menu-circle"></div>
       </div>
       <picture>
-        <source srcset="src/assets/images/screenshot_garden-dark.jpg" media="all" data-media="(prefers-color-scheme:light)">
-        <img src="src/assets/images/screenshot_garden.jpg" alt="Screenshot Garden app">
+        <source srcset="{ScreenshotDarkmode}" media="all" data-media="(prefers-color-scheme:light)">
+        <img src="{ScreenshotLightmode}" alt="Screenshot Garden app">
       </picture>
     </div>
   </div>
