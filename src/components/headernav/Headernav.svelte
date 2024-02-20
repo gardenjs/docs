@@ -77,7 +77,7 @@
             padding: 0.75rem;
           }
           &:hover {
-            background-color: hsl(65, 10%, 89%);;
+            background-color: var(--c-link-bg);
             border-radius: 0.5rem;
           }
         }
@@ -112,19 +112,16 @@
               }
             }
           }
-          .toggle-mode {
+        }
+        .toggle-mode {
             padding-left: 1rem;
             .icon {
               font-size: 0.938rem;
               @media (min-width: 840px) {
                 font-size: 1rem;
               }
-              @media (min-width: 960px) {
-                font-size: 1.125rem;
-              }
             }
           }
-        }
         &.navicon {
           margin-left: 2rem;
           @media (min-width: 840px) {
