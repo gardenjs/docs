@@ -35,7 +35,7 @@
       paragraph="You can use Gardenjs out of the box even in a multiframework project - Storybook and others can't do that." />
     <Cards
       title="The sleek good-looking alternative"
-      paragraph="You can use Gardenjs out of the box even in a multiframework project - Storybook and others can't do that." />
+      paragraph="The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience." />
   </div>
   <ChapterIntro
     superscript="Gardenjs overview"
@@ -43,7 +43,7 @@
   <div class="cards-3cols">
     <Cards isHgCard
       title="Organisation"
-      paragraph="Keep track of the countless components even in large projects and ensure the quality of your work." />
+      paragraph="Keep track of the countless components even in large projects and ensure the quality of your work. You can also output an external local library within a project." />
     <Cards isHgCard
       title="Usability"
       paragraph="A well thought-out concept, simple operation and numerous small features help to make everyday development work easier." />
