@@ -54,11 +54,11 @@
       title="Collaboration"
       paragraph="Publish your component libraries inside your team or to public to simplify collaboration between designers and developers." />
     <Cards isHgCard
-      title="Stories"
-      paragraph="Write stories to showcase and document your components. Output all versions and states of your components." />
+      title="Examples"
+      paragraph="Write examples to showcase and document your components. Output all versions and states of your components." />
     <Cards isHgCard
       title="Documentation"
-      paragraph="Add any additional information to your components and stories and keep track of all components and for the whole team." />
+      paragraph="Add any additional information to your components and examples and keep track of all components and for the whole team." />
   </div>
   <ChapterIntro
     superscript="If you like Gardenjs"
