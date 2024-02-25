@@ -34,6 +34,9 @@
     <li class="single-item">
       <a href="/docs/notes" on:click={handleClick}>Add Notes</a>
     </li>
+    <li class="single-item">
+      <a href="/docs/roadmap" on:click={handleClick}>Roadmap</a>
+    </li>
   </ul>
 </nav>
 
