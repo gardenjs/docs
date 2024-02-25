@@ -52,7 +52,7 @@
           top: 0rem;
           right: 0rem;
           bottom: 0rem;
-          padding: 2rem 0;
+          padding: 4rem 2rem 2rem;
           width: 100%;
           height: 100vh;
           background-color: var(--c-website-bg);
