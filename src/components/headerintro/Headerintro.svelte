@@ -8,8 +8,14 @@
     <div class="slogan">Plant, Cultivate, <span class="italic">Harvest!</div>
     <p class="slogan_subtext">Gardenjs provides a centralized platform for developers to create, test and present UI components and pages in isolation.</p>
     <div class="header_links">
-      <a href="/docs" class="btn-docs" title="documentation">Documentation</a>
-      <a href=".#" title="Watch Gardenjs demo" target="_blank">Watch Demo</a>
+      <a href="/docs" class="header_link btn-docs" title="documentation">
+        <span class="header_links-label">Documentation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+      </a>
+      <a href=".#" class="header_link" title="Watch Gardenjs demo" target="_blank">
+        <span class="header_links-label">Watch Demo</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17L17 7"/></svg>
+      </a>
     </div>
   </div>
   <div class="header_img">
@@ -96,26 +102,40 @@
           grid-template-columns: repeat(2, 1fr);
           gap: 0 1rem;
         }
-        a {
-          display: block;
+        .header_link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           padding: 0.375rem 1.25rem;
           color: var(--c-website-bg);
           font-size: 0.875rem;
           @media (min-width: 840px) {
             font-size: 1rem;
           }
+          @media (min-width: 960px) {
+            padding: 0.5rem 1.25rem;
+          }
           text-transform: uppercase;
-          text-align: center;
           font-weight: 500;
           text-decoration: none;
           background-color: var(--c-text);
           border-radius: 1.5rem;
-          transition: 0.2s;
+          transition: 0.8s;
+          .header_links-label {
+            padding-right: 0.5rem;
+          }
+          svg {
+            transition: 0.2s;
+          }
           &:hover,
           &:focus {
             background-color: var(--c-secondary);
             // box-shadow: 0 .175rem .5rem 0 rgba(0,0,0,.4);
             transition: 0.2s;
+            svg {
+              transform: translateX(0.375rem);
+              transition: 0.2s;
+            }
           }
         }
         a.btn-docs {
