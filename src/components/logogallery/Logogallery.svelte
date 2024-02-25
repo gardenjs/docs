@@ -14,14 +14,21 @@
     @media (min-width: 840px) {
       margin: 0 auto 3rem;
     }
+    @media (min-width: 960px) {
+      margin: 0 auto 5rem;
+    }
+    @media (min-width: 1280px) {
+      margin: 0 auto 5rem;
+    }
   }
   .logos {
     list-style: none;
+    margin: 0;
     padding: 0;
     text-align: center;
     li {
       display: inline-block;
-      margin: 1rem;
+      margin: 0 1rem;
       .icon {
         font-size: 1.25rem;
         @media (min-width: 960px) {

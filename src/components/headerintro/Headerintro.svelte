@@ -5,8 +5,8 @@
 
 <div class="header_intro">
   <div class="header_text">
-    <div class="slogan"><span>Plant. </span><span>Cultivate. </span><span><i>Harvest</i>.</span></div>
-    <p class="slogan_subtext">A lightweight open source tool that helps you build, test and document UI components and pages. Build UI component libraries and design systems hand in hand in your frontend projects and explore your work.</p>
+    <div class="slogan">Plant, Cultivate, <span class="italic">Harvest!</div>
+    <p class="slogan_subtext">Gardenjs provides a centralized platform for developers to create, test and present UI components and pages in isolation.</p>
     <div class="header_links">
       <a href="/docs" class="btn-docs" title="documentation">Documentation</a>
       <a href=".#" title="Watch Gardenjs demo" target="_blank">Watch Demo</a>
@@ -44,7 +44,7 @@
       .slogan {
         display: block;
         margin: 0 0 1.25rem;
-        font-family: 'Vollkorn', serif;
+        font-family: 'Vollkorn';
         font-size: 2.5rem;
         color: var(--c-headline);
         font-weight: 400;
@@ -66,6 +66,9 @@
             display: block;
           }
         }
+        .italic {
+          font-family: 'Vollkorn Italic';
+        }
       }
       .slogan_subtext {
         display: block;
@@ -73,16 +76,16 @@
         width: 100%;
         font-size: 1rem;
         color: var(--c-text-light);
-        font-weight: 500;
+        font-weight: 400;
         @supports (font-variation-settings: normal) {
-          font-variation-settings: 'wght' 500;
+          font-variation-settings: 'wght' 400;
         }
         text-align: center;
         @media (min-width: 450px) {
-          font-size: 1.125rem;
+          font-size: 1.25rem;
         }
         @media (min-width: 960px) {
-          font-size: 1.25rem;
+          font-size: 1.375rem;
           text-align: left;
         }
       }

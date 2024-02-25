@@ -5,12 +5,12 @@
   export let intro = ''
 
   export let isPagetitle = false
-  let haspagetitle = ''
-  let hasnotpagetitle = 'mt'
+  let haspagetitle = 'has-h1'
+  let hasnotpagetitle = ''
 
 </script>
 
-<div class="chapter {isPagetitle? haspagetitle : hasnotpagetitle}">
+<div class="chapter {isPagetitle? haspagetitle : hasnotpagetitle }">
   {#if superscript}
     <div class="superscript">{superscript}</div>
   {/if}
@@ -26,18 +26,21 @@
 
 <style lang="scss">
   .chapter {
-    margin: 0 0 2rem;
+    margin: 4rem 0 1rem;
     font-family: 'Spline Sans Mono';
     @media (min-width: 840px) {
-      margin: 0  0 3rem;
+      margin: 5rem 0 1rem;
     }
-    &.mt {
-      margin: 4rem 0 0;
+    @media (min-width: 960px) {
+      margin: 6rem 0 1rem;
+    }
+    &.has-h1 {
+      margin: 0 0 1.5rem;
       @media (min-width: 840px) {
-        margin: 5rem 0 0;
+        margin: 0 0 2rem;
       }
       @media (min-width: 960px) {
-        margin: 6rem 0 0;
+        margin: 0 0 2.5rem;
       }
     }
     .superscript {
@@ -57,13 +60,21 @@
     }
     h1,
     h2 {
-      margin-top: 0;
-      font-family: 'Vollkorn', serif;
+      margin: 0 0 1rem;
+    }
+    h1 {
+      font-family: 'Vollkorn';
       font-size: 1.75rem;
-      font-weight: 600;
-      @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 600 !important;
+      @media (min-width: 840px) {
+        font-size: 2.75rem;
       }
+      @media (min-width: 960px) {
+        font-size: 4rem;
+      }
+    }
+    h2 {
+      font-family: 'Vollkorn Italic';
+      font-size: 1.75rem;
       @media (min-width: 840px) {
         font-size: 2.5rem;
       }
@@ -72,8 +83,9 @@
       }
     }
     p {
+      margin: 0rem;
       padding: 0 0 0 1rem;
-      max-width: 920px;
+      // max-width: 980px;
       border-left: 0.25rem solid var(--c-primary);
       font-size: 1rem;
       color: var(--c-text);
@@ -89,6 +101,7 @@
       }
       @media (min-width: 960px) {
         padding: 0 0 0 1.5rem;
+        font-size: 1.375rem;
         border-left-width: 0.375rem;
       }
       @media (min-width: 1280px) {

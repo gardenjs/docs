@@ -21,9 +21,9 @@
     font-family: 'Spline Sans Mono';
     @media (min-width: 840px) {
       padding: 2rem;
-    } 
+    }
     background-color: var(--c-card-bg);
-    border: 1px solid var(--c-border);
+    border: 1px solid var(--c-border-cards);
     border-radius: var(--b-radius);
     &.turquoise {
       background-color: var(--c-card-bg-hl);
@@ -34,23 +34,24 @@
     }
     h3 {
       margin: 0 0 0.75rem;
-      font-family: 'Vollkorn', serif;
       font-size: 1rem;
-      font-weight: 800;
+      font-weight: 600;
       @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 800;
+        font-variation-settings: 'wght' 600;
       }
       @media (min-width: 840px) {
         font-size: 1.25rem;
       }
       @media (min-width: 960px) {
         margin: 0 0 1rem;
-        font-size: 1.375rem;
-        text-transform: uppercase;;
+        font-size: 1.75rem;
       }
     }
     p {
-      line-height: 1.6;
+      @media (min-width: 1280px) {
+        font-size: 1.125rem;
+        color: var(--c-text-light);
+      }
       &:last-of-type {
         margin: 0;
       }

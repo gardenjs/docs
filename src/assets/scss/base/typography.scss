@@ -6,7 +6,7 @@ body {
   -moz-font-smoothing: antialiased;
 }
 h1 {
-  margin: 0 auto 1.5rem;
+  margin: 0 0 1.5rem;
   font-size: 1.625rem;
   color: var(--c-headline);
   line-height: 1.2;
@@ -15,7 +15,7 @@ h1 {
   }
 }
 h2 {
-  margin: 1rem 0;
+  margin: 1rem;
   font-size: 1.25rem;
   line-height: 1.25;
   color: var(--c-headline);
@@ -29,7 +29,7 @@ h3 {
   font-size: 1.2rem;
   line-height: 1.4;
   color: var(--c-headline);
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.05rem;
   @media (min-width: 960px) {
     margin: 2.25rem 0 1rem;
     font-size: 1.375rem;
@@ -69,10 +69,10 @@ ul {
     margin: 0 0 0.25rem;
     font-size: 0.875rem;
     color: var(--c-text);
-    @media (min-width: 450px) {
+    @media (min-width: 840px) {
       font-size: 1rem;
     }
-    @media (min-width: 840px) {
+    @media (min-width: 960px) {
       font-size: 1.125rem;
     }
   }

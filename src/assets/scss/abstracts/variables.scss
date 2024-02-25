@@ -10,9 +10,11 @@
   --c-website-code-bg:   hsl(185, 100%, 92%);
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-border:            hsl(216, 10%, 80%);
+  --c-border-cards:      var(--c-border);
   --c-card-bg:           hsl(0, 0%, 100%);
-  // --c-card-bg-hl:         hsl(185, 100%, 85%);
-  --c-card-bg-hl:         hsl(185, 80%, 88%);
+  --c-card-bg-hl:        hsl(185, 80%, 88%);
+  --c-quote-bg:          hsl(65, 10%, 92%);
+  --c-quote-border:      var(--c-quote-bg);
   --c-prism-bg:          #161b22;
   --c-table-bg:          transparent;
 
@@ -21,7 +23,7 @@
   --c-text-light:        var(--c-secondary);
   --c-link:              hsl(185, 100%, 40%);
   --c-link-hl:           hsl(185, 100%, 45%);
-  --c-link-bg:           hsl(65, 10%, 89%);
+  --c-link-bg:           hsl(65, 10%, 92%);
   --c-table:             var(--c-secondary-dark);
   --c-btntxt-docs:       var(--c-text);
 
@@ -31,7 +33,7 @@
   --c-app-bg:            hsl(216, 41%, 15%);
   --c-app-border:        hsl(216, 41%, 5%);
 
-  --w-website-wide:      1440px;
+  --w-website-wide:      1380px;
   --w-website-slim:       840px;
 
   --b-radius:            1rem;
@@ -49,8 +51,11 @@
   --c-website-code-bg:   hsl(185, 70%, 20%);
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-border:            var(--c-text);
+  --c-border-cards:      var(--c-text);
   --c-card-bg:           transparent;
   --c-card-bg-hl:        hsl(216, 25%, 25%);
+  --c-quote-bg:          var(--c-website-bg);
+  --c-quote-border:      var(--c-border);
   --c-prism-bg:          hsl(216, 25%, 25%);
 
   --c-headline:          var(--c-secondary-dark);
