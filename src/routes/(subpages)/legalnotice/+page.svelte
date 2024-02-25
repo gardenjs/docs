@@ -16,8 +16,7 @@
     <p><strong>Vertreten durch:</strong><br>
     Robin Danzinger, Martin Farkas</p>
     <h2>Kontakt</h2>
-    <p>Martin Farkas<br>
-    E-Mail: info@websites-graphix.com</p>
+    <p>E-Mail: <a href="mailto:hello@rabbitdevelopment.de">hello@rabbitdevelopment.de</a></p>
     <h2>EU-Streitschlichtung</h2>
     <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben.</p>
     <h2>Verbraucher&shy;streit&shy;beilegung / Universal&shy;schlichtungs&shy;stelle</h2>
@@ -26,8 +25,8 @@
 </Main>
 
 <style>
-   h1, h2 {
-    font-family: 'Vollkorn', serif;
+  h1, h2 {
+    font-family: 'Vollkorn';
   }
   p {
     font-family: 'Spline Sans Mono';
