@@ -13,6 +13,7 @@
   }
 </script>
 
+<div class="sidenav_heading">Documentation</div>
 <nav class="sidenav">
   <ul>
     <li>
@@ -51,6 +52,18 @@
 </nav>
 
 <style lang="scss">
+  .sidenav_heading {
+    @media (max-width: 839px) {
+      display: none;
+    }
+    @media (min-width: 840px) {
+      margin: 0 0 1.5rem;
+      font-size: 1.25rem;
+      color: var(--c-secondary);
+      font-weight: 800;
+      letter-spacing: 0.063rem;
+    }
+  }
   .sidenav {
     position: sticky;
     overflow-y: scroll;
