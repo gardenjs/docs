@@ -15,23 +15,24 @@
   <ChapterIntro isPagetitle
     superscript="This is Gardenjs"
     pagetitle="UI component library explorer for JS frameworks"
-    intro="Gardenjs is the showroom for what you grow: The explorer represents each UI component of your design system in isolation. Gardenjs is developed for projects of any size. Gardenjs is open source under the MIT license and free." />
+    intro="Gardenjs promotes modular and reusable code, streamlines collaboration between team members and increases overall productivity. Gardenjs is designed for projects of any size. Gardenjs is open source under the MIT license and free." />
   <Logogallery />
   <Blockquote
     quote="«Building a frontend is like gardening. Grow your components and layouts, maintain them and control their growth. Build great products and reap the rewards of your work!»"
     author="John Doe, coder & gardener" />
   <ChapterIntro
     superscript="Become a gardener"
-    title="Why Gardenjs is so cool" />
+    title="Why Gardenjs is so cool"
+    intro="With its intuitive user interface, easy and efficient integration into projects and super-fast execution of changes, it enables developers to efficiently create great user experiences." />
   <div class="cards-2cols">
     <Cards
-      title="In Gardenjs, your components grow at the speed of light"
+      title="Speed of light"
       paragraph="Gardenjs is a Svelte app and thus benefits from its super speed. Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." />
     <Cards
-      title="Use Gardenjs with your favorite JS framework"
+      title="Use your favorite JS framework"
       paragraph="Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." />
     <Cards
-      title="Use Gardenjs in multiframework projects"
+      title="Multi-framework compatible"
       paragraph="You can use Gardenjs out of the box even in a multiframework project - Storybook and others can't do that." />
     <Cards
       title="The sleek good-looking alternative"
@@ -39,7 +40,8 @@
   </div>
   <ChapterIntro
     superscript="Gardenjs overview"
-    title="Your benefits" />
+    title="Your benefits"
+    intro="Create, organize and share components effortlessly. Speed up the development process, improve teamwork and provide users with a consistent user experience." />
   <div class="cards-3cols">
     <Cards isHgCard
       title="Organisation"
@@ -62,10 +64,16 @@
   </div>
   <ChapterIntro
     superscript="If you like Gardenjs"
-    title="We look forward to your help" />
-  <Cards
-    title="Contributions are welcome"
-    paragraph="Gardenjs is actively maintained. We will integrate some useful features in the future and are open for further requests. We are happy about your support. Please report bugs on Github." />
+    title="We look forward to your help"
+    intro="Gardenjs is published under the MIT license and therefore free to use. We are therefore particularly pleased about your support." />
+  <div class="cards-2cols">
+    <Cards
+      title="Support us"
+      paragraph="You can support us by using Gardenjs, by writing a plugin for a new framework (which we will then gladly point out), by reporting bugs or by writing documentation. We are happy about your support." />
+    <Cards
+      title="Make a donation"
+      paragraph="A donation model is planned if Gardenjs is well received. A list of possible features can be found in the documentation. Please contact us if you would like to have one of the features integrated as soon as possible." />
+  </div>
 </Main>
 
 <style lang="scss">
@@ -74,8 +82,13 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+  margin: 1.5rem 0 0;
+  @media (min-width: 840px) {
+    margin: 2rem 0 0;
+  }
   @media (min-width: 960px) {
     gap: 1.5rem;
+    margin: 2.5rem 0 0;
   }
 }
 @media (min-width: 600px) {
