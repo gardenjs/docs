@@ -15,27 +15,37 @@
 
 <nav class="sidenav">
   <ul>
-    <li class="single-item">
-      <a href="/docs" on:click={handleClick}>About</a>
+    <li>
+      <span class="folder">Overview</span>
+      <ul>
+        <li><a href="/docs" on:click={handleClick}>About Gardenjs</a></li>
+      </ul>
     </li>
     <li>
-      <a href="/docs/get-started/install" on:click={handleClick}>Get Started</a>
+      <span class="folder">Get Started</span>
       <ul>
         {#each links as link}  
-          <li>
-            <a href={link.href} on:click={handleClick}>{link.label}</a>
-          </li>
+          <li><a href={link.href} on:click={handleClick}>{link.label}</a></li>
         {/each}
       </ul>
     </li>
-    <li class="single-item">
-      <a href="/docs/renderer" on:click={handleClick}>Add Renderer</a>
+    <li>
+      <span class="folder">Add Renderer</span>
+      <ul>
+        <li><a href="/docs/renderer" on:click={handleClick}>Add Renderer</a></li>
+      </ul>
     </li>
-    <li class="single-item">
-      <a href="/docs/notes" on:click={handleClick}>Add Notes</a>
+    <li>
+      <span class="folder">Add Notes</span>
+      <ul>
+        <li><a href="/docs/notes" on:click={handleClick}>Add Notes</a></li>
+      </ul>
     </li>
-    <li class="single-item">
-      <a href="/docs/roadmap" on:click={handleClick}>Roadmap</a>
+    <li>
+      <span class="folder">What comes next?</span>
+      <ul>
+        <li><a href="/docs/roadmap" on:click={handleClick}>Roadmap</a></li>
+      </ul>
     </li>
   </ul>
 </nav>
@@ -47,29 +57,34 @@
     ul {
       display: block;
       li {
-        &.single-item {
+        font-size: 0.938rem;
+        color: var(--c-text);
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.063rem;
+        .folder {
+          display: block;
           margin: 0 0 0.5rem;
         }
-        a {
-          padding: 0.5rem;
-          font-size: 0.938rem;
-          color: var(--c-text);
-          line-height: 1.2;
-          font-weight: 700;
-          text-decoration: none;
-          letter-spacing: 0.063rem;
-          &:hover {
-            background-color: var(--c-link-bg);
-            border-radius: 0.5rem;
-          }
-        }
         ul {
-          margin: 0 0 1rem;
+          margin: 0 0 1.5rem;
+          padding-left: 0.375rem;
+          border-left: 1px solid var(--c-border);
           li {
+            padding: 0;
             a {
-              padding: 0.375rem 0.5rem;
+              margin: 0;
+              padding: 0.5rem 1rem;
+              font-size: 0.938rem;
+              color: var(--c-text);
+              line-height: 1.2;
               font-weight: 400;
-              transition: 0.2s;
+              text-decoration: none;
+              letter-spacing: 0.063rem;
+              &:hover {
+                background-color: var(--c-link-bg);
+                border-radius: 0.5rem;
+              }
             }
           }
         }
