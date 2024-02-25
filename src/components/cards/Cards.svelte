@@ -34,23 +34,27 @@
     }
     h3 {
       margin: 0 0 0.75rem;
-      font-size: 1rem;
-      font-weight: 600;
+      font-family: 'Vollkorn';
+      font-size: 1.25rem;
+      font-weight: 700;
       @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 600;
+        font-variation-settings: 'wght' 400;
       }
       @media (min-width: 840px) {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
       }
       @media (min-width: 960px) {
         margin: 0 0 1rem;
         font-size: 1.75rem;
       }
+      @media (min-width: 1280px) {
+        font-size: 2.25rem;
+      }
     }
     p {
+      color: var(--c-text-light);
       @media (min-width: 1280px) {
         font-size: 1.125rem;
-        color: var(--c-text-light);
       }
       &:last-of-type {
         margin: 0;

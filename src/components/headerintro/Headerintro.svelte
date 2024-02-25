@@ -51,8 +51,8 @@
         @supports (font-variation-settings: normal) {
           font-variation-settings: 'wght' 400;
         }
+        line-height: 1;
         text-align: center;
-        line-height: 0.8;
         @media (min-width: 280px) {
           font-size: 3.25rem;
         }
@@ -62,6 +62,7 @@
         @media (min-width: 960px) {
           font-size: 7rem;
           text-align: left;
+          line-height: 0.8;
           span {
             display: block;
           }
@@ -81,7 +82,7 @@
           font-variation-settings: 'wght' 400;
         }
         text-align: center;
-        @media (min-width: 450px) {
+        @media (min-width: 840px) {
           font-size: 1.25rem;
         }
         @media (min-width: 960px) {

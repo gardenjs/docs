@@ -69,6 +69,9 @@
         font-size: 2.75rem;
       }
       @media (min-width: 960px) {
+        font-size: 3.25rem;
+      }
+      @media (min-width: 1280px) {
         font-size: 4rem;
       }
     }
@@ -93,15 +96,12 @@
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 400;
       }
-      @media (min-width: 450px) {
-        font-size: 1.125rem;
-      }
       @media (min-width: 840px) {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
       }
       @media (min-width: 960px) {
         padding: 0 0 0 1.5rem;
-        font-size: 1.375rem;
+        font-size: 1.25rem;
         border-left-width: 0.375rem;
       }
       @media (min-width: 1280px) {
