@@ -7,23 +7,25 @@
   --c-secondary-dark:    hsl(216, 40%, 20%);
 
   --c-website-bg:        hsl(65, 10%, 97%);
-  --c-website-code-bg:   hsl(185, 100%, 92%);
+  --c-website-code-bg:   var(--c-link-bg);
   --c-navbar-icon:       var(--c-secondary-dark);
-  --c-navbar-icon-hl:    var(--c-link);
+  --c-navbar-icon-hl:    var(--c-primary-link);
   --c-border:            hsl(216, 10%, 80%);
   --c-border-cards:      var(--c-border);
   --c-card-bg:           hsl(0, 0%, 100%);
   --c-card-bg-hl:        hsl(185, 80%, 88%);
   --c-quote-bg:          hsl(65, 10%, 92%);
   --c-quote-border:      var(--c-quote-bg);
-  --c-prism-bg:          #161b22;
+  --c-prism-bg:          var(--c-link-bg);
   --c-table-bg:          transparent;
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);
   --c-text-light:        var(--c-secondary);
-  --c-link:              hsl(185, 100%, 40%);
-  --c-link-hl:           hsl(185, 100%, 45%);
+  --c-link:              hsl(216, 100%, 55%);
+  --c-link-hl:           hsl(216, 100%, 65%);
+  --c-primary-link:      hsl(185, 100%, 35%);
+  --c-primary-link-hl:   hsl(185, 100%, 45%);
   --c-link-bg:           hsl(65, 10%, 92%);
   --c-table:             var(--c-secondary-dark);
   --c-btntxt-docs:       var(--c-text);
@@ -49,15 +51,16 @@
   --c-secondary-dark:    hsl(216, 25%, 75%);
 
   --c-website-bg:        hsl(216, 41%, 12%);
-  --c-website-code-bg:   hsl(185, 70%, 20%);
+  --c-website-code-bg:   var(--c-link-bg);
   --c-navbar-icon:       var(--c-secondary-dark);
+  --c-navbar-icon-hl:    var(--c-primary);
   --c-border:            var(--c-text);
   --c-border-cards:      var(--c-text);
   --c-card-bg:           transparent;
   --c-card-bg-hl:        hsl(216, 25%, 25%);
   --c-quote-bg:          var(--c-website-bg);
   --c-quote-border:      var(--c-border);
-  --c-prism-bg:          hsl(216, 25%, 25%);
+  --c-prism-bg:          var(--c-link-bg);
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);
