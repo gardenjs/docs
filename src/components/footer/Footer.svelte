@@ -79,7 +79,7 @@
             @media (min-width: 1280px) {
               display: block;
               margin-right: 0.75rem;
-              fill: var(--c-link);
+              fill: var(--c-primary-link);
               font-size: 0.75rem;
             }
           }
@@ -92,9 +92,14 @@
       a {
         display: inline-block;
         font-size: 0.813rem;
+        color: var(--c-primary-link);
         text-decoration: none;
         @media (min-width: 960px) {
           font-size: 0.938rem;
+        }
+        &:focus,
+        &:hover {
+          color: var(--c-primary-link-hl);
         }
       }
       .footer_nav {

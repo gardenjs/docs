@@ -121,8 +121,11 @@
                 font-size: 1rem;
               }
             }
-            &:hover .icon {
-              color: var(--c-navbar-icon-hl);
+            &:focus,
+            &:hover {
+              .icon {
+                color: var(--c-navbar-icon-hl);
+              }
             }
           }
         &.navicon {
