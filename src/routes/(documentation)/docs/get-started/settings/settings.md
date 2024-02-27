@@ -11,7 +11,7 @@ During installation, the configuration file **garden.config.js** is generated in
 | `no_open_browser` | Boolean |  Default: `true` <br> Stops auto opening Gardenjs on start. |
 | `project_title` | String, Text |  Default: `My project name`<br> Title is displayed above the navigation. |
 | `welcome_page` | Path | Set a path to your own start page, e.g. `/src/foo.svelte`. |
-| `structure` | Path | Each entry is output with its subpages in the page tree. <br> E.g. `layouts: '/src/layout/, 'components: '/src/components/'.` |
+| `structure` | Path | Each entry is output with its subpages in the page tree. <br> E.g. `layouts: './src/layout/, 'components: './src/components/'.` |
 | `watch`| `directories`: Path, `include`: File suffix | Defines which directories and file types to monitor. |
 | `watch`: `directories` | Path | Path to directories to be monitored for changes, e.g. `['./src/'],`. |
 | `watch`: `include` | File suffix | File types to be monitored for changes, e.g. ['.svelte', '.vue', '.scss', '.css', '.js', '.ts']. |
@@ -26,15 +26,15 @@ During installation, the configuration file **garden.config.js** is generated in
 
 ## Pagetree
 
-The source folder of the components was queried during installation. It is also possible to display several page trees one below the other. With the `structure` option, you can define a finer granulation of the page tree and integrate components from different directories.
+The source folder of the components was queried during installation. It is also possible to display several page trees one below the other. With the `structure` option, you can define a finer granulation of the page tree and integrate components from different directories. You could also display external components in your project.
 
 ```js
  "structure": {
-    "layouts": "/src/layout/",
-    "components": "/src/components/",
+    "layouts": "./src/layout/",
+    "components": "./src/components/",
+    "external lib": "/absolute/path/to/lib"
   },
 ```
-
 
 ## Theme Function
 

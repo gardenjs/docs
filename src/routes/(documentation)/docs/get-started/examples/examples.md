@@ -1,6 +1,6 @@
-# Examples / Stories
+# Examples
 
-An "example" - other tools call this "story" - refers to a single state or variation of a UI component that you want to showcase. "Examples" are used to document and demonstrate how a component looks and behaves in different scenarios or states. Each "example" represents a specific use case or variant of the component. "Examples" are created somewhere in the source directory or directly next to the component itself in the description and specification file ***.das.js**.
+An "example" - other tools call this "story" - refers to a single state or variation of a UI component that you want to showcase. "Examples" are used to document and demonstrate how a component looks and behaves in different scenarios or states. Each "example" represents a specific use case or variant of the component. "Examples" are created somewhere in the source directory or directly next to the component itself in the **D**escription **A**nd **S**pecification file ***.das.js**.
 
 ## Create the description and specification file
 

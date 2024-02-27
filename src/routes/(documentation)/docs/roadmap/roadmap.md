@@ -1,8 +1,8 @@
 # Roadmap
 
-Gardenjs will continue to be maintained.
+Gardenjs will continue to be maintained and further functions will be integrated.
 
-A donation model is planned if Gardenjs is well received. Please contact us if you would like to have one of the features integrated as soon as possible.
+A donation model is planned if Gardenjs is well received. Please contact us if you would like to support us in integrating one of the features in the near future.
 
 ## Next
 
@@ -10,7 +10,7 @@ A donation model is planned if Gardenjs is well received. Please contact us if y
 - [feature] Evaluation of "Make Storybook stories compatible with Garden". If relatively easy possible then development. Otherwise prioritize other tasks/features depending on complexity.
 - [task] Add tests.
 
-## Later (without specific order)
+## Later (no specific order)
 
 - [task] Keep user state after refresh.
   - [task] Store selection in panel nav for refresh or if another component is selected.
