@@ -60,7 +60,7 @@
       margin: 0 0 1.5rem;
       font-size: 1.25rem;
       color: var(--c-secondary);
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: 0.063rem;
     }
   }
@@ -74,10 +74,10 @@
         color: var(--c-text);
         line-height: 1.2;
         font-weight: 700;
-        letter-spacing: 0.063rem;
         .sidenav_folder {
           display: block;
           margin: 0 0 0.5rem;
+          letter-spacing: 0.063rem;
         }
         ul {
           margin: 0 0 1.5rem;
@@ -93,7 +93,6 @@
               line-height: 1.2;
               font-weight: 400;
               text-decoration: none;
-              letter-spacing: 0.063rem;
               &:hover {
                 background-color: var(--c-link-bg);
                 border-radius: 0.5rem;
