@@ -1,10 +1,12 @@
 # Getting started
 
+## Requirements
+
 Make sure [Vite](https://vitejs.dev/) is installed! Also make sure you have a current version of Node.js installed.  
 
 ## Step 1: Install Gardenjs
 
-Run the following command in your command line:
+In the command line, go to the root directory of your project and enter the following command:
 
 ```console
 npm install --save-dev gardenjs
