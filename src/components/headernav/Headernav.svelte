@@ -121,7 +121,6 @@
                 font-size: 1rem;
               }
             }
-            &:focus,
             &:hover {
               .icon {
                 color: var(--c-navbar-icon-hl);

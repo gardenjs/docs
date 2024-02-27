@@ -97,7 +97,6 @@
         @media (min-width: 960px) {
           font-size: 0.938rem;
         }
-        &:focus,
         &:hover {
           color: var(--c-primary-link-hl);
         }
