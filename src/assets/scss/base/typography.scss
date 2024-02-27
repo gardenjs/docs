@@ -78,6 +78,7 @@ ul {
 }
 a {
   color: var(--c-link);
+  text-decoration: none;
   &:hover {
     color: var(--c-link-hl);
   }
