@@ -17,13 +17,13 @@
 <nav class="sidenav">
   <ul>
     <li>
-      <span class="folder">Overview</span>
+      <span class="sidenav_folder">Overview</span>
       <ul>
         <li><a href="/docs" on:click={handleClick}>About Gardenjs</a></li>
       </ul>
     </li>
     <li>
-      <span class="folder">Get Started</span>
+      <span class="sidenav_folder">Get Started</span>
       <ul>
         {#each links as link}  
           <li><a href={link.href} on:click={handleClick}>{link.label}</a></li>
@@ -31,19 +31,19 @@
       </ul>
     </li>
     <li>
-      <span class="folder">Add Renderer</span>
+      <span class="sidenav_folder">Add Renderer</span>
       <ul>
         <li><a href="/docs/renderer" on:click={handleClick}>Add Renderer</a></li>
       </ul>
     </li>
     <li>
-      <span class="folder">Add Notes</span>
+      <span class="sidenav_folder">Add Notes</span>
       <ul>
         <li><a href="/docs/notes" on:click={handleClick}>Add Notes</a></li>
       </ul>
     </li>
     <li>
-      <span class="folder">What comes next?</span>
+      <span class="sidenav_folder">What comes next?</span>
       <ul>
         <li><a href="/docs/roadmap" on:click={handleClick}>Roadmap</a></li>
       </ul>
@@ -75,7 +75,7 @@
         line-height: 1.2;
         font-weight: 700;
         letter-spacing: 0.063rem;
-        .folder {
+        .sidenav_folder {
           display: block;
           margin: 0 0 0.5rem;
         }
