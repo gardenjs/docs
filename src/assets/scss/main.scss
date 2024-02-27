@@ -12,4 +12,7 @@
 // @import 'base/scrollbar';
 @import 'base/text-selection';
 
-@import 'prism/prism-theme-github-dark.css'
+// vendor (inside variables.scss)
+@import 'prism/prism-theme-github.css';
+// @import 'prism/prism-theme-github-light.css';
+// @import 'prism/prism-theme-github-dark.css';
