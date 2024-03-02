@@ -161,8 +161,10 @@
     @media (min-width: 960px) {
       .header_img {
         position: relative;
+        overflow: hidden;
         width: 960px;
         margin: 0 0 0 5rem;
+        border-radius: 0.563rem;
         img {
           width: auto;
           height: 100%;
