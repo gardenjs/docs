@@ -5,7 +5,8 @@
   const links = [
     { href: "/docs/get-started/install", label: "Install" },
     { href: "/docs/get-started/settings", label: "Settings" },
-    { href: "/docs/get-started/examples", label: "Examples (Stories)" }
+    { href: "/docs/get-started/examples", label: "Examples" },  
+    { href: "/docs/get-started/decorators", label: "Decorators" }
   ];
 
   function handleClick() {
@@ -31,9 +32,9 @@
       </ul>
     </li>
     <li>
-      <span class="sidenav_folder">Add Renderer</span>
+      <span class="sidenav_folder">Renderer</span>
       <ul>
-        <li><a href="/docs/renderer" on:click={handleClick}>Add Renderer</a></li>
+        <li><a href="/docs/renderer" on:click={handleClick}>Write new Renderer</a></li>
       </ul>
     </li>
     <li>
