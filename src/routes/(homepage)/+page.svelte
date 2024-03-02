@@ -22,7 +22,7 @@
     author="John Doe, coder & gardener" />
   <ChapterIntro
     superscript="Become a gardener"
-    title="Why Gardenjs is so cool"
+    title="Why Gardenjs?"
     intro="With its intuitive user interface, easy and efficient integration into projects and super-fast execution of changes, it enables developers to efficiently create great user experiences." />
   <div class="cards-2cols">
     <Cards
