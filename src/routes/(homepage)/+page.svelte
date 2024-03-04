@@ -15,7 +15,7 @@
   <ChapterIntro isPagetitle
     superscript="This is Gardenjs"
     pagetitle="UI component library explorer for JS frameworks"
-    intro="Gardenjs promotes modular and reusable code, streamlines collaboration between team members and increases overall productivity. Gardenjs is designed for projects of any size. Gardenjs is open source under the MIT license and free." />
+    intro="Gardenjs promotes modular and reusable code, streamlines collaboration between team members and increases overall productivity. Gardenjs is MIT licensed and free." />
   <Logogallery />
   <Blockquote
     quote="«Building a frontend is like gardening. Grow your components and layouts, maintain them and control their growth. Build great products and reap the rewards of your work!»"
@@ -65,7 +65,7 @@
   <ChapterIntro
     superscript="If you like Gardenjs"
     title="We look forward to your help"
-    intro="Gardenjs is published under the MIT license and therefore free to use. We are therefore particularly pleased about your support." />
+    intro="Gardenjs is published under the MIT license and free to use. We are therefore particularly pleased about your support." />
   <div class="cards-2cols">
     <Cards
       title="Support us"

@@ -10,15 +10,12 @@
 <style lang="scss">
   .logo_gallery {
     text-align: center;
-    margin: 0 auto 2rem;
-    @media (min-width: 840px) {
-      margin: 0 auto 3rem;
-    }
+    margin: 3rem auto;
     @media (min-width: 960px) {
-      margin: 0 auto 5rem;
+      margin: 4rem auto;
     }
     @media (min-width: 1280px) {
-      margin: 0 auto 5rem;
+      margin: 5rem auto;
     }
   }
   .logos {
@@ -30,12 +27,12 @@
       display: inline-block;
       margin: 0 1rem;
       .icon {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         @media (min-width: 960px) {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
         @media (min-width: 1280px) {
-          font-size: 1.75rem;
+          font-size: 2.25rem;
         }
       }
       .placeholder {

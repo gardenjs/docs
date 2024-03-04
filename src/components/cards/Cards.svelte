@@ -28,31 +28,31 @@
     &.turquoise {
       background-color: var(--c-card-bg-hl);
       border-color: var(--c-card-bg-hl);
-      h3 {
-        color: var(--c-text);
-      }
     }
     h3 {
       margin: 0 0 0.75rem;
-      font-family: 'Vollkorn';
       font-size: 1.25rem;
-      font-weight: 700;
+      font-weight: 500;
       @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 400;
+        font-variation-settings: 'wght' 700;
       }
       @media (min-width: 840px) {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
       }
       @media (min-width: 960px) {
         margin: 0 0 1rem;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
       @media (min-width: 1280px) {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
       }
     }
     p {
-      color: var(--c-text-light);
+      color: var(--c-text);
+      font-weight: 400;
+      @supports (font-variation-settings: normal) {
+        font-variation-settings: 'wght' 400;
+      }
       @media (min-width: 1280px) {
         font-size: 1.125rem;
       }

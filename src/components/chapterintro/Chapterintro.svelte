@@ -34,22 +34,27 @@
     @media (min-width: 960px) {
       margin: 6rem 0 1rem;
     }
+    @media (min-width: 1280px) {
+      margin: 8rem 0 1rem;
+    }
     &.has-h1 {
       margin: 0 0 1.5rem;
       @media (min-width: 840px) {
         margin: 0 0 2rem;
       }
       @media (min-width: 960px) {
-        margin: 0 0 2.5rem;
+        margin: 2.5rem 0;
       }
     }
+    // border-top: 2px solid var(--c-text);
+    // padding: 2rem 0 0;
     .superscript {
       margin: 0 0 0.25rem;
       font-size: 0.75rem;
-      color: var(--c-secondary);
+      color: var(--c-text);
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.188rem;
+      letter-spacing: 0.125rem;
       font-weight: 600;
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 600;
@@ -60,7 +65,7 @@
     }
     h1,
     h2 {
-      margin: 0 0 1rem;
+      margin: 0 0 0.5rem;
     }
     h1 {
       font-family: 'Vollkorn';
@@ -87,25 +92,19 @@
     }
     p {
       margin: 0rem;
-      padding: 0 0 0 1rem;
-      // max-width: 980px;
-      border-left: 0.25rem solid var(--c-primary);
       font-size: 1rem;
-      color: var(--c-text);
+      color: var(--c-text-light);
       font-weight: 400;
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 400;
       }
       @media (min-width: 840px) {
-        font-size: 1.125rem;
-      }
-      @media (min-width: 960px) {
-        padding: 0 0 0 1.5rem;
         font-size: 1.25rem;
-        border-left-width: 0.375rem;
       }
+      // @media (min-width: 960px) {
+      //   font-size: 1.375rem;
+      // }
       @media (min-width: 1280px) {
-        padding: 0 0 0 2rem;
         font-size: 1.375rem;
       }
     }

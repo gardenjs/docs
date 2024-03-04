@@ -27,7 +27,7 @@
     .icon {
       margin: 0 0 0.75rem;
       font-size: 1.25rem;
-      color: var(--c-primary);
+      color: var(--c-primary-link);
       @media (min-width: 840px) {
         font-size: 1.5rem;
       }
@@ -37,16 +37,19 @@
     }
     .quote {
       max-width: 100%;
-      font-size: 1rem;
+      font-size: 1.125rem;
       color: var(--c-text);
       font-weight: 700;
       @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 700;
+        font-variation-settings: 'wght' 400;
       }
       @media (min-width: 840px) {
         font-size: 1.25rem;
       }
       @media (min-width: 960px) {
+        font-size: 1.375rem;
+      }
+      @media (min-width: 1280px) {
         margin: 0 0 1rem;
         font-size: 1.5rem;
       }
@@ -56,9 +59,9 @@
       margin: 0;
       font-size: 0.875rem;
       color: var(--c-text-light);
-      font-weight: 400;
+      font-weight: 500;
       @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 400;
+        font-variation-settings: 'wght' 500;
       }
       text-align: right;
       @media (min-width: 840px) {
