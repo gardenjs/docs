@@ -75,6 +75,8 @@
         }
         @media (min-width: 840px) {
           position: sticky;
+          top: 0;
+          align-self: start;
           padding-top: 6rem;
           @media (min-width: 960px) {
             padding-top: 7.5rem;
