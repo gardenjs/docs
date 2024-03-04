@@ -1,17 +1,36 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import { page } from '$app/stores';
   
   const dispatch = createEventDispatcher();
-  const links = [
+
+  let currentPage;
+  page.subscribe(value => {
+    currentPage = value.path;
+  });
+
+  const overview = [
+    { href: "/docs", label: "Why Gardenjs" },
+  ];
+  const getstarted = [
     { href: "/docs/get-started/install", label: "Install" },
-    { href: "/docs/get-started/settings", label: "Settings" },
     { href: "/docs/get-started/install-renderer", label: "Install Renderer Plugin" },
+    { href: "/docs/get-started/settings", label: "Settings" },
     { href: "/docs/get-started/examples", label: "Examples" },  
     { href: "/docs/get-started/decorators", label: "Decorators" }
   ];
+  const renderer = [
+    { href: "/docs/renderer", label: "Write new renderer" },
+  ];
+  const notes = [
+    { href: "/docs/notes", label: "Add notes" },
+  ];
+  const roadmap = [
+    { href: "/docs/roadmap", label: "Roadmap" },
+  ];
 
   function handleClick() {
-    dispatch("toggleMobilenav")
+    dispatch("toggleMobilenav");
   }
 </script>
 
@@ -21,33 +40,51 @@
     <li>
       <span class="sidenav_folder">Overview</span>
       <ul>
-        <li><a href="/docs" on:click={handleClick}>Why Gardenjs</a></li>
+        {#each overview as link}  
+          <li>
+            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+          </li>
+        {/each}
       </ul>
     </li>
     <li>
       <span class="sidenav_folder">Get Started</span>
       <ul>
-        {#each links as link}  
-          <li><a href={link.href} on:click={handleClick}>{link.label}</a></li>
+        {#each getstarted as link}  
+          <li>
+            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+          </li>
         {/each}
       </ul>
     </li>
     <li>
       <span class="sidenav_folder">Renderer</span>
       <ul>
-        <li><a href="/docs/renderer" on:click={handleClick}>Write new Renderer</a></li>
+        {#each renderer as link}  
+          <li>
+            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+          </li>
+        {/each}
       </ul>
     </li>
     <li>
       <span class="sidenav_folder">Add Notes</span>
       <ul>
-        <li><a href="/docs/notes" on:click={handleClick}>Add Notes</a></li>
+        {#each notes as link}  
+          <li>
+            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+          </li>
+        {/each}
       </ul>
     </li>
     <li>
       <span class="sidenav_folder">What comes next?</span>
       <ul>
-        <li><a href="/docs/roadmap" on:click={handleClick}>Roadmap</a></li>
+        {#each roadmap as link}  
+          <li>
+            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+          </li>
+        {/each}
       </ul>
     </li>
   </ul>
@@ -88,14 +125,19 @@
           li {
             padding: 0;
             a {
-              margin: 0;
-              padding: 0.5rem 1rem;
+              margin: 0.25rem 0;
+              padding: 0.375rem 1rem;
               font-size: 0.938rem;
               color: var(--c-text);
               line-height: 1.2;
               font-weight: 400;
               text-decoration: none;
               &:hover {
+                background-color: var(--c-link-bg);
+                border-radius: 0.5rem;
+              }
+              &.active {
+                color: var(--c-link);
                 background-color: var(--c-link-bg);
                 border-radius: 0.5rem;
               }
