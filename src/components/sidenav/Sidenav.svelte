@@ -9,9 +9,7 @@
     currentPage = value.path;
   });
 
-  const overview = [
-    { href: "/docs", label: "Why Gardenjs" },
-  ];
+  const overview = [{ href: "/docs", label: "Why Gardenjs" }];
   const getstarted = [
     { href: "/docs/get-started/install", label: "Install" },
     { href: "/docs/get-started/install-renderer", label: "Install Renderer Plugin" },
@@ -19,15 +17,9 @@
     { href: "/docs/get-started/examples", label: "Examples" },  
     { href: "/docs/get-started/decorators", label: "Decorators" }
   ];
-  const renderer = [
-    { href: "/docs/renderer", label: "Write new renderer" },
-  ];
-  const notes = [
-    { href: "/docs/notes", label: "Add notes" },
-  ];
-  const roadmap = [
-    { href: "/docs/roadmap", label: "Roadmap" },
-  ];
+  const renderer = [{ href: "/docs/renderer", label: "Write New Renderer" }];
+  const notes = [{ href: "/docs/notes", label: "Add Notes" }];
+  const roadmap = [{ href: "/docs/roadmap", label: "Roadmap" }];
 
   function handleClick() {
     dispatch("toggleMobilenav");
@@ -126,7 +118,7 @@
             padding: 0;
             a {
               margin: 0.25rem 0;
-              padding: 0.375rem 1rem;
+              padding: 0.375rem 0.75rem;
               font-size: 0.938rem;
               color: var(--c-text);
               line-height: 1.2;
@@ -138,6 +130,7 @@
               }
               &.active {
                 color: var(--c-link);
+                font-weight: 600;
                 background-color: var(--c-link-bg);
                 border-radius: 0.5rem;
               }
