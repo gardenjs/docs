@@ -21,7 +21,7 @@
     <li>
       <span class="sidenav_folder">Overview</span>
       <ul>
-        <li><a href="/docs" on:click={handleClick}>About Gardenjs</a></li>
+        <li><a href="/docs" on:click={handleClick}>Why Gardenjs</a></li>
       </ul>
     </li>
     <li>

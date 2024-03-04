@@ -1,5 +1,5 @@
 <script>
-  import About from './about.md'
+  import Whygardenjs from './why-gardenjs.md'
 </script>
 
 <svelte:head>
@@ -8,5 +8,5 @@
 </svelte:head>
 
 <div class="md_file">
-  <About />
+  <Whygardenjs />
 </div>
