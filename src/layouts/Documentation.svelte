@@ -17,9 +17,11 @@
     <div class="sidebar {showMobilenav ? 'show' : ''}">
       <Sidenav on:toggleMobilenav={handleToggleMobilenav}/>
     </div>
-    <div class="content">
-      <slot></slot>
-      <Vegetables />
+    <div class="content-wrapper">
+      <div class="content">
+        <slot></slot>
+        <Vegetables />
+      </div>
     </div>
   </div>
 </div>
@@ -35,7 +37,7 @@
     padding: 0 1.5rem;
     @media (min-width: 1100px) {
       margin: auto;
-      max-width: 1100px;
+      // max-width: 1100px;
     }
     .mainaside_container {
       position: relative;
@@ -86,7 +88,7 @@
         }
       }
     }
-    .content {
+    .content-wrapper {
       padding: 8.5rem 0 0;
       @media (min-width: 580px) {
         padding: 6rem 0 0;
@@ -98,6 +100,10 @@
       }
       @media (min-width: 960px) {
         padding-top: 7rem;
+      }
+      .content {
+        margin: auto;
+        max-width: 840px;
       }
     }
   }
