@@ -4,11 +4,6 @@
   
   const dispatch = createEventDispatcher();
 
-  let currentPage;
-  page.subscribe(value => {
-    currentPage = value.path;
-  });
-
   const overview = [{ href: "/docs", label: "Why Gardenjs" }];
   const getstarted = [
     { href: "/docs/get-started/install", label: "Install" },
