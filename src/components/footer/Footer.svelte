@@ -10,7 +10,7 @@
 <footer class="footer {hasBordertop? bordertop : noborder}">
   <div class="footer_container">
     <div class="footer_copyright">
-        <div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License">MIT License</a>.<br><span class="copyright">&copy;</span> 2020-{now.getFullYear()} <a href="https://www.rabbitdevelopment.de">Rabbit Development</a>. All rights reserved.</div>
+        <div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License">MIT License</a>.<br><span class="copyright">&copy;</span> {now.getFullYear()} <a href="https://www.rabbitdevelopment.de">Rabbit Development</a>. All rights reserved.</div>
     </div>
     <div class="footer_nav">
       <nav>
