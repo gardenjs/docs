@@ -28,14 +28,11 @@
   .chapter {
     margin: 4rem 0 1rem;
     font-family: 'Spline Sans Mono';
-    @media (min-width: 840px) {
+    @media (min-width: 960px) {
       margin: 5rem 0 1rem;
     }
-    @media (min-width: 960px) {
-      margin: 6rem 0 1rem;
-    }
     @media (min-width: 1280px) {
-      margin: 8rem 0 1rem;
+      margin: 6rem 0 1rem;
     }
     &.has-h1 {
       margin: 0 0 1.5rem;
@@ -46,12 +43,12 @@
         margin: 2.5rem 0;
       }
     }
-    // border-top: 2px solid var(--c-text);
-    // padding: 2rem 0 0;
+    // border-bottom: 2px solid var(--c-primary-dark);
+    // padding: 2rem 0;
     .superscript {
       margin: 0 0 0.25rem;
       font-size: 0.75rem;
-      color: var(--c-text);
+      color: var(--c-secondary);
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.125rem;
@@ -93,17 +90,17 @@
     p {
       margin: 0rem;
       font-size: 1rem;
-      color: var(--c-text-light);
+      color: var(--c-text);
       font-weight: 400;
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 400;
       }
       @media (min-width: 840px) {
+        font-size: 1.125rem;
+      }
+      @media (min-width: 960px) {
         font-size: 1.25rem;
       }
-      // @media (min-width: 960px) {
-      //   font-size: 1.375rem;
-      // }
       @media (min-width: 1280px) {
         font-size: 1.375rem;
       }

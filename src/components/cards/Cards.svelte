@@ -48,7 +48,7 @@
       }
     }
     p {
-      color: var(--c-text);
+      color: var(--c-text-light);
       font-weight: 400;
       @supports (font-variation-settings: normal) {
         font-variation-settings: 'wght' 400;

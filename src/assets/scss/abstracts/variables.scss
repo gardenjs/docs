@@ -2,15 +2,15 @@
   --c-primary:           hsl(185, 80%, 75%);
   --c-primary-dark:      hsl(185, 100%, 35%);
   --c-primary-hl:        hsl(185, 80%, 65%);
-  --c-secondary:         hsl(216, 25%, 50%);
-  --c-secondary-dark:    hsl(216, 40%, 20%);
+  --c-secondary:         hsl(216, 35%, 50%);
+  --c-secondary-dark:    hsl(216, 35%, 20%);
 
   --c-website-bg:        hsl(65, 10%, 97%);
   --c-website-code-bg:   var(--c-link-bg);
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-navbar-icon-hl:    var(--c-primary-link);
   --c-border:            hsl(216, 10%, 80%);
-  --c-border-cards:      var(--c-border);
+  --c-border-cards:      transparent;
   --c-card-bg:           hsl(0, 0%, 100%);
   --c-card-bg-hl:        hsl(185, 80%, 88%);
   --c-quote-bg:          hsl(65, 10%, 92%);
@@ -20,7 +20,7 @@
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);
-  --c-text-light:        var(--c-secondary);
+  --c-text-light:        hsl(216, 10%, 50%);
   --c-link:              hsl(216, 100%, 55%);
   --c-link-hl:           hsl(216, 100%, 65%);
   --c-primary-link:      var(--c-primary-dark);
