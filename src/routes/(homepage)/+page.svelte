@@ -64,12 +64,12 @@
   </div>
   <ChapterIntro
     superscript="If you like Gardenjs"
-    title="We look forward to your help"
+    title="Would you like to get involved?"
     intro="Gardenjs is published under the MIT license and free to use. We are therefore particularly pleased about your support." />
   <div class="cards-2cols">
     <Cards
       title="Support us"
-      paragraph="You can support us by using Gardenjs, by writing a plugin for a new framework (which we will then gladly point out), by reporting bugs or by writing documentation. We are happy about your support." />
+      paragraph="You can support us by using Gardenjs, writing a plugin for a new framework (which we will then gladly point out), reporting bugs, making a contribution or writing documentation. We look forward to your support." />
     <Cards
       title="Make a donation"
       paragraph="A donation model is planned if Gardenjs is well received. A list of possible features can be found in the documentation. Please contact us if you would like to have one of the features integrated as soon as possible." />
