@@ -88,13 +88,14 @@
           text-align: right;
         }
         ul {
+          display: flex;
           li {
             display: inline-block;
             padding: 0 0.75rem;
             margin-bottom: 0.75rem;
             @media (min-width: 840px) {
               margin: 0;
-              padding: 0 0 0 1.5rem;
+              padding: 0 0 0 2rem;
             }
           }
         }
