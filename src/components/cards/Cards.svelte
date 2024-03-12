@@ -6,7 +6,6 @@
   let highlighted = 'turquoise'
   let nothighlighted = ''
 
-  
 </script>
 
 <div class="card {isHgCard? highlighted : nothighlighted}">
