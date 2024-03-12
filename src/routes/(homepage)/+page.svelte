@@ -4,6 +4,7 @@
   import Cards from '../../components/cards/Cards.svelte'
   import Logogallery from '../../components/logogallery/Logogallery.svelte'
   import Blockquote from '../../components/blockquote/Blockquote.svelte'
+  import Accordion from '../../components/accordion/Accordion.svelte'
 </script>
 
 <svelte:head>
@@ -69,11 +70,14 @@
   <div class="cards-2cols">
     <Cards
       title="Support us"
-      paragraph="You can support us by using Gardenjs, writing a plugin for a new framework (which we will then gladly point out), reporting bugs, making a contribution or writing documentation. We look forward to your support." />
+      paragraph="You can support us by using Gardenjs, writing a plugin for a new framework (which we will then gladly point out), reporting bugs, giving feedback, making a contribution or writing documentation. We look forward to your support." />
     <Cards
       title="Make a donation"
       paragraph="A donation model is planned if Gardenjs is well received. A list of possible features can be found in the documentation. Please contact us if you would like to have one of the features integrated as soon as possible." />
   </div>
+  <ChapterIntro
+    title="FAQ" />
+  <Accordion />
 </Main>
 
 <style lang="scss">
