@@ -11,6 +11,7 @@
   import Line2Boxes2H2 from '../../assets/images/leftright2left.svg?raw'
   import StraightDownLoop from '../../assets/images/straightdownloop.svg?raw'
   import Top2LeftCenterRight from '../../assets/images/top2elftcenterright.svg?raw'
+  import TopCenterRight2left from '../../assets/images/leftcenterright2left.svg?raw'
 </script>
 
 <svelte:head>
@@ -81,6 +82,9 @@
       title="Documentation"
       paragraph="Add any additional information to your components and examples and keep track of all components and for the whole team." />
   </div>
+  <span class="is-centered">
+    {@html TopCenterRight2left}
+  </span>
   <ChapterIntro
     superscript="If you like Gardenjs"
     title="Would you like to get involved?"
