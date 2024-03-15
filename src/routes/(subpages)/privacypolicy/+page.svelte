@@ -35,12 +35,3 @@
     <p>Quelle: <a href="https://www.e-recht24.de" target="_blank">eRecht24</a> & <a href="https://opr.vc/docs/hosting/github_pages/" target="_blank">GitHub</a></p>
   </div>
 </Main>
-
-<style>
-  h1, h2, h3, h4 {
-    font-family: 'Vollkorn';
-  }
-  p, li {
-    font-family: 'Spline Sans Mono';
-  }
-</style>

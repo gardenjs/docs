@@ -17,7 +17,6 @@
   .card {
     margin: 0;
     padding: 1.5rem;
-    font-family: 'Spline Sans Mono';
     @media (min-width: 840px) {
       padding: 2rem;
     }
@@ -29,31 +28,23 @@
       border-color: var(--c-card-bg-hl);
     }
     h3 {
-      margin: 0 0 0.75rem;
+      margin-top: 0;
+      font-family: 'Vollkorn Bold';
       font-size: 1.25rem;
-      font-weight: 500;
-      @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 700;
-      }
       @media (min-width: 840px) {
         font-size: 1.375rem;
       }
       @media (min-width: 960px) {
-        margin: 0 0 1rem;
         font-size: 1.5rem;
       }
       @media (min-width: 1280px) {
-        font-size: 1.75rem;
+        font-size: 1.875rem;
       }
     }
     p {
-      color: var(--c-text-light);
-      font-weight: 400;
-      @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 400;
-      }
+      color: var(--c-text);
       @media (min-width: 1280px) {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
       }
       &:last-of-type {
         margin: 0;

@@ -13,21 +13,20 @@
   .blockquote {
     margin: 0 0 2rem;
     padding: 1.5rem;
-    font-family: 'Spline Sans Mono';
     border: 1px solid var(--c-quote-border);
     border-radius: 1rem;
     background-color: var(--c-quote-bg);
     @media (min-width: 840px) {
-      margin: 0 0 3rem;
+      // margin: 0 0 3rem;
       padding: 2rem;
     }
     @media (min-width: 960px) {
-      margin: 0 0 5rem;
+      margin: 0 0 2rem;
     }
     .icon {
       margin: 0 0 0.75rem;
       font-size: 1.25rem;
-      color: var(--c-primary-link);
+      color: var(--c-quote-icon);
       @media (min-width: 840px) {
         font-size: 1.5rem;
       }
@@ -37,12 +36,10 @@
     }
     .quote {
       max-width: 100%;
+      font-family: 'Spline Sans Mono';
       font-size: 1.125rem;
       color: var(--c-text);
-      font-weight: 700;
-      @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 400;
-      }
+      font-variation-settings: 'wght' 600;
       @media (min-width: 840px) {
         font-size: 1.25rem;
       }
@@ -58,11 +55,7 @@
       display: block;
       margin: 0;
       font-size: 0.875rem;
-      color: var(--c-text-light);
-      font-weight: 500;
-      @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 500;
-      }
+      color: var(--c-quote-icon);
       text-align: right;
       @media (min-width: 840px) {
         font-size: 1.125rem;

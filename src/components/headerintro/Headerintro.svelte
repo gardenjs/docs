@@ -1,6 +1,7 @@
 <script>
   import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.jpg'
   import ScreenshotLightmode from '../../assets/images/screenshot_garden.jpg'
+  import DashedLine from '../../assets/images/line2h1.svg?raw'
 </script>
 
 <div class="header_intro">
@@ -17,6 +18,9 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17L17 7"/></svg>
       </a>
     </div>
+    <div class="dashed-line">
+      {@html DashedLine}
+    </div>
   </div>
   <div class="header_img">
     <div class="app">
@@ -32,11 +36,13 @@
 </div>
 
 <style lang="scss">
-  @use "sass:math";
+  .dashed-line {
+    margin-top: 2rem;
+  }
+
   .header_intro {
     position: relative;
-    margin: auto;
-    font-family: 'Spline Sans Mono';
+    margin: auto;    
     @media (min-width: 960px) {
       display: grid;
       grid-template-columns: repeat(2,540px 1fr);
@@ -50,13 +56,9 @@
       .slogan {
         display: block;
         margin: 0 0 1.25rem;
-        font-family: 'Vollkorn';
+        font-family: 'Vollkorn Bold';
         font-size: 2.5rem;
         color: var(--c-headline);
-        font-weight: 400;
-        @supports (font-variation-settings: normal) {
-          font-variation-settings: 'wght' 400;
-        }
         line-height: 1;
         text-align: center;
         @media (min-width: 280px) {
@@ -68,32 +70,31 @@
         @media (min-width: 960px) {
           font-size: 7rem;
           text-align: left;
-          line-height: 0.8;
+          line-height: 0.9;
           span {
             display: block;
           }
         }
         .italic {
-          font-family: 'Vollkorn Italic';
+          font-family: 'Vollkorn BoldItalic';
         }
       }
       .slogan_subtext {
         display: block;
-        margin: 0.5rem 0 1.75rem;
-        width: 100%;
+        margin: 0 0 1.75rem;
+        font-family: 'Spline Sans Mono';
         font-size: 1rem;
         color: var(--c-text-light);
-        font-weight: 400;
-        @supports (font-variation-settings: normal) {
-          font-variation-settings: 'wght' 400;
-        }
         text-align: center;
         @media (min-width: 840px) {
-          font-size: 1.25rem;
+          font-size: 1.125rem;
         }
         @media (min-width: 960px) {
-          font-size: 1.375rem;
+          // font-size: 1.25rem;
           text-align: left;
+        }
+        @media (min-width: 1280px) {
+          font-size: 1.25rem;
         }
       }
       .header_links {
@@ -107,6 +108,7 @@
           justify-content: center;
           align-items: center;
           padding: 0.375rem 1.25rem;
+          font-family: 'Spline Sans Mono';
           color: var(--c-website-bg);
           font-size: 0.875rem;
           @media (min-width: 840px) {
@@ -116,7 +118,6 @@
             padding: 0.5rem 1.25rem;
           }
           text-transform: uppercase;
-          font-weight: 500;
           text-decoration: none;
           background-color: var(--c-text);
           border-radius: 1.5rem;
@@ -130,7 +131,6 @@
           &:hover,
           &:focus {
             background-color: var(--c-secondary);
-            // box-shadow: 0 .175rem .5rem 0 rgba(0,0,0,.4);
             transition: 0.2s;
             svg {
               transform: translateX(0.375rem);
@@ -178,7 +178,7 @@
           flex-direction: column;
           position: relative;
           width: 100%;
-          height: 100%;
+          // height: 100%;
           background-color: var(--c-app-bg);
           border-radius: 0.563rem;
           backdrop-filter: blur(1.25rem);

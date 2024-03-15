@@ -36,7 +36,7 @@
 
 <style lang="scss">
   .accordion {
-    margin: 4rem 0 0;
+    margin: 2rem 0 0;
     .accordion_item {
       margin: 0 0 0.375rem;
       .accordion_btn {
@@ -73,14 +73,10 @@
         }
         .accordion_label {
           display: block;
-          line-height: 1.2;
-          font-family: "Spline Sans Mono";
+          line-height: 1.25;
           font-size: 1rem;
           color: var(--c-text);
-          text-transform: uppercase;
-          @supports (font-variation-settings: normal) {
-            font-variation-settings: 'wght' 700;
-          }
+          font-variation-settings: 'wght' 700;
           @media (min-width: 840px) {
             font-size: 1.125rem;
           }
@@ -104,26 +100,19 @@
         .accordion_content {
           margin: 0rem;
           padding: 1.5rem;
-          width: 100%;
-          background-color: #fff;
           border-radius: 0 0 var(--b-radius) var(--b-radius);
+          border: 3px solid var(--c-quote-bg);
           transition: .2s;
-          font-family: "Spline Sans Mono";
           font-size: 0.875rem;
-          color: var(--c-text);
-          font-weight: 400;
-          @supports (font-variation-settings: normal) {
-            font-variation-settings: 'wght' 400;
-          }
           @media (min-width: 840px) {
             padding: 2rem;
-            font-size: 1rem;
-          }
-          @media (min-width: 960px) {
             font-size: 1.125rem;
           }
-          @media (min-width: 1280px) {
+          @media (min-width: 960px) {
             font-size: 1.25rem;
+          }
+          @media (min-width: 1280px) {
+            font-size: 1.375rem;
           }
         }
       }

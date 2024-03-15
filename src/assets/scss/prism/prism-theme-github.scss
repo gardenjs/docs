@@ -4,6 +4,8 @@
  * @author Katorly
  */
 
+ /* ... customized ... */
+
 :root {
   --pre-language: #24292f;
   --pre-language-select-bg: #9fc6e9;
@@ -40,9 +42,9 @@ html[data-theme="dark"] {
 pre[class*="language-"],
 code[class*="language-"] {
   color: var(--pre-language);
-  font-size: 13px;
+  font-size: 0.875rem;
   text-shadow: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: 'Spline Sans Mono';
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -56,6 +58,9 @@ code[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  @media (min-width: 960px) {
+    font-size: 1rem;
+  }
 }
 pre[class*="language-"]::selection,
 code[class*="language-"]::selection,
@@ -154,7 +159,7 @@ pre[class*="language-"] > code[class*="language-"] {
 }
 .token.important,
 .token.bold {
-  font-weight: bold;
+  font-variation-settings: 'wght' 700;
 }
 .token.italic {
   font-style: italic;

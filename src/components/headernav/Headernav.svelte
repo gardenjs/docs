@@ -64,7 +64,6 @@
 
 <style lang="scss">
   .navbar_nav {
-    font-family: 'Spline Sans Mono';
     ul {
       display: flex;
       align-items: center;
@@ -85,19 +84,17 @@
         a {
           display: flex;
           align-items: center;
+          font-family: 'Spline Sans Mono';
           font-size: 0.875rem;
           color: var(--c-text);
+          font-variation-settings: 'wght' 500;
           text-transform: uppercase;
           line-height: 1;
-          font-weight: 500;
-          @supports (font-variation-settings: normal) {
-            font-variation-settings: 'wght' 600;
-          }
           @media (min-width: 960px) {
-            font-size: 1rem;
+            font-size: 0.938rem;
           }
           @media (min-width: 1280px) {
-            font-size: 1.125rem;
+            font-size: 1rem;
           }
           .icon {
             font-size: 0.75rem;
@@ -123,7 +120,7 @@
             }
             &:hover {
               .icon {
-                color: var(--c-navbar-icon-hl);
+                color: var(--c-primary);
               }
             }
           }

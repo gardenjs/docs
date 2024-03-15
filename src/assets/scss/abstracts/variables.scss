@@ -1,31 +1,33 @@
 :root {
-  --c-primary:           hsl(185, 80%, 75%);
+  --c-primary:           hsl(185, 100%, 50%); // hsl(185, 80%, 75%);
   --c-primary-dark:      hsl(185, 100%, 35%);
-  --c-primary-hl:        hsl(185, 80%, 65%);
-  --c-secondary:         hsl(216, 35%, 50%);
-  --c-secondary-dark:    hsl(216, 35%, 20%);
+  --c-primary-hl:        hsl(185, 100%, 75%);
+  --c-secondary:         hsl(216, 41%, 45%);
+  --c-secondary-dark:    hsl(216, 41%, 30%);
 
-  --c-website-bg:        hsl(65, 10%, 97%);
+  --c-website-bg:        hsl(38, 100%, 98%); //hsl(65, 10%, 97%);
   --c-website-code-bg:   var(--c-link-bg);
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-navbar-icon-hl:    var(--c-primary-link);
   --c-border:            hsl(216, 10%, 80%);
   --c-border-cards:      transparent;
-  --c-card-bg:           hsl(0, 0%, 100%);
-  --c-card-bg-hl:        hsl(185, 80%, 88%);
-  --c-quote-bg:          hsl(65, 10%, 92%);
+  --c-card-bg:           hsl(38, 60%, 95%);  // hsl(0, 0%, 100%);
+  --c-card-bg-hl:        hsl(185, 100%, 90%);
+  --c-quote-bg:          hsl(38, 60%, 95%); // hsl(65, 10%, 92%);
+  --c-quote-icon:        hsl(185, 60%, 40%);
   --c-quote-border:      var(--c-quote-bg);
   --c-prism-bg:          var(--c-link-bg);
   --c-table-bg:          transparent;
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);
-  --c-text-light:        hsl(216, 10%, 50%);
+  --c-text-light:        hsl(216, 21%, 50%); // hsl(216, 10%, 50%);
+  --c-superscript:       var(--c-text-light);
   --c-link:              hsl(216, 100%, 55%);
   --c-link-hl:           hsl(216, 100%, 65%);
   --c-primary-link:      var(--c-primary-dark);
   --c-primary-link-hl:   hsl(185, 100%, 45%);
-  --c-link-bg:           hsl(65, 10%, 92%);
+  --c-link-bg:           var(--c-quote-bg); //hsl(65, 10%, 92%);
   --c-table:             var(--c-secondary-dark);
   --c-btntxt-docs:       var(--c-text);
 
@@ -59,11 +61,13 @@
   --c-card-bg-hl:        hsl(216, 25%, 25%);
   --c-quote-bg:          var(--c-website-bg);
   --c-quote-border:      var(--c-border);
+  --c-quote-icon:        var(--c-primary-link);
   --c-prism-bg:          var(--c-link-bg);
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);
   --c-text-light:        var(--c-secondary-dark);
+  --c-superscript:       var(--c-secondary);
   --c-link:              hsl(185, 100%, 70%);
   --c-link-hl:           hsl(185, 100%, 80%);
   --c-link-bg:           var(--c-card-bg-hl);

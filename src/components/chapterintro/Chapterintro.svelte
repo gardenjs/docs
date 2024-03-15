@@ -27,12 +27,11 @@
 <style lang="scss">
   .chapter {
     margin: 4rem 0 1rem;
-    font-family: 'Spline Sans Mono';
     @media (min-width: 960px) {
       margin: 5rem 0 1rem;
     }
     @media (min-width: 1280px) {
-      margin: 6rem 0 1rem;
+      margin: 1rem 0 1rem;
     }
     &.has-h1 {
       margin: 0 0 1.5rem;
@@ -40,32 +39,27 @@
         margin: 0 0 2rem;
       }
       @media (min-width: 960px) {
-        margin: 2.5rem 0;
+        margin: 1rem 0;
       }
     }
-    // border-bottom: 2px solid var(--c-primary-dark);
-    // padding: 2rem 0;
     .superscript {
       margin: 0 0 0.25rem;
+      font-family: 'Spline Sans Mono';
+      font-variation-settings: 'wght' 600;
       font-size: 0.75rem;
-      color: var(--c-secondary);
-      font-weight: 600;
+      color: var(--c-superscript);
       text-transform: uppercase;
       letter-spacing: 0.125rem;
-      font-weight: 600;
-      @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 600;
-      }
       @media (min-width: 840px) {
         font-size: 0.938rem;
       }
     }
     h1,
     h2 {
-      margin: 0 0 0.5rem;
+      margin: 0 0 1rem;
     }
     h1 {
-      font-family: 'Vollkorn';
+      font-family: 'Vollkorn Bold';
       font-size: 1.75rem;
       @media (min-width: 840px) {
         font-size: 2.75rem;
@@ -78,7 +72,7 @@
       }
     }
     h2 {
-      font-family: 'Vollkorn Italic';
+      font-family: 'Vollkorn BoldItalic';
       font-size: 1.75rem;
       @media (min-width: 840px) {
         font-size: 2.5rem;
@@ -91,10 +85,6 @@
       margin: 0rem;
       font-size: 1rem;
       color: var(--c-text);
-      font-weight: 400;
-      @supports (font-variation-settings: normal) {
-        font-variation-settings: 'wght' 400;
-      }
       @media (min-width: 840px) {
         font-size: 1.125rem;
       }
@@ -102,7 +92,7 @@
         font-size: 1.25rem;
       }
       @media (min-width: 1280px) {
-        font-size: 1.375rem;
+        font-size: 1.625rem;
       }
     }
   }

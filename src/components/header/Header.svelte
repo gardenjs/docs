@@ -74,10 +74,7 @@
             display: inline-flex;
             align-items: center;
             color: var(--c-text);
-            font-weight: 900;
-            @supports (font-variation-settings: normal) {
-              font-variation-settings: 'wght' 900;
-            }
+            font-variation-settings: 'wght' 900;
             text-decoration: none;
             @media (max-width: 579px) {
               margin: 0 0 0.75rem;
@@ -97,7 +94,6 @@
             }  
             .logo_label {
               padding: 0 0 0 0.75rem;
-              font-weight: 800;
               font-size: 1.5rem;
               white-space: nowrap;
               transition: color 0.2s;

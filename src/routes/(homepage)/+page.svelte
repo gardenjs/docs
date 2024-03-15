@@ -5,6 +5,12 @@
   import Logogallery from '../../components/logogallery/Logogallery.svelte'
   import Blockquote from '../../components/blockquote/Blockquote.svelte'
   import Accordion from '../../components/accordion/Accordion.svelte'
+
+  import LineExitBlockquote from '../../assets/images/left2righttwoloops.svg?raw'
+  import Line2Boxes2 from '../../assets/images/left2leftright.svg?raw'
+  import Line2Boxes2H2 from '../../assets/images/leftright2left.svg?raw'
+  import StraightDownLoop from '../../assets/images/straightdownloop.svg?raw'
+  import Top2LeftCenterRight from '../../assets/images/top2elftcenterright.svg?raw'
 </script>
 
 <svelte:head>
@@ -21,10 +27,16 @@
   <Blockquote
     quote="«Building a frontend is like gardening. Grow your components and layouts, maintain them and control their growth. Build great products and reap the rewards of your work!»"
     author="John Doe, coder & gardener" />
+  <span class="is-centered">
+    {@html LineExitBlockquote}
+  </span>
   <ChapterIntro
     superscript="Become a gardener"
     title="Why Gardenjs?"
     intro="With its intuitive user interface, easy and efficient integration into projects and super-fast execution of changes, it enables developers to efficiently create great user experiences." />
+  <span class="is-centered">
+    {@html Line2Boxes2}
+  </span>
   <div class="cards-2cols">
     <Cards
       title="Speed of light"
@@ -39,10 +51,16 @@
       title="The sleek good-looking alternative"
       paragraph="The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience." />
   </div>
+  <span class="is-centered">
+    {@html Line2Boxes2H2}
+  </span>
   <ChapterIntro
     superscript="Gardenjs overview"
     title="Your benefits"
     intro="Create, organize and share components effortlessly. Speed up the development process, improve teamwork and provide users with a consistent user experience." />
+  <span class="is-centered">
+    {@html Top2LeftCenterRight}
+  </span>
   <div class="cards-3cols">
     <Cards isHgCard
       title="Organisation"
@@ -67,6 +85,9 @@
     superscript="If you like Gardenjs"
     title="Would you like to get involved?"
     intro="Gardenjs is published under the MIT license and free to use. We are therefore particularly pleased about your support." />
+  <span class="is-centered">
+    {@html Line2Boxes2}
+  </span>
   <div class="cards-2cols">
     <Cards
       title="Support us"
@@ -75,12 +96,22 @@
       title="Make a donation"
       paragraph="A donation model is planned if Gardenjs is well received. A list of possible features can be found in the documentation. Please contact us if you would like to have one of the features integrated as soon as possible." />
   </div>
+  <span class="is-centered">
+    {@html Line2Boxes2H2}
+  </span>
   <ChapterIntro
     title="FAQ" />
   <Accordion />
+  <span class="is-centered">
+    {@html StraightDownLoop}
+  </span>
 </Main>
 
 <style lang="scss">
+.is-centered {
+  display: flex;
+  justify-content: center;
+}
 .cards-2cols,
 .cards-3cols {
   display: grid;
@@ -92,7 +123,7 @@
   }
   @media (min-width: 960px) {
     gap: 1.5rem;
-    margin: 2.5rem 0 0;
+    margin: 1.5rem 0 1.5rem;
   }
 }
 @media (min-width: 600px) {
