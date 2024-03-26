@@ -14,7 +14,6 @@
 
   let ifdocs = 'is-docs'
   let notdocs = ''
-
 </script>
 
 <header class="header {isFixed? fixed : scroll} {isDocs? ifdocs : notdocs}">
