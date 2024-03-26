@@ -36,7 +36,13 @@
 
 <style lang="scss">
   .accordion {
-    margin: 2rem 0 0;
+    margin: 2rem 0;
+    @media (min-width: 960px) {
+      margin: 2rem 0 3rem;
+    }
+    @media (min-width: 1280px) {
+      margin-top: 2rem 0 4rem;
+    }
     .accordion_item {
       margin: 0 0 0.375rem;
       .accordion_btn {
