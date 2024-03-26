@@ -107,32 +107,34 @@
           align-items: center;
           padding: 0.375rem 1.25rem;
           font-family: 'Spline Sans Mono';
-          color: var(--c-website-bg);
+          color: var(--c-text);
           font-size: 0.875rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 2px solid var(--c-text);
+          box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
+          border-radius: .25rem;
+          transition: 0.4s;
           @media (min-width: 840px) {
-            font-size: 1rem;
+            font-size: 0.938rem;
           }
           @media (min-width: 960px) {
             padding: 0.5rem 1.25rem;
           }
-          text-transform: uppercase;
-          text-decoration: none;
-          background-color: var(--c-text);
-          border-radius: 1.5rem;
-          transition: 0.8s;
           .header_links-label {
             padding-right: 0.5rem;
           }
           svg {
-            transition: 0.2s;
+            transition: 0.4s;
           }
           &:hover,
           &:focus {
-            background-color: var(--c-secondary);
-            transition: 0.2s;
+            transition: 0.4s;
+            box-shadow: 0 0 0 -1px #fff, 0 0 0 #fff;
+            transform: translate(0.25rem , 0.25rem );
             svg {
-              transform: translateX(0.375rem);
-              transition: 0.2s;
+              transform: translateX(0.5rem );
+              transition: 0.4s;
             }
           }
         }
@@ -140,6 +142,8 @@
           margin: 0 0 0.5rem;
           color: var(--c-btntxt-docs);
           background-color: var(--c-primary);
+          border-color: var(--c-border-docs);
+          box-shadow: 0.375rem 0.375rem 0 -1px var(--c-primary), 3px 3px 0 var(--c-primary);
           &:hover,
           &:focus {
             background-color: var(--c-primary-hl);

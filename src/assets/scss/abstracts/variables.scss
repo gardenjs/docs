@@ -10,6 +10,7 @@
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-navbar-icon-hl:    var(--c-primary-link);
   --c-border:            hsl(216, 10%, 80%);
+  --c-border-docs:       var(--c-text);
   --c-border-cards:      transparent;
   --c-card-bg:           hsl(38, 60%, 95%);  // hsl(0, 0%, 100%);
   --c-card-bg-hl:        hsl(185, 100%, 90%);
@@ -56,6 +57,7 @@
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-navbar-icon-hl:    var(--c-primary);
   --c-border:            var(--c-text);
+  --c-border-docs:       var(--c-website-bg);
   --c-border-cards:      var(--c-text);
   --c-card-bg:           transparent;
   --c-card-bg-hl:        hsl(216, 25%, 25%);
