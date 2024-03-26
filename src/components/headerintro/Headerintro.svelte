@@ -36,10 +36,6 @@
 </div>
 
 <style lang="scss">
-  .dashed-line {
-    margin-top: 2rem;
-  }
-
   .header_intro {
     position: relative;
     margin: auto;    
@@ -68,11 +64,14 @@
           font-size: 4rem;
         }
         @media (min-width: 960px) {
-          font-size: 7rem;
+          font-size: 5.5rem;
           text-align: left;
           line-height: 0.9;
           span {
             display: block;
+          }
+          @media (min-width: 1280px) {
+            font-size: 7rem;
           }
         }
         .italic {
@@ -90,7 +89,6 @@
           font-size: 1.125rem;
         }
         @media (min-width: 960px) {
-          // font-size: 1.25rem;
           text-align: left;
         }
         @media (min-width: 1280px) {
@@ -151,6 +149,12 @@
           }
         }
       }
+    }
+    // dashed line
+    .dashed-line {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
     }
     // header img
     @media (max-width: 959px) {

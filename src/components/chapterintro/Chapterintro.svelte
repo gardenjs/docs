@@ -26,13 +26,7 @@
 
 <style lang="scss">
   .chapter {
-    margin: 4rem 0 1rem;
-    @media (min-width: 960px) {
-      margin: 5rem 0 1rem;
-    }
-    @media (min-width: 1280px) {
-      margin: 1rem 0 1rem;
-    }
+    margin: 2rem 0 1rem;
     &.has-h1 {
       margin: 0 0 1.5rem;
       @media (min-width: 840px) {
