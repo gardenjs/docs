@@ -36,7 +36,7 @@
     h1,
     h2 {
       margin: 0 0 1rem;
-      font-family: 'Source Sans 3';
+      font-family: 'Source Sans 3 Italic';
       font-variation-settings: 'wght' 900;
       font-size: 1.375rem;
       @media (min-width: 600px) {
