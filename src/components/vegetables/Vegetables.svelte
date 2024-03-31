@@ -4,11 +4,11 @@
   export let isHome = false
 
   let ifhome = 'is-home'
-  let nothome = ''
+  let undefined = ''
 
 </script>
 
-<div class="vegetables {isHome? ifhome : nothome}">
+<div class="vegetables {isHome? ifhome : undefined}">
   <img src="{Vegetables}" alt="Vegetable illustration">
 </div>
 

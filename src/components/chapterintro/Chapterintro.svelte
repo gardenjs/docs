@@ -1,19 +1,15 @@
 <script>
-  export let superscript = ''
   export let pagetitle = ''
   export let title = ''
   export let intro = ''
 
   export let isPagetitle = false
   let haspagetitle = 'has-h1'
-  let hasnotpagetitle = ''
+  let undefined = ''
 
 </script>
 
-<div class="chapter {isPagetitle? haspagetitle : hasnotpagetitle }">
-  {#if superscript}
-    <div class="superscript">{superscript}</div>
-  {/if}
+<div class="chapter {isPagetitle? haspagetitle : undefined }">
   {#if pagetitle}
     <h1>{pagetitle}</h1>
   {:else}
@@ -26,6 +22,7 @@
 
 <style lang="scss">
   .chapter {
+    text-align: center;
     margin: 2rem 0 1rem;
     &.has-h1 {
       margin: 0 0 1.5rem;
@@ -36,49 +33,32 @@
         margin: 1rem 0;
       }
     }
-    .superscript {
-      margin: 0 0 0.25rem;
-      font-family: 'Spline Sans Mono';
-      font-variation-settings: 'wght' 600;
-      font-size: 0.75rem;
-      color: var(--c-superscript);
-      text-transform: uppercase;
-      letter-spacing: 0.125rem;
-      @media (min-width: 840px) {
-        font-size: 0.938rem;
-      }
-    }
     h1,
     h2 {
       margin: 0 0 1rem;
-    }
-    h1 {
-      font-family: 'Vollkorn Bold';
-      font-size: 1.75rem;
-      @media (min-width: 840px) {
-        font-size: 2.75rem;
+      font-family: 'Source Sans 3';
+      font-variation-settings: 'wght' 900;
+      font-size: 1.375rem;
+      @media (min-width: 600px) {
+        font-size: 1.75rem;
+      }
+      @media (min-width: 600px) {
+        font-size: 2.5rem;
       }
       @media (min-width: 960px) {
         font-size: 3.25rem;
       }
       @media (min-width: 1280px) {
-        font-size: 4rem;
-      }
-    }
-    h2 {
-      font-family: 'Vollkorn BoldItalic';
-      font-size: 1.75rem;
-      @media (min-width: 840px) {
-        font-size: 2.5rem;
-      }
-      @media (min-width: 960px) {
-        font-size: 3.375rem;
+        font-size: 3.5rem;
       }
     }
     p {
       margin: 0rem;
-      font-size: 1rem;
+      font-size: 0.938rem;
       color: var(--c-text);
+      @media (min-width: 600px) {
+        font-size: 1rem;
+      }
       @media (min-width: 840px) {
         font-size: 1.125rem;
       }
@@ -86,7 +66,7 @@
         font-size: 1.25rem;
       }
       @media (min-width: 1280px) {
-        font-size: 1.625rem;
+        font-size: 1.5rem;
       }
     }
   }

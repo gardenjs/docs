@@ -84,7 +84,6 @@
         a {
           display: flex;
           align-items: center;
-          font-family: 'Spline Sans Mono';
           font-size: 0.875rem;
           color: var(--c-text);
           font-variation-settings: 'wght' 500;

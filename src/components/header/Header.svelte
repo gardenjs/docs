@@ -13,10 +13,10 @@
   let scroll = ''
 
   let ifdocs = 'is-docs'
-  let notdocs = ''
+  let undefined = ''
 </script>
 
-<header class="header {isFixed? fixed : scroll} {isDocs? ifdocs : notdocs}">
+<header class="header {isFixed? fixed : scroll} {isDocs? ifdocs : undefined}">
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">

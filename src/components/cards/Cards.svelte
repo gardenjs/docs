@@ -2,50 +2,40 @@
   export let title
   export let paragraph
 
-  export let isHgCard = false
-  let highlighted = 'turquoise'
-  let nothighlighted = ''
+  export let hasTurquoiseBG = false
+  export let hasYellowBG = false
+  let turquoisebg = 'turquoise'
+  let yellowbg = 'yellow'
+  let undefined = ''
 
 </script>
 
-<div class="card {isHgCard? highlighted : nothighlighted}">
+<div class="card {hasTurquoiseBG? turquoisebg : undefined} {hasYellowBG? yellowbg : undefined}">
   <h3>{title}</h3>
   <p>{paragraph}</p>
 </div>
 
 <style lang="scss">
   .card {
-    margin: 0;
+    margin: 0 0.75rem 0.75rem 0;
     padding: 1.5rem;
     @media (min-width: 840px) {
       padding: 2rem;
     }
-    background-color: var(--c-card-bg);
-    border: 1px solid var(--c-border-cards);
+    border: var(--b);
     border-radius: var(--b-radius);
+    box-shadow: 0.75rem 0.75rem 0 -2px var(--c-website-bg), 0.75rem 0.75rem 0 var(--c-text);
     &.turquoise {
       background-color: var(--c-card-bg-hl);
-      border-color: var(--c-card-bg-hl);
+    }
+    &.yellow {
+      background-color: hsl(60, 90%, 80%);
     }
     h3 {
       margin-top: 0;
-      font-family: 'Vollkorn Bold';
-      font-size: 1.25rem;
-      @media (min-width: 840px) {
-        font-size: 1.375rem;
-      }
-      @media (min-width: 960px) {
-        font-size: 1.5rem;
-      }
-      @media (min-width: 1280px) {
-        font-size: 1.875rem;
-      }
     }
     p {
       color: var(--c-text);
-      @media (min-width: 1280px) {
-        font-size: 1.25rem;
-      }
       &:last-of-type {
         margin: 0;
       }

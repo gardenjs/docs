@@ -7,13 +7,15 @@ body {
   -moz-font-smoothing: antialiased;
 }
 h1,h2,h3 {
-  color: var(--c-headline);
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' 900;
   line-height: 1.2;
 }
 h1 {
   margin: 0 0 1.5rem;
   font-size: 1.625rem;
+  @media (min-width: 840px) {
+    font-size: 2rem;
+  }
   @media (min-width: 960px) {
     font-size: 2.5rem;
   }
@@ -21,6 +23,9 @@ h1 {
 h2 {
   margin: 1rem;
   font-size: 1.25rem;
+  @media (min-width: 840px) {
+    font-size: 1.275rem;
+  }
   @media (min-width: 960px) {
     margin: 3rem 0 1rem;
     font-size: 1.875rem;
@@ -28,9 +33,12 @@ h2 {
 }
 h3 {
   margin: 1.25rem 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
+  @media (min-width: 840px) {
+    font-size: 1.25rem;
+  }
   @media (min-width: 960px) {
-    margin: 2rem 0 0.5rem;
+    margin: 2rem 0 1rem;
     font-size: 1.625rem;
   }
 }

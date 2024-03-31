@@ -8,4 +8,4 @@
 <Header showHeaderintro />
 <slot></slot>
 <Vegetables isHome />
-<Footer />
+<Footer isHome />

@@ -1,7 +1,7 @@
 <script>
+  import Dashedline from '../../components/dashedlines/Dashedlines.svelte'
   import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.jpg'
   import ScreenshotLightmode from '../../assets/images/screenshot_garden.jpg'
-  import DashedLine from '../../assets/images/line2h1.svg?raw'
 </script>
 
 <div class="header_intro">
@@ -18,9 +18,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17L17 7"/></svg>
       </a>
     </div>
-    <div class="dashed-line">
-      {@html DashedLine}
-    </div>
+    <Dashedline dashedlines1 />
   </div>
   <div class="header_img">
     <div class="app">
@@ -52,7 +50,7 @@
       .slogan {
         display: block;
         margin: 0 0 1.25rem;
-        font-family: 'Vollkorn Bold';
+        font-variation-settings: 'wght' 900;
         font-size: 2.5rem;
         color: var(--c-headline);
         line-height: 1;
@@ -71,17 +69,17 @@
             display: block;
           }
           @media (min-width: 1280px) {
-            font-size: 7rem;
+            font-size: 6.5rem;
           }
         }
         .italic {
-          font-family: 'Vollkorn BoldItalic';
+          font-family: 'Source Sans 3 Italic';
         }
       }
       .slogan_subtext {
         display: block;
         margin: 0 0 1.75rem;
-        font-family: 'Spline Sans Mono';
+        font-family:"Gloria Hallelujah";
         font-size: 1rem;
         color: var(--c-text-light);
         text-align: center;
@@ -100,20 +98,20 @@
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 0 1rem;
+          margin: 0 0 2rem;
         }
         .header_link {
           display: flex;
           justify-content: center;
           align-items: center;
           padding: 0.375rem 1.25rem;
-          font-family: 'Spline Sans Mono';
           color: var(--c-text);
           font-size: 0.875rem;
           text-transform: uppercase;
           text-decoration: none;
           border: 2px solid var(--c-text);
-          box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
           border-radius: .25rem;
+          box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
           transition: 0.4s;
           @media (min-width: 840px) {
             font-size: 0.938rem;
@@ -144,21 +142,11 @@
           background-color: var(--c-primary);
           border-color: var(--c-border-docs);
           box-shadow: 0.375rem 0.375rem 0 -1px var(--c-primary), 3px 3px 0 var(--c-primary);
-          &:hover,
-          &:focus {
-            background-color: var(--c-primary-hl);
-          }
           @media (min-width: 480px) {
             margin: 0;
           }
         }
       }
-    }
-    // dashed line
-    .dashed-line {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: center;
     }
     // header img
     @media (max-width: 959px) {

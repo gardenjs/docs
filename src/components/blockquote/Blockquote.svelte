@@ -11,22 +11,18 @@
 
 <style lang="scss">
   .blockquote {
-    margin: 0 0 2rem;
+    margin: 2rem 0.75rem 2rem 0;
     padding: 1.5rem;
-    border: 1px solid var(--c-quote-border);
-    border-radius: 1rem;
-    background-color: var(--c-quote-bg);
+    border: var(--b);
+    border-radius: var(--b-radius);
+    box-shadow: 0.75rem 0.75rem 0 -2px var(--c-website-bg), 0.75rem 0.75rem 0 var(--c-text);
     @media (min-width: 840px) {
-      // margin: 0 0 3rem;
       padding: 2rem;
-    }
-    @media (min-width: 960px) {
-      margin: 0 0 2rem;
     }
     .icon {
       margin: 0 0 0.75rem;
       font-size: 1.25rem;
-      color: var(--c-quote-icon);
+      color: var(--c-primary);
       @media (min-width: 840px) {
         font-size: 1.5rem;
       }
@@ -36,10 +32,10 @@
     }
     .quote {
       max-width: 100%;
-      font-family: 'Spline Sans Mono';
+      font-family:"Gloria Hallelujah";
       font-size: 1.125rem;
       color: var(--c-text);
-      font-variation-settings: 'wght' 600;
+      font-weight: 600;
       @media (min-width: 840px) {
         font-size: 1.25rem;
       }
@@ -55,7 +51,8 @@
       display: block;
       margin: 0;
       font-size: 0.875rem;
-      color: var(--c-quote-icon);
+      color: var(--c-text-light);
+      font-variation-settings: 'wght' 500;
       text-align: right;
       @media (min-width: 840px) {
         font-size: 1.125rem;

@@ -2,12 +2,16 @@
   let now = new Date()
 
   export let hasBordertop = false
+  export let isHome = false
 
   let bordertop = 'has-bt'
   let noborder = ''
+
+  let ifhome = 'is-home'
+  let nothome = ''
 </script>
 
-<footer class="footer {hasBordertop? bordertop : noborder}">
+<footer class="footer {hasBordertop? bordertop : noborder} {isHome? ifhome : nothome}">
   <div class="footer_container">
     <div class="footer_copyright">
         <div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License">MIT License</a>.<br><span class="copyright">&copy;</span> {now.getFullYear()} <a href="https://www.rabbitdevelopment.com">Rabbit Development</a>. All rights reserved.</div>
@@ -27,7 +31,6 @@
   .footer {
     position: relative;
     padding: 0 1.5rem;
-    background-color: var(--c-footer-bg);
     overflow: hidden;
     &.has-bt {
       border-top: 1px solid var(--c-border);
@@ -95,6 +98,12 @@
             }
           }
         }
+      }
+    }
+    &.is-home {
+      .footer_copyright,
+      .footer_nav li {
+        font-family:"Gloria Hallelujah";
       }
     }
   }

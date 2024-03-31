@@ -85,8 +85,7 @@
     @media (min-width: 840px) {
       margin: 0 0 1.5rem;
       font-variation-settings: 'wght' 700;
-      font-size: 1.25rem;
-      color: var(--c-secondary);
+      font-size: 1.375rem;
       letter-spacing: 0.063rem;
     }
   }
