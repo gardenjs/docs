@@ -26,10 +26,10 @@
     border-radius: var(--b-radius);
     box-shadow: 0.75rem 0.75rem 0 -2px var(--c-website-bg), 0.75rem 0.75rem 0 var(--c-text);
     &.turquoise {
-      background-color: var(--c-card-bg-hl);
+      background-color: var(--c-turquoise);
     }
     &.yellow {
-      background-color: hsl(60, 90%, 80%);
+      background-color: var(--c-yellow);
     }
     h3 {
       margin-top: 0;
