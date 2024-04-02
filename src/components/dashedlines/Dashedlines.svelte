@@ -25,7 +25,7 @@
   <div class="dashed">
     {#if dashedlines2}
       <div class="svg">{@html Dashedline2}</div>
-      <div class="dashed_label dashed-02_label">LOL</div>
+      <div class="dashed_label dashed-02_label">ROFL</div>
     {/if}
     {#if dashedlines3}
       <div class="svg">{@html Dashedline3}</div>
@@ -45,7 +45,7 @@
     {/if}
     {#if dashedlines7}
       <div class="svg">{@html Dashedline7}</div>
-      <div class="dashed_label dashed-07_label">And now get to the fruit</div>
+      <div class="dashed_label dashed-07_label">And now get to the fruit!</div>
     {/if}
   </div>
 {/if}
