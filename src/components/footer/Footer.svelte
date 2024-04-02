@@ -71,13 +71,13 @@
       a {
         display: inline-block;
         font-size: 0.813rem;
-        color: var(--c-primary-link);
+        color: var(--c-footer-link);
         text-decoration: none;
         @media (min-width: 960px) {
           font-size: 0.938rem;
         }
         &:hover {
-          color: var(--c-primary-link-hl);
+          color: var(--c-footer-link-hl);
         }
       }
       .footer_nav {
