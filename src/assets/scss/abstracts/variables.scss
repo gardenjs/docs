@@ -1,51 +1,48 @@
 :root {
-  --c-primary:           hsl(185, 80%, 75%);
-  --c-primary-dark:      hsl(185, 100%, 35%);
-  --c-primary-hl:        hsl(185, 80%, 65%);
-  --c-secondary:         hsl(216, 35%, 50%);
-  --c-secondary-dark:    hsl(216, 35%, 20%);
+  --c-primary:           hsl(185, 80%, 75%); // hsl(185, 80%, 75%);
+  --c-primary-dark:      hsl(185, 80%, 40%);
+  --c-secondary:         hsl(216, 41%, 45%);
+  --c-secondary-dark:    hsl(216, 41%, 30%);
 
-  --c-website-bg:        hsl(65, 10%, 97%);
-  --c-website-code-bg:   var(--c-link-bg);
+  --c-website-bg:        #fff;
+  --c-website-code-bg:   hsl(0, 0%, 95%);
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-navbar-icon-hl:    var(--c-primary-link);
   --c-border:            hsl(216, 10%, 80%);
-  --c-border-cards:      transparent;
-  --c-card-bg:           hsl(0, 0%, 100%);
-  --c-card-bg-hl:        hsl(185, 80%, 88%);
-  --c-quote-bg:          hsl(65, 10%, 92%);
-  --c-quote-border:      var(--c-quote-bg);
+  --c-border-docs:       var(--c-text);
+  --c-turquoise:         hsl(185, 100%, 90%);
+  --c-yellow:            hsl(60, 90%, 80%);
   --c-prism-bg:          var(--c-link-bg);
   --c-table-bg:          transparent;
 
-  --c-headline:          var(--c-secondary-dark);
-  --c-text:              var(--c-secondary-dark);
-  --c-text-light:        hsl(216, 10%, 50%);
-  --c-link:              hsl(216, 100%, 55%);
-  --c-link-hl:           hsl(216, 100%, 65%);
+  --c-headline:          #000;
+  --c-text:              #000;
+  --c-text-light:        hsl(216, 21%, 50%);
+  --c-link:              hsl(216, 80%, 55%);
+  --c-link-hl:           hsl(216, 80%, 65%);
   --c-primary-link:      var(--c-primary-dark);
-  --c-primary-link-hl:   hsl(185, 100%, 45%);
-  --c-link-bg:           hsl(65, 10%, 92%);
+  --c-link-bg:           var(--c-website-code-bg);
   --c-table:             var(--c-secondary-dark);
   --c-btntxt-docs:       var(--c-text);
 
-  --c-footer-bg:         var(--c-website-bg);
   --c-footer-text:       var(--c-text-light);
+  --c-footer-link:       var(--c-primary-dark);
+  --c-footer-link-hl:   hsl(185, 80%, 45%);
 
   --c-app-bg:            hsl(216, 41%, 15%);
   --c-app-border:        hsl(216, 41%, 5%);
 
-  --w-website-wide:      1380px;
+  --w-website-wide:      1280px;
   --w-website-slim:       840px;
 
-  --b-radius:            1rem;
+  --b:                   2px solid var(--c-text);
+  --b-radius:            0.25rem;
 
-  --monospace:           "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --ff-monospace:        "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 [data-theme="dark"] {
   --c-primary:           hsl(185, 80%, 65%);
-  --c-primary-hl:        hsl(185, 80%, 75%);
   --c-secondary:         hsl(216, 25%, 80%);
   --c-secondary-dark:    hsl(216, 25%, 75%);
 
@@ -54,24 +51,24 @@
   --c-navbar-icon:       var(--c-secondary-dark);
   --c-navbar-icon-hl:    var(--c-primary);
   --c-border:            var(--c-text);
-  --c-border-cards:      var(--c-text);
-  --c-card-bg:           transparent;
-  --c-card-bg-hl:        hsl(216, 25%, 25%);
-  --c-quote-bg:          var(--c-website-bg);
+  --c-border-docs:       var(--c-website-bg);
+  --c-turquoise:        hsl(216, 25%, 25%);
+  --c-yellow:           hsl(216, 25%, 25%);
   --c-quote-border:      var(--c-border);
   --c-prism-bg:          var(--c-link-bg);
 
   --c-headline:          var(--c-secondary-dark);
   --c-text:              var(--c-secondary-dark);
   --c-text-light:        var(--c-secondary-dark);
-  --c-link:              hsl(185, 100%, 70%);
-  --c-link-hl:           hsl(185, 100%, 80%);
-  --c-link-bg:           var(--c-card-bg-hl);
+  --c-link:              var(--c-primary);
+  --c-link-hl:           hsl(185, 80%, 75%);
+  --c-link-bg:           var(--c-turquoise);
   --c-table:             var(--c-secondary);
   --c-btntxt-docs:       var(--c-website-bg);
 
-  --c-footer-bg:           var(--c-website-bg);
-  --c-footer-text:       hsl(216, 70%, 87%);
+  --c-footer-text:       var(--c-text);
+  --c-footer-link:       var(--c-primary);
+  --c-footer-link-hl:    var(--c-link-hl);
 
   --c-app-bg:            hsl(168, 8%, 96%);
   --c-app-border:        hsl(168, 8%, 76%);

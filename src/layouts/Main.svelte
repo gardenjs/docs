@@ -5,7 +5,7 @@
   let intro = ''
   let margintop = 'has-mt'
   let iswide = ''
-  let home = 'is-wide'
+  let home = 'is-home'
 </script>
 
 <div class="main {hasHeaderintro? intro : margintop} {isWide? home : iswide}">
@@ -46,7 +46,8 @@
         max-width: var(--w-website-slim);
       }
     }
-    &.is-wide {
+    &.is-home {
+      margin-top: 0;
       .main_container {
         max-width: var(--w-website-wide);
       }

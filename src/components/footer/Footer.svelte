@@ -2,15 +2,19 @@
   let now = new Date()
 
   export let hasBordertop = false
+  export let isHome = false
 
   let bordertop = 'has-bt'
   let noborder = ''
+
+  let ifhome = 'is-home'
+  let nothome = ''
 </script>
 
-<footer class="footer {hasBordertop? bordertop : noborder}">
+<footer class="footer {hasBordertop? bordertop : noborder} {isHome? ifhome : nothome}">
   <div class="footer_container">
     <div class="footer_copyright">
-        <div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License">MIT License</a>.<br><span class="copyright">&copy;</span> {now.getFullYear()} <a href="https://www.rabbitdevelopment.de">Rabbit Development</a>. All rights reserved.</div>
+        <div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License">MIT License</a>.<br><span class="copyright">&copy;</span> {now.getFullYear()} <a href="https://www.rabbitdevelopment.com">Rabbit Development</a>. All rights reserved.</div>
     </div>
     <div class="footer_nav">
       <nav>
@@ -27,11 +31,6 @@
   .footer {
     position: relative;
     padding: 0 1.5rem;
-    @supports (font-variation-settings: normal) {
-      font-family: 'Spline Sans Mono';
-      font-variation-settings: 'wght' 400;
-    }
-    background-color: var(--c-footer-bg);
     overflow: hidden;
     &.has-bt {
       border-top: 1px solid var(--c-border);
@@ -72,13 +71,13 @@
       a {
         display: inline-block;
         font-size: 0.813rem;
-        color: var(--c-primary-link);
+        color: var(--c-footer-link);
         text-decoration: none;
         @media (min-width: 960px) {
           font-size: 0.938rem;
         }
         &:hover {
-          color: var(--c-primary-link-hl);
+          color: var(--c-footer-link-hl);
         }
       }
       .footer_nav {
@@ -99,6 +98,12 @@
             }
           }
         }
+      }
+    }
+    &.is-home {
+      .footer_copyright,
+      .footer_nav li {
+        font-family:"Gloria Hallelujah";
       }
     }
   }

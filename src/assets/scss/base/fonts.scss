@@ -1,26 +1,18 @@
-//
-// @Project: WAT Ingenieurgesellschaft
-// @Author: Martin Farkas
-// @Email:  info@websites-graphix.com
-//
-
-@supports (font-variation-settings: normal) {
-  @font-face {
-    font-family: 'Spline Sans Mono';
-    src: url('../fonts/SplineSansMono-VariableFont_wght.woff2') format('woff2');
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Vollkorn';
-    src: url('../fonts/Vollkorn-VariableFont_wght.woff2') format('woff2');
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Vollkorn Italic';
-    src: url('../fonts/Vollkorn-Italic-VariableFont_wght.woff2') format('woff2');
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('../Fonts/SourceSans3-VariableFont_wght.woff2') format('woff2');
+  font-optical-sizing: auto;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans 3 Italic';
+  src: url('../Fonts/SourceSans3-Italic-VariableFont_wght.woff2') format('woff2');
+  font-optical-sizing: auto;
+  font-display: swap;
+}
+@font-face {
+  font-family:"Gloria Hallelujah";
+  src: url('../fonts/GloriaHallelujah-Regular.woff2') format('woff2');
+  font-optical-sizing: auto;
+  font-style: normal;
 }

@@ -1,8 +1,14 @@
 <script>
   import Vegetables from '../../assets/icons/vegetables.svg'
+
+  export let isHome = false
+
+  let ifhome = 'is-home'
+  let undefined = ''
+
 </script>
 
-<div class="vegetables">
+<div class="vegetables {isHome? ifhome : undefined}">
   <img src="{Vegetables}" alt="Vegetable illustration">
 </div>
 
@@ -29,6 +35,15 @@
       }
       @media (min-width: 840px) {
         width: 375px;
+      }
+    }
+    &.is-home {
+      margin: 2rem auto;
+      @media (min-width: 960px) {
+        margin-top: 2rem;
+      }
+      @media (min-width: 1280px) {
+        margin-top: 2.5rem;
       }
     }
   }

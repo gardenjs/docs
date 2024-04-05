@@ -13,11 +13,10 @@
   let scroll = ''
 
   let ifdocs = 'is-docs'
-  let notdocs = ''
-
+  let undefined = ''
 </script>
 
-<header class="header {isFixed? fixed : scroll} {isDocs? ifdocs : notdocs}">
+<header class="header {isFixed? fixed : scroll} {isDocs? ifdocs : undefined}">
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">
@@ -74,10 +73,7 @@
             display: inline-flex;
             align-items: center;
             color: var(--c-text);
-            font-weight: 900;
-            @supports (font-variation-settings: normal) {
-              font-variation-settings: 'wght' 900;
-            }
+            font-variation-settings: 'wght' 900;
             text-decoration: none;
             @media (max-width: 579px) {
               margin: 0 0 0.75rem;
@@ -97,7 +93,6 @@
             }  
             .logo_label {
               padding: 0 0 0 0.75rem;
-              font-weight: 800;
               font-size: 1.5rem;
               white-space: nowrap;
               transition: color 0.2s;

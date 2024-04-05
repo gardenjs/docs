@@ -7,5 +7,5 @@
 
 <Header showHeaderintro />
 <slot></slot>
-<Vegetables />
-<Footer />
+<Vegetables isHome />
+<Footer isHome />

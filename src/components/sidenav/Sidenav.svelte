@@ -84,9 +84,8 @@
     }
     @media (min-width: 840px) {
       margin: 0 0 1.5rem;
-      font-size: 1.25rem;
-      color: var(--c-secondary);
-      font-weight: 700;
+      font-variation-settings: 'wght' 700;
+      font-size: 1.375rem;
       letter-spacing: 0.063rem;
     }
   }
@@ -96,10 +95,13 @@
     ul {
       display: block;
       li {
-        font-size: 0.938rem;
+        font-variation-settings: 'wght' 700;
+        font-size: 1rem;
         color: var(--c-text);
         line-height: 1.2;
-        font-weight: 700;
+        @media (min-width: 960px) {
+          font-size: 1.125rem;
+        }
         .sidenav_folder {
           display: block;
           margin: 0 0 0.5rem;
@@ -114,18 +116,21 @@
             a {
               margin: 0.25rem 0;
               padding: 0.375rem 0.75rem;
-              font-size: 0.938rem;
+              font-size: 1rem;
               color: var(--c-text);
               line-height: 1.2;
-              font-weight: 400;
+              font-variation-settings: 'wght' 400;
               text-decoration: none;
+              @media (min-width: 960px) {
+                font-size: 1.125rem;
+              }
               &:hover {
                 background-color: var(--c-link-bg);
                 border-radius: 0.5rem;
               }
               &.active {
                 color: var(--c-link);
-                font-weight: 600;
+                font-variation-settings: 'wght' 500;
                 background-color: var(--c-link-bg);
                 border-radius: 0.5rem;
               }

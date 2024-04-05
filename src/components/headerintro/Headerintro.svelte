@@ -1,4 +1,5 @@
 <script>
+  import Dashedline from '../../components/dashedlines/Dashedlines.svelte'
   import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.jpg'
   import ScreenshotLightmode from '../../assets/images/screenshot_garden.jpg'
 </script>
@@ -17,6 +18,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17L17 7"/></svg>
       </a>
     </div>
+    <Dashedline dashedlines1 />
   </div>
   <div class="header_img">
     <div class="app">
@@ -32,11 +34,9 @@
 </div>
 
 <style lang="scss">
-  @use "sass:math";
   .header_intro {
     position: relative;
-    margin: auto;
-    font-family: 'Spline Sans Mono';
+    margin: auto;    
     @media (min-width: 960px) {
       display: grid;
       grid-template-columns: repeat(2,540px 1fr);
@@ -50,13 +50,9 @@
       .slogan {
         display: block;
         margin: 0 0 1.25rem;
-        font-family: 'Vollkorn';
+        font-variation-settings: 'wght' 900;
         font-size: 2.5rem;
         color: var(--c-headline);
-        font-weight: 400;
-        @supports (font-variation-settings: normal) {
-          font-variation-settings: 'wght' 400;
-        }
         line-height: 1;
         text-align: center;
         @media (min-width: 280px) {
@@ -66,34 +62,35 @@
           font-size: 4rem;
         }
         @media (min-width: 960px) {
-          font-size: 7rem;
+          font-size: 5.5rem;
           text-align: left;
-          line-height: 0.8;
+          line-height: 0.9;
           span {
             display: block;
           }
+          @media (min-width: 1280px) {
+            font-size: 6.5rem;
+          }
         }
         .italic {
-          font-family: 'Vollkorn Italic';
+          font-family: 'Source Sans 3 Italic';
         }
       }
       .slogan_subtext {
         display: block;
-        margin: 0.5rem 0 1.75rem;
-        width: 100%;
+        margin: 0 0 1.75rem;
+        font-family:"Gloria Hallelujah";
         font-size: 1rem;
         color: var(--c-text-light);
-        font-weight: 400;
-        @supports (font-variation-settings: normal) {
-          font-variation-settings: 'wght' 400;
-        }
         text-align: center;
         @media (min-width: 840px) {
-          font-size: 1.25rem;
+          font-size: 1.125rem;
         }
         @media (min-width: 960px) {
-          font-size: 1.375rem;
           text-align: left;
+        }
+        @media (min-width: 1280px) {
+          font-size: 1.25rem;
         }
       }
       .header_links {
@@ -101,40 +98,41 @@
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 0 1rem;
+          margin: 0 0 2rem;
         }
         .header_link {
           display: flex;
           justify-content: center;
           align-items: center;
           padding: 0.375rem 1.25rem;
-          color: var(--c-website-bg);
+          color: var(--c-text);
           font-size: 0.875rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 2px solid var(--c-text);
+          border-radius: .25rem;
+          box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
+          transition: 0.4s;
           @media (min-width: 840px) {
-            font-size: 1rem;
+            font-size: 0.938rem;
           }
           @media (min-width: 960px) {
             padding: 0.5rem 1.25rem;
           }
-          text-transform: uppercase;
-          font-weight: 500;
-          text-decoration: none;
-          background-color: var(--c-text);
-          border-radius: 1.5rem;
-          transition: 0.8s;
           .header_links-label {
             padding-right: 0.5rem;
           }
           svg {
-            transition: 0.2s;
+            transition: 0.4s;
           }
           &:hover,
           &:focus {
-            background-color: var(--c-secondary);
-            // box-shadow: 0 .175rem .5rem 0 rgba(0,0,0,.4);
-            transition: 0.2s;
+            transition: 0.4s;
+            box-shadow: 0 0 0 -1px #fff, 0 0 0 #fff;
+            transform: translate(0.25rem , 0.25rem );
             svg {
-              transform: translateX(0.375rem);
-              transition: 0.2s;
+              transform: translateX(0.5rem );
+              transition: 0.4s;
             }
           }
         }
@@ -142,10 +140,8 @@
           margin: 0 0 0.5rem;
           color: var(--c-btntxt-docs);
           background-color: var(--c-primary);
-          &:hover,
-          &:focus {
-            background-color: var(--c-primary-hl);
-          }
+          border-color: var(--c-border-docs);
+          box-shadow: 0.375rem 0.375rem 0 -1px var(--c-primary), 3px 3px 0 var(--c-primary);
           @media (min-width: 480px) {
             margin: 0;
           }
@@ -178,7 +174,7 @@
           flex-direction: column;
           position: relative;
           width: 100%;
-          height: 100%;
+          // height: 100%;
           background-color: var(--c-app-bg);
           border-radius: 0.563rem;
           backdrop-filter: blur(1.25rem);
