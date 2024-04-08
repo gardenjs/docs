@@ -6,8 +6,6 @@
 
   --c-website-bg:        #fff;
   --c-website-code-bg:   hsl(0, 0%, 95%);
-  --c-navbar-icon:       var(--c-secondary-dark);
-  --c-navbar-icon-hl:    var(--c-primary-link);
   --c-border:            hsl(216, 10%, 80%);
   --c-border-docs:       var(--c-text);
   --c-turquoise:         hsl(185, 100%, 90%);
@@ -27,7 +25,7 @@
 
   --c-footer-text:       var(--c-text-light);
   --c-footer-link:       var(--c-primary-dark);
-  --c-footer-link-hl:   hsl(185, 80%, 45%);
+  --c-footer-link-hl:    hsl(185, 80%, 45%);
 
   --c-app-bg:            hsl(216, 41%, 15%);
   --c-app-border:        hsl(216, 41%, 5%);
@@ -48,8 +46,6 @@
 
   --c-website-bg:        hsl(216, 41%, 12%);
   --c-website-code-bg:   var(--c-link-bg);
-  --c-navbar-icon:       var(--c-secondary-dark);
-  --c-navbar-icon-hl:    var(--c-primary);
   --c-border:            var(--c-text);
   --c-border-docs:       var(--c-website-bg);
   --c-turquoise:        hsl(216, 25%, 25%);
@@ -62,6 +58,7 @@
   --c-text-light:        var(--c-secondary-dark);
   --c-link:              var(--c-primary);
   --c-link-hl:           hsl(185, 80%, 75%);
+  --c-primary-link:      var(--c-link-hl);
   --c-link-bg:           var(--c-turquoise);
   --c-table:             var(--c-secondary);
   --c-btntxt-docs:       var(--c-website-bg);
