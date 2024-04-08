@@ -9,13 +9,13 @@
     <div class="slogan">Plant, Cultivate, <span class="italic">Harvest!</div>
     <p class="slogan_subtext">Gardenjs provides a centralized platform for developers to create, test and present UI components and pages in isolation.</p>
     <div class="header_links">
-      <a href="/docs" class="header_link btn-docs" title="documentation">
-        <span class="header_links-label">Documentation</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
-      </a>
-      <a href=".#" class="header_link" title="Watch Gardenjs demo" target="_blank">
+      <a href=".#" class="header_link btn-demo" title="Watch Gardenjs demo" target="_blank">
         <span class="header_links-label">Watch Demo</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17L17 7"/></svg>
+      </a>
+      <a href="/docs" class="header_link" title="documentation">
+        <span class="header_links-label">Documentation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
       </a>
     </div>
     <Dashedline dashedlines1 />
@@ -136,7 +136,7 @@
             }
           }
         }
-        a.btn-docs {
+        a.btn-demo {
           margin: 0 0 0.5rem;
           color: var(--c-btntxt-docs);
           background-color: var(--c-primary);
