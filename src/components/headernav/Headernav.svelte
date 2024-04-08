@@ -46,9 +46,9 @@
     <li>
       <button id="toggle-mode" class="toggle-mode" title="Toggle Website Theme" on:click={toggleTheme}>
       {#if currentTheme === 'light'}
-      <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16 0c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16C0 7.163 7.162 0 16 0zm-.001 7c-4.937 0-9 4.062-9 9 0 4.936 4.063 8.999 9 8.999s9-4.063 9-9a6.365 6.365 0 01-4.484 1.848c-3.492 0-6.364-2.872-6.364-6.364 0-1.678.664-3.292 1.848-4.483z" fill-rule="evenodd"/></svg>
+        <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 009 9 9 9 0 11-9-9z"/></svg>
       {:else}
-      <svg class="icon" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm0 22.2a1 1 0 00-1 1V25a1 1 0 002 0v-1.8a1 1 0 00-1-1zm5.801-1.813a1 1 0 00-1.414 1.414l1.269 1.27a1 1 0 001.414-1.415zm-10.188 0a1 1 0 00-1.414 0l-1.27 1.269a1 1 0 001.415 1.414l1.27-1.269a1 1 0 000-1.414zM16 12.4a3.6 3.6 0 100 7.2 3.6 3.6 0 000-7.2zM8.8 15H7a1 1 0 000 2h1.8a1 1 0 000-2zM25 15h-1.8a1 1 0 000 2H25a1 1 0 000-2zm-1.93-6.07a1 1 0 00-1.414 0l-1.27 1.269a1 1 0 001.415 1.414l1.27-1.269a1 1 0 000-1.414zm-12.726 0a1 1 0 00-1.414 1.414l1.269 1.27a1 1 0 001.414-1.415zM16 6a1 1 0 00-1 1v1.8a1 1 0 002 0V7a1 1 0 00-1-1z" fill-rule="evenodd"/></svg>
+        <svg lass="icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
       {/if}
       </button>
     </li>
