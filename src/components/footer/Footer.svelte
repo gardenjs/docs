@@ -71,13 +71,13 @@
       a {
         display: inline-block;
         font-size: 0.813rem;
-        color: var(--c-footer-link);
+        color: var(--c-link);
         text-decoration: none;
         @media (min-width: 960px) {
           font-size: 0.938rem;
         }
         &:hover {
-          color: var(--c-footer-link-hl);
+          color: var(--c-link-hl);
         }
       }
       .footer_nav {
@@ -104,6 +104,12 @@
       .footer_copyright,
       .footer_nav li {
         font-family:"Gloria Hallelujah";
+      }
+      a {
+        color: var(--c-footer-link);
+        &:hover {
+          color: var(--c-footer-link-hl);
+        }
       }
     }
   }
