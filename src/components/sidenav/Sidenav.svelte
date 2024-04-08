@@ -9,8 +9,9 @@
     { href: "/docs/get-started/install", label: "Install" },
     { href: "/docs/get-started/install-renderer", label: "Install Renderer Plugin" },
     { href: "/docs/get-started/settings", label: "Settings" },
-    { href: "/docs/get-started/examples", label: "Examples" },  
-    { href: "/docs/get-started/decorators", label: "Decorators" }
+    { href: "/docs/get-started/examples", label: "Examples" },
+    { href: "/docs/get-started/hooks", label: "Hooks" },
+    { href: "/docs/get-started/decorators", label: "Decorators" },
   ];
   const renderer = [{ href: "/docs/renderer", label: "Write New Renderer" }];
   const notes = [{ href: "/docs/notes", label: "Add Notes" }];
