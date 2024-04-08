@@ -1,10 +1,10 @@
 <script>
 
   let items = [
-    { label: 'Why have we developed another storybook?', content: 'We started developing Gardenjs for two reasons: Storybook was clearly too slow and we wanted to get to know Svelte better. First, we used Gardenjs for our own projects and finally released it as open source because it does some things better than alternative tools. As users of open source software, we now have the opportunity to give something back.' },
-    { label: 'Why is Gardenjs better than the alternatives around Storybook?', content: 'The question is provocative and of course each tool has its own advantages and disadvantages. Certainly, the top dog also covers many features that are not or not yet integrated in Gardenjs. Gardenjs is definitely much faster and leaner. In our opinion, "stories" can be created more efficiently with Gardenjs and the option to work with decorators is more flexible. Gardenjs also looks better ;) Much is a matter of taste, form your own opinion - we look forward to your feedback.' },
-    { label: 'What is the business model of Gardenjs?', content: 'We have developed Gardenjs for our own development work. We do not see a market for a paid version or paid functions. However, we would appreciate help with the further maintenance and integration of new functions. If Gardenjs is accepted, we will also consider a sponsoring or donation program.' },
-    { label: 'Is Gardenjs being actively developed?', content: 'We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the roadmap (see Docs) depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.' }
+    { label: 'Why have we developed another storybook?', content: '<p>We started developing Gardenjs for two reasons: Storybook was clearly too slow and we wanted to get to know Svelte better. First, we used Gardenjs for our own projects and finally released it as open source because it does some things better than alternative tools. As users of open source software, we now have the opportunity to give something back.</p>' },
+    { label: 'Why is Gardenjs better than the alternatives around Storybook?', content: '<p>The question is provocative and of course each tool has its own advantages and disadvantages. Certainly, the top dog also covers many features that are not or not yet integrated in Gardenjs. Gardenjs is definitely much faster and leaner. In our opinion, "stories" can be created more efficiently with Gardenjs and the option to work with decorators is more flexible. Gardenjs also looks better ;) Much is a matter of taste, form your own opinion - we look forward to your feedback.</p>' },
+    { label: 'What is the business model of Gardenjs?', content: '<p>We have developed Gardenjs for our own development work. We do not see a market for a paid version or paid functions. However, we would appreciate help with the further maintenance and integration of new functions. If Gardenjs is accepted, we will also consider a sponsoring or donation program.</p>' },
+    { label: 'Is Gardenjs being actively developed?', content: '<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the roadmap (see Docs) depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>' }
   ];
 
   function toggleAccordion(index) {
@@ -31,7 +31,7 @@
       </button>
       <div class="panel" aria-hidden={item.isOpen ? "false" : "true"} class:show={item.isOpen}>
         <div class="accordion_content">
-          {item.content}
+          {@html item.content}
         </div>
       </div>
     </div>
@@ -117,16 +117,8 @@
         .accordion_content {
           margin: 0.25rem 0 0 0.25rem;
           padding: 0 1.5rem 1.5rem;
-          font-size: 0.875rem;
           @media (min-width: 840px) {
             padding: 0 2rem 2rem;
-            font-size: 1.125rem;
-          }
-          @media (min-width: 960px) {
-            font-size: 1.25rem;
-          }
-          @media (min-width: 1280px) {
-            font-size: 1.375rem;
           }
         }
       }
