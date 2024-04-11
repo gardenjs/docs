@@ -67,6 +67,10 @@ p {
   @media (min-width: 960px) {
     font-size: 1.188rem;
   }
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 }
 ol,
 ul {
@@ -97,6 +101,12 @@ p mark,
 p code {
   padding: 0.125rem 0.25rem;
   font-size: 0.875rem;
+  font-variation-settings: 'wght' 500;
+  background-color: var(--c-website-code-bg);
+  border-radius: 0.25rem;
+  @media (min-width: 840px) {
+    font-size: 0.875rem;
+  }
   font-variation-settings: 'wght' 500;
   background-color: var(--c-website-code-bg);
   border-radius: 0.25rem;
