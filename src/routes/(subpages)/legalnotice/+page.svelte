@@ -16,7 +16,7 @@
     <p><strong>Vertreten durch:</strong><br>
     Robin Danzinger, Martin Farkas</p>
     <h3>Kontakt</h3>
-    <p>E-Mail: <a href="mailto:hello@rabbitdevelopment.com">hello@rabbitdevelopment.com</a></p>
+    <p>E-Mail: <a href="mailto:hello@gardenjs.org">hello@gardenjs.org</a></p>
     <h3>EU-Streitschlichtung</h3>
     <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben.</p>
     <h3>Verbraucher&shy;streit&shy;beilegung / Universal&shy;schlichtungs&shy;stelle</h3>
