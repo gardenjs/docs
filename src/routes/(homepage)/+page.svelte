@@ -46,30 +46,6 @@
     <Cards hasYellowBG isEven2col
       title="The sleek good-looking alternative"
       paragraph="The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience." />
-      <Cards hasYellowBG isEven2col
-      title="Speed of light"
-      paragraph="Gardenjs is a Svelte app and thus benefits from its super speed. Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." />
-    <Cards hasYellowBG isOdd2col
-      title="Use your favorite JS framework"
-      paragraph="Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." />
-    <Cards hasYellowBG isOdd2col
-      title="Multi-framework compatible"
-      paragraph="You can use Gardenjs out of the box even in a multiframework project - Storybook and others can't do that." />
-    <Cards hasYellowBG isEven2col
-      title="The sleek good-looking alternative"
-      paragraph="The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience." />
-      <Cards hasYellowBG isEven2col
-      title="Speed of light"
-      paragraph="Gardenjs is a Svelte app and thus benefits from its super speed. Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." />
-    <Cards hasYellowBG isOdd2col
-      title="Use your favorite JS framework"
-      paragraph="Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." />
-    <Cards hasYellowBG isOdd2col
-      title="Multi-framework compatible"
-      paragraph="You can use Gardenjs out of the box even in a multiframework project - Storybook and others can't do that." />
-    <Cards hasYellowBG isEven2col
-      title="The sleek good-looking alternative"
-      paragraph="The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience." />
   </Grid>
   <Dashedline4 dashedlines4 />
   <ChapterIntro
