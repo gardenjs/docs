@@ -55,17 +55,19 @@
       box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
       border-radius: var(--b-radius);
       transition: 0.4s;
-      &:hover,
-      &:focus {
-        box-shadow: 0 0 0 1px #fff, 0 0 0 #fff;
-        transform: translate(0.25rem , 0.25rem );
-        transition: 0.4s;
-      }
       &:nth-last-of-type(even) {
         transform: rotateZ(-0.25deg);
       }
       &:nth-last-of-type(odd) {
         transform: rotateZ(0.25deg);
+      }
+      &:hover,
+      &:focus,
+      &:has(.active) {
+        box-shadow: 0 0 0 1px #fff, 0 0 0 #fff;
+        transform: translate(0.25rem , 0.25rem );
+        transform: rotateZ(0deg);
+        transition: 0.4s;
       }
       .accordion_btn {
         display: flex;
