@@ -14,6 +14,7 @@
   --c-table-bg:          transparent;
 
   --c-headline:          #000;
+  --c-headline-bg:       var(--c-primary);
   --c-text:              #000;
   --c-text-light:        hsl(216, 21%, 50%);
   --c-link:              hsl(216, 80%, 55%);
@@ -54,6 +55,7 @@
   --c-prism-bg:          var(--c-link-bg);
 
   --c-headline:          var(--c-secondary-dark);
+  --c-headline-bg:       hsl(216, 25%, 25%);
   --c-text:              var(--c-secondary-dark);
   --c-text-light:        var(--c-secondary-dark);
   --c-link:              var(--c-primary);
