@@ -4,7 +4,8 @@
     { label: 'Why have we developed another storybook?', content: '<p>We started developing Gardenjs for two reasons: Storybook was clearly too slow and we wanted to get to know Svelte better. First, we used Gardenjs for our own projects and finally released it as open source because it does some things better than alternative tools. As users of open source software, we now have the opportunity to give something back.</p>' },
     { label: 'Why is Gardenjs better than the alternatives around Storybook?', content: '<p>The question is provocative and of course each tool has its own advantages and disadvantages. Certainly, the top dog also covers many features that are not or not yet integrated in Gardenjs. Gardenjs is definitely much faster and leaner. In our opinion, "stories" can be created more efficiently with Gardenjs and the option to work with decorators is more flexible. Gardenjs also looks better ;) Much is a matter of taste, form your own opinion - we look forward to your feedback.</p>' },
     { label: 'What is the business model of Gardenjs?', content: '<p>We have developed Gardenjs for our own development work. We do not see a market for a paid version or paid functions. However, we would appreciate help with the further maintenance and integration of new functions. If Gardenjs is accepted, we will also consider a sponsoring or donation program.</p>' },
-    { label: 'Is Gardenjs being actively developed?', content: '<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the roadmap (see Docs) depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>' }
+    { label: 'Is Gardenjs being actively developed?', content: '<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the roadmap (see Docs) depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>' },
+    { label: 'Do you have further questions or is there something on your mind?', content: '<p>If you have any problems, please first look in the <a href="/docs">documentation</a> or check whether there is an issue for your problem on <a href="https://github.com/gardenjs/gardenjs" target="_blank">GitHub</a> and otherwise open a new issue. We look forward to your feedback and support. Please feel free to contact us.</p>'}
   ];
 
   function toggleAccordion(index) {
@@ -48,7 +49,7 @@
       margin-top: 2rem 0 4rem;
     }
     .accordion_item {
-      margin: 0 0 0.75rem;
+      margin: 0 0 1rem;
       border: var(--b);
       border-radius: var(--b-radius);
       box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
@@ -59,6 +60,12 @@
         box-shadow: 0 0 0 1px #fff, 0 0 0 #fff;
         transform: translate(0.25rem , 0.25rem );
         transition: 0.4s;
+      }
+      &:nth-last-of-type(even) {
+        transform: rotateZ(-0.25deg);
+      }
+      &:nth-last-of-type(odd) {
+        transform: rotateZ(0.25deg);
       }
       .accordion_btn {
         display: flex;
