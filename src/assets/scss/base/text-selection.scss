@@ -1,6 +1,12 @@
-h1,h2,h3,h4,h5,p,li,a,span,div,b,strong,i,em,sub,sup,code,th,td {
+h2,h3,h4,h5,p,li,a,span,div,b,strong,i,em,sub,sup,code,th,td {
   &::selection {
     color: var(--c-text);
     background-color: var(--c-primary);
+  }
+}
+h1 {
+  &::selection {
+    color: var(--c-text);
+    background-color: transparent;
   }
 }

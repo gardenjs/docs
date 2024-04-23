@@ -35,7 +35,9 @@
     }
     h1,
     h2 {
+      display: inline-block;
       margin: 0 0 1rem;
+      padding: 0 0 0.25rem;
       font-family: 'Source Sans 3 Italic';
       font-variation-settings: 'wght' 900;
       font-size: 1.375rem;
@@ -51,6 +53,11 @@
       @media (min-width: 1280px) {
         font-size: 3.5rem;
       }
+    }
+    h1 {
+      background: linear-gradient(180deg, transparent 0 50%, var(--c-headline-bg) 50% 100%);
+      border-left: 1.5rem solid transparent;
+	    border-right: 1.5rem solid transparent;
     }
     p {
       margin: 0rem;
