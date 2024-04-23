@@ -1,5 +1,5 @@
 :root {
-  --c-primary:           hsl(185, 80%, 75%); // hsl(185, 80%, 75%);
+  --c-primary:           hsl(185, 80%, 75%);
   --c-primary-dark:      hsl(185, 80%, 40%);
   --c-secondary:         hsl(216, 41%, 45%);
   --c-secondary-dark:    hsl(216, 41%, 30%);
@@ -14,7 +14,7 @@
   --c-table-bg:          transparent;
 
   --c-headline:          #000;
-  --c-headline-bg:       var(--c-primary);
+  --c-headline-bg:       var(--c-turquoise);
   --c-text:              #000;
   --c-text-light:        hsl(216, 21%, 50%);
   --c-link:              hsl(216, 80%, 55%);
@@ -55,7 +55,7 @@
   --c-prism-bg:          var(--c-link-bg);
 
   --c-headline:          var(--c-secondary-dark);
-  --c-headline-bg:       hsl(216, 25%, 25%);
+  --c-headline-bg:       var(--c-turquoise);
   --c-text:              var(--c-secondary-dark);
   --c-text-light:        var(--c-secondary-dark);
   --c-link:              var(--c-primary);
