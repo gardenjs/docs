@@ -11,7 +11,7 @@
 
 <div class="chapter {isPagetitle? haspagetitle : undefined }">
   {#if pagetitle}
-    <h1>{pagetitle}</h1>
+    <h1><span>{pagetitle}</span></h1>
   {:else}
     <h2>{title}</h2>
   {/if}
@@ -35,7 +35,6 @@
     }
     h1,
     h2 {
-      display: inline-block;
       margin: 0 0 1rem;
       padding: 0 0 0.25rem;
       font-family: 'Source Sans 3 Italic';
@@ -55,9 +54,9 @@
       }
     }
     h1 {
-      background: linear-gradient(180deg, transparent 0 50%, var(--c-headline-bg) 50% 100%);
-      border-left: 1.5rem solid transparent;
-	    border-right: 1.5rem solid transparent;
+      span {
+        background: linear-gradient(180deg, transparent 0 55%, var(--c-headline-bg) 55% 100%);
+      }
     }
     p {
       margin: 0rem;
