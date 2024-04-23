@@ -1,6 +1,17 @@
 <script>
+
   export let title
   export let paragraph
+
+  export let isEven2col = false
+  export let isOdd2col = false
+  let rotateEven2col = 'rotate_even-2col'
+  let rotateOdd2col = 'rotate_odd-2col'
+
+  export let isEven3col = false
+  export let isOdd3col = false
+  let rotateEven3col = 'rotate_even-3col'
+  let rotateOdd3col = 'rotate_odd-3col'
 
   export let hasTurquoiseBG = false
   export let hasYellowBG = false
@@ -10,7 +21,7 @@
 
 </script>
 
-<div class="card {hasTurquoiseBG? turquoisebg : undefined} {hasYellowBG? yellowbg : undefined}">
+<div class="card {hasTurquoiseBG? turquoisebg : undefined} {hasYellowBG? yellowbg : undefined} {isEven2col? rotateEven2col: undefined} {isOdd2col? rotateOdd2col : undefined} {isEven3col? rotateEven3col: undefined} {isOdd3col? rotateOdd3col : undefined}">
   <h3>{title}</h3>
   <p>{paragraph}</p>
 </div>
@@ -38,6 +49,42 @@
       color: var(--c-text);
       &:last-of-type {
         margin: 0;
+      }
+    }
+    &.rotate_even-2col,
+    &.rotate_even-3col {
+      transform: rotateZ(-0.75deg);
+    }
+    &.rotate_odd-2col,
+    &.rotate_odd-3col {
+      transform: rotateZ(0.75deg);
+    }
+    @media (min-width: 600px) and (max-width: 959px) {
+      &.rotate_even-2col {
+        transform: rotateZ(-0.75deg);
+      }
+      &.rotate_even-2col,
+      &.rotate_even-3col {
+        &:nth-of-type(even) {
+          transform: rotateZ(-0.75deg);
+        }
+      }
+      &.rotate_odd-2col {
+        transform: rotateZ(0.75deg);
+      }
+      &.rotate_odd-2col,
+      &.rotate_odd-3col {
+        &:nth-of-type(odd) {
+          transform: rotateZ(0.75deg);
+        }
+      }
+    }
+    @media (min-width: 960px) {
+      &.rotate_even-3col {
+        transform: rotateZ(-0.75deg);
+      }
+      &.rotate_odd-3col {
+        transform: rotateZ(0.75deg);
       }
     }
   }
