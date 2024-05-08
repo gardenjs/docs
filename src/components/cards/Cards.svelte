@@ -53,38 +53,38 @@
     }
     &.rotate_even-2col,
     &.rotate_even-3col {
-      transform: rotateZ(-0.75deg);
+      transform: rotateZ(-1deg);
     }
     &.rotate_odd-2col,
     &.rotate_odd-3col {
-      transform: rotateZ(0.75deg);
+      transform: rotateZ(1deg);
     }
     @media (min-width: 600px) and (max-width: 959px) {
       &.rotate_even-2col {
-        transform: rotateZ(-0.75deg);
+        transform: rotateZ(-1deg);
       }
       &.rotate_even-2col,
       &.rotate_even-3col {
         &:nth-of-type(even) {
-          transform: rotateZ(-0.75deg);
+          transform: rotateZ(-1deg);
         }
       }
       &.rotate_odd-2col {
-        transform: rotateZ(0.75deg);
+        transform: rotateZ(1deg);
       }
       &.rotate_odd-2col,
       &.rotate_odd-3col {
         &:nth-of-type(odd) {
-          transform: rotateZ(0.75deg);
+          transform: rotateZ(1deg);
         }
       }
     }
     @media (min-width: 960px) {
       &.rotate_even-3col {
-        transform: rotateZ(-0.75deg);
+        transform: rotateZ(-1deg);
       }
       &.rotate_odd-3col {
-        transform: rotateZ(0.75deg);
+        transform: rotateZ(1deg);
       }
     }
   }

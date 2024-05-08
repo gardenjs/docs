@@ -110,7 +110,7 @@
           text-transform: uppercase;
           text-decoration: none;
           border: 2px solid var(--c-text);
-          border-radius: .25rem;
+          border-radius: 0.25rem;
           box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
           transition: 0.4s;
           @media (min-width: 840px) {
@@ -141,7 +141,7 @@
           color: var(--c-btntxt-docs);
           background-color: var(--c-primary);
           border-color: var(--c-border-docs);
-          box-shadow: 0.375rem 0.375rem 0 -1px var(--c-primary), 3px 3px 0 var(--c-primary);
+          box-shadow: 0.25rem 0.25rem 0 -1px var(--c-primary), 0.25rem 0.25rem 0 var(--c-primary);
           @media (min-width: 480px) {
             margin: 0;
           }
