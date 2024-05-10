@@ -5,6 +5,8 @@
   import Footer from '../components/footer/Footer.svelte'
   import Vegetables from '../components/vegetables/Vegetables.svelte'
 
+  export let url = ''
+
   let showMobilenav = false
   function handleToggleMobilenav() {
     showMobilenav = !showMobilenav
@@ -15,7 +17,7 @@
 <div class="mainaside">
   <div class="mainaside_container">
     <div class="sidebar {showMobilenav ? 'show' : ''}">
-      <Sidenav on:toggleMobilenav={handleToggleMobilenav}/>
+      <Sidenav on:toggleMobilenav={handleToggleMobilenav} url={url}/>
     </div>
     <div class="content-wrapper">
       <div class="content">

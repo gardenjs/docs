@@ -1,7 +1,8 @@
 <script>
   import Documentation from '../../layouts/Documentation.svelte'
+  import {page} from '$app/stores'
 </script>
 
-<Documentation>
+<Documentation url={$page.url.pathname}>
   <slot></slot>
 </Documentation>

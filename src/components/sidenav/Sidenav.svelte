@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import { page } from '$app/stores';
+
+  export let url = "";
   
   const dispatch = createEventDispatcher();
 
@@ -30,7 +31,7 @@
       <ul>
         {#each overview as link}  
           <li>
-            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
           </li>
         {/each}
       </ul>
@@ -40,7 +41,7 @@
       <ul>
         {#each getstarted as link}  
           <li>
-            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
           </li>
         {/each}
       </ul>
@@ -50,7 +51,7 @@
       <ul>
         {#each renderer as link}  
           <li>
-            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
           </li>
         {/each}
       </ul>
@@ -60,7 +61,7 @@
       <ul>
         {#each notes as link}  
           <li>
-            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
           </li>
         {/each}
       </ul>
@@ -70,7 +71,7 @@
       <ul>
         {#each roadmap as link}  
           <li>
-            <a href={link.href} class:active={$page.url.pathname === link.href} on:click={handleClick}>{link.label}</a>
+            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
           </li>
         {/each}
       </ul>
