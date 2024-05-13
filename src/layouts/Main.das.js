@@ -1,8 +1,8 @@
 export default {
   name: 'Main',
   file: './Main.svelte',
-  description: 'Main column wrapper as part of all page layouts.',
+  description: 'Layout “Main” is the main content area in all page layouts.',
   examples: [
-    // {title: "Container for main content of page layouts"}
+    {title: "Default of the main content area"}
   ]
 }
