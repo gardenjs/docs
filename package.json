@@ -10,18 +10,19 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"garden": "garden"
 	},
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"@gardenjs/render-plugin-svelte": "^0.0.1-alpha04",
 		"@sveltejs/adapter-static": "^3.0.1",
-		"@sveltejs/kit": "^2.5.5",
+		"@sveltejs/kit": "^2.5.8",
+		"@sveltejs/vite-plugin-svelte": "^3.1.0",
+		"express": "^4.19.2",
+		"gardenjs": "^0.9.1-alpha.19",
 		"mdsvex": "^0.11.0",
 		"sass": "^1.74.1",
-		"svelte": "^4.2.12",
-		"vite": "^5.2.8",
-		"express": "^4.19.2"
-	},
-	"dependencies": {
+		"svelte": "^4.2.17",
+		"vite": "^5.2.11"
 	}
 }
