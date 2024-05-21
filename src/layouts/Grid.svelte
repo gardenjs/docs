@@ -1,11 +1,13 @@
 <script>
-  export let isColTwo = true
-  export let isColThree = false
-  let twoCol = 'grid-2cols'
-  let threeCol = 'grid-3cols'
+  export let columns = 1
+
+  const columnClass = {
+    '2': 'grid-2cols',
+    '3': 'grid-3cols'
+  }
 </script>
 
-<div class="cards {isColTwo? twoCol : undefined} {isColThree? threeCol : undefined}">
+<div class="cards {columnClass[columns + ''] ?? ''}">
   <slot></slot>
 </div>
 

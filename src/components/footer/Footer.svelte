@@ -5,13 +5,11 @@
   export let isHome = false
 
   let bordertop = 'has-bt'
-  let noborder = ''
 
   let ifhome = 'is-home'
-  let nothome = ''
 </script>
 
-<footer class="footer {hasBordertop? bordertop : noborder} {isHome? ifhome : nothome}">
+<footer class="footer {hasBordertop? bordertop : ''} {isHome? ifhome : ''}">
   <div class="footer_container">
     <div class="footer_copyright">
         <div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License">MIT License</a>.<br><span class="copyright">&copy;</span> {now.getFullYear()} <a href="https://www.rabbitdevelopment.com">Rabbit Development</a>. All rights reserved.</div>

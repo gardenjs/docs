@@ -1,8 +1,10 @@
 export default {
   name: 'Footer',
   file: './Footer.svelte',
-  description: 'Website Footer.',
+  description: './Footer.md',
   examples: [
-    {title: "Website footer"}
+    {title: "Footer homepage", input: {isHome: "true" }},
+    {title: "Footer subpages"},
+    {title: "Footer documentation pages", input: {hasBordertop: "true"}},
   ]
 }

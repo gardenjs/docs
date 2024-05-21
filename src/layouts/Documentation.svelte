@@ -1,6 +1,6 @@
 <script>
   import '../assets/scss/main.scss'
-  import Header from '../components/header/Header.svelte'
+  import Navbar from '../components/header/Navbar.svelte'
   import Sidenav from '../components/sidenav/Sidenav.svelte'
   import Footer from '../components/footer/Footer.svelte'
   import Vegetables from '../components/vegetables/Vegetables.svelte'
@@ -13,7 +13,7 @@
   }
 </script>
 
-<Header isFixed isDocs hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
+<Navbar isFixed isDocs hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
 <div class="mainaside">
   <div class="mainaside_container">
     <div class="sidebar {showMobilenav ? 'show' : ''}">

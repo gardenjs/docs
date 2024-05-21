@@ -6,7 +6,6 @@
   export let isPagetitle = false
   let haspagetitle = 'has-h1'
   let undefined = ''
-
 </script>
 
 <div class="chapter {isPagetitle? haspagetitle : undefined }">

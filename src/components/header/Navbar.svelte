@@ -1,6 +1,6 @@
 <script>
-  import Headernav from '../headernav/Headernav.svelte'
-  import Headerintro from '../headerintro/Headerintro.svelte'
+  import Headernav from './Headernav.svelte'
+  import Headerintro from './Headerintro.svelte'
   import Logo from '../../assets/icons/logo.svg'
 
   export let isFixed = false
@@ -10,13 +10,10 @@
   export let hasMobilenavicon = false
 
   let fixed = 'is-fixed'
-  let scroll = ''
-
   let ifdocs = 'is-docs'
-  let undefined = ''
 </script>
 
-<header class="header {isFixed? fixed : scroll} {isDocs? ifdocs : undefined}">
+<header class="header {isFixed? fixed : ''} {isDocs? ifdocs : ''}">
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">

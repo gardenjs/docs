@@ -1,8 +1,9 @@
 export default {
   name: 'Main',
-  file: './Main.svelte',
-  description: 'Layout “Main” is the main content area in all page layouts.',
+  file: './Main.example.svelte',
+  description: '<h1>Layout for the main content area</h1><p>This layout component is the main content area in the “Homepage” and “Supage” layouts.</p><h2>Note</h2><p>The background here is gray only for better representation, in the project the background is transparent.</p>',
+
   examples: [
-    {title: "Default of the main content area"}
+    {title: "Main content area"}
   ]
 }
