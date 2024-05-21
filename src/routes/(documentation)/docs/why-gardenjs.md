@@ -10,7 +10,7 @@ The barrier to entry is very low: Gardenjs concentrates on the essential require
 
 ## Which JS frameworks are supported?
 
-Gardenjs currently supports Svelte, Vue and React through renderer plugins - multi-framework projects are possible. To ensure that other JS frameworks also work, corresponding plugins must be created. More information on this can be found <a href="/docs/add-frameworks">here</a>.
+Gardenjs currently supports Svelte, Vue and React through renderer plugins - multi-framework projects are possible. To ensure that other JS frameworks also work, corresponding plugins must be created. More information on this can be found <a href="/docs/renderer/">here</a>.
 
 ## Demo
 

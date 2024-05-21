@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Make sure [Vite](https://vitejs.dev/) is installed! Also make sure you have a current version of Node.js installed.  
+Make sure <a href="https://vitejs.dev/" target="_blank">Vite</a> is installed! Also make sure you have a current version of Node.js installed.  
 
 ## Step 1: Install Gardenjs
 
@@ -50,7 +50,7 @@ If you have made a mistake or would like to change something now, you can also d
 
 In order for Gardenjs to be able to display components later, the corresponding renderer plugin is required. If no renderer was selected during the installation routine, you will need to install one (or more) of our renderer plugins or install your own renderer.
 
-You can find more information on creating a custom renderer plugin <a href="/docs/add-frameworks">here</a>.
+You can find more information on creating a custom renderer plugin <a href="/docs/renderer">here</a>.
 
 ## Step 4: Run Gardenjs
 
@@ -60,8 +60,8 @@ npm run garden
 
 The default browser address is **http://localhost:3010/garden**. The server port is defined in **garden.config.js** and can be adjusted there.
 
-Gardenjs will be empty now. First of all, the components must be registered as described <a href="/docs/get-started/output">here</a>.
+Gardenjs will be empty now. First of all, the components must be registered as described <a href="/docs/get-started/examples">here</a>.
 
 ## Step 5: Refine configuration
 
-Project-specific settings are made in the file **garden.config.js**. Some of the possible settings are essential for the execution of Gardenjs. More infos <a href="/docs/get-started/setup">here</a>.
+Project-specific settings are made in the file **garden.config.js**. Some of the possible settings are essential for the execution of Gardenjs. More infos <a href="/docs/get-started/settings">here</a>.

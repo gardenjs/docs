@@ -14,7 +14,7 @@ export default {
 }
 ```
 
-`description` is optional and is output in the panel under the component in the "Notes" tab. The path to a Markdown file or Markdown is also possible. More infos <a href="/docs/add-notes">here</a>.
+`description` is optional and is output in the panel under the component in the "Notes" tab. The path to a Markdown file or Markdown is also possible. More infos <a href="/docs/notes">here</a>.
 
 ## Create "examples"
 
