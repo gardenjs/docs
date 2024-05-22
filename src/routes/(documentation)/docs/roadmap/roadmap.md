@@ -6,19 +6,22 @@ A donation model is planned if Gardenjs is well received. Please contact us if y
 
 ## Next
 
+- [feature] Slot handling.
 - [refactor] Move logic to own file / use stores?. Handle user interaction.
 - [feature] Evaluation of "Make Storybook stories compatible with Garden". If relatively easy possible then development. Otherwise prioritize other tasks/features depending on complexity.
 - [task] Add tests.
+- [task] In das files import component instead of use relative filename as string
 
 ## Later (no specific order)
 
+- [feature] use das-files from other modules (e.g. show carrots in custom project).
 - [task] Keep user state after refresh.
   - [task] Store selection in panel nav for refresh or if another component is selected.
   - [task] Store selection of stage for refresh or if another component is selected.
-- [feature] Add testing library. E.g. [Testing Library](https://testing-library.com/).
+- [feature] Add testing library. E.g. <a href="https://testing-library.com/" target="_blank">Testing Library</a>.
 - [feature] Collect events and show in panel.
 - [feature] Bookmarks. (siehe ReactCosmos)
-- [task] Add [line numbers plugin](https://github.com/wcoder/highlightjs-line-numbers.js) to highlightjs.
+- [task] Add <a href="https://github.com/wcoder/highlightjs-line-numbers.js" target="_blank">line numbers plugin</a> to highlightjs.
 - [task] Sidebarnav is closed by default on narrow display devices.
 - [task] Make setting of default mode possible via garden.config.js.
 - [task] If full mode is active, switching to portrait mode is deactivated.
@@ -27,7 +30,7 @@ A donation model is planned if Gardenjs is well received. Please contact us if y
 - [task] Show custom favicon.svg configured in garden.config.js.
 - [task] Color variables are made configurable for your own Gardenjs themes.
 - [feature] Screenshot tests:
-  - Docker image oder alternativ for screenshot test.
+  - Docker image or alternativ for screenshot test.
   - Automatic create test file & and folder (like init garden).
   - Settings.
 - [feature] Set width and height of stage by size input.
