@@ -1,7 +1,7 @@
 export default {
   name: 'Footer',
   file: './Footer.svelte',
-  description: './Footer.md',
+  description: '',
   examples: [
     {title: "Footer homepage", input: {isHome: "true" }},
     {title: "Footer subpages"},
