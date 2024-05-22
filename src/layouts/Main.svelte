@@ -1,5 +1,5 @@
 <script>
-  export let hasHeaderintro = false
+  export let hasHeaderhead = false
   export let isWide = false
 
   let intro = ''
@@ -8,7 +8,7 @@
   let home = 'is-home'
 </script>
 
-<div class="main {hasHeaderintro? intro : margintop} {isWide? home : iswide}">
+<div class="main {hasHeaderhead? intro : margintop} {isWide? home : iswide}">
   <div class="main_container">
     <slot></slot>
   </div>

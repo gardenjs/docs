@@ -1,21 +1,21 @@
 <script>
-  import ChapterIntro from './Chapterintro.svelte'
+  import ChapterHead from './Chapterhead.svelte'
   import Grid from '../../layouts/Grid.svelte'
-  import Card from './Card.svelte'
+  import Card from '../card/Card.svelte'
 
   export let cards = []
-  export let title = ''
-  export let intro = ''
-  export let columns = 1
   export let pagetitle = ''
+  export let title = ''
+  export let chaptertext = ''
+  export let columns = 1
   export let bgColor
 
 </script>
 
-<ChapterIntro
+<ChapterHead
   title={title}
   pagetitle={pagetitle}
-  intro={intro} />
+  chaptertext={chaptertext} />
 <Grid columns={columns}>
   {#each cards as {title, paragraph, rotation}, i}
     <Card
