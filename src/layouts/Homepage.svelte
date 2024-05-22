@@ -5,7 +5,7 @@
   import Footer from '../components/footer/Footer.svelte'
 </script>
 
-<Navbar showHeaderintro />
+<Navbar showHeroheader />
 <slot></slot>
 <Vegetables isHome />
 <Footer isHome />

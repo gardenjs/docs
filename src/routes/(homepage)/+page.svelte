@@ -1,17 +1,16 @@
 <script>
 	import Main from '../../layouts/Main.svelte'
-  import ChapterIntro from '../../components/chapter/Chapterintro.svelte'
+  import ChapterHead from '../../components/chapter/Chapterhead.svelte'
+  import Chapter from '../../components/chapter/Chapter.svelte';
   import Logogallery from '../../components/logogallery/Logogallery.svelte'
   import Blockquote from '../../components/blockquote/Blockquote.svelte'
   import Accordion from '../../components/accordion/Accordion.svelte'
-
   import Dashedline2 from '../../components/dashedlines/Dashedlines.svelte'
   import Dashedline3 from '../../components/dashedlines/Dashedlines.svelte'
   import Dashedline4 from '../../components/dashedlines/Dashedlines.svelte'
   import Dashedline5 from '../../components/dashedlines/Dashedlines.svelte'
   import Dashedline6 from '../../components/dashedlines/Dashedlines.svelte'
   import Dashedline7 from '../../components/dashedlines/Dashedlines.svelte'
-  import Chapter from '../../components/chapter/Chapter.svelte';
 
   const chapter1 = [
     {
@@ -35,7 +34,6 @@
       rotation: 'left',
     }
   ]
-
   const chapter2 = [
     {
       title: "Organisation",
@@ -68,7 +66,6 @@
       rotation: 'right',
     }
   ]
-
   const chapter3 = [
     {
       title:"Support us",
@@ -81,7 +78,6 @@
       rotation: 'right',
     }
   ]
-
   const accordionItems = [
     {
       label: 'Why have we developed another storybook?',
@@ -111,10 +107,10 @@
 	<meta name="description" content="Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React." />
 </svelte:head>
 
-<Main hasHeaderintro isWide>
-  <ChapterIntro isPagetitle
+<Main hasHeaderhead isWide>
+  <ChapterHead isPagetitle
     pagetitle="UI component library explorer for JS frameworks"
-    intro="Gardenjs promotes modular and reusable code, streamlines collaboration between team members and increases overall productivity. Gardenjs is MIT licensed and free." />
+    chaptertext="Gardenjs promotes modular and reusable code, streamlines collaboration between team members and increases overall productivity. Gardenjs is MIT licensed and free." />
   <Logogallery />
   <Dashedline2 dashedlines2 />
   <Blockquote
@@ -123,7 +119,7 @@
   <Dashedline3 dashedlines3 />
   <Chapter
     title="Why Gardenjs?"
-    intro="Gardenjs supports efficient frontend development with its intuitive user interface, easy integration into projects and super-fast execution."
+    chaptertext="Gardenjs supports efficient frontend development with its intuitive user interface, easy integration into projects and super-fast execution."
     columns=2
     bgColor="yellow"
     cards={chapter1}>
@@ -131,7 +127,7 @@
   <Dashedline4 dashedlines4 />
   <Chapter
     title="Your benefits"
-    intro="Gardenjs supports efficient frontend development with its intuitive user interface, easy integration into projects and super-fast execution."
+    chaptertext="Gardenjs supports efficient frontend development with its intuitive user interface, easy integration into projects and super-fast execution."
     columns=3
     bgColor="turquoise"
     cards={chapter2}>
@@ -139,12 +135,12 @@
   <Dashedline5 dashedlines5 />
   <Chapter
     title="Would you like to get involved?"
-    intro="Gardenjs is published under the MIT license and free to use. We are therefore particularly pleased about your support."
+    chaptertext="Gardenjs is published under the MIT license and free to use. We are therefore particularly pleased about your support."
     columns=2
     cards={chapter3}>
   </Chapter>
   <Dashedline6 dashedlines6 />
-  <ChapterIntro
+  <ChapterHead
     title="FAQ" />
   <Accordion items={accordionItems}/>
   <Dashedline7 dashedlines7 />
