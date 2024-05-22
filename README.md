@@ -1,4 +1,4 @@
-# Gardenjs documentation
+# Gardenjs website & documentation
 
 [Gardenjs](https://github.com/rabbitdevelopment/garden) is a lightweight and superfast component library explorer for UI development, testing and documentation.
 
@@ -11,12 +11,11 @@ Happy Gardening :)
 ## Todo´s
 
 - [bug] In dark mode, the header image browser bar is in "light mode" when you switch pages and then return to the homepage.
-- [task] Add Gardenjs, display each component & write stories.
 - [docs] Add "Hooks", "Decorators", "Write Renderer".
-- [docs] Check content before releasing docs.
+- [docs] Check content & all links before releasing docs.
 - [task] privacy policy: hosting Github?
 - [task] change gardenjs screenshot in header with gardenjs docs example.
-- [task] Add link to demo at headerintro btn & /docs page.
+- [task] Add link to demo at heroheader btn & /docs page.
 
 ---
 Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by [Rabbit Development](https://www.rabbitdevelopment.de).
