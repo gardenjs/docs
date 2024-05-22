@@ -1,17 +1,14 @@
 <script>
-  import Grid from './Main.svelte';
-
-  export let columns = 2;
+  import Main from './Main.svelte';
 </script>
 
-<Grid columns={columns}>
-  <div>Main content</div>
-</Grid>
+<Main>
+  <div>Main content area...</div>
+</Main>
 
 <style>
   div {
     padding: 1rem;
-    height: 500px;
     background-color: #eee;
   }
 </style>
