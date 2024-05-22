@@ -4,7 +4,7 @@
 
 <style>
   div {
-    border: 1px dashed #ff7474;
+    border: 2px dashed #ca0202;
     margin-top: 2rem;
   }
 </style>
