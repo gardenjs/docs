@@ -1,11 +1,11 @@
 <script>
   import Headernav from './Headernav.svelte'
-  import Headerintro from './Headerintro.svelte'
+  import Heroheader from './Heroheader.svelte'
   import Logo from '../../assets/icons/logo.svg'
 
   export let isFixed = false
   export let isDocs = false
-  export let showHeaderintro = false
+  export let showHeroheader = false
   export let showMobilenav = false
   export let hasMobilenavicon = false
 
@@ -24,8 +24,8 @@
         <Headernav on:toggleMobilenav {showMobilenav} {hasMobilenavicon} />
       </div>
     </div>
-    {#if showHeaderintro}
-      <Headerintro />
+    {#if showHeroheader}
+      <Heroheader />
     {/if}
   </div>
 </header>
