@@ -1,6 +1,6 @@
 # Gardenjs website & docs
 
-This repository contains the [website & documentation](https://gardenjs.org/) of Gardenjs. [Gardenjs](https://github.com/rabbitdevelopment/garden) is a lightweight and superfast component library explorer for UI development, testing and documentation.
+This repository contains the <a href="https://gardenjs.org/" target="_blank">website & documentation</a> of Gardenjs. <a href="https://github.com/rabbitdevelopment/garden" target="_blank">Gardenjs</a> is a lightweight and superfast component library explorer for UI development, testing and documentation.
 
 You can use this repository as a code demo of Gardenjs. We use Svelte here which then works the same way for other supported frameworks like Vue and React (Gardenjs can also be easily extended for other JS frameworks).
 
