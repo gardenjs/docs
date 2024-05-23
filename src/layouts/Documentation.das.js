@@ -3,6 +3,6 @@ export default {
   file: './Documentation.svelte',
   description: '',
   examples: [
-    // {title: "Layout for the Documentation pages"}
+    // {title: 'Layout for the Documentation pages'}
   ]
 }

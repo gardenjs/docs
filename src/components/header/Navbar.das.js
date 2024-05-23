@@ -3,6 +3,6 @@ export default {
   file: './Navbar.svelte',
   description: './Navbar.md',
   examples: [
-    // {title: "Navbar"}
+    // {title: 'Navbar'}
   ]
 }

@@ -3,6 +3,6 @@ export default {
   file: './Vegetables.svelte',
   description: '',
   examples: [
-    {title: "Box with title and text"},
+    {title: 'Box with title and text'},
   ]
 }

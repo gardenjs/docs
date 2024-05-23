@@ -3,6 +3,6 @@ export default {
   file: './Headernav.svelte',
   description: '',
   examples: [
-    // {title: "Headernav"}
+    // {title: 'Headernav'}
   ]
 }

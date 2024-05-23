@@ -1,5 +1,5 @@
 export default {
   name: 'Application Image',
-  file: './Application.svelte',
+  file: './Applicationimage.svelte',
   description: 'Only used in the Hero header.',
 }

@@ -3,6 +3,6 @@ export default {
   file: './Heroheader.svelte',
   description: '',
   examples: [
-    // {title: "Homepage intro"}
+    // {title: 'Homepage intro'}
   ]
 }
