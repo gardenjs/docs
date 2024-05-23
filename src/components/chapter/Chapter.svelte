@@ -17,12 +17,12 @@
   pagetitle={pagetitle}
   chaptertext={chaptertext} />
 <Grid columns={columns}>
-  {#each cards as {title, paragraph, rotation}, i}
+  {#each cards as {cardtitle, paragraph, rotation}, i}
     <Card
       bgColor={bgColor}
       rotation={rotation}
       columns={columns}
-      title={title}
+      cardtitle={cardtitle}
       paragraph={paragraph} />
   {/each}
 </Grid>

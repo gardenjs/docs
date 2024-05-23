@@ -1,5 +1,5 @@
 <script> 
-  export let title
+  export let cardtitle
   export let paragraph
 
   export let rotation = ''
@@ -11,7 +11,7 @@
 </script>
 
 <div class="card {bgColor} {rotationClass}">
-  <h3>{title}</h3>
+  <h3>{cardtitle}</h3>
   <p>{paragraph}</p>
 </div>
 
