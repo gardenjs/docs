@@ -1,7 +1,7 @@
 <script>
   import Slogan from './Slogan.svelte'
   import Linkbutton from '../linkbutton/Linkbutton.svelte'
-  import Application from './Application.svelte'
+  import Applicationimage from './Applicationimage.svelte'
   import Dashedline from '../dashedlines/Dashedlines.svelte'
 
 </script>
@@ -27,7 +27,7 @@
     <Dashedline dashedlines1 />
   </div>
   <div class="heroheader_img">
-    <Application />
+    <Applicationimage />
   </div>
 </div>
 
