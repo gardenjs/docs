@@ -5,18 +5,7 @@
   
   const dispatch = createEventDispatcher();
 
-  const overview = [{ href: "/docs", label: "Why Gardenjs" }];
-  const getstarted = [
-    { href: "/docs/get-started/install", label: "Install" },
-    { href: "/docs/get-started/install-renderer", label: "Install Renderer Plugin" },
-    { href: "/docs/get-started/settings", label: "Settings" },
-    { href: "/docs/get-started/examples", label: "Examples" },
-    { href: "/docs/get-started/hooks", label: "Hooks" },
-    { href: "/docs/get-started/decorators", label: "Decorators" },
-  ];
-  const renderer = [{ href: "/docs/renderer", label: "Write New Renderer" }];
-  const notes = [{ href: "/docs/notes", label: "Add Notes" }];
-  const roadmap = [{ href: "/docs/roadmap", label: "Roadmap" }];
+  export let folders = [];
 
   function handleClick() {
     dispatch("toggleMobilenav");
@@ -26,56 +15,18 @@
 <div class="sidenav_heading">Documentation</div>
 <nav class="sidenav">
   <ul>
-    <li>
-      <span class="sidenav_folder">Overview</span>
-      <ul>
-        {#each overview as link}  
-          <li>
-            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
-          </li>
-        {/each}
-      </ul>
-    </li>
-    <li>
-      <span class="sidenav_folder">Get Started</span>
-      <ul>
-        {#each getstarted as link}  
-          <li>
-            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
-          </li>
-        {/each}
-      </ul>
-    </li>
-    <li>
-      <span class="sidenav_folder">Renderer</span>
-      <ul>
-        {#each renderer as link}  
-          <li>
-            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
-          </li>
-        {/each}
-      </ul>
-    </li>
-    <li>
-      <span class="sidenav_folder">Add Notes</span>
-      <ul>
-        {#each notes as link}  
-          <li>
-            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
-          </li>
-        {/each}
-      </ul>
-    </li>
-    <li>
-      <span class="sidenav_folder">What comes next?</span>
-      <ul>
-        {#each roadmap as link}  
-          <li>
-            <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
-          </li>
-        {/each}
-      </ul>
-    </li>
+    {#each folders as folder}
+      <li>
+        <span class="sidenav_folder">{folder.title}</span>
+        <ul>
+          {#each folder.items as link}  
+            <li>
+              <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
+            </li>
+          {/each}
+        </ul>
+      </li>
+    {/each}
   </ul>
 </nav>
 

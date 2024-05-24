@@ -9,7 +9,6 @@ Happy Gardening :)
 ## Todo´s
 
 - [bug] In dark mode, the header image browser bar is in 'light mode' when you switch pages and then return to the homepage.
-- [task] Add cards to chapter demo.
 - [task] Move sidenav links to routes (or layouts/documentation?).
 - [docs] Add Hooks, Decorators, Write Renderer.
 - [docs] Check content & all links before releasing docs.

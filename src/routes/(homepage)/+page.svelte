@@ -14,67 +14,67 @@
 
   const chapter1cards = [
     {
-      cardtitle:"Speed of light",
-      paragraph:"Gardenjs is a Svelte app and thus benefits from its super speed. Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." ,
+      title:"Speed of light",
+      text:"Gardenjs is a Svelte app and thus benefits from its super speed. Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." ,
       rotation: 'left',
     },
     {
-      cardtitle:"Use your favorite JS framework",
-      paragraph:"Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." ,
+      title:"Use your favorite JS framework",
+      text:"Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." ,
       rotation: 'right',
     },
     {
-      cardtitle:"Multi-framework compatible",
-      paragraph:"You can use Gardenjs out of the box left in a multiframework project - Storybook and others can't do that." ,
+      title:"Multi-framework compatible",
+      text:"You can use Gardenjs out of the box left in a multiframework project - Storybook and others can't do that." ,
       rotation: 'right',
     },
     {
-      cardtitle: 'The sleek good-looking alternative',
-      paragraph: 'The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience.',
+      title: 'The sleek good-looking alternative',
+      text: 'The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience.',
       rotation: 'left',
     }
   ]
   const chapter2cards = [
     {
-      cardtitle: 'Organisation',
-      paragraph: 'Keep track of the countless components left in large projects and ensure the quality of your work. You can also output an external local library within a project.',
+      title: 'Organisation',
+      text: 'Keep track of the countless components left in large projects and ensure the quality of your work. You can also output an external local library within a project.',
       rotation: 'left'
     },
     {
-      cardtitle: 'Usability',
-      paragraph: 'A well thought-out concept, simple operation and numerous small features help to make everyday development work easier.',
+      title: 'Usability',
+      text: 'A well thought-out concept, simple operation and numerous small features help to make everyday development work easier.',
       rotation: 'right',
     },
     {
-      cardtitle: 'Representation',
-      paragraph: 'Preview components in different viewport sizes and rotations or in a separate browser window. The size of the stage is shown in pixel size.',
+      title: 'Representation',
+      text: 'Preview components in different viewport sizes and rotations or in a separate browser window. The size of the stage is shown in pixel size.',
       rotation: 'left',
     },
     {
-      cardtitle: 'Collaboration',
-      paragraph: 'Publish your component libraries inside your team or to public to simplify collaboration between designers and developers.',
+      title: 'Collaboration',
+      text: 'Publish your component libraries inside your team or to public to simplify collaboration between designers and developers.',
       rotation: 'right',
     },
     {
-      cardtitle: 'Examples',
-      paragraph: 'Write examples to showcase and document your components. Output all versions and states of your components.',
+      title: 'Examples',
+      text: 'Write examples to showcase and document your components. Output all versions and states of your components.',
       rotation: 'left',
     },
     {
-      cardtitle: 'Documentation',
-      paragraph: 'Add any additional information to your components and examples and keep track of all components and for the whole team.',
+      title: 'Documentation',
+      text: 'Add any additional information to your components and examples and keep track of all components and for the whole team.',
       rotation: 'right',
     }
   ]
   const chapter3cards = [
     {
-      cardtitle: 'Support us',
-      paragraph: 'You can support us by using Gardenjs, writing a plugin for a new framework (which we will then gladly point out), reporting bugs, giving feedback, making a contribution or writing documentation. We look forward to your support.',
+      title: 'Support us',
+      text: 'You can support us by using Gardenjs, writing a plugin for a new framework (which we will then gladly point out), reporting bugs, giving feedback, making a contribution or writing documentation. We look forward to your support.',
       rotation: 'left',
     },
     {
-      cardtitle: 'Make a donation',
-      paragraph: 'A donation model is planned if Gardenjs is well received. A list of possible features can be found in the documentation. Please contact us if you would like to have one of the features integrated as soon as possible.',
+      title: 'Make a donation',
+      text: 'A donation model is planned if Gardenjs is well received. A list of possible features can be found in the documentation. Please contact us if you would like to have one of the features integrated as soon as possible.',
       rotation: 'right',
     }
   ]

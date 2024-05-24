@@ -1,6 +1,6 @@
 <script> 
-  export let cardtitle
-  export let paragraph
+  export let title
+  export let text
 
   export let rotation = ''
   export let columns = 1
@@ -11,8 +11,8 @@
 </script>
 
 <div class="card {bgColor} {rotationClass}">
-  <h3>{cardtitle}</h3>
-  <p>{paragraph}</p>
+  <h3>{title}</h3>
+  <p>{text}</p>
 </div>
 
 <style lang="scss">
