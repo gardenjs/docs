@@ -11,9 +11,9 @@ export default {
         columns: 3,
         bgColor: 'yellow',
         cards: [
-          {title: 'title 1', text: ''},
-          {title: 'title 2', text: ''},
-          {title: 'title 3', text: ''}
+          {title: 'Title box 1', text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'},
+          {title: 'Title box 2', text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'},
+          {title: 'Title box 3', text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,'}
 
         ]
       }
@@ -25,9 +25,9 @@ export default {
         columns: 2,
         bgColor: 'turquoise',
         cards: [
-          {title: 'title 1', text: ''},
-          {title: 'title 2', text: ''},
-          {title: 'title 3', text: ''}
+          {title: 'Title box 1', text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'},
+          {title: 'Title box 2', text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'},
+          {title: 'Title box 3', text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,'}
 
         ]
       }
