@@ -91,6 +91,6 @@
     <p>This data is processed on the basis of Art. 6 para. 1 lit. b GDPR if your request is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if this has been requested.</p>
     <p>The data you send to us via contact requests will remain with us until you ask us to delete it, revoke your consent to storage or the purpose for data storage no longer applies (e.g. after your request has been processed). Mandatory statutory provisions - in particular statutory retention periods - remain unaffected.</p>
     <p>&nbsp;</p>
-    <p>Source: <a href="https://www.e-recht24.de" target="_blank" rel="noreferrer">eRecht24</a>. GitHub Pages: <a href="https://opr.vc/docs/hosting/github_pages/" target="_blank">GitHub</a> Translation: <a href="https://www.deepl.com/" target="_blank">DeepL</a>.</p>
+    <p>Source: <a href="https://www.e-recht24.de" target="_blank" rel="noreferrer">eRecht24</a>. GitHub Pages: <a href="https://opr.vc/docs/hosting/github_pages/" target="_blank">GitHub</a>. Translation: <a href="https://www.deepl.com/" target="_blank">DeepL</a>.</p>
   </div>
 </Main>
