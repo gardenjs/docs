@@ -1,4 +1,4 @@
-const overview = {title: 'Overview', items: [{ href: "#", label: "Why Gardenjs" }]};
+const overview = {title: 'Overview', items: [{ href: "./", label: "Why Gardenjs" }]};
 const getstarted = {title: 'Get Started', items: [
   { href: "./", label: "Install" },
   { href: "./", label: "Install Renderer Plugin" },
@@ -10,7 +10,7 @@ const getstarted = {title: 'Get Started', items: [
 const renderer = {title: 'Renderer', items: [{ href: "./", label: "Write New Renderer" }]};
 const notes = {title: 'Add Notes', items:[{ href: "./", label: "Add Notes" }]};
 const roadmap = {title: 'What comes next', items:[{ href: "./", label: "Roadmap" }]};
-const github = {title: 'external Link', items:[{ href: "https://github.com/gardenjs/gardenjs", label: "GitHub" }]};
+const github = {title: 'External Link Test', items:[{ href: "https://github.com/gardenjs/gardenjs", label: "GitHub" }]};
 
 const sidenavFolders = [overview, getstarted, renderer, notes, roadmap, github];
 
