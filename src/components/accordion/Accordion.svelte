@@ -55,7 +55,7 @@
         transform: rotateZ(0.25deg);
       }
       &:hover,
-      &:focus,
+      &:focus-visible,
       &:has(.active) {
         box-shadow: 0 0 0 1px #fff, 0 0 0 #fff;
         transform: translate(0.25rem , 0.25rem );

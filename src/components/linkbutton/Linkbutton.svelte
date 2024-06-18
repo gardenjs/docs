@@ -45,7 +45,7 @@
       transition: 0.4s;
     }
     &:hover,
-    &:focus {
+    &:focus-visible {
       transition: 0.4s;
       box-shadow: 0 0 0 -1px #fff, 0 0 0 #fff;
       transform: translate(0.25rem , 0.25rem );
