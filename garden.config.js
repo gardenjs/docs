@@ -8,12 +8,17 @@ export default {
   // Stop auto opening Gardenjs on start:
   // "no_open_browser": true,
 
-  // This title is displayed above the navigation:
+  // This title is displayed above the navigation,
+  // if the path to a logo is specified, "project_title" is used as the title tag:
   project_title: "Gardenjs docs",
+  project_logo: "src/assets/icons/logo.svg",
 
   // Here you can set a path to your own start page.
   // The HTML file may only contain the body part, i.e. without the doctype, head and body tag:
   "welcome_page": "./garden.homepage.html",
+
+  // Show the link to the docs in the sidebar:
+  docs_link: true,
 
   // vite config file:
   vite_config: "./garden.vite.config.js",
