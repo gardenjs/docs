@@ -15,22 +15,42 @@
   const chapter1cards = [
     {
       title:"Speed of light",
-      text:"Gardenjs is a Svelte app and thus benefits from its super speed. Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." ,
+      text:"Gardenjs starts almost instantly within 2s. In action, code changes in Gardenjs are reflected by the Vite build tool at the speed of light — significantly faster than Storybook or comparable tools." ,
       rotation: 'left',
     },
     {
+      title:"Fast and efficient handling",
+      text:"Gardenjs offers simple configuration and ensures the uncomplicated, fast and efficient integration of components in Gardenjs." ,
+      rotation: 'right',
+    },
+    {
       title:"Use your favorite JS framework",
-      text:"Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Or support us to integrate more frameworks." ,
+      text:"Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Please support us to integrate more frameworks." ,
       rotation: 'right',
     },
     {
       title:"Multi-framework compatible",
-      text:"You can use Gardenjs out of the box left in a multiframework project - Storybook and others can't do that." ,
+      text:"You can also use Gardenjs in a multiframework project by adding another renderer plugin - Storybook and others cannot." ,
+      rotation: 'left',
+    },
+    {
+      title: 'Hooks',
+      text: 'With Gardenjs, you can integrate hooks into your components as a versatile and effective way of creating state and effect logic.',
+      rotation: 'left',
+    },
+    {
+      title: 'Decorators',
+      text: 'Components can be extended and customized with Decorators to add additional features and behaviors in Gardenjs - without changing the actual code of the component.',
       rotation: 'right',
     },
     {
       title: 'The sleek good-looking alternative',
       text: 'The efficient integration into your framework, numerous features and a clearly organized, beautiful interface make working with Gardenjs a real experience.',
+      rotation: 'right',
+    },
+    {
+      title: 'Open source and free',
+      text: 'Gardenjs is open source and can be used free of charge. We are of course still happy to receive support.',
       rotation: 'left',
     }
   ]
@@ -74,26 +94,26 @@
     },
     {
       title: 'Make a donation',
-      text: 'A donation model is planned if Gardenjs is well received. A list of possible features can be found in the documentation. Please contact us if you would like to have one of the features integrated as soon as possible.',
+      text: 'A donation and sponsoring model is planned if Gardenjs is well received. A list of possible future features can be found in the documentation. Please contact us if you would like to sponsor one of the features.',
       rotation: 'right',
     }
   ]
   const accordionItems = [
     {
       label: 'Why have we developed another storybook?',
-      content: '<p>We started developing Gardenjs for two reasons: Storybook was clearly too slow and we wanted to get to know Svelte better. First, we used Gardenjs for our own projects and finally released it as open source because it does some things better than alternative tools. As users of open source software, we now have the opportunity to give something back.</p>'
+      content: '<p>We developed Gardenjs for two reasons: Firstly, Storybook was clearly too slow and a bit too cluttered for us, and secondly, we were enthusiastic about Svelte and wanted to get to know the framework better with an example project. We initially used Gardenjs for our own projects, but since it does some things better than alternative tools, we have now released it. As enthusiastic users of open source software, this gives us the opportunity to give something back.</p>'
     },
     { 
       label: 'Why is Gardenjs better than the alternatives around Storybook?',
-      content: '<p>The question is provocative and of course each tool has its own advantages and disadvantages. Certainly, the top dog also covers many features that are not or not yet integrated in Gardenjs. Gardenjs is definitely much faster and leaner. In our opinion, "stories" can be created more efficiently with Gardenjs and the option to work with decorators is more flexible. Gardenjs also looks better ;) Much is a matter of taste, form your own opinion - we look forward to your feedback.</p>'
+      content: '<p>The question is provocative and of course each tool has its own advantages and disadvantages. Certainly, the top dog also covers many features that are not or not yet integrated in Gardenjs. But Gardenjs is definitely much faster and leaner. In our opinion, "stories" can be created more efficiently with Gardenjs, the handling is smoother and the option to work with decorators is more flexible. In addition, Gardenjs is multiframework-compatible, unlike Strorybook. And of course Gardenjs looks much better ;) Much is a matter of taste, form your own opinion - we look forward to your feedback.</p>'
     },
     {
       label: 'What is the business model of Gardenjs?',
-      content: '<p>We have developed Gardenjs for our own development work. We do not see a market for a paid version or paid functions. However, we would appreciate help with the further maintenance and integration of new functions. If Gardenjs is accepted, we will also consider a sponsoring or donation program.</p>'
+      content: '<p>We have developed Gardenjs for our own development work. We do not see a market for a paid version or paid functions. Of course, we would appreciate help with the further maintenance and integration of new functions. If Gardenjs is accepted, we will also consider a sponsoring and donation program.</p>'
     },
     { 
       label: 'Is Gardenjs being actively developed?',
-      content: '<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the roadmap (see Docs) depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>'
+      content: '<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the <a href="/docs/roadmap">roadmap</a> depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>'
     },
     {
       label: 'Do you have further questions or is there something on your mind?',
