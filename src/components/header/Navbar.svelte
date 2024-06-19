@@ -2,6 +2,7 @@
   import Headernav from './Headernav.svelte'
   import Heroheader from './Heroheader.svelte'
   import Logo from '../../assets/icons/logo.svg'
+  import LogoNeg from '../../assets/icons/logo_neg.svg'
 
   export let isFixed = false
   export let isDocs = false
@@ -18,7 +19,10 @@
     <div class="navbar">
       <div class="navbar_container">
         <a class="logo" href="/" title="go to start">
-          <img src="{Logo}" alt="Logo">
+          <picture>
+            <source srcset="{Logo}" media="all" data-media="(prefers-color-scheme:light)">
+            <img src="{LogoNeg}" alt="Logo">
+          </picture>
         </a>
         <Headernav on:toggleMobilenav {showMobilenav} {hasMobilenavicon} />
       </div>
