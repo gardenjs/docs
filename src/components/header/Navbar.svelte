@@ -19,7 +19,6 @@
       <div class="navbar_container">
         <a class="logo" href="/" title="go to start">
           <img src="{Logo}" alt="Logo">
-          <span class="logo_label">Gardenjs</span>
         </a>
         <Headernav on:toggleMobilenav {showMobilenav} {hasMobilenavicon} />
       </div>
@@ -74,31 +73,22 @@
             text-decoration: none;
             @media (max-width: 579px) {
               margin: 0 0 0.75rem;
-              width: 191px;
             }
             img {
               display: inline-block;
-              width: 65px;
+              width: 107px;
               height: 36px;
-              @media (min-width: 960px) {
-                width: 80%;
-                height: auto;
+              @media (min-width: 380px) {
+                width: 149px;
+                height: 50px;
+              }
+              @media (min-width: 840px) {
+                width: 178px;
+                height: 60px;
               }
               @media (min-width: 1280px) {
-                width: 100%;
-              }
-            }  
-            .logo_label {
-              padding: 0 0 0 0.75rem;
-              font-size: 1.5rem;
-              white-space: nowrap;
-              transition: color 0.2s;
-              @media (min-width: 960px) {
-                padding: 0 0 0 1rem;
-                font-size: 1.875rem;
-              }
-              @media (min-width: 1280px) {
-                font-size: 2.5rem;
+                width: 208px;
+                height: 70px;
               }
             }
           }
