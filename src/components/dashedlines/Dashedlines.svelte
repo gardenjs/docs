@@ -79,7 +79,6 @@
   .dashed-06_label,
   .dashed-07_label {
     position: absolute;
-    display: inline;
     left: 50%;
     transform: translate(-50%);
   }
