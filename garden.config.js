@@ -5,13 +5,16 @@ export default {
   // Define the server port:
   serverport: 3010,
 
+  // For garden development purposes only!!!
+  // devmodus: true,
+
   // Stop auto opening Gardenjs on start:
   // "no_open_browser": true,
 
   // This title is displayed above the navigation,
   // if the path to a logo is specified, "project_title" is used as the title tag:
   project_title: "Gardenjs docs",
-  project_logo: "src/assets/icons/logo.svg",
+  project_logo: "src/assets/icons/logo_sidebar.svg",
 
   // Here you can set a path to your own start page.
   // The HTML file may only contain the body part, i.e. without the doctype, head and body tag:
