@@ -1,3 +1,6 @@
+<a href="https://github.com/gardenjs/gardenjs" target="_blank"><img src="https://raw.githubusercontent.com/gardenjs/branding/main/badge/badge_gardenjs.svg"></a>
+
+
 # Gardenjs website & docs
 
 This repository contains the <a href="https://gardenjs.org/" target="_blank">website & documentation</a> of Gardenjs. <a href="https://github.com/rabbitdevelopment/garden" target="_blank">Gardenjs</a> is a lightweight and superfast component library explorer for UI development, testing and documentation.
@@ -8,8 +11,9 @@ Happy Gardening :)
 
 ## Todo´s
 
+- [bug] The logo for dark mode disappears when the page is changed.
 - [bug] In dark mode, the header image browser bar is in 'light mode' when you switch pages and then return to the homepage.
-- [task] Move sidenav links to routes (or layouts/documentation?).
+- [bug] If cards are displayed in two columns, the correct "slant" order is not correct when displayed in one column on smaller monitors.
 - [docs] Add Hooks, Decorators, Write Renderer.
 - [docs] Check content & all links before releasing docs.
 - [task] Privacy policy: hosting Github?
