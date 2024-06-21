@@ -1,6 +1,6 @@
 <script>
-    import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.jpg'
-    import ScreenshotLightmode from '../../assets/images/screenshot_garden.jpg'
+    import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.png'
+    import ScreenshotLightmode from '../../assets/images/screenshot_garden.png'
 </script>
 
 <div class="app">
