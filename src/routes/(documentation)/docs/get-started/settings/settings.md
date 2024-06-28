@@ -7,7 +7,7 @@ During installation, the configuration file **garden.config.js** is generated in
 | Argument | Type | Description |
 |--- |--- | --- |
 | `serverport` | Positive number | Default: `3010` <br> Define the server port. |
-| `devmodus` | Boolean |  Default: `false` <br> For garden development purposes only. |
+| `devmodus` | Boolean |  Default: `false` <br> !!! For garden development purposes only. |
 | `no_open_browser` | Boolean |  Default: `true` <br> Stops auto opening Gardenjs on start. |
 | `project_title` | String, Text |  Default: `My project name`<br> Title is displayed above the navigation. |
 | `project_logo` | Path |  Optional. Logo is displayed above the navigation. Then "project_title" is used as title tag. |
