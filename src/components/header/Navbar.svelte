@@ -68,11 +68,12 @@
             color: var(--c-text);
             font-variation-settings: 'wght' 900;
             text-decoration: none;
+            line-height: 1;
             @media (max-width: 579px) {
               margin: 0 0 0.75rem;
             }
             img {
-              display: inline-block;
+              display: block;
               width: 107px;
               height: 36px;
               @media (min-width: 380px) {
