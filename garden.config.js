@@ -5,8 +5,9 @@ export default {
   // Define the server port:
   serverport: 3010,
 
-  // For garden development purposes only!!!
-  devmodus: true,
+  // !!! For garden development purposes only !!!
+  // If set true, the "Code" tab is not displayed in the panel. An empty stage is displayed instead of the custom welcome_page.
+  // devmodus: true,
 
   // Stop auto opening Gardenjs on start:
   // no_open_browser: true,
@@ -19,7 +20,7 @@ export default {
 
   // Here you can set a path to your own start page.
   // The HTML file may only contain the body part, i.e. without the doctype, head and body tag:
-  welcome_page: './garden.homepage.html',
+  welcome_page: './gardendocs.homepage.html',
 
   // Show the link to the docs in the sidebar:
   docs_link: true,
