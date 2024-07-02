@@ -14,7 +14,7 @@
   }
 </script>
 
-<Navbar isFixed isDocs hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
+<Navbar isFixed hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
 <div class="mainaside">
   <div class="mainaside_container">
     <div class="sidebar {showMobilenav ? 'show' : ''}">
