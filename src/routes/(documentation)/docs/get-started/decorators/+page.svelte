@@ -1,5 +1,5 @@
 <script>
-  import Decorators from './examples.md'
+  import Decorators from './decorators.md'
 </script>
 
 <svelte:head>
