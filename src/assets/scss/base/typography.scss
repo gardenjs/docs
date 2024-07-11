@@ -100,8 +100,12 @@ strong {
 i {
   font-family: 'Source Sans 3 Italic' !important;
 }
+code {
+  font-family: var(--ff-monospace);
+}
 p mark,
-p code {
+p code,
+li code {
   padding: 0.125rem 0.25rem;
   font-size: 0.875rem;
   font-variation-settings: 'wght' 500;
@@ -116,7 +120,4 @@ p code {
   @media (min-width: 840px) {
     font-size: 0.875rem;
   }
-}
-code {
-  font-family: var(--ff-monospace);
 }
