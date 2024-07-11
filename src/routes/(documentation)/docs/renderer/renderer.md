@@ -66,4 +66,4 @@ Also take a look at how the existing renderers solve this...
 
 <br>
 
-** Let us know if you have written a new renderer for another framework. We will be happy to refer to it. **
+**Let us know if you have written a new renderer for another framework. We will be happy to refer to it.**
