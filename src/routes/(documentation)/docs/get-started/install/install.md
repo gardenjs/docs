@@ -33,18 +33,47 @@ Now start Gardenjs for the first time:
 This will set up Gardenjs and generate the **garden.config.js** file. You will be prompted to select various options:
 
 ```console
-? Enter your project title:
-? UI Library:
-? Enter your component source folder:
-? Should garden create an example component?
+Welcome to the garden setup process
+
+===================================
+
+? Enter your project title: 
+? UI Library: 
+? Enter your component source folder: 
+? Should garden create an example component? 
+===================================
+
+For rendering the components for the selected libraries, you have to install the appropriate plugins.
+? Shall gardenjs install the necessary plugins?
+? Package manager: 
+
+===================================
+? You need a vite configuration file for gardenjs. Shall we create the file? 
+===================================
+
+Creating garden.vite.config.js ...:
+
+===================================
+
+Creating garden.config.js ...:
+
 
 Done. Edit garden.config.js file according to your needs.
+Run npm run garden again, to start gardenjs.
+===================================
 Happy gardening!
+===================================
 ```
+
+### The gardenjs configuration files
 
 In the root directory you will now find the Gardenjs configuration file **garden.config.js**.
 
 If you have made a mistake or would like to change something now, you can also delete the file and run `npm run garden` again. Alternatively, and for future adjustments, edit the **garden.config.js** file manually, see step 5.
+
+Optionally the **garden.vite.config.js** has been generated. If you haven't selected the option to generate the file you need to create it now.
+
+This config file sets up vite to run gardenjs. If you are using vite as your default bundler you already have a vite.config.js. You might adapt the garden.vite.config.js to your own needs. However there are some garden specific settings, that's why your vite.config.js can't be used for gardenjs.
 
 ### ! Renderer Plugin
 
