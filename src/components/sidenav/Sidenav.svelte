@@ -22,7 +22,7 @@
         <ul>
           {#each folder.items as link}  
             <li>
-              <a href={base}{link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
+              <a href={base}{link.href} class:active={url === base + link.href} on:click={handleClick}>{link.label}</a>
             </li>
           {/each}
         </ul>
