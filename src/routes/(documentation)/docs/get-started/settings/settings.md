@@ -7,11 +7,12 @@ During installation, the configuration file **garden.config.js** is generated in
 | Argument | Type | Description |
 |--- |--- | --- |
 | `serverport` | Positive number | Default: `3010` <br> Define the server port. |
-| `devmodus` | Boolean |  Default: `false` <br> For garden development purposes only. |
+| `devmodus` | Boolean |  Default: `false` <br> !!! For garden development purposes only. |
 | `no_open_browser` | Boolean |  Default: `true` <br> Stops auto opening Gardenjs on start. |
 | `project_title` | String, Text |  Default: `My project name`<br> Title is displayed above the navigation. |
 | `project_logo` | Path |  Optional. Logo is displayed above the navigation. Then "project_title" is used as title tag. |
-| `welcome_page` | Path | Set a path to your own start page, e.g. `/src/foo.svelte`. |
+| `project_logo_darkmode` | Path |  Optional. Logo is displayed above the navigation in dark mode. Then "project_title" is used as title tag. |
+| `welcome_page` | Path | Optional. Set a path to your own start page, e.g. `/src/foo.html`. |
 | `docs_link` | Boolean | Default: `true` <br> Set a path to your own start page, e.g. `/src/foo.svelte`. |
 | `structure` | Path | Each entry is output with its subpages in the page tree. <br> E.g. `layouts: './src/layout/, 'components: './src/components/'.` |
 | `watch`| `directories`: Path, `include`: File suffix | Defines which directories and file types to monitor. |

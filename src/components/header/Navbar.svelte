@@ -5,16 +5,14 @@
   import LogoNeg from '../../assets/icons/logo_neg.svg'
 
   export let isFixed = false
-  export let isDocs = false
   export let showHeroheader = false
   export let showMobilenav = false
   export let hasMobilenavicon = false
 
   let fixed = 'is-fixed'
-  let ifdocs = 'is-docs'
 </script>
 
-<header class="header {isFixed? fixed : ''} {isDocs? ifdocs : ''}">
+<header class="header {isFixed? fixed : ''}">
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">
@@ -39,11 +37,6 @@
     overflow: hidden;
     padding: 0 1.5rem;
     width: 100%;
-    &.is-fixed {
-      position: fixed;
-      top: 0;
-      z-index: 9;
-    }
     .header_container {
       position: relative;
       .navbar {
@@ -75,11 +68,12 @@
             color: var(--c-text);
             font-variation-settings: 'wght' 900;
             text-decoration: none;
+            line-height: 1;
             @media (max-width: 579px) {
               margin: 0 0 0.75rem;
             }
             img {
-              display: inline-block;
+              display: block;
               width: 107px;
               height: 36px;
               @media (min-width: 380px) {
@@ -99,12 +93,30 @@
         }
       }
     }
-    // docs only
-    &.is-docs {
+    &.is-fixed {
+      position: fixed;
+      top: 0;
+      z-index: 9;
       @media (min-width: 580px) {
         border-bottom: 1px solid var(--c-border);
       }
       .navbar_container {
+        img {
+          width: 107px;
+          height: 36px;
+          @media (min-width: 380px) {
+            width: 128px !important;
+            height: 35px !important;
+          }
+          @media (min-width: 960px) {
+            width: 119px !important;
+            height: 40px !important;
+          }
+          @media (min-width: 1280px) {
+            width: 149px !important;
+            height: 50px !important;
+          }
+        }
         @media (min-width: 580px) {
           height: 4rem !important;
         }

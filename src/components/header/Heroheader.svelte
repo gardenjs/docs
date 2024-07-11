@@ -1,6 +1,6 @@
 <script>
   import Slogan from './Slogan.svelte'
-  import Linkbutton from '../linkbutton/Linkbutton.svelte'
+  import Linkbutton from './Linkbutton.svelte'
   import Applicationimage from './Applicationimage.svelte'
   import Dashedline from '../dashedlines/Dashedlines.svelte'
 
@@ -14,7 +14,7 @@
     </Slogan>
     <div class="heroheader_links">
       <Linkbutton isExternal
-        link="https://www.gardenjs.com/demo"
+        link="https://demo.gardenjs.org/"
         btnlabel="Watch Demo"
         bgColor="turquoise">
       </Linkbutton>

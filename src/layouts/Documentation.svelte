@@ -14,7 +14,7 @@
   }
 </script>
 
-<Navbar isFixed isDocs hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
+<Navbar isFixed hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
 <div class="mainaside">
   <div class="mainaside_container">
     <div class="sidebar {showMobilenav ? 'show' : ''}">
@@ -117,7 +117,7 @@
     right: 0;
     bottom: 0;
     background-color: var(--c-website-bg);
-    opacity: 0.6;
+    opacity: 0.9;
     z-index: 99998;
     @media (min-width: 840px) {
       display: none;

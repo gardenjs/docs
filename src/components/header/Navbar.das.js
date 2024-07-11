@@ -3,7 +3,7 @@ export default {
   file: './Navbar.svelte',
   description: './Navbar.md',
   examples: [
-    {title: 'Navbar homepage & subpages'},
-    {title: 'Navbar docs', input: {isDocs: 'true'}},
+    {title: 'Navbar homepage'},
+    {title: 'Navbar subpages & docs', input: {isDocs: 'true'}},
   ]
 }
