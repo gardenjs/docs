@@ -2,6 +2,7 @@
   import { createEventDispatcher } from "svelte";
   import {theme, toggleTheme} from "../../stores/theme.js";
   import { browser } from '$app/environment';
+  import { base } from '$app/paths';
 
   const dispatch = createEventDispatcher();
   export let showMobilenav = false
@@ -21,7 +22,7 @@
 <nav class="navbar_nav">
   <ul>
     <li>
-      <a href="/docs" title="documentation">Docs</a>
+      <a href="{base}/docs" title="documentation">Docs</a>
     </li>
     <li>
       <a class="github" href="https://github.com/rabbitdevelopment/garden" title="Garden Github Repository" target="_blank">
