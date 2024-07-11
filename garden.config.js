@@ -12,8 +12,8 @@ export default {
   // Stop auto opening Gardenjs on start:
   // no_open_browser: true,
 
-  // This title is displayed above the navigation,
-  // if the path to a logo is specified, "project_title" is used as the title tag:
+  // This title is displayed above the navigation:
+  // If the path to a logo is specified, "project_title" is used as the alt tag. Additional darkmode logo can be added.
   project_title: 'Gardenjs docs',
   project_logo: './src/assets/icons/logo_sidebar.svg',
   project_logo_darkmode: './src/assets/icons/logo_sidebar_neg.svg',
