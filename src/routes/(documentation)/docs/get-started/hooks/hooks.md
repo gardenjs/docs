@@ -4,18 +4,18 @@ Sometimes you need to setup the environment in a specific state, so that the com
 
 Gardenjs provides hook-functions which will be executed before or after rendering and after unmounting a component.
 
-| location               | hook      | executed                                                                                                                                                                                  |
-| ---------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| \*.das.hook.js         | beforeAll | executed before any component inside the directory or below is rendered. When selecting another example or another component in same hierarchy, this function will not be executed again. |
-| \*.das.hook.js         | before    | executed always when component a new component or example is selected                                                                                                                     |
-| \*.das.hook.js         | after     | executed after component is umounted/destroyed                                                                                                                                            |
-| \*.das.hook.js         | afterAll  | executed after component is unmounted/destroyed and another component outside of the hierarchy is selected                                                                                |
-| component description  | beforeAll | executed before component is rendered. When selecting another example, this function will not be executed again.                                                                          |
-| component description  | before    | executed always when another example of same component is selected                                                                                                                        |
-| component description  | after     | executed after component is umounted/destroyed                                                                                                                                            |
-| component description  | afterAll  | executed after component is unmounted/destroyed and another component is selected                                                                                                         |
-| in example description | before    | executed when the example is selected after component was updated                                                                                                                         |
-| in example description | after     | executed when another example or component is selected                                                                                                                                    |
+| location | hook | executed |
+| --- | --- | --- |
+| \*.das.hook.js | beforeAll | executed before any component inside the directory or below is rendered. When selecting another example or another component in same hierarchy, this function will not be executed again. |
+| \*.das.hook.js | before | executed always when component a new component or example is selected |
+| \*.das.hook.js | after | executed after component is umounted/destroyed |
+| \*.das.hook.js | afterAll | executed after component is unmounted/destroyed and another component outside of the hierarchy is selected |
+| component description  | beforeAll | executed before component is rendered. When selecting another example, this function will not be executed again. |
+| component description  | before | executed always when another example of same component is selected |
+| component description  | after | executed after component is umounted/destroyed |
+| component description  | afterAll  | executed after component is unmounted/destroyed and another component is selected |
+| in example description | before | executed when the example is selected after component was updated |
+| in example description | after | executed when another example or component is selected |
 
 If you want to share the same setup for all examples of one component use the hooks inside the component description
 If you want to share the same setup for all components or a group of components then use hook files ( `*.das.hook.js` or `*.das.hook.ts` )
@@ -24,14 +24,14 @@ If you want to share the same setup for all components or a group of components 
 
 The order of executing the hooks is as:
 
-- beforeAll hooks
-- before hooks
+1. beforeAll hooks
+2. before hooks
 
 And the order inside beforeAll hooks is
 
-- hook file
-- component description
-- then example description.
+1. hook file
+2. component description
+3. then example description.
 
 The after hooks are executed in reverse order: first after hooks then afterAll hooks.
 
@@ -49,7 +49,7 @@ folder B
   comp3.das.js
 ```
 
-glob1.das.hook.js and glob2.das.hook:
+`glob1.das.hook.js` and `glob2.das.hook`:
 
 ```js
 export default {
@@ -59,9 +59,10 @@ export default {
   before: glob1Before
   after: glob1After
   ...
+}
 ```
 
-comp1.das.js and comp2.das.js
+`comp1.das.js` and `comp2.das.js`
 
 ```js
 export default {
@@ -80,7 +81,7 @@ export default {
 }
 ```
 
-- selecting a component first:
+#### Selecting a component first
 
   1. glob1BeforeAll
   2. comp1BeforeAll
@@ -88,7 +89,7 @@ export default {
   4. comp1Before
   5. example1Before
 
-- selecting another example of same component
+#### Selecting another example of same component
 
   1. example1After
   2. comp1After
@@ -97,7 +98,7 @@ export default {
   5. comp1Before
   6. example2Before
 
-- selecting another component in same hierarchy
+#### Selecting another component in same hierarchy
 
   1. example2After
   2. comp1After
@@ -108,7 +109,7 @@ export default {
   7. comp2Before
   8. example1Before
 
-- selecting another component in another hierarchy
+#### Selecting another component in another hierarchy
 
   1. example1After
   2. comp2After
