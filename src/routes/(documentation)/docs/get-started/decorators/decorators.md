@@ -45,6 +45,6 @@ let user = {name: 'Jane Doe', rights: ['read', 'write']}
 </script>
 
 <CompanyFrame user={user}>
-  <slot> <!-- here will be rendered the component --></slot>
+  <slot> <!-- here will be rendered the component --> </slot>
 </CompanyFrame>
 ```
