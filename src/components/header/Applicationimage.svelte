@@ -1,6 +1,7 @@
 <script>
-    import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.png'
-    import ScreenshotLightmode from '../../assets/images/screenshot_garden.png'
+  import ScreenshotDarkmode from '../../assets/images/screenshot_garden-dark.png'
+  import ScreenshotLightmode from '../../assets/images/screenshot_garden.png'
+  import {theme} from '../../stores/theme'
 </script>
 
 <div class="app">
@@ -8,7 +9,7 @@
     <div class="menu-circle"></div>
   </div>
   <picture>
-    <source srcset="{ScreenshotDarkmode}" media="all" data-media="(prefers-color-scheme:light)">
+    <source srcset="{ScreenshotDarkmode}" media="{$theme === 'light' ? 'all' : 'none'}" data-media="(prefers-color-scheme:light)">
     <img src="{ScreenshotLightmode}" alt="Screenshot Garden app">
   </picture>
 </div>

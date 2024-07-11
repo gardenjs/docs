@@ -1,34 +1,20 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import {theme, toggleTheme} from "../../stores/theme.js";
+  import { browser } from '$app/environment';
 
   const dispatch = createEventDispatcher();
   export let showMobilenav = false
   export let hasMobilenavicon = false
 
-  let currentTheme = 'light'
-
-  function toggleTheme() {
-    currentTheme = currentTheme === "dark" ? "light" : "dark"
-    document.documentElement.setAttribute("data-theme", currentTheme);
-    updateSourceMedia(currentTheme);
-  }
-
-  function updateSourceMedia (colorPreference) {
-    var pictures = document.querySelectorAll('picture');
-    pictures.forEach(function (picture) {
-      var sources = picture.querySelectorAll("source[data-media*=\"prefers-color-scheme\"]");
-      sources.forEach(function (source) {
-        if (source.dataset.media.includes(colorPreference)) {
-          source.media = 'all';
-        } else {
-          source.media = 'none';
-        }
-      })
-    })
-  };
-
   function handleToggleMobilenav() {
     dispatch("toggleMobilenav", {})
+  }
+
+  $: {
+    if (browser) {
+      document.documentElement.setAttribute("data-theme", $theme);
+    }
   }
 </script>
 
@@ -45,7 +31,7 @@
     </li>
     <li>
       <button id="toggle-mode" class="toggle-mode" title="Toggle Website Theme" on:click={toggleTheme}>
-      {#if currentTheme === 'light'}
+      {#if theme === 'light'}
         <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 009 9 9 9 0 11-9-9z"/></svg>
       {:else}
         <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>

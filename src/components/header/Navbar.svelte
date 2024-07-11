@@ -3,6 +3,7 @@
   import Heroheader from './Heroheader.svelte'
   import Logo from '../../assets/icons/logo.svg'
   import LogoNeg from '../../assets/icons/logo_neg.svg'
+  import { theme } from '../../stores/theme'
 
   export let isFixed = false
   export let showHeroheader = false
@@ -18,7 +19,7 @@
       <div class="navbar_container">
         <a class="logo" href="/" title="go to start">
           <picture>
-            <source srcset="{Logo}" media="all" data-media="(prefers-color-scheme:light)">
+            <source srcset="{Logo}" media="{$theme === 'light' ? 'all' : 'none'}" data-media="(prefers-color-scheme:light)">
             <img src="{LogoNeg}" alt="Logo">
           </picture>
         </a>
