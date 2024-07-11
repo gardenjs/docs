@@ -4,6 +4,7 @@
   import Logo from '../../assets/icons/logo.svg'
   import LogoNeg from '../../assets/icons/logo_neg.svg'
   import { theme } from '../../stores/theme'
+  import { base } from '$app/paths';
 
   export let isFixed = false
   export let showHeroheader = false
@@ -17,7 +18,7 @@
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">
-        <a class="logo" href="/" title="go to start">
+        <a class="logo" href="{base}/" title="go to start">
           <picture>
             <source srcset="{Logo}" media="{$theme === 'light' ? 'all' : 'none'}" data-media="(prefers-color-scheme:light)">
             <img src="{LogoNeg}" alt="Logo">

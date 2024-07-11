@@ -11,6 +11,7 @@
   import Dashedline5 from '../../components/dashedlines/Dashedlines.svelte'
   import Dashedline6 from '../../components/dashedlines/Dashedlines.svelte'
   import Dashedline7 from '../../components/dashedlines/Dashedlines.svelte'
+  import { base } from '$app/paths';
 
   const chapter1cards = [
     {
@@ -113,11 +114,11 @@
     },
     { 
       label: 'Is Gardenjs being actively developed?',
-      content: '<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the <a href="/docs/roadmap">roadmap</a> depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>'
+      content: `<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the <a href="${base}/docs/roadmap">roadmap</a> depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>`
     },
     {
       label: 'Do you have further questions or is there something on your mind?',
-      content: '<p>If you have any problems, please first look in the <a href="/docs">documentation</a> or check whether there is an issue for your problem on <a href="https://github.com/gardenjs/gardenjs" target="_blank">GitHub</a> and otherwise open a new issue. We look forward to your feedback and support. Please feel free to contact us.</p>'
+      content: `<p>If you have any problems, please first look in the <a href="${base}/docs">documentation</a> or check whether there is an issue for your problem on <a href="https://github.com/gardenjs/gardenjs" target="_blank">GitHub</a> and otherwise open a new issue. We look forward to your feedback and support. Please feel free to contact us.</p>`
     }
   ];
 </script>

@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import { base } from '$app/paths';
 
   export let url = "";
   
@@ -21,7 +22,7 @@
         <ul>
           {#each folder.items as link}  
             <li>
-              <a href={link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
+              <a href={base}{link.href} class:active={url === link.href} on:click={handleClick}>{link.label}</a>
             </li>
           {/each}
         </ul>

@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   let now = new Date()
 
   export let hasBordertop = false
@@ -17,8 +18,8 @@
     <div class="footer_nav">
       <nav>
         <ul>
-          <li><a href="/legalnotice">Legal Notice</a></li>
-          <li><a href="/privacypolicy">Privacy Policy</a></li>
+          <li><a href="{base}/legalnotice">Legal Notice</a></li>
+          <li><a href="{base}/privacypolicy">Privacy Policy</a></li>
         </ul>
       </nav>
     </div>
