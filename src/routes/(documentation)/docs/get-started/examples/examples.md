@@ -65,3 +65,55 @@ The component **Sectionintro.svelte** file itself could look like this:
   {/if}
 </section>
 ```
+
+## Display components with slots
+
+Components with a slot cannot be displayed directly, the slot remains empty. If you want to fill the slot with content, an "auxiliary component" is required (e.g. Foo.example.svelte).
+If the component has properties, the auxiliary component must also have these properties and pass them on to the component or at least set them permanently.
+
+An example using a svelte component: **Layout.example.svelte**
+
+```svelte
+<script>
+  import Layout from './Layout.svelte';
+
+  export let columns
+  const fixBgColor = 'white'
+</script>
+
+<Layout columns={columns} bgColor={fixBgColor}>
+  <div>Main content area...</div>
+</Layout>
+
+<style>
+  div {
+    padding: 1rem;
+    border: 1px solid red;
+  }
+</style>
+```
+
+<br>
+
+The **Layout.das.js**:
+
+```js
+export default {
+  name: 'Layout',
+  file: './Layout.example.svelte',
+  examples: [
+    {
+      title: '1 column',
+      input: {
+        columns: 1,
+      }
+    },
+    {
+      title: '3 columns',
+      input: {
+        columns: 3,
+      }
+    }
+  ]
+}
+```
