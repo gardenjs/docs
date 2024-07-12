@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths';
+  
   let now = new Date()
 
   export let hasBordertop = false

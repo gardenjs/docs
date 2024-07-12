@@ -15,7 +15,6 @@ const config = {
 		appDir: 'app',
 		adapter: adapter(
 			{
-				// default options are shown
 				pages: 'docs',
 				assets: 'docs',
 				fallback: null
