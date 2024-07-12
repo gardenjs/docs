@@ -14,8 +14,8 @@
     </Slogan>
     <div class="heroheader_links">
       <Linkbutton isExternal
-        link="https://demo.gardenjs.org/"
-        btnlabel="Watch Demo"
+        link="./"
+        btnlabel="Demo coming soon"
         bgColor="turquoise">
       </Linkbutton>
       <Linkbutton
