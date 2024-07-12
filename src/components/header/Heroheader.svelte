@@ -3,6 +3,7 @@
   import Linkbutton from './Linkbutton.svelte'
   import Applicationimage from './Applicationimage.svelte'
   import Dashedline from '../dashedlines/Dashedlines.svelte'
+  import { base } from '$app/paths';
 
 </script>
 
@@ -19,7 +20,7 @@
         bgColor="turquoise">
       </Linkbutton>
       <Linkbutton
-        link="/docs"
+        link="{base}/docs"
         btnlabel="Documentation"
         bgColor="">
       </Linkbutton>

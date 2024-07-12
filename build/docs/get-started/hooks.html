@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="../../favicon.svg" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../../app/immutable/assets/2.CUiWSWrM.css" rel="stylesheet">
+		<link href="../../app/immutable/assets/Vegetables.CLzM6dNq.css" rel="stylesheet">
+		<link href="../../app/immutable/assets/Dashedlines.RDG1wRPi.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../app/immutable/entry/start.Cce2I6O_.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/entry.B5GAKyYe.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/scheduler.U_2hvb7C.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/index.Bq4uhzYx.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/paths.lQQCy2Pc.js">
+		<link rel="modulepreload" href="../../app/immutable/entry/app.Qgn_vsva.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/index.BoCreYX2.js">
+		<link rel="modulepreload" href="../../app/immutable/nodes/0.DjIiORdL.js">
+		<link rel="modulepreload" href="../../app/immutable/nodes/2.yAGJFsE2.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/Vegetables.DG8Lgmeq.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/Dashedlines.CT2eSUbp.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/each.D6YF6ztN.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/stores.Bi68kcyC.js">
+		<link rel="modulepreload" href="../../app/immutable/nodes/8.WLrlN_Ib.js"><title>Add notes :: Gardenjs Docs</title><!-- HEAD_svelte-172r7uz_START --><meta name="description" content="About hooks and Gardenjs. Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React."><!-- HEAD_svelte-172r7uz_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			  <header class="header is-fixed svelte-197f0k8"><div class="header_container svelte-197f0k8"><div class="navbar svelte-197f0k8"><div class="navbar_container svelte-197f0k8"><a class="logo svelte-197f0k8" href="../../" title="go to start"><picture><source srcset="/app/immutable/assets/logo.D5IOKsPb.svg" media="all" data-media="(prefers-color-scheme:light)"> <img src="/app/immutable/assets/logo_neg.DPFWF6LM.svg" alt="Logo" class="svelte-197f0k8"></picture></a> <nav class="navbar_nav svelte-211gtq"><ul class="svelte-211gtq"><li class="svelte-211gtq" data-svelte-h="svelte-10t5zeo"><a href="../../docs" title="documentation" class="svelte-211gtq">Docs</a></li> <li class="svelte-211gtq" data-svelte-h="svelte-13jtnj9"><a class="github svelte-211gtq" href="https://github.com/rabbitdevelopment/garden" title="Garden Github Repository" target="_blank"><svg class="icon svelte-211gtq" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M15.015 0C6.723 0 0 6.894 0 15.398c0 6.803 4.302 12.573 10.27 14.61.75.14 1.025-.334 1.025-.743 0-.365-.013-1.334-.02-2.618-4.178.93-5.059-2.065-5.059-2.065-.683-1.778-1.668-2.252-1.668-2.252-1.362-.955.104-.936.104-.936 1.507.11 2.3 1.587 2.3 1.587 1.34 2.353 3.515 1.673 4.37 1.28.137-.996.525-1.674.954-2.058-3.334-.389-6.84-1.71-6.84-7.61 0-1.681.585-3.056 1.545-4.132-.155-.39-.67-1.955.147-4.075 0 0 1.26-.414 4.13 1.579a14.03 14.03 0 013.76-.518c1.275.005 2.56.176 3.759.518 2.867-1.993 4.126-1.579 4.126-1.579.82 2.12.304 3.685.15 4.075.961 1.076 1.543 2.45 1.543 4.13 0 5.917-3.512 7.218-6.857 7.599.54.476 1.02 1.415 1.02 2.852 0 2.057-.02 3.718-.02 4.223 0 .413.27.891 1.034.741 5.963-2.04 10.261-7.808 10.261-14.608C30.034 6.894 23.31 0 15.015 0"></path></svg> <span>Source</span></a></li> <li class="svelte-211gtq"><button id="toggle-mode" class="toggle-mode svelte-211gtq" title="Toggle Website Theme"><svg class="icon svelte-211gtq" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg></button></li> <li class="navicon svelte-211gtq"><button class="menu svelte-211gtq" title="Expand menu"><svg class="icon svelte-211gtq" role="img" width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"></path></svg></button></li></ul> </nav></div></div> </div> </header> <div class="mainaside svelte-10gwf77"><div class="mainaside_container svelte-10gwf77"><div class="sidebar  svelte-10gwf77"><div class="sidenav_heading svelte-1oucj0z" data-svelte-h="svelte-vv0xr2">Documentation</div> <nav class="sidenav svelte-1oucj0z"><ul class="svelte-1oucj0z"><li class="svelte-1oucj0z"><span class="sidenav_folder svelte-1oucj0z">Overview</span> <ul class="svelte-1oucj0z"><li class="svelte-1oucj0z"><a href="../../docs" class="svelte-1oucj0z">Why Gardenjs?</a> </li></ul> </li><li class="svelte-1oucj0z"><span class="sidenav_folder svelte-1oucj0z">Get Started</span> <ul class="svelte-1oucj0z"><li class="svelte-1oucj0z"><a href="../../docs/get-started/install" class="svelte-1oucj0z">Install</a> </li><li class="svelte-1oucj0z"><a href="../../docs/get-started/install-renderer" class="svelte-1oucj0z">Install Renderer Plugin</a> </li><li class="svelte-1oucj0z"><a href="../../docs/get-started/settings" class="svelte-1oucj0z">Settings</a> </li><li class="svelte-1oucj0z"><a href="../../docs/get-started/examples" class="svelte-1oucj0z">Examples</a> </li><li class="svelte-1oucj0z"><a href="../../docs/get-started/hooks" class="svelte-1oucj0z">Hooks</a> </li><li class="svelte-1oucj0z"><a href="../../docs/get-started/decorators" class="svelte-1oucj0z">Decorators</a> </li></ul> </li><li class="svelte-1oucj0z"><span class="sidenav_folder svelte-1oucj0z">Renderer</span> <ul class="svelte-1oucj0z"><li class="svelte-1oucj0z"><a href="../../docs/renderer" class="svelte-1oucj0z">Write New Renderer</a> </li></ul> </li><li class="svelte-1oucj0z"><span class="sidenav_folder svelte-1oucj0z">Add Notes</span> <ul class="svelte-1oucj0z"><li class="svelte-1oucj0z"><a href="../../docs/notes" class="svelte-1oucj0z">Add Notes</a> </li></ul> </li><li class="svelte-1oucj0z"><span class="sidenav_folder svelte-1oucj0z">What comes next?</span> <ul class="svelte-1oucj0z"><li class="svelte-1oucj0z"><a href="../../docs/roadmap" class="svelte-1oucj0z">Roadmap</a> </li></ul> </li></ul> </nav></div> <div class="content-wrapper svelte-10gwf77"><div class="content svelte-10gwf77"> <div class="md_file"><h1 data-svelte-h="svelte-1xhedz2">Hooks</h1> <p data-svelte-h="svelte-1whilyx">Sometimes you need to setup the environment in a specific state, so that the component will rendered correctly. E.g. you have a store object for a user, a session-cookie or you want to check if a value is read from the localStorage.</p> <p data-svelte-h="svelte-148iw2v">Gardenjs provides hook-functions which will be executed before or after rendering and after unmounting a component.</p> <table data-svelte-h="svelte-s5labl"><thead><tr><th>location</th> <th>hook</th> <th>executed</th></tr></thead> <tbody><tr><td>*.das.hook.js</td> <td>beforeAll</td> <td>executed before any component inside the directory or below is rendered. When selecting another example or another component in same hierarchy, this function will not be executed again.</td></tr> <tr><td>*.das.hook.js</td> <td>before</td> <td>executed always when component a new component or example is selected</td></tr> <tr><td>*.das.hook.js</td> <td>after</td> <td>executed after component is umounted/destroyed</td></tr> <tr><td>*.das.hook.js</td> <td>afterAll</td> <td>executed after component is unmounted/destroyed and another component outside of the hierarchy is selected</td></tr> <tr><td>component description</td> <td>beforeAll</td> <td>executed before component is rendered. When selecting another example, this function will not be executed again.</td></tr> <tr><td>component description</td> <td>before</td> <td>executed always when another example of same component is selected</td></tr> <tr><td>component description</td> <td>after</td> <td>executed after component is umounted/destroyed</td></tr> <tr><td>component description</td> <td>afterAll</td> <td>executed after component is unmounted/destroyed and another component is selected</td></tr> <tr><td>in example description</td> <td>before</td> <td>executed when the example is selected after component was updated</td></tr> <tr><td>in example description</td> <td>after</td> <td>executed when another example or component is selected</td></tr></tbody></table> <p data-svelte-h="svelte-6fmn4z">If you want to share the same setup for all examples of one component use the hooks inside the component description
+If you want to share the same setup for all components or a group of components then use hook files ( <code>*.das.hook.js</code> or <code>*.das.hook.ts</code> )</p> <h2 data-svelte-h="svelte-e1rm32">Executing order</h2> <p data-svelte-h="svelte-1a5kntn">The order of executing the hooks is as:</p> <ol data-svelte-h="svelte-g3iy85"><li>beforeAll hooks</li> <li>before hooks</li></ol> <p data-svelte-h="svelte-x0w8tg">And the order inside beforeAll hooks is</p> <ol data-svelte-h="svelte-x116ag"><li>hook file</li> <li>component description</li> <li>then example description.</li></ol> <p data-svelte-h="svelte-2i1ezh">The after hooks are executed in reverse order: first after hooks then afterAll hooks.</p> <h3 data-svelte-h="svelte-qg4234">Example</h3> <p data-svelte-h="svelte-kbz5nc">Given the following projectstructur:</p> <pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">folder A
+  glob1.das.hook.js
+  comp1.das.js
+  comp2.das.js
+folder B
+  glob2.das.hook.js
+  comp3.das.js</code><!-- HTML_TAG_END --></pre> <p data-svelte-h="svelte-c0ywpp"><code>glob1.das.hook.js</code> and <code>glob2.das.hook</code>:</p> <pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+  <span class="token operator">...</span>
+  <span class="token literal-property property">beforeAll</span><span class="token operator">:</span> glob1BeforeAll
+  <span class="token literal-property property">afterAll</span><span class="token operator">:</span> glob1AfterAll
+  <span class="token literal-property property">before</span><span class="token operator">:</span> glob1Before
+  <span class="token literal-property property">after</span><span class="token operator">:</span> glob1After
+  <span class="token operator">...</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre> <p data-svelte-h="svelte-r88xjs"><code>comp1.das.js</code> and <code>comp2.das.js</code></p> <pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+  <span class="token operator">...</span>
+  <span class="token literal-property property">beforeAll</span><span class="token operator">:</span> comp1BeforeAll
+  <span class="token literal-property property">afterAll</span><span class="token operator">:</span> comp1AfterAll
+  <span class="token literal-property property">before</span><span class="token operator">:</span> comp1Before
+  <span class="token literal-property property">after</span><span class="token operator">:</span> comp1After
+  <span class="token operator">...</span>
+  <span class="token literal-property property">examples</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token operator">...</span>
+    <span class="token punctuation">&#123;</span><span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token operator">...</span><span class="token punctuation">,</span> <span class="token literal-property property">before</span><span class="token operator">:</span> example1Before<span class="token punctuation">,</span> <span class="token literal-property property">after</span><span class="token operator">:</span> example1After<span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#123;</span><span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token operator">...</span><span class="token punctuation">,</span> <span class="token literal-property property">before</span><span class="token operator">:</span> example2Before<span class="token punctuation">,</span> <span class="token literal-property property">after</span><span class="token operator">:</span> example2After<span class="token punctuation">&#125;</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre> <h4 data-svelte-h="svelte-f18co0">Selecting a component first</h4> <ol data-svelte-h="svelte-16yd1el"><li>glob1BeforeAll</li> <li>comp1BeforeAll</li> <li>glob1Before</li> <li>comp1Before</li> <li>example1Before</li></ol> <h4 data-svelte-h="svelte-1ddd6df">Selecting another example of same component</h4> <ol data-svelte-h="svelte-1yjne"><li>example1After</li> <li>comp1After</li> <li>glob1After</li> <li>glob1Before</li> <li>comp1Before</li> <li>example2Before</li></ol> <h4 data-svelte-h="svelte-1o5as7e">Selecting another component in same hierarchy</h4> <ol data-svelte-h="svelte-144tdj"><li>example2After</li> <li>comp1After</li> <li>glob1After</li> <li>comp1AfterAll</li> <li>comp2BeforeAll</li> <li>glob1Before</li> <li>comp2Before</li> <li>example1Before</li></ol> <h4 data-svelte-h="svelte-wncldp">Selecting another component in another hierarchy</h4> <ol data-svelte-h="svelte-vp9vth"><li>example1After</li> <li>comp2After</li> <li>glob1After</li> <li>comp1AfterAll</li> <li>glob1AfterAll</li> <li>glob2BeforeAll</li> <li>comp3BeforeAll</li> <li>glob2Before</li> <li>comp3Before</li> <li>exampleBefore</li></ol></div> <div class="vegetables  svelte-avwe2o"><img src="/app/immutable/assets/vegetables.M-tu_6-w.svg" alt="Vegetable illustration" class="svelte-avwe2o"> </div></div></div></div></div> <footer class="footer has-bt  svelte-kquci1"><div class="footer_container svelte-kquci1"><div class="footer_copyright svelte-kquci1"><div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License" class="svelte-kquci1" data-svelte-h="svelte-cgigc5">MIT License</a>.<br><span class="copyright svelte-kquci1" data-svelte-h="svelte-tg2ofc">©</span> 2024 <a href="https://www.rabbitdevelopment.com" class="svelte-kquci1" data-svelte-h="svelte-1ga25tl">Rabbit Development</a>. All rights reserved.</div></div> <div class="footer_nav svelte-kquci1" data-svelte-h="svelte-76nbp4"><nav><ul class="svelte-kquci1"><li class="svelte-kquci1"><a href="../../legalnotice" class="svelte-kquci1">Legal Notice</a></li> <li class="svelte-kquci1"><a href="../../privacypolicy" class="svelte-kquci1">Privacy Policy</a></li></ul></nav></div></div> </footer>  
+			
+			<script>
+				{
+					__sveltekit_1w5xbbv = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../../app/immutable/entry/start.Cce2I6O_.js"),
+						import("../../app/immutable/entry/app.Qgn_vsva.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+		</div>
+	</body>
+</html>
