@@ -19,12 +19,12 @@
   .card {
     margin: 0 0.75rem 0.75rem 0;
     padding: 1.5rem;
-    @media (min-width: 840px) {
-      padding: 2rem;
-    }
     border: var(--b);
     border-radius: var(--b-radius);
     box-shadow: 0.75rem 0.75rem 0 -2px var(--c-website-bg), 0.75rem 0.75rem 0 var(--c-text);
+    @media (min-width: 840px) {
+      padding: 2rem;
+    }
     &.turquoise {
       background-color: var(--c-turquoise);
     }

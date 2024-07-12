@@ -1,6 +1,6 @@
 <script>
   import { base } from '$app/paths';
-  
+
   let now = new Date()
 
   export let hasBordertop = false
@@ -57,6 +57,7 @@
       }
       .footer_copyright {
         order: 2;
+        font-size: 0.813rem;
         @media (min-width: 1280px) {
           order: 1;
           .copyright {
@@ -64,7 +65,6 @@
           }
         }
       }
-      font-size: 0.813rem;
       @media (min-width: 960px) {
         font-size: 0.938em;
       }
