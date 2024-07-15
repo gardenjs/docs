@@ -19,6 +19,8 @@ export default defineConfig(({ command, mode }) => {
         },
       ],
     },
+
+    base: "/docs/demo",
     
     
     build: {
