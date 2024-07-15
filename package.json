@@ -9,9 +9,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "vite build && vite build -c 'garden.vite.config.js'",
 		"preview": "vite preview",
-		"garden": "garden"
+		"garden": "garden",
+		"gardenbuild": "vite build "
 	},
 	"devDependencies": {
 		"@gardenjs/render-plugin-svelte": "^1.0.0",
