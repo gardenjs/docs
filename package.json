@@ -9,7 +9,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && vite build -c 'garden.vite.config.js'",
+		"build": "vite build",
 		"preview": "vite preview",
 		"garden": "garden",
 		"gardenbuild": "vite build ",
