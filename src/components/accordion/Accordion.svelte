@@ -46,7 +46,6 @@
       border: var(--b);
       border-radius: var(--b-radius);
       box-shadow: 0.25rem 0.25rem 0 -1px var(--c-text), 0.25rem 0.25rem 0 var(--c-text);
-      border-radius: var(--b-radius);
       transition: 0.4s;
       &:nth-last-of-type(even) {
         transform: rotateZ(-0.25deg);
