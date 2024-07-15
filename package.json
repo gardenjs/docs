@@ -12,7 +12,9 @@
 		"build": "vite build && vite build -c 'garden.vite.config.js'",
 		"preview": "vite preview",
 		"garden": "garden",
-		"gardenbuild": "vite build "
+		"gardenbuild": "vite build ",
+		"build:garden": "vite build -c 'garden.vite.config.js'",
+		"preview:garden": "vite preview -c 'garden.vite.config.js'"
 	},
 	"devDependencies": {
 		"@gardenjs/render-plugin-svelte": "^1.0.0",
