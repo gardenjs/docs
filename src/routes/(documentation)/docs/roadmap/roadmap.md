@@ -22,7 +22,7 @@ The following list is in no specific order:
   - [feature] Evaluation of "Make Storybook stories compatible with Garden".
 - **Tests:**
   - [task] Add tests to code.
-  - [feature] Add testing library. E.g. [Testing Library](https://testing-library.com/).
+  - [feature] Add testing library. E.g. Testing Library.
   - [feature] Screenshot tests:
     - Docker image oder alternativ for screenshot test.
     - Automatic create test file & and folder (like init garden).
@@ -32,7 +32,7 @@ The following list is in no specific order:
   - [feature] Set custom values such as "iPhone 15", "iPad Air", "Galaxy A" or as pixel values in garden.config and display them in a dropdown instead of icons.
   - [task] If full mode is active, switching to portrait mode should be deactivated.
   - [feature] Vertical dragbar to drag stage horizontical.
-  - [task] Add line numbers to highlightjs (https://github.com/wcoder/highlightjs-line-numbers.js).
+  - [task] Add line numbers to highlightjs.
   - [feature] Bookmarks for components. (like ReactCosmos)
   - [feature] Show a grid in the background.
   - [feature] Visualization of margin and padding, spacing via mouseover.
