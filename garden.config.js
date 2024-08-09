@@ -18,8 +18,9 @@ export default {
   project_logo: './src/assets/icons/logo_sidebar.svg',
   project_logo_darkmode: './src/assets/icons/logo_sidebar_neg.svg',
 
-  // Here you can set a path to your own start page.
-  // The HTML file may only contain the body part, i.e. without the doctype, head and body tag:
+  // Enter a path to your user-defined start page.
+  // The HTML file may only contain the body part (without doctype, html-, head- & body tag).
+  // Specify the CSS styles in a style tag under the HTML part.
   welcome_page: './gardendocs.homepage.html',
 
   // Show the link to the docs in the sidebar:
