@@ -82,6 +82,7 @@
       }
       .footer_nav {
         order: 1;
+        margin: 0 auto 1.25rem;
         @media (min-width: 1280px) {
           order: 2;
           text-align: right;
@@ -91,7 +92,6 @@
           li {
             display: inline-block;
             padding: 0 0.75rem;
-            margin-bottom: 0.75rem;
             @media (min-width: 840px) {
               margin: 0;
               padding: 0 0 0 2rem;
