@@ -47,11 +47,11 @@
       margin: 2rem 0 0;
       padding: 0 0 1rem;
       .heroheader_links {
+        margin: 0 0 2rem;
         @media (min-width: 480px) {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 0 1rem;
-          margin: 0 0 2rem;
         }
       }
     }
