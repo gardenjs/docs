@@ -17,11 +17,13 @@
     <div class="accordion_item">
       <button class="accordion_btn {item.isOpen ? 'active' : ''}" on:click={() => toggleAccordion(index)}>
         <span class="accordion_label">{item.label}</span>
-        {#if item.isOpen}
-          <svg class="accordion_icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
-        {:else}
-          <svg class="accordion_icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-        {/if}
+        <span class="accordion_icon">
+          {#if item.isOpen}
+            <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+          {:else}
+            <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+          {/if}
+        </span>
       </button>
       <div class="panel" aria-hidden={item.isOpen ? "false" : "true"} class:show={item.isOpen}>
         <div class="accordion_content">
@@ -71,19 +73,19 @@
         @media (min-width: 840px) {
           padding: 1rem 2rem;
         }
-        .accordion_icon {
+        .icon {
           transition: .4s;
-          font-size: 0.875rem;
+          font-size: 0.625rem;
           color: var(--c-text);
-          width: 1rem;
-          height: 1rem;
+          @media (min-width: 600px) {
+            font-size: 0.75rem;
+          }
           @media (min-width: 960px) {
-            width: 1.5rem;
-            height: 1.5rem;
+            font-size: 0.875rem;
           }
         }
-        &.active:hover .accordion_icon,
-        &.active .accordion_icon {
+        &.active:hover .icon,
+        &.active .icon {
           transition: .4s;
         }
         .accordion_label {
