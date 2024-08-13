@@ -57,6 +57,9 @@
       li {
         margin-left: 1rem;
         line-height: 1;
+        &:first-of-type {
+          margin: 0;
+        }
         a {
           padding: 0.5rem 0.75rem;
           @media (min-width: 960px) {
@@ -97,7 +100,6 @@
           }
         }
         .toggle-mode {
-            padding-left: 1rem;
             .icon {
               font-size: 0.938rem;
               @media (min-width: 840px) {
@@ -111,7 +113,7 @@
             }
           }
         &.navicon {
-          margin-left: 2rem;
+          margin: 0 0.5rem 0 2rem;
           @media (min-width: 840px) {
             display: none;
           }
