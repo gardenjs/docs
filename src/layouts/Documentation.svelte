@@ -4,6 +4,7 @@
   import Sidenav from '../components/sidenav/Sidenav.svelte'
   import Footer from '../components/footer/Footer.svelte'
   import Vegetables from '../components/vegetables/Vegetables.svelte'
+  import { onMount, afterUpdate } from 'svelte';
 
   export let url = ''
   export let sidenavFolders = []
@@ -12,6 +13,27 @@
   function handleToggleMobilenav() {
     showMobilenav = !showMobilenav
   }
+
+  function wrapTables() {
+    const tables = document.querySelectorAll('.content table');
+    tables.forEach(table => {
+      if (!table.parentNode.classList.contains('table-wrapper')) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'table-wrapper';
+        wrapper.style.overflowX = 'scroll';
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      }
+    });
+  }
+
+  onMount(() => {
+    wrapTables();
+  });
+
+  afterUpdate(() => {
+    wrapTables();
+  });
 </script>
 
 <Navbar isFixed hasMobilenavicon {showMobilenav} on:toggleMobilenav={handleToggleMobilenav} />
@@ -61,7 +83,7 @@
           width: 100%;
           height: 100vh;
           background-color: var(--c-website-bg);
-          translate: 100vw 0;
+          translate: 500px 0; // because of the table overflow on the settings page
           overflow-y: scroll;
           overflow-x: hidden;
           z-index: 99999;
