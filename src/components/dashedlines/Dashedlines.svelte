@@ -17,48 +17,71 @@
 </script>
 
 {#if dashedlines1}
-  <div class="dashed">
-    <div class="dashed_label dashed-01_label">This is Gardenjs</div>
-    <div class="svg">{@html Dashedline1}</div>
+  <div class="dl-1">
+    <div class="grid-helper"></div>
+    <div class="small-displays">{@html Dashedline7}</div>
+    <div class="big-displays">{@html Dashedline1}</div>
+    <div class="dl_text dl-1_text"><div>This is Gardenjs</div></div>
   </div>
-{:else}
-  <div class="dashed">
-    {#if dashedlines2}
-      <div class="svg">{@html Dashedline2}</div>
-      <div class="dashed_label dashed-02_label">ROFL</div>
-    {/if}
-    {#if dashedlines3}
-      <div class="svg">{@html Dashedline3}</div>
-      <div class="dashed_label dashed-03_label">Become a gardener</div>
-    {/if}
-    {#if dashedlines4}
-      <div class="svg">{@html Dashedline4}</div>
-      <div class="dashed_label dashed-04_label">Overview</div>
-    {/if}
-    {#if dashedlines5}
-      <div class="svg">{@html Dashedline5}</div>
-      <div class="dashed_label dashed-05_label">If you like Gardenjs</div>  
-    {/if}
-    {#if dashedlines6}
-      <div class="svg">{@html Dashedline6}</div>
-      <div class="dashed_label dashed-06_label">Do you have any questions?</div>
-    {/if}
-    {#if dashedlines7}
-      <div class="svg">{@html Dashedline7}</div>
-      <div class="dashed_label dashed-07_label">And now get to the fruit!</div>
-    {/if}
+  {:else}
+  {#if dashedlines2}
+    <div class="dl dl-2">
+      <div></div>
+      <div>{@html Dashedline2}</div>
+      <div class="dl_text"><div>ROFL</div></div>
+    </div>
+  {/if}
+  {#if dashedlines3}
+    <div class="dl dl-3">
+      <div></div>
+      <div>{@html Dashedline3}</div>
+      <div class="dl_text"><div>Become a gardener</div></div>
+    </div>
+  {/if}
+  {#if dashedlines4}
+    <div class="dl dl-4">
+      <div></div>
+      <div>{@html Dashedline4}</div>
+      <div class="dl_text"><div>Overview</div></div>
+    </div>
+  {/if}
+  {#if dashedlines5}
+    <div class="dl dl-5">
+      <div></div>
+      <div>{@html Dashedline5}</div>
+      <div class="dl_text"><div>If you like Gardenjs</div></div>
+    </div>
+  {/if}
+  {#if dashedlines6}
+  <div class="dl dl-6">
+    <div></div>
+    <div>{@html Dashedline6}</div>
+    <div class="dl_text"><div>Do you have any questions?</div></div>
   </div>
+  {/if}
+  {#if dashedlines7}
+    <div class="dl dl-7">
+      <div></div>
+      <div>{@html Dashedline7}</div>
+      <div class="dl_text"><div>And now get to the fruit!</div></div>
+    </div>
+  {/if}
 {/if}
 
 <style lang="scss">
-  .dashed {
+  .dl {
     position: relative;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 0px;
     height: 250px;
     width: 100%;
   }
-  .dashed_label {
-    font-family:"Gloria Hallelujah";
+  .dl_text {
+    position: relative;
+    overflow: hidden;
+    font-family: "Gloria Hallelujah";
     font-weight: 600;
     font-size: 0.875rem;
     color: var(--c-text);
@@ -66,49 +89,73 @@
     @media (min-width: 840px) {
       font-size: 0.938rem;
     }
+    div {
+      position: absolute;
+    }
   }
-  .dashed-01_label {
-    position: absolute;
-    right: 2rem;
-    bottom: 1.5rem;
-  }
-  .dashed-02_label,
-  .dashed-03_label,
-  .dashed-04_label,
-  .dashed-05_label,
-  .dashed-06_label,
-  .dashed-07_label {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  .dashed-02_label {
+  .dl-2 .dl_text div {
     top: 70%;
-    margin: 0 0 0 4rem;
   }
-  .dashed-03_label {
-    top: 72%;
-    margin: 0 0 0 8rem;
+  .dl-3 .dl_text div {
+    top: 69%;
   }
-  .dashed-04_label {
-    top: 70%;
-    margin: 0 0 0 5.5rem;
+  .dl-4 .dl_text div {
+    top: 68%;
   }
-  .dashed-05_label {
+  .dl-5 .dl_text div {
     top: 25%;
-    margin: 0 0 0 8rem;
   }
-  .dashed-06_label {
-    top: 71%;
-    margin: 0 0 0 10rem;
+  .dl-6 .dl_text div {
+    top: 69%;
   }
-  .dashed-07_label {
+  .dl-7 .dl_text div {
     top: 45%;
-    margin: 0 0 0 10rem;
   }
-  .svg {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
+  // first dashed line
+  .dl-1 {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 0px;
+    height: 250px;
+    width: 100%;
+    @media (min-width: 960px) {
+      display: block;
+    }
+  }
+  .dl-1_text {
+    @media (min-width: 840px) {
+      font-size: 0.938rem;
+    }
+    div {
+      position: absolute;
+      top: 45%;
+      @media (min-width: 960px) {
+        position: relative;
+      }
+    }
+    @media (min-width: 960px) {
+      position: absolute;
+      top: 80%;
+      right: 2.5rem;
+      div {
+        display: inline-block;
+      }
+    }
+  }
+  .grid-helper,
+  .small-displays {
+    display: block;
+    @media (min-width: 960px) {
+      display: none;
+    }
+  }
+  .big-displays {
+    display: none;
+    @media (min-width: 960px) {
+      display: block;
+    }
   }
 </style>
