@@ -28,7 +28,6 @@ The following list is in no specific order:
     - Automatic create test file & and folder.
     - Settings.
 - **UX improvements:**
-  - [feature] Specify the width and height of the stage by entering the size directly.
   - [feature] Set custom values such as "iPhone 15", "iPad Air", "Galaxy A" or as pixel values in garden.config and display them in a dropdown instead of icon nav.
   - [task] If full mode is active, switching to portrait mode should be deactivated.
   - [task] Add line numbers to code in panel.
