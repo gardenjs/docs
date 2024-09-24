@@ -25,8 +25,8 @@
       rotation: 'right',
     },
     {
-      title:"Use your favorite JS framework",
-      text:"Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Please support us to integrate more frameworks." ,
+      title:"Use your favorite framework ",
+      text:"Use Gardenjs out of the box with Svelte, Vue and React. If you want to use a previously unsupported framework and template language, you can write a plugin with little effort, so that your components are rendered in Gardenjs as well. Please support us to integrate more frameworks." ,
       rotation: 'right',
     },
     {
@@ -130,7 +130,7 @@
 
 <Main hasHeaderhead isWide>
   <ChapterHead isPagetitle
-    pagetitle="UI component library explorer for JS frameworks"
+    pagetitle="UI component library explorer"
     chaptertext="Gardenjs promotes modular and reusable code, streamlines collaboration between team members and increases overall productivity. Gardenjs is MIT licensed and free." />
   <Logogallery />
   <Dashedline2 dashedlines2 />
