@@ -84,6 +84,7 @@
         order: 1;
         margin: 0 auto 1.25rem;
         @media (min-width: 1280px) {
+          margin: 0 0 1.25rem;
           order: 2;
           text-align: right;
         }
