@@ -1,4 +1,4 @@
-# Write a plugin for another JS framework
+# Write a plugin for another framework
 
 Gardenjs currently supports <a href="https://github.com/gardenjs/render-plugin-svelte" target="_blank" title="Go to the Svelte renderer Repository">Svelte</a>, <a href="https://github.com/gardenjs/render-plugin-vue" target="_blank" title="Go to the Vue renderer Repository">Vue</a> and <a href="https://github.com/gardenjs/render-plugin-react" target="_blank" title="Go to the React renderer Repository">React</a> - also in multi-framework projects. In order to make Gardenjs compatible with other frameworks and template languages, a corresponding render must be added as a plugin.
 

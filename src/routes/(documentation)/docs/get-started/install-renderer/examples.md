@@ -2,7 +2,7 @@
 
 If you have already selected a renderer during the installation, then there is nothing more to do here and you can continue with the next steps.
 
-If you did not select a renderer during the installation, you must now install a renderer. Currently there are renderer plugins for <a href="https://github.com/gardenjs/render-plugin-svelte" target="_blank">Svelte</a>, <a href="https://github.com/gardenjs/render-plugin-vue" target="_blank">Vue</a> and <a href="https://github.com/gardenjs/render-plugin-react" target="_blank">React</a>. These plugins are installed as NPM modules, e.g.:
+If you did not select a renderer during the installation, you must now install a renderer. Currently there are renderer plugins for <a href="https://github.com/gardenjs/render-plugin-svelte" target="_blank">Svelte</a>, <a href="https://github.com/gardenjs/render-plugin-vue" target="_blank">Vue</a> and <a href="https://github.com/gardenjs/render-plugin-react" target="_blank">React</a> (HTML snippets are already supported by Gardenjs.). These plugins are installed as NPM modules, e.g.:
 
 ```console
 npm i @gardenjs/render-plugin-svelte

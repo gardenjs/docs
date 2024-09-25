@@ -40,10 +40,10 @@ export default {
   file: './Sectionintro.svelte',
   description: 'Section intro with H2 heading, optional with superscript and teaser text.',
   examples: [
-    {title: "Section intro with superscript, H2 heading and intro text", input: {superscript: "Superscript", heading: "This is the section title", teaser: "This is the text. This is the text. This is the text. This is the text. This is the text."}},
-    {title: "Section intro with H2 heading and intro text", input: {heading: "This is the section title", teaser: "This is the text. This is the text. This is the text. This is the text. This is the text."}},
-    {title: "Section intro with H2 heading with superscript", input: {superscript: "Superscript", heading: "This is the section title"}},
-    {title: "Section intro with H2 heading", input: { heading: "This is the section title"}}
+    {title: "H2, superscript & intro text", input: {superscript: "Superscript", heading: "This is the section title", teaser: "This is the text...."}},
+    {title: "H2 & intro text", input: {heading: "This is the section title", teaser: "This is the text..."}},
+    {title: "H2 with superscript", input: {superscript: "Superscript", heading: "This is the section title"}},
+    {title: "H2", input: { heading: "This is the section title"}}
   ]
 }
 ```
