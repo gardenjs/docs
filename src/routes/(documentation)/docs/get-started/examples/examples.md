@@ -82,7 +82,7 @@ An example using a svelte component: **Layout.example.svelte**
 </script>
 
 <Layout columns={columns} bgColor={fixBgColor}>
-  <div>Main content area...</div>
+  <div>Slot...</div>
 </Layout>
 
 <style>

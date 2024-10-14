@@ -3,7 +3,7 @@
 </script>
 
 <Main>
-  <div>Main content area...</div>
+  <div>Slot...</div>
 </Main>
 
 <style>

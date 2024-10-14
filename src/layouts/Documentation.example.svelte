@@ -5,7 +5,7 @@
 </script>
 
 <Documentation sidenavFolders={sidenavFolders}>
-  <div>Content area...</div>
+  <div>Slot...</div>
 </Documentation>
 
 <style>

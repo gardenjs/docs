@@ -5,7 +5,7 @@
 
 <Homepage>
   <Main hasHeaderhead isWide>
-    <div>Main content area...</div>
+    <div>Slot...</div>
   </Main>
 </Homepage>
 
