@@ -10,4 +10,6 @@ You can use this repository as a code demo of Gardenjs. We use Svelte with Svelt
 Happy Gardening :)
 
 ---
-Copyright (C) 2023 - present by Robin Danzinger & Martin Farkas. Maintained by <a href="https://www.rabbitdevelopment.com" target="_blank">Rabbit Development</a>.
+Copyright (C) 2023 - present by Martin Farkas. Maintained by <a href="https://www.rabbitdevelopment.com" target="_blank">Rabbit Development</a>.
+
+Further information can be found in the [LICENSE](https://github.com/gardenjs/docs?tab=License-1-ov-file#readme) file.
