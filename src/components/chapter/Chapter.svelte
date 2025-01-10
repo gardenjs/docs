@@ -3,12 +3,25 @@
   import Grid from '../../layouts/Grid.svelte'
   import Card from '../card/Card.svelte'
 
-  export let cards = []
-  export let pagetitle = ''
-  export let title = ''
-  export let chaptertext = ''
-  export let columns = 1
-  export let bgColor
+  /**
+   * @typedef {Object} Props
+   * @property {any} [cards]
+   * @property {string} [pagetitle]
+   * @property {string} [title]
+   * @property {string} [chaptertext]
+   * @property {number} [columns]
+   * @property {any} bgColor
+   */
+
+  /** @type {Props} */
+  let {
+    cards = [],
+    pagetitle = '',
+    title = '',
+    chaptertext = '',
+    columns = 1,
+    bgColor
+  } = $props();
 
 </script>
 

@@ -1,6 +1,13 @@
 <script>
-  export let hasHeaderhead = false
-  export let isWide = false
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [hasHeaderhead]
+   * @property {boolean} [isWide]
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { hasHeaderhead = false, isWide = false, children } = $props();
 
   let intro = ''
   let margintop = 'has-mt'
@@ -10,7 +17,7 @@
 
 <div class="main {hasHeaderhead? intro : margintop} {isWide? home : iswide}">
   <div class="main_container">
-    <slot></slot>
+    {@render children?.()}
   </div>
 </div>
 

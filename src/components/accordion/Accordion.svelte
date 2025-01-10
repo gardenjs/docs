@@ -1,5 +1,5 @@
 <script>
-  export let items = [];
+  let { items = $bindable([]) } = $props();
 
   function toggleAccordion(index) {
     items = items.map((item, i) => {
@@ -15,7 +15,7 @@
 <div class="accordion">
   {#each items as item, index}
     <div class="accordion_item">
-      <button class="accordion_btn {item.isOpen ? 'active' : ''}" on:click={() => toggleAccordion(index)}>
+      <button class="accordion_btn {item.isOpen ? 'active' : ''}" onclick={() => toggleAccordion(index)}>
         <span class="accordion_label">{item.label}</span>
         <span class="accordion_icon">
           {#if item.isOpen}
@@ -57,7 +57,7 @@
       }
       &:hover,
       &:focus-visible,
-      &:has(.active) {
+      &:has(:global(.active)) {
         box-shadow: 0 0 0 1px #fff, 0 0 0 #fff;
         transform: translate(0.25rem , 0.25rem );
         transform: rotateZ(0deg);

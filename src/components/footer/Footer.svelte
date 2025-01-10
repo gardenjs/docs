@@ -3,8 +3,14 @@
 
   let now = new Date()
 
-  export let hasBordertop = false
-  export let isHome = false
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [hasBordertop]
+   * @property {boolean} [isHome]
+   */
+
+  /** @type {Props} */
+  let { hasBordertop = false, isHome = false } = $props();
 
   let bordertop = 'has-bt'
 

@@ -1,6 +1,12 @@
 <script>
-  export let slogan = ''
-  export let subtext = ''
+  /**
+   * @typedef {Object} Props
+   * @property {string} [slogan]
+   * @property {string} [subtext]
+   */
+
+  /** @type {Props} */
+  let { slogan = '', subtext = '' } = $props();
 </script>
 
 <div class="slogan">{@html slogan}</div>

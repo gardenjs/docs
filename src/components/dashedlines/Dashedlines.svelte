@@ -1,11 +1,4 @@
 <script>
-  export let dashedlines1 = ''
-  export let dashedlines2 = ''
-  export let dashedlines3 = ''
-  export let dashedlines4 = ''
-  export let dashedlines5 = ''
-  export let dashedlines6 = ''
-  export let dashedlines7 = ''
 
   import Dashedline1 from '../../assets/images/dashedline_1.svg?raw'
   import Dashedline2 from '../../assets/images/dashedline_2.svg?raw'
@@ -14,6 +7,27 @@
   import Dashedline5 from '../../assets/images/dashedline_5.svg?raw'
   import Dashedline6 from '../../assets/images/dashedline_6.svg?raw'
   import Dashedline7 from '../../assets/images/dashedline_7.svg?raw'
+  /**
+   * @typedef {Object} Props
+   * @property {string} [dashedlines1]
+   * @property {string} [dashedlines2]
+   * @property {string} [dashedlines3]
+   * @property {string} [dashedlines4]
+   * @property {string} [dashedlines5]
+   * @property {string} [dashedlines6]
+   * @property {string} [dashedlines7]
+   */
+
+  /** @type {Props} */
+  let {
+    dashedlines1 = '',
+    dashedlines2 = '',
+    dashedlines3 = '',
+    dashedlines4 = '',
+    dashedlines5 = '',
+    dashedlines6 = '',
+    dashedlines7 = ''
+  } = $props();
 </script>
 
 {#if dashedlines1}

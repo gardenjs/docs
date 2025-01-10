@@ -1,9 +1,20 @@
 <script>
-  export let pagetitle = ''
-  export let title = ''
-  export let chaptertext = ''
 
-  export let isPagetitle = false
+  /**
+   * @typedef {Object} Props
+   * @property {string} [pagetitle]
+   * @property {string} [title]
+   * @property {string} [chaptertext]
+   * @property {boolean} [isPagetitle]
+   */
+
+  /** @type {Props} */
+  let {
+    pagetitle = '',
+    title = '',
+    chaptertext = '',
+    isPagetitle = false
+  } = $props();
   let haspagetitle = 'has-h1'
 </script>
 

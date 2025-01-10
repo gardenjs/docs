@@ -1,5 +1,12 @@
 <script>
-  export let columns = 1
+  /**
+   * @typedef {Object} Props
+   * @property {number} [columns]
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { columns = 1, children } = $props();
 
   const columnClass = {
     '2': 'grid-2cols',
@@ -8,7 +15,7 @@
 </script>
 
 <div class="cards {columnClass[columns + ''] ?? ''}">
-  <slot></slot>
+  {@render children?.()}
 </div>
 
 <style lang="scss">

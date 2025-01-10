@@ -1,13 +1,25 @@
 <script> 
-  export let title
-  export let text
 
-  export let rotation = ''
-  export let columns = 1
 
-  $: rotationClass = rotation ? `rotate_${rotation}-${columns}col` : ''
 
-  export let bgColor = ''
+  /**
+   * @typedef {Object} Props
+   * @property {any} title
+   * @property {any} text
+   * @property {string} [rotation]
+   * @property {number} [columns]
+   * @property {string} [bgColor]
+   */
+
+  /** @type {Props} */
+  let {
+    title,
+    text,
+    rotation = '',
+    columns = 1,
+    bgColor = ''
+  } = $props();
+  let rotationClass = $derived(rotation ? `rotate_${rotation}-${columns}col` : '')
 </script>
 
 <div class="card {bgColor} {rotationClass}">
