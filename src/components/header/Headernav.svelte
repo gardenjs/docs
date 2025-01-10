@@ -1,22 +1,30 @@
 <script>
+  import { run } from 'svelte/legacy';
+
   import { createEventDispatcher } from "svelte";
   import {theme, toggleTheme} from "../../stores/theme.js";
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
 
   const dispatch = createEventDispatcher();
-  export let showMobilenav = false
-  export let hasMobilenavicon = false
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [showMobilenav]
+   * @property {boolean} [hasMobilenavicon]
+   */
+
+  /** @type {Props} */
+  let { showMobilenav = false, hasMobilenavicon = false } = $props();
 
   function handleToggleMobilenav() {
     dispatch("toggleMobilenav", {})
   }
 
-  $: {
+  run(() => {
     if (browser) {
       document.documentElement.setAttribute("data-theme", $theme);
     }
-  }
+  });
 </script>
 
 <nav class="navbar_nav">
@@ -31,7 +39,7 @@
       </a>
     </li>
     <li>
-      <button id="toggle-mode" class="toggle-mode" title="Toggle Website Theme" on:click={toggleTheme}>
+      <button id="toggle-mode" class="toggle-mode" title="Toggle Website Theme" onclick={toggleTheme}  aria-label="Toggle theme">
       {#if theme === 'light'}
         <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 009 9 9 9 0 11-9-9z"/></svg>
       {:else}
@@ -41,7 +49,7 @@
     </li>
     {#if hasMobilenavicon}
       <li class="navicon">
-        <button class="menu" on:click={handleToggleMobilenav} title={showMobilenav ? 'Collapse menu' : 'Expand menu'}>
+        <button class="menu" onclick={handleToggleMobilenav} title={showMobilenav ? 'Collapse menu' : 'Expand menu'} aria-label="Toggle menu">
           <svg class="icon" role="img" width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
         </button>
       </li>
@@ -89,13 +97,13 @@
             font-size: 0.75rem;
             color: var(--c-text);
           }
-          &.github {
-            .icon {
-              display: none;
-              @media (min-width: 840px) {
-                display: block;
-                margin-right: 0.25rem;
-              }
+        }
+        a.github {
+          .icon {
+            display: none;
+            @media (min-width: 840px) {
+              display: block;
+              margin-right: 0.25rem;
             }
           }
         }

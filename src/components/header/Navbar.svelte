@@ -6,10 +6,21 @@
   import { theme } from '../../stores/theme'
   import { base } from '$app/paths';
 
-  export let isFixed = false
-  export let showHeroheader = false
-  export let showMobilenav = false
-  export let hasMobilenavicon = false
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [isFixed]
+   * @property {boolean} [showHeroheader]
+   * @property {boolean} [showMobilenav]
+   * @property {boolean} [hasMobilenavicon]
+   */
+
+  /** @type {Props} */
+  let {
+    isFixed = false,
+    showHeroheader = false,
+    showMobilenav = false,
+    hasMobilenavicon = false
+  } = $props();
 
   let fixed = 'is-fixed'
 </script>

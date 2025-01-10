@@ -1,6 +1,5 @@
 <script>
-  export let quote
-  export let author
+  let { quote, author } = $props();
 </script>
 
 <blockquote class="blockquote">

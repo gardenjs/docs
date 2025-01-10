@@ -1,9 +1,20 @@
 <script>
-  export let isExternal = false
 
-  export let link = ''
-  export let bgColor = ''
-  export let btnlabel = ''
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [isExternal]
+   * @property {string} [link]
+   * @property {string} [bgColor]
+   * @property {string} [btnlabel]
+   */
+
+  /** @type {Props} */
+  let {
+    isExternal = false,
+    link = '',
+    bgColor = '',
+    btnlabel = ''
+  } = $props();
 </script>
 
 {#if isExternal}

@@ -1,7 +1,13 @@
 <script>
   import Vegetables from '../../assets/icons/vegetables.svg'
 
-  export let isHome = false
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [isHome]
+   */
+
+  /** @type {Props} */
+  let { isHome = false } = $props();
 
   let ifhome = 'is-home'
   let undefined = ''

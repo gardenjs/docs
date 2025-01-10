@@ -1,7 +1,13 @@
 <script>
   import Grid from './Grid.svelte';
 
-  export let columns = 2;
+  /**
+   * @typedef {Object} Props
+   * @property {number} [columns]
+   */
+
+  /** @type {Props} */
+  let { columns = 2 } = $props();
 </script>
 
 <Grid columns={columns}>

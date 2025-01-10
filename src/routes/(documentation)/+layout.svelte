@@ -1,6 +1,13 @@
 <script>
   import Documentation from '../../layouts/Documentation.svelte'
   import {page} from '$app/stores'
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { children } = $props();
 
   const overview = {title: 'Overview', items: [{ href: "/docs", label: "Why Gardenjs?" }]};
   const getstarted = {title: 'Get Started', items: [
@@ -19,5 +26,5 @@
 </script>
 
 <Documentation sidenavFolders={sidenavFolders} url={$page.url.pathname}>
-  <slot></slot>
+  {@render children?.()}
 </Documentation>

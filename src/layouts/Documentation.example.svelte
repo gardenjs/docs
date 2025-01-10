@@ -1,7 +1,7 @@
 <script>
   import Documentation from './Documentation.svelte';
 
-  export let sidenavFolders = [];
+  let { sidenavFolders = [] } = $props();
 </script>
 
 <Documentation sidenavFolders={sidenavFolders}>

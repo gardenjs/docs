@@ -1,16 +1,16 @@
 // abstract
-@import 'abstracts/root';
+@use 'abstracts/root';
 
 // base
-@import 'base/general';
-@import 'base/fonts';
-@import 'base/navs';
-@import 'base/buttons';
-@import 'base/typography';
-@import 'base/table';
-@import 'base/icons';
-@import 'base/scrollbar';
-@import 'base/text-selection';
+@use 'base/general';
+@use 'base/fonts';
+@use 'base/navs';
+@use 'base/buttons';
+@use 'base/typography';
+@use 'base/table';
+@use 'base/icons';
+@use 'base/scrollbar';
+@use 'base/text-selection';
 
 // vendors
-@import 'prism/prism-theme-github.scss';
+@use 'prism/prism-theme-github.scss';
