@@ -5,14 +5,14 @@ const getstarted = {title: 'Get Started', items: [
   { href: "./", label: "Settings" },
   { href: "./", label: "Examples" },
   { href: "./", label: "Hooks" },
-  { href: "./", label: "Decorators" },
+  { href: "./", label: "Decorators" }
 ]};
 const renderer = {title: 'Renderer', items: [{ href: "./", label: "Write New Renderer" }]};
 const notes = {title: 'Add Notes', items:[{ href: "./", label: "Add Notes" }]};
 const roadmap = {title: 'What comes next', items:[{ href: "./", label: "Roadmap" }]};
-const github = {title: 'External Link Test', items:[{ href: "https://github.com/gardenjs/gardenjs", label: "GitHub" }]};
+const knownissues = {title: 'Known Issues', items:[{ href: "./", label: "Known Issues" }]};
 
-const sidenavFolders = [overview, getstarted, renderer, notes, roadmap, github];
+const sidenavFolders = [overview, getstarted, renderer, notes, roadmap, knownissues];
 
 export default {
   name: 'Sidenav',

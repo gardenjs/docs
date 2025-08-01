@@ -21,8 +21,9 @@
   const renderer = {title: 'Renderer', items: [{ href: "/docs/renderer", label: "Write New Renderer" }]};
   const notes = {title: 'Add Notes', items:[{ href: "/docs/notes", label: "Add Notes" }]};
   const roadmap = {title: 'What comes next?', items:[{ href: "/docs/roadmap", label: "Roadmap" }]};
+  const knownissues = {title: 'Known issues', items:[{ href: "/docs/known-issues", label: "Known Issues" }]};
 
-  const sidenavFolders = [overview, getstarted, renderer, notes, roadmap];
+  const sidenavFolders = [overview, getstarted, renderer, notes, roadmap, knownissues];
 </script>
 
 <Documentation sidenavFolders={sidenavFolders} url={$page.url.pathname}>
