@@ -17,6 +17,10 @@ export default defineConfig(({ command, mode }) => {
           find: /\$app\/(.*)/,
           replacement: join(resolve(__dirname, "node_modules/@gardenjs/render-plugin-svelte/src/sveltekit_mocks/"), "$1"),
         },
+        {
+          find: '@assets',
+          replacement: resolve(__dirname, 'src/assets'),
+        },
       ],
     },
 
