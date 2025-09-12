@@ -57,6 +57,18 @@ export default {
     {name: 'dark', stageBg: '#121c2b'}, // manually set default active theme on start {active: true, name: 'dark', stageBg: '#101010'},
     // {name: 'light', stageBg: '#eee'}
   ],
+
+  devices: {
+    small: [
+      {w: 375, h: 667, name: 'phone'},
+      {w: 320, h: 568, name: 'phone-small'},
+      {w: 414, h: 896, name: 'phone-plus'}
+    ],
+    medium: [{w: 768, h: 1024, name: 'tablet'}],
+    large: [{w: 1440, h: 900, name: 'laptop'}],
+  },
+
+
   themeHandler: onThemeChange
 }
 
