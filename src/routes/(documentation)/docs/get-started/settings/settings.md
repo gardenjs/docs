@@ -19,10 +19,11 @@ During installation, the configuration file **garden.config.js** is generated in
 | `watch`: `directories` | Path | Path to directories to be monitored for changes, e.g. `['./src/'],`. |
 | `watch`: `include` | File suffix | File types to be monitored for changes, e.g. ['.svelte', '.vue', '.scss', '.css', '.js', '.ts']. |
 | `vite_config` | Path | Default: `./vite.config.js` <br> Path to the vite.config file. (In any case, make sure Vite is installed.)  |
-| `renderer` | String |  Specify the JS framework(s) used in the project. Requires a corresponding framework plugin. When the npm install script was run, a render was automatically stored here if the appropriate selection was made. E.g. `gardenjs-plugin-svelte`.
+| `renderer` | String |  Specify the JS framework(s) used in the project. Requires a corresponding framework plugin. When the npm install script was run, a render was automatically stored here if the appropriate selection was made. E.g. `gardenjs-plugin-svelte`. |
 | `additional_style_files` | Path |  Add global style files needed for your project, e.g. `'src/assets/scss/base.scss', 'src/assets/scss/main.scss'` |
 | `devices` | `small`: deviceConfig[], `medium`: deviceConfig[], `large`: deviceConfig[] | Set custom device types for each category. |
 | `deviceConfig`| name: String, w: Number, h: Number | Set name, width and height for a device type. |
+| `grid` | `size`: number, `style`: 'dotted' or 'lined', `color`: string | Custom configuration for background grid. |
 | `themes` | `name`: String, `stageBg`: Color, `active`: Boolean | Edit or disable "Themes" depending on whether your app uses themes. Defines a list of display modes of your project to output the components accordingly. |
 | `themes`: `name` | String | Name of the mode as it appears in the theme navigation. E.g. `name: 'Dark mode'` |
 | `themes`: `stageBg` | String | Sets the background color of the stage for each mode. All common CSS color values can be used as values. E.g. `stageBg: '#101010'` |
