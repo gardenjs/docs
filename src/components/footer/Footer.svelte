@@ -64,11 +64,14 @@
       .footer_copyright {
         order: 2;
         font-size: 0.813rem;
+        a {
+          font-variation-settings: 'wght' 500;
+        }
+        @media (min-width: 960px) {
+          font-size: 0.938rem;
+        }
         @media (min-width: 1280px) {
           order: 1;
-          .copyright {
-            font-size: 110%;
-          }
         }
       }
       @media (min-width: 960px) {
@@ -76,12 +79,8 @@
       }
       a {
         display: inline-block;
-        font-size: 0.813rem;
         color: var(--c-link);
         text-decoration: none;
-        @media (min-width: 960px) {
-          font-size: 0.938rem;
-        }
         &:hover {
           color: var(--c-link-hl);
         }
