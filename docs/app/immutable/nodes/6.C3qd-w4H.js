@@ -1,0 +1,24 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/eZSdofcA.js";import{al as r,au as c,at as d,am as o,aw as p,ax as _,ak as u}from"../chunks/DTR-qeEL.js";import{h as m}from"../chunks/kTIsabA7.js";import{h as l}from"../chunks/DWwbg4El.js";var k=r(`<h1>Decorators</h1> <p>Sometimes you want to embed your component inside a another component. E.g. all your components are meant to be rendered inside a global component. The global component might initalize a global context like an user object.
+Or you want to embed your component in another component to check if it is correctly displayed when embedded in another div.</p> <p>For this you can define decorators.</p> <p>Decorators are component files with one <code>slot</code>, where the component should be rendered inside. How a slot is defined depends on the ui framework.</p> <p>You can define global decorators. These are files with the file extension <code>das.decorator.[fwk-extension]</code>.
+If you want to use a decorator only for a specific component, you can set the decorator filename inside the component description.</p> <p>If you define more than one decorator, the decorators will be rendered recursively in the order how they are placed in the directory.</p> <pre class="language-undefined"><!></pre> <h2>Using multiple frameworks</h2> <p>Decorator files are always written in the same ui framework like the component which should be displayed. If you have two components written in different frameworks, e.g. react and svelte, then you have to provide a decorator for the react component and a decorator for the svelte component. I.e. you can’t use a react decorator for a svelte component.</p> <h2>Example decorator file</h2> <p>company.das.decorator.svelte:</p> <pre class="language-svelte"><!></pre>`,1);function h(s){var a=k(),n=c(d(a),12),t=p(n);l(t,()=>`<code class="language-undefined">
+  decorator1 _______________________________
+  |                                         |
+  |   decorator2 ______________________     |
+  |   |                                |    |
+  |   |   component _______________    |    |
+  |   |   |                       |    |    |
+  |   |   |                       |    |    |
+  |   |   |                       |    |    |
+  |   |   |                       |    |    |
+  |   |   |_______________________|    |    |
+  |   |                                |    |
+  |   |________________________________|    |
+  |                                         |
+  |_________________________________________|
+</code>`),_(n);var e=c(n,10),i=p(e);l(i,()=>`<code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token punctuation">&#123;</span>name<span class="token operator">:</span> <span class="token string">'Jane Doe'</span><span class="token punctuation">,</span> rights<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'read'</span><span class="token punctuation">,</span> <span class="token string">'write'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CompanyFrame</span> <span class="token attr-name">user=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>user<span class="token punctuation">&#125;</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- here will be rendered the component --></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CompanyFrame</span><span class="token punctuation">></span></span></code>`),_(e),o(s,a)}var f=r('<meta name="description" content="How to set up decorators for your project. Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React."/>'),g=r('<div class="md_file"><!></div>');function D(s){var a=g();m(t=>{var e=f();u.title="Decorators :: Gardenjs Docs",o(t,e)});var n=p(a);h(n),_(a),o(s,a)}export{D as component};
