@@ -10,30 +10,30 @@
 		<link href="../../app/immutable/assets/Dashedlines.99IpA0Ap.css" rel="stylesheet">
 		<link href="../../app/immutable/assets/Vegetables.C7MWvPUk.css" rel="stylesheet">
 		<link href="../../app/immutable/assets/2.9uVrGdXU.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../app/immutable/entry/start.CvORz8RG.js">
-		<link rel="modulepreload" href="../../app/immutable/chunks/Co5jnj6y.js">
+		<link rel="modulepreload" href="../../app/immutable/entry/start.CF0CMsyx.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/DUdaAGyI.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/EFvz9tmu.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/DTR-qeEL.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/BPhcgrgG.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/kTIsabA7.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/CNoUnMVm.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/fZY6lZoO.js">
-		<link rel="modulepreload" href="../../app/immutable/chunks/CNGp-7kV.js">
-		<link rel="modulepreload" href="../../app/immutable/entry/app.nog-LJsQ.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/JPEDPpTJ.js">
+		<link rel="modulepreload" href="../../app/immutable/entry/app.CaE51Sg4.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/B62jGtBV.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/DsnmJJEf.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/Dcdn10QC.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/L0_l05Jv.js">
 		<link rel="modulepreload" href="../../app/immutable/nodes/0.exOfkBWa.js">
-		<link rel="modulepreload" href="../../app/immutable/nodes/2.FA1b3J0v.js">
+		<link rel="modulepreload" href="../../app/immutable/nodes/2.7pZhvZOb.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/eZSdofcA.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/CCGzPJ4e.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/DZqihZtk.js">
-		<link rel="modulepreload" href="../../app/immutable/chunks/Cuw9L8zU.js">
+		<link rel="modulepreload" href="../../app/immutable/chunks/DUVOP9BG.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/CAH8BnLE.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/DWwbg4El.js">
 		<link rel="modulepreload" href="../../app/immutable/chunks/BijvsJlI.js">
-		<link rel="modulepreload" href="../../app/immutable/nodes/6.C3qd-w4H.js"><!--[--><meta name="description" content="How to set up decorators for your project. Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React."/><!--]--><title>Decorators :: Gardenjs Docs</title>
+		<link rel="modulepreload" href="../../app/immutable/nodes/6.CdmvO5_Z.js"><!--[--><meta name="description" content="How to set up decorators for your project. Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React."/><!--]--><title>Decorators :: Gardenjs Docs</title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -55,7 +55,7 @@ If you want to use a decorator only for a specific component, you can set the de
   |                                         |
   |_________________________________________|
 </code><!----></pre> <h2>Using multiple frameworks</h2> <p>Decorator files are always written in the same ui framework like the component which should be displayed. If you have two components written in different frameworks, e.g. react and svelte, then you have to provide a decorator for the react component and a decorator for the svelte component. I.e. you can’t use a react decorator for a svelte component.</p> <h2>Example decorator file</h2> <p>company.das.decorator.svelte:</p> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token punctuation">&#123;</span>name<span class="token operator">:</span> <span class="token string">'Jane Doe'</span><span class="token punctuation">,</span> rights<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'read'</span><span class="token punctuation">,</span> <span class="token string">'write'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Jane Doe'</span><span class="token punctuation">,</span> <span class="token literal-property property">rights</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'read'</span><span class="token punctuation">,</span> <span class="token string">'write'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CompanyFrame</span> <span class="token attr-name">user=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>user<span class="token punctuation">&#125;</span></span><span class="token punctuation">></span></span>
@@ -64,15 +64,15 @@ If you want to use a decorator only for a specific component, you can set the de
 			
 			<script>
 				{
-					__sveltekit_y1ed4u = {
+					__sveltekit_aj3b4g = {
 						base: new URL("../..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../../app/immutable/entry/start.CvORz8RG.js"),
-						import("../../app/immutable/entry/app.nog-LJsQ.js")
+						import("../../app/immutable/entry/start.CF0CMsyx.js"),
+						import("../../app/immutable/entry/app.CaE51Sg4.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2, 6],
