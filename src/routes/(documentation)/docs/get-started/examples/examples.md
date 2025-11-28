@@ -8,8 +8,8 @@ Create a file ***.das.js** for each component you want to display in Gardenjs. N
 
 ```js
 export default {
-  name: 'Foo',
-  file: './Foo.svelte', // path to the component
+  name: 'Foo',  // optional, is generated automatically and can be overwritten
+  file: './Foo.svelte', // optional, path to the component
   description: 'Some description.' // optional
 }
 ```
