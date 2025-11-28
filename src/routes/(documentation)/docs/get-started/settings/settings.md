@@ -20,8 +20,8 @@ During installation, the configuration file **garden.config.js** is generated in
 | `watch`: `include` | File suffix | File types to be monitored for changes, e.g. ['.svelte', '.vue', '.scss', '.css', '.js', '.ts']. |
 | `vite_config` | Path | Default: `./vite.config.js` <br> Path to the vite.config file. (In any case, make sure Vite is installed.)  |
 | `renderer` | String |  Specify the JS framework(s) used in the project. Requires a corresponding framework plugin. When the npm install script was run, a render was automatically stored here if the appropriate selection was made. E.g. `gardenjs-plugin-svelte`. |
-| getComponentName | Function | Option to generate component names in the component tree from dasFileName using your own function. |
-| getComponentFileNames | Function | Option to generate component file names from dasFileName using your own function. Must return an array. First match will be used. |
+| `getComponentName` | Function | Option to generate component names in the component tree from dasFileName using your own function. |
+| `getComponentFileNames` | Function | Option to generate component file names from dasFileName using your own function. Must return an array. First match will be used. |
 | `additional_style_files` | Path |  Add global style files needed for your project, e.g. `'src/assets/scss/base.scss', 'src/assets/scss/main.scss'` |
 | `devices` | `small`: deviceConfig[], `medium`: deviceConfig[], `large`: deviceConfig[] | Set custom device types for each category. |
 | `deviceConfig`| name: String, w: Number, h: Number | Set name, width and height for a device type. |
