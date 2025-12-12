@@ -1,6 +1,4 @@
 <script>
-  import { run } from 'svelte/legacy';
-
   import { createEventDispatcher } from "svelte";
   import {theme, toggleTheme} from "../../stores/theme.js";
   import { browser } from '$app/environment';
@@ -20,7 +18,7 @@
     dispatch("toggleMobilenav", {})
   }
 
-  run(() => {
+  $effect(() => {
     if (browser) {
       document.documentElement.setAttribute("data-theme", $theme);
     }
