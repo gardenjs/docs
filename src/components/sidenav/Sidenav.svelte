@@ -1,20 +1,22 @@
 <script>
-  import { createEventDispatcher } from "svelte";
   import { base } from '$app/paths';
-
-  const dispatch = createEventDispatcher();
 
   /**
    * @typedef {Object} Props
    * @property {string} [url]
    * @property {any} [folders]
+   * @property {() => void} [ontoggleMobilenav]
    */
 
   /** @type {Props} */
-  let { url = "", folders = [] } = $props();
+  let { 
+    url = "", 
+    folders = [],
+    ontoggleMobilenav = () => {}
+  } = $props();
 
   function handleClick() {
-    dispatch("toggleMobilenav");
+    ontoggleMobilenav();
   }
 </script>
 

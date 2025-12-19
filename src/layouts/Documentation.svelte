@@ -41,7 +41,7 @@
 <div class="mainaside">
   <div class="mainaside_container">
     <div class="sidebar {showMobilenav ? 'show' : ''}">
-      <Sidenav folders={sidenavFolders} on:toggleMobilenav={handleToggleMobilenav} url={url}/>
+      <Sidenav folders={sidenavFolders} ontoggleMobilenav={handleToggleMobilenav} {url}/>
     </div>
     <div class="content-wrapper">
       <div class="content">
