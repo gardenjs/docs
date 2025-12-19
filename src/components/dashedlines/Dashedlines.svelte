@@ -1,5 +1,4 @@
 <script>
-
   import Dashedline1 from '../../assets/images/dashedline_1.svg?raw'
   import Dashedline2 from '../../assets/images/dashedline_2.svg?raw'
   import Dashedline3 from '../../assets/images/dashedline_3.svg?raw'
@@ -7,6 +6,7 @@
   import Dashedline5 from '../../assets/images/dashedline_5.svg?raw'
   import Dashedline6 from '../../assets/images/dashedline_6.svg?raw'
   import Dashedline7 from '../../assets/images/dashedline_7.svg?raw'
+  
   /**
    * @typedef {Object} Props
    * @property {string} [dashedlines1]

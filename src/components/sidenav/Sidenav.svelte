@@ -2,7 +2,6 @@
   import { createEventDispatcher } from "svelte";
   import { base } from '$app/paths';
 
-  
   const dispatch = createEventDispatcher();
 
   /**

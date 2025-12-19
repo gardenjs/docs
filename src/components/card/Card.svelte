@@ -1,7 +1,4 @@
 <script> 
-
-
-
   /**
    * @typedef {Object} Props
    * @property {any} title
