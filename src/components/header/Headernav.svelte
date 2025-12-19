@@ -1,21 +1,24 @@
 <script>
-  import { createEventDispatcher } from "svelte";
   import {theme, toggleTheme} from "../../stores/theme.js";
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
 
-  const dispatch = createEventDispatcher();
   /**
    * @typedef {Object} Props
    * @property {boolean} [showMobilenav]
    * @property {boolean} [hasMobilenavicon]
+   * @property {() => void} [ontoggleMobilenav]
    */
 
   /** @type {Props} */
-  let { showMobilenav = false, hasMobilenavicon = false } = $props();
+  let { 
+    showMobilenav = false, 
+    hasMobilenavicon = false,
+    ontoggleMobilenav = () => {}
+  } = $props();
 
   function handleToggleMobilenav() {
-    dispatch("toggleMobilenav", {})
+    ontoggleMobilenav();
   }
 
   $effect(() => {

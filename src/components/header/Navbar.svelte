@@ -12,6 +12,7 @@
    * @property {boolean} [showHeroheader]
    * @property {boolean} [showMobilenav]
    * @property {boolean} [hasMobilenavicon]
+   * @property {() => void} [ontoggleMobilenav]
    */
 
   /** @type {Props} */
@@ -19,7 +20,8 @@
     isFixed = false,
     showHeroheader = false,
     showMobilenav = false,
-    hasMobilenavicon = false
+    hasMobilenavicon = false,
+    ontoggleMobilenav = () => {}
   } = $props();
 
   let fixed = 'is-fixed'
@@ -35,7 +37,7 @@
             <img src="{LogoNeg}" alt="Logo">
           </picture>
         </a>
-        <Headernav on:toggleMobilenav {showMobilenav} {hasMobilenavicon} />
+        <Headernav {ontoggleMobilenav} {showMobilenav} {hasMobilenavicon} />
       </div>
     </div>
     {#if showHeroheader}
