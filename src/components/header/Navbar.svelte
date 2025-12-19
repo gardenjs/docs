@@ -23,11 +23,9 @@
     hasMobilenavicon = false,
     ontoggleMobilenav = () => {}
   } = $props();
-
-  let fixed = 'is-fixed'
 </script>
 
-<header class="header {isFixed? fixed : ''}">
+<header class="header {isFixed ? 'is-fixed' : ''}">
   <div class="header_container">
     <div class="navbar">
       <div class="navbar_container">
