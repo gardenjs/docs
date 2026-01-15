@@ -26,7 +26,6 @@ export default defineConfig(({ command, mode }) => {
 
     base: "/",
     
-    
     build: {
       rollupOptions: {
         input: {
@@ -37,4 +36,3 @@ export default defineConfig(({ command, mode }) => {
     },
   };
 });
-  
