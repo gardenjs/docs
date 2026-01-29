@@ -19,9 +19,6 @@ export default {
   file: './Sidenav.svelte',
   description: '',
   examples: [
-    {title: 'Documentation', input: {folders: sidenavFolders} },
-    {title: 'With current url set to Settings Documentation', input: {folders: sidenavFolders, url:"#settings"}},
-    {title: 'No Folders', input: {folders: []} },
-    {title: 'Folder without item', input: {folders: [{title: 'Folder without item', items: []}]} },
+    {title: 'Documentation', input: {folders: sidenavFolders} }
   ]
 }

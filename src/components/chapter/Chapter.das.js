@@ -52,4 +52,49 @@ export default {
       },
     },
   ],
+  params: [
+    {
+      name: 'pagetitle',
+      type: 'text',
+      label: 'Page Title (H1)'
+    },
+    {
+      name: 'title',
+      type: 'text',
+      label: 'Chapter Title (H2)'
+    },
+    {
+      name: 'chaptertext',
+      type: 'text',
+      label: 'Chapter Text'
+    },
+    {
+      name: 'columns',
+      type: 'number',
+      label: 'Columns'
+    },
+    {
+      name: 'bgColor',
+      type: 'select',
+      label: 'Background Color',
+      options: ['yellow', 'turquoise']
+    },
+    {
+      name: 'cards',
+      type: 'objectrenderer',
+      label: 'Cards',
+      schema: {
+        title: {
+          type: 'text',
+          label: 'Card Title',
+          placeholder: 'Enter card title'
+        },
+        text: {
+          type: 'text',
+          label: 'Card Text',
+          placeholder: 'Enter card text'
+        }
+      }
+    }
+  ]
 };
