@@ -2,6 +2,8 @@
 
 An "example" - other tools call this "story" - refers to a single state or variation of an UI component that you want to showcase. "Examples" are used to document and demonstrate how a component looks and behaves in different scenarios or states. Each "example" represents a specific use case or variant of the component. "Examples" are created somewhere in the source directory or directly next to the component itself in the **D**escription **A**nd **S**pecification file ***.das.js**.
 
+To make your components interactive and testable with different property values, you can also add <a href="/docs/get-started/params">params</a> to create UI controls in the Gardenjs panel.
+
 ## Create the description and specification file
 
 Create a file ***.das.js** for each component you want to display in Gardenjs. Name them like the components themselves and save each one next to the corresponding component. These files look like this:
@@ -50,7 +52,7 @@ export default {
 
 While "title" is used as navigation title in the panel, you define the value of the respective fields with "input".
 
-<br>
+---
 
 The component **Sectionintro.svelte** file itself could look like this:
 
@@ -93,7 +95,7 @@ An example using a svelte component: **Layout.example.svelte**
 </style>
 ```
 
-<br>
+---
 
 The **Layout.das.js**:
 
@@ -117,3 +119,9 @@ export default {
   ]
 }
 ```
+
+## Interactive controls with params
+
+In addition to static examples, you can add interactive controls to your components using <a href="/docs/get-started/params">params</a>. Params create input fields in the Gardenjs panel that allow you to dynamically modify component properties without changing code. This is especially useful for testing different property combinations and states.
+
+Learn more about available param types and how to use them in the <a href="/docs/get-started/params">params documentation</a>.
