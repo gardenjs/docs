@@ -6,7 +6,7 @@ Learn more about <a href="/docs/get-started/examples">creating examples and .das
 
 ## Requirements
 
-Upcoming Gardenjs version 1.7
+Gardenjs &ge; v1.7
 
 ## Basic Structure
 
