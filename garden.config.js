@@ -6,7 +6,7 @@ export default {
 
 	// !!! For garden development purposes only !!!
 	// If set true, the "Code" tab is not displayed in the panel. An empty stage is displayed instead of the custom welcome_page.
-	devmodus: true,
+	devmodus: false,
 
 	// Stop auto opening Gardenjs on start:
 	// no_open_browser: true,
