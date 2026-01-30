@@ -13,18 +13,23 @@
 		"preview": "vite preview",
 		"garden": "garden",
 		"build:garden": "vite build -c 'garden.vite.config.js'",
-		"preview:garden": "vite preview -c 'garden.vite.config.js'"
+		"preview:garden": "vite preview -c 'garden.vite.config.js'",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
 	},
 	"devDependencies": {
 		"@gardenjs/render-plugin-svelte": "^2.0.0",
 		"@sveltejs/adapter-static": "^3.0.10",
-		"@sveltejs/kit": "^2.49.2",
-		"@sveltejs/vite-plugin-svelte": "^6.2.1",
+		"@sveltejs/kit": "^2.50.1",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
 		"express": "^5.2.1",
-		"gardenjs": "1.6.6",
+		"gardenjs": "1.6.8",
 		"mdsvex": "^0.12.6",
-		"sass": "^1.93.2",
-		"svelte": "5.46.1",
-		"vite": "7.3.0"
+		"prettier": "^3.8.1",
+		"prettier-plugin-svelte": "^3.4.1",
+		"sass": "^1.97.3",
+		"svelte": "5.49.1",
+		"vite": "7.3.1",
+		"vite-plugin-compression": "^0.5.1"
 	}
 }
