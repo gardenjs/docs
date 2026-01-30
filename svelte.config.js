@@ -17,7 +17,8 @@ const config = {
 			{
 				pages: 'docs',
 				assets: 'docs',
-				fallback: null
+				fallback: null,
+				strict: true
 			}
 		),
 		paths: {
