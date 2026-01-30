@@ -102,11 +102,11 @@
   const accordionItems = [
     {
       label: 'Why have we developed another storybook?',
-      content: '<p>We developed Gardenjs for two reasons: Firstly, Storybook was clearly too slow and a bit too cluttered for us, and secondly, we were enthusiastic about Svelte and wanted to get to know the framework better with an example project. We initially used Gardenjs for our own projects, but since it does some things better than alternative tools, we have now released it. As enthusiastic users of open source software, this gives us the opportunity to give something back.</p>'
+      content: '<p>We developed Gardenjs for two reasons: Firstly, Storybook was clearly too slow for us at the time and a bit too cluttered for us, and secondly, we were enthusiastic about Svelte and wanted to get to know the framework better with an example project. We initially used Gardenjs for our own projects, but since it does some things better than alternative tools, we have now released it. As enthusiastic users of open source software, this gives us the opportunity to give something back.</p>'
     },
     { 
       label: 'Why is Gardenjs better than the alternatives around Storybook?',
-      content: '<p>The question is provocative and of course each tool has its own advantages and disadvantages. Certainly, the top dog also covers many features that are not or not yet integrated in Gardenjs. But Gardenjs is definitely much faster and leaner. In our opinion, "stories" can be created more efficiently with Gardenjs, the handling is smoother and the option to work with decorators is more flexible. In addition, Gardenjs is multiframework-compatible, unlike Strorybook. And of course Gardenjs looks much better ;) Much is a matter of taste, form your own opinion - we look forward to your feedback.</p>'
+      content: '<p>The question is provocative and of course each tool has its own advantages and disadvantages. Certainly, the top dog also covers many features that are not or not yet integrated in Gardenjs. But Gardenjs is faster and leaner. In our opinion, "stories" can be created more efficiently with Gardenjs, the handling is smoother and the option to work with decorators is more flexible. In addition, Gardenjs is multiframework-compatible, unlike Strorybook. And of course Gardenjs looks much better ;) Much is a matter of taste, form your own opinion - we look forward to your feedback.</p>'
     },
     {
       label: 'What is the business model of Gardenjs?',
@@ -114,7 +114,7 @@
     },
     { 
       label: 'Is Gardenjs being actively developed?',
-      content: `<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the <a href="${base}/docs/roadmap">roadmap</a> depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p>`
+      content: `<p>We will actively maintain Gardenjs, as we use Gardenjs in many of our projects. Gardenjs is relatively easy to maintain. Whether and how actively we will work through the <a href="${base}/docs/roadmap">roadmap</a> depends on our own needs for Gardenjs and to a large extent on how well Gardenjs is accepted and how much support we receive.</p><p>We are also open to incorporating your needs and wishes. Please feel free to contact us and give us your feedback.</p>`
     },
     {
       label: 'Do you have further questions or is there something on your mind?',
