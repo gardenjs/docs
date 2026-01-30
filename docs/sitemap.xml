@@ -22,10 +22,16 @@
     <loc>https://gardenjs.org/docs/roadmap</loc>
   </url>
   <url>
+    <loc>https://gardenjs.org/docs/known-issues</loc>
+  </url>
+  <url>
     <loc>https://gardenjs.org/docs/get-started/decorators</loc>
   </url>
   <url>
     <loc>https://gardenjs.org/docs/get-started/examples</loc>
+  </url>
+  <url>
+    <loc>https://gardenjs.org/docs/get-started/params</loc>
   </url>
   <url>
     <loc>https://gardenjs.org/docs/get-started/hooks</loc>
