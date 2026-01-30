@@ -1,117 +1,119 @@
 body {
-  font-family: 'Source Sans 3';
-  color: var(--c-text);
-  font-variation-settings: 'wght' 400;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
+	font-family: 'Source Sans 3';
+	color: var(--c-text);
+	font-variation-settings: 'wght' 400;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
 }
-h1,h2,h3 {
-  font-variation-settings: 'wght' 900;
-  line-height: 1.2;
+h1,
+h2,
+h3 {
+	font-variation-settings: 'wght' 900;
+	line-height: 1.2;
 }
 h1 {
-  margin: 0 0 1.5rem;
-  font-size: 1.625rem;
-  @media (min-width: 840px) {
-    font-size: 2rem;
-  }
-  @media (min-width: 960px) {
-    font-size: 2.5rem;
-  }
+	margin: 0 0 1.5rem;
+	font-size: 1.625rem;
+	@media (min-width: 840px) {
+		font-size: 2rem;
+	}
+	@media (min-width: 960px) {
+		font-size: 2.5rem;
+	}
 }
 h2 {
-  margin: 1rem 0;
-  font-size: 1.25rem;
-  @media (min-width: 840px) {
-    font-size: 1.275rem;
-  }
-  @media (min-width: 960px) {
-    margin: 3rem 0 1rem;
-    font-size: 1.875rem;
-  }
+	margin: 1rem 0;
+	font-size: 1.25rem;
+	@media (min-width: 840px) {
+		font-size: 1.275rem;
+	}
+	@media (min-width: 960px) {
+		margin: 3rem 0 1rem;
+		font-size: 1.875rem;
+	}
 }
 h3 {
-  margin: 1.25rem 0 0.5rem;
-  font-size: 1.125rem;
-  @media (min-width: 840px) {
-    font-size: 1.25rem;
-  }
-  @media (min-width: 960px) {
-    margin: 2rem 0 1rem;
-    font-size: 1.625rem;
-  }
+	margin: 1.25rem 0 0.5rem;
+	font-size: 1.125rem;
+	@media (min-width: 840px) {
+		font-size: 1.25rem;
+	}
+	@media (min-width: 960px) {
+		margin: 2rem 0 1rem;
+		font-size: 1.625rem;
+	}
 }
 h4 {
-  margin: 0.75rem 0 0.25rem;
-  font-size: 1rem;
-  color: var(--c-headline);
-  font-variation-settings: 'wght' 700;
-  line-height: 1.2;
-  @media (min-width: 840px) {
-    font-size: 1.125rem;
-  }
-  @media (min-width: 960px) {
-    margin: 1.5rem 0 0.25rem;
-    font-size: 1.25rem;
-  }
+	margin: 0.75rem 0 0.25rem;
+	font-size: 1rem;
+	color: var(--c-headline);
+	font-variation-settings: 'wght' 700;
+	line-height: 1.2;
+	@media (min-width: 840px) {
+		font-size: 1.125rem;
+	}
+	@media (min-width: 960px) {
+		margin: 1.5rem 0 0.25rem;
+		font-size: 1.25rem;
+	}
 }
 p {
-  margin: 0 0 0.5rem;
-  font-size: 0.875rem;
-  color: var(--c-text);
-  @media (min-width: 840px) {
-    margin: 0 0 0.75rem;
-    font-size: 1rem;
-  }
-  @media (min-width: 960px) {
-    font-size: 1.188rem;
-  }
-  a {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
+	margin: 0 0 0.5rem;
+	font-size: 0.875rem;
+	color: var(--c-text);
+	@media (min-width: 840px) {
+		margin: 0 0 0.75rem;
+		font-size: 1rem;
+	}
+	@media (min-width: 960px) {
+		font-size: 1.188rem;
+	}
+	a {
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
 }
 ol,
 ul {
-  li { 
-    margin: 0 0 0.25rem;
-    font-size: 0.875rem;
-    color: var(--c-text);
-    @media (min-width: 840px) {
-      font-size: 1rem;
-    }
-    @media (min-width: 960px) {
-      font-size: 1.188rem;
-    }
-  }
+	li {
+		margin: 0 0 0.25rem;
+		font-size: 0.875rem;
+		color: var(--c-text);
+		@media (min-width: 840px) {
+			font-size: 1rem;
+		}
+		@media (min-width: 960px) {
+			font-size: 1.188rem;
+		}
+	}
 }
 a {
-  color: var(--c-link);
-  text-decoration: none;
-  &:hover {
-    color: var(--c-link-hl);
-  }
+	color: var(--c-link);
+	text-decoration: none;
+	&:hover {
+		color: var(--c-link-hl);
+	}
 }
 b,
 strong {
-  font-variation-settings: 'wght' 600;
+	font-variation-settings: 'wght' 600;
 }
 i {
-  font-family: 'Source Sans 3 Italic' !important;
+	font-family: 'Source Sans 3 Italic' !important;
 }
 code {
-  font-family: var(--ff-monospace);
+	font-family: var(--ff-monospace);
 }
 p mark,
 p code,
 li code {
-  padding: 0.125rem 0.25rem;
-  font-size: 0.875rem;
-  font-variation-settings: 'wght' 500;
-  background-color: var(--c-website-code-bg);
-  border-radius: 0.25rem;
-  @media (min-width: 840px) {
-    font-size: 0.875rem;
-  }
+	padding: 0.125rem 0.25rem;
+	font-size: 0.875rem;
+	font-variation-settings: 'wght' 500;
+	background-color: var(--c-website-code-bg);
+	border-radius: 0.25rem;
+	@media (min-width: 840px) {
+		font-size: 0.875rem;
+	}
 }

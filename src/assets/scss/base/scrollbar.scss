@@ -1,19 +1,19 @@
 ::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+	width: 0.5rem;
+	height: 0.5rem;
 }
 ::-webkit-scrollbar-track {
-  &:vertical {
-    background: var(--c-website-bg);
-  }
-  &:horizontal {
-    background: var(--c-prism-bg);
-    overflow: hidden;
-  }
+	&:vertical {
+		background: var(--c-website-bg);
+	}
+	&:horizontal {
+		background: var(--c-prism-bg);
+		overflow: hidden;
+	}
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--c-primary);
-  &:hover {
-    background: var(--c-primary);
-  }
+	background: var(--c-primary);
+	&:hover {
+		background: var(--c-primary);
+	}
 }
