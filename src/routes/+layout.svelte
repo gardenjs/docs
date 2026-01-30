@@ -1,12 +1,12 @@
 <script>
-	import { theme } from '../stores/theme';
-	/**
-	 * @typedef {Object} Props
-	 * @property {import('svelte').Snippet} [children]
-	 */
+  import { theme } from '../stores/theme'
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
 
-	/** @type {Props} */
-	let { children } = $props();
+  /** @type {Props} */
+  let { children } = $props()
 </script>
 
 {@render children?.()}

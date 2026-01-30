@@ -1,74 +1,75 @@
 :root {
-	--c-primary: hsl(185, 80%, 75%);
-	--c-primary-dark: hsl(185, 80%, 40%);
-	--c-secondary: hsl(216, 41%, 45%);
-	--c-secondary-dark: hsl(216, 41%, 30%);
+  --c-primary: hsl(185, 80%, 75%);
+  --c-primary-dark: hsl(185, 80%, 40%);
+  --c-secondary: hsl(216, 41%, 45%);
+  --c-secondary-dark: hsl(216, 41%, 30%);
 
-	--c-website-bg: #fff;
-	--c-website-code-bg: hsl(0, 0%, 96%);
-	--c-border: hsl(216, 10%, 80%);
-	--c-border-docs: var(--c-text);
-	--c-turquoise: hsl(185, 100%, 90%);
-	--c-yellow: hsl(60, 90%, 80%);
-	--c-prism-bg: var(--c-link-bg);
-	--c-table-bg: transparent;
+  --c-website-bg: #fff;
+  --c-website-code-bg: hsl(0, 0%, 96%);
+  --c-border: hsl(216, 10%, 80%);
+  --c-border-docs: var(--c-text);
+  --c-turquoise: hsl(185, 100%, 90%);
+  --c-yellow: hsl(60, 90%, 80%);
+  --c-prism-bg: var(--c-link-bg);
+  --c-table-bg: transparent;
 
-	--c-headline: #000;
-	--c-headline-bg: var(--c-turquoise);
-	--c-text: #000;
-	--c-text-light: hsl(216, 21%, 50%);
-	--c-link: hsl(216, 80%, 55%);
-	--c-link-hl: hsl(216, 80%, 65%);
-	--c-primary-link: var(--c-primary-dark);
-	--c-link-bg: var(--c-website-code-bg);
-	--c-btntxt-docs: var(--c-text);
+  --c-headline: #000;
+  --c-headline-bg: var(--c-turquoise);
+  --c-text: #000;
+  --c-text-light: hsl(216, 21%, 50%);
+  --c-link: hsl(216, 80%, 55%);
+  --c-link-hl: hsl(216, 80%, 65%);
+  --c-primary-link: var(--c-primary-dark);
+  --c-link-bg: var(--c-website-code-bg);
+  --c-btntxt-docs: var(--c-text);
 
-	--c-footer-text: var(--c-text-light);
-	--c-footer-link: var(--c-primary-dark);
-	--c-footer-link-hl: hsl(185, 80%, 45%);
+  --c-footer-text: var(--c-text-light);
+  --c-footer-link: var(--c-primary-dark);
+  --c-footer-link-hl: hsl(185, 80%, 45%);
 
-	--c-app-bg: hsl(216, 41%, 15%);
-	--c-app-border: hsl(216, 41%, 5%);
+  --c-app-bg: hsl(216, 41%, 15%);
+  --c-app-border: hsl(216, 41%, 5%);
 
-	--w-website-wide: 1280px;
-	--w-website-slim: 840px;
+  --w-website-wide: 1280px;
+  --w-website-slim: 840px;
 
-	--b: 2px solid var(--c-text);
-	--b-radius: 0.25rem;
+  --b: 2px solid var(--c-text);
+  --b-radius: 0.25rem;
 
-	--ff-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --ff-monospace:
+    'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
 
 [data-theme='dark'] {
-	--c-primary: hsl(185, 80%, 65%);
-	--c-secondary: hsl(216, 25%, 80%);
-	--c-secondary-dark: hsl(216, 25%, 75%);
+  --c-primary: hsl(185, 80%, 65%);
+  --c-secondary: hsl(216, 25%, 80%);
+  --c-secondary-dark: hsl(216, 25%, 75%);
 
-	--c-website-bg: hsl(216, 41%, 12%);
-	--c-website-code-bg: var(--c-link-bg);
-	--c-border: var(--c-text);
-	--c-border-docs: var(--c-website-bg);
-	--c-turquoise: hsl(216, 25%, 25%);
-	--c-yellow: hsl(216, 25%, 25%);
-	--c-quote-border: var(--c-border);
-	--c-prism-bg: var(--c-link-bg);
+  --c-website-bg: hsl(216, 41%, 12%);
+  --c-website-code-bg: var(--c-link-bg);
+  --c-border: var(--c-text);
+  --c-border-docs: var(--c-website-bg);
+  --c-turquoise: hsl(216, 25%, 25%);
+  --c-yellow: hsl(216, 25%, 25%);
+  --c-quote-border: var(--c-border);
+  --c-prism-bg: var(--c-link-bg);
 
-	--c-headline: var(--c-secondary-dark);
-	--c-headline-bg: var(--c-turquoise);
-	--c-text: var(--c-secondary-dark);
-	--c-text-light: var(--c-secondary-dark);
-	--c-link: var(--c-primary);
-	--c-link-hl: hsl(185, 80%, 75%);
-	--c-primary-link: var(--c-link-hl);
-	--c-link-bg: var(--c-turquoise);
-	--c-btntxt-docs: var(--c-website-bg);
+  --c-headline: var(--c-secondary-dark);
+  --c-headline-bg: var(--c-turquoise);
+  --c-text: var(--c-secondary-dark);
+  --c-text-light: var(--c-secondary-dark);
+  --c-link: var(--c-primary);
+  --c-link-hl: hsl(185, 80%, 75%);
+  --c-primary-link: var(--c-link-hl);
+  --c-link-bg: var(--c-turquoise);
+  --c-btntxt-docs: var(--c-website-bg);
 
-	--c-footer-text: var(--c-text);
-	--c-footer-link: var(--c-primary);
-	--c-footer-link-hl: var(--c-link-hl);
+  --c-footer-text: var(--c-text);
+  --c-footer-link: var(--c-primary);
+  --c-footer-link-hl: var(--c-link-hl);
 
-	--c-app-bg: hsl(168, 8%, 96%);
-	--c-app-border: hsl(168, 8%, 76%);
+  --c-app-bg: hsl(168, 8%, 96%);
+  --c-app-border: hsl(168, 8%, 76%);
 
-	--b: 2px solid var(--c-text);
+  --b: 2px solid var(--c-text);
 }

@@ -16,14 +16,14 @@ sup,
 code,
 th,
 td {
-	&::selection {
-		color: var(--c-text);
-		background-color: var(--c-primary);
-	}
+  &::selection {
+    color: var(--c-text);
+    background-color: var(--c-primary);
+  }
 }
 h1 {
-	&::selection {
-		color: var(--c-text);
-		background-color: transparent;
-	}
+  &::selection {
+    color: var(--c-text);
+    background-color: transparent;
+  }
 }

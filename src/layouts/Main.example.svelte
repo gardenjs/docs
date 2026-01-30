@@ -1,14 +1,14 @@
 <script>
-	import Main from './Main.svelte';
+  import Main from './Main.svelte'
 </script>
 
 <Main>
-	<div>Slot...</div>
+  <div>Slot...</div>
 </Main>
 
 <style>
-	div {
-		padding: 1rem;
-		background-color: #eee;
-	}
+  div {
+    padding: 1rem;
+    background-color: #eee;
+  }
 </style>

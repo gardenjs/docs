@@ -1,20 +1,20 @@
 <script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {import('svelte').Snippet} [children]
-	 */
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
 
-	/** @type {Props} */
-	let { children } = $props();
+  /** @type {Props} */
+  let { children } = $props()
 </script>
 
 <div>
-	{@render children?.()}
+  {@render children?.()}
 </div>
 
 <style>
-	div {
-		border: 2px dashed #ca0202;
-		margin-top: 2rem;
-	}
+  div {
+    border: 2px dashed #ca0202;
+    margin-top: 2rem;
+  }
 </style>

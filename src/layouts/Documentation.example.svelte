@@ -1,16 +1,16 @@
 <script>
-	import Documentation from './Documentation.svelte';
+  import Documentation from './Documentation.svelte'
 
-	let { sidenavFolders = [] } = $props();
+  let { sidenavFolders = [] } = $props()
 </script>
 
 <Documentation {sidenavFolders}>
-	<div>Slot...</div>
+  <div>Slot...</div>
 </Documentation>
 
 <style>
-	div {
-		padding: 1rem;
-		background-color: #eee;
-	}
+  div {
+    padding: 1rem;
+    background-color: #eee;
+  }
 </style>
