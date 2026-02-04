@@ -61,13 +61,14 @@ Creates a number input field.
 
 ### Boolean
 
-Creates a checkbox input.
+Creates a checkbox or toggle switch input.
 
 ```javascript
 {
   name: 'isActive',
   type: 'boolean',
-  label: 'Active'
+  label: 'Active',
+  variant: 'checkbox'  // 'checkbox' (default) or 'toggle' for switch display
 }
 ```
 
@@ -89,22 +90,18 @@ Creates a color picker.
 
 ### Select
 
-Creates a dropdown menu with predefined options.
-
-**Simple Array:**
+Creates a dropdown menu or radio button group with predefined options.
 
 ```javascript
 {
   name: 'size',
   type: 'select',
   label: 'Size',
-  options: ['small', 'medium', 'large']
+  variant: 'dropdown',  // 'dropdown' (default) or 'radio' for radio buttons
+  options: ['small', 'medium', 'large']  // Simple string array
 }
-```
 
-**With Labels and Values:**
-
-```javascript
+// With labels and values:
 {
   name: 'variant',
   type: 'select',
@@ -188,10 +185,11 @@ Creates a complex form for arrays of objects with defined schemas. Perfect for m
 ## Properties Reference
 
 | Property | Required | Used In | Description |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | `name` | Yes | All types | The property name to bind to. |
 | `type` | Yes | All types | The param type (text, number, boolean, etc.). |
 | `label` | No | All types | Display name in the UI (defaults to name). |
+| `variant` | No | boolean, select | Display variant: `checkbox`/`toggle` for boolean, `dropdown`/`radio` for select. |
 | `options` | Yes | select | Array of options (strings or `{label, value}` objects). |
 | `schema` | Yes | object, objectrenderer | Defines the structure of nested fields. |
 | `placeholder` | No | In schema | Placeholder text for input fields. |
