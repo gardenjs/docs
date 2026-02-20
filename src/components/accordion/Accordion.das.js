@@ -19,17 +19,18 @@ export default {
   params: [
     {
       name: 'items',
+      type: 'array',
+      control: 'array',
       label: 'Items',
-      type: 'objectrenderer',
-      description: 'Array of accordion items',
       schema: {
         label: {
+          name: 'label',
           label: 'Title',
-          placeholder: 'Enter title',
         },
         content: {
+          name: 'content',
+          control: 'textarea',
           label: 'Content',
-          placeholder: 'Enter content',
         },
       },
     },
