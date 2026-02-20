@@ -16,12 +16,14 @@ export default {
   params: [
     {
       name: 'slogan',
-      type: 'text',
+      type: 'string',
       label: 'Slogan',
     },
     {
       name: 'subtext',
-      type: 'text',
+      type: 'string',
+      control: 'textarea',
+      numberOfRows: 5,
       label: 'Subtext',
     },
   ],

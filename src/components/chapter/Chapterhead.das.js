@@ -31,17 +31,19 @@ export default {
   params: [
     {
       name: 'pagetitle',
-      type: 'text',
+      type: 'string',
       label: 'Page Title (H1)',
     },
     {
       name: 'title',
-      type: 'text',
+      type: 'string',
       label: 'Chapter Title (H2)',
     },
     {
       name: 'chaptertext',
-      type: 'text',
+      type: 'string',
+      control: 'textarea',
+      numberOfRows: 3,
       label: 'Chapter Text',
     },
   ],

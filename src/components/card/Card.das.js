@@ -47,23 +47,27 @@ export default {
   params: [
     {
       name: 'title',
-      type: 'text',
+      type: 'string',
       label: 'Card Title',
     },
     {
       name: 'text',
-      type: 'text',
+      type: 'string',
+      control: 'textarea',
+      numberOfRows: 3,
       label: 'Card Text',
     },
     {
       name: 'bgColor',
-      type: 'select',
+      type: 'string',
+      control: 'select',
       label: 'Background Color',
       options: ['yellow', 'turquoise'],
     },
     {
       name: 'rotation',
-      type: 'select',
+      type: 'string',
+      control: 'select',
       label: 'Rotation',
       options: ['left', 'right'],
     },

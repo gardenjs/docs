@@ -55,17 +55,19 @@ export default {
   params: [
     {
       name: 'pagetitle',
-      type: 'text',
+      type: 'string',
       label: 'Page Title (H1)',
     },
     {
       name: 'title',
-      type: 'text',
-      label: 'Chapter Title (H2)',
+      type: 'string',
+      label: 'Chapter Title (H2) - only used if no pagetitle is provided',
     },
     {
       name: 'chaptertext',
-      type: 'text',
+      type: 'string',
+      control: 'textarea',
+      numberOfRows: 3,
       label: 'Chapter Text',
     },
     {
@@ -75,22 +77,26 @@ export default {
     },
     {
       name: 'bgColor',
-      type: 'select',
+      type: 'string',
+      control: 'radio',
       label: 'Background Color',
       options: ['yellow', 'turquoise'],
     },
     {
       name: 'cards',
-      type: 'objectrenderer',
+      type: 'array',
+      control: 'array',
       label: 'Cards',
       schema: {
         title: {
-          type: 'text',
+          type: 'string',
           label: 'Card Title',
           placeholder: 'Enter card title',
         },
         text: {
-          type: 'text',
+          type: 'string',
+          control: 'textarea',
+          numberOfRows: 3,
           label: 'Card Text',
           placeholder: 'Enter card text',
         },

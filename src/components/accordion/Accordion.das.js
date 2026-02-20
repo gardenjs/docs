@@ -30,6 +30,7 @@ export default {
         content: {
           name: 'content',
           control: 'textarea',
+          numberOfRows: 5,
           label: 'Content',
         },
       },
