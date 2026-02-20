@@ -4,6 +4,6 @@ export default {
   description: './Navbar.md',
   examples: [
     { title: 'Navbar homepage' },
-    { title: 'Navbar subpages & docs', input: { isFixed: 'true' } },
+    { title: 'Navbar subpages & docs', input: { isFixed: true } },
   ],
 }

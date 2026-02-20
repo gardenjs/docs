@@ -27,4 +27,29 @@ export default {
       },
     },
   ],
+
+  params: [
+    {
+      name: 'btnlabel',
+      type: 'string',
+      label: 'Button label',
+    },
+    {
+      name: 'link',
+      type: 'string',
+      label: 'Link',
+    },
+    {
+      name: 'bgColor',
+      type: 'string',
+      control: 'select',
+      label: 'Background Color',
+      options: ['turquoise', 'no background'],
+    },
+    {
+      name: 'isExternal',
+      type: 'boolean',
+      label: 'Is External',
+    },
+  ],
 }
