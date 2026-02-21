@@ -22,20 +22,25 @@ export default {
   params: [
     {
       name: 'title',
-      type: 'text',
+      type: 'string',
       label: 'Title'
     }
   ]
 }
 ```
 
-## Available Param Types
+If you **do not** define a `params` array, params are generated automatically from the `input` data of your examples. These fields appear in the panel; you can override or extend them by defining a `params` array explicitly when needed.
+
+## Available Controls
+
+Each param is rendered in the panel by a **control** (the UI widget). You get a control either by setting a matching `type` (Gardenjs picks the default control for `string`, `number`, `boolean`, `date`, `array`, `object`) or by setting `type` and `control` explicitly. Controls like color, time, datetime, range, and select have no built-in type and always need `control` plus a suitable `type` (e.g. `type: 'string'`, `control: 'time'`). The following controls are available:
 
 - [**Array**](#array) - Input for adding/removing list items
 - [**Boolean**](#boolean) - Checkbox or toggle switch
 - [**Color**](#color) - Color picker
 - [**Date**](#date) - Date picker
 - [**Datetime**](#datetime) - Datetime picker
+- [**JSON**](#json) - JSON input (textarea with validation)
 - [**Number**](#number) - Number input field
 - [**Object**](#object) - Key-value pair inputs
 - [**Object Renderer**](#object-renderer) - Complex form for arrays of objects
@@ -69,7 +74,7 @@ Creates a checkbox or toggle switch input.
   name: 'isActive',
   type: 'boolean',
   label: 'Active',
-  variant: 'checkbox'  // 'checkbox' (default) or 'toggle' for switch display
+  control: 'checkbox'  // 'checkbox' (default) or 'toggle' for switch display
 }
 ```
 
@@ -77,12 +82,13 @@ Creates a checkbox or toggle switch input.
 
 <h3 id="color" style="scroll-margin-top: 6rem;">Color</h3>
 
-Creates a color picker.
+Creates a color picker. Use `type: 'string'` and `control: 'color'` (no built-in type for color).
 
 ```javascript
 {
   name: 'bgColor',
-  type: 'color',
+  type: 'string',
+  control: 'color',
   label: 'Background Color'
 }
 ```
@@ -105,12 +111,13 @@ Creates a date picker.
 
 <h3 id="datetime" style="scroll-margin-top: 6rem;">Datetime</h3>
 
-Creates a datetime picker.
+Creates a datetime picker. Use `type: 'string'` and `control: 'datetime'`.
 
 ```javascript
 {
   name: 'appointment',
-  type: 'datetime',
+  type: 'string',
+  control: 'datetime',
   label: 'Appointment'
 }
 ```
@@ -185,12 +192,13 @@ Creates a complex form for arrays of objects with defined schemas. Perfect for m
 
 <h3 id="range" style="scroll-margin-top: 6rem;">Range</h3>
 
-Creates a range slider.
+Creates a range slider. Use `type: 'number'` and `control: 'range'`.
 
 ```javascript
 {
   name: 'opacity',
-  type: 'range',
+  type: 'number',
+  control: 'range',
   label: 'Opacity',
   min: 0,     // Minimum value (default: 0)
   max: 1,     // Maximum value (default: 100)
@@ -202,21 +210,22 @@ Creates a range slider.
 
 <h3 id="select" style="scroll-margin-top: 6rem;">Select</h3>
 
-Creates a dropdown menu or radio button group with predefined options.
+Creates a dropdown menu or radio button group with predefined options. Use `type: 'string'` and `control: 'select'` or `control: 'radio'`.
 
 ```javascript
 {
   name: 'size',
-  type: 'select',
+  type: 'string',
+  control: 'select',  // or 'radio' for radio buttons
   label: 'Size',
-  variant: 'dropdown',  // 'dropdown' (default) or 'radio' for radio buttons
   options: ['small', 'medium', 'large']  // Simple string array
 }
 
 // With labels and values:
 {
   name: 'variant',
-  type: 'select',
+  type: 'string',
+  control: 'select',
   label: 'Variant',
   options: [
     { label: 'Primary', value: 'primary' },
@@ -230,23 +239,36 @@ Creates a dropdown menu or radio button group with predefined options.
 
 <h3 id="text--string" style="scroll-margin-top: 6rem;">Text / String</h3>
 
-Creates a text input field or textarea.
+Creates a text input field or textarea. Use `type: 'string'`; default control is text input, or set `control: 'textarea'` for multiline.
 
 ```javascript
 {
   name: 'title',
-  type: 'text',
-  label: 'Card Title',
-  variant: 'text'  // 'text' (default) or 'textarea'
+  type: 'string',
+  label: 'Card Title'  // default: single-line text; omit control or set control: 'text'
 }
 
-// Textarea with custom rows:
+// Textarea with custom row count:
 {
   name: 'description',
-  type: 'text',
+  type: 'string',
+  control: 'textarea',
   label: 'Description',
-  variant: 'textarea',
-  rows: 5  // Number of visible rows (default: 4)
+  numberOfRows: 5  // Number of visible rows (default: 4)
+}
+```
+
+---
+
+<h3 id="json" style="scroll-margin-top: 6rem;">JSON</h3>
+
+Creates a JSON editor (textarea with validation). In Gardenjs this control is used when `type` is `array` or `object` (no separate `type: 'json'`). Suitable for structured data or configuration objects.
+
+```javascript
+{
+  name: 'config',
+  type: 'array',  // or type: 'object'
+  label: 'Configuration',
 }
 ```
 
@@ -254,12 +276,13 @@ Creates a text input field or textarea.
 
 <h3 id="time" style="scroll-margin-top: 6rem;">Time</h3>
 
-Creates a time picker.
+Creates a time picker. Use `type: 'string'` and `control: 'time'`.
 
 ```javascript
 {
   name: 'openingTime',
-  type: 'time',
+  type: 'string',
+  control: 'time',
   label: 'Opening Time'
 }
 ```
@@ -268,23 +291,25 @@ Creates a time picker.
 
 ## Properties Reference
 
+Params can be defined by **type** only (Gardenjs picks a default control) or by **type** plus **control** to choose the exact UI. If `control` is set and valid, it overrides the default for that type.
+
 | Property | Required | Used In | Description |
 | --- | --- | --- | --- |
-| `name` | Yes | All types | The property name to bind to. |
-| `type` | Yes | All types | The param type (text, number, boolean, etc.). |
-| `label` | No | All types | Display name in the UI (defaults to name). |
-| `variant` | No | boolean, select, text | Display variant: `checkbox`/`toggle` for boolean, `dropdown`/`radio` for select, `text`/`textarea` for text. |
-| `options` | Yes | select | Array of options (strings or `{label, value}` objects). |
+| `name` | Yes | All | The property name to bind to. |
+| `type` | Yes | All | Data type. In Gardenjs only these types have a built-in default control: `string` → text; `number` → number; `boolean` → checkbox; `date` → date; `array` / `object` → JSON editor. All other controls (time, datetime, color, range, select, textarea, toggle, radio, etc.) require setting `control` explicitly, typically with `type: 'string'` or `type: 'number'`. |
+| `label` | No | All | Display name in the UI (defaults to `name`). |
+| `control` | No | Optional override | UI control. Values: `text`, `textarea`, `checkbox`, `toggle`, `number`, `color`, `date`, `time`, `datetime`, `array`, `object`, `range`, `select`, `radio`, `multiselect`, `checkboxes`. Use to pick variant: boolean → `checkbox` or `toggle`; string → `text`, `textarea`, `date`, `time`, `datetime`, `select`, `radio`; number → `number` or `range`; array → `array`, `multiselect`, `checkboxes`. |
+| `options` | Yes | select, radio, multiselect, checkboxes | Array of options (strings or `{ label, value }` objects). |
 | `schema` | Yes | object, objectrenderer | Defines the structure of nested fields. |
 | `placeholder` | No | In schema | Placeholder text for input fields. |
-| `rows` | No | text (textarea) | Number of visible rows in textarea (default: 4). |
+| `numberOfRows` | No | text (textarea), json | Number of visible rows in textarea/JSON field (default: 4). |
 | `min` | No | range | Minimum value for range slider (default: 0). |
 | `max` | No | range | Maximum value for range slider (default: 100). |
 | `step` | No | range | Step size for range slider (default: 1). |
 
 ## Complete Example
 
-Here's a complete `.das.js` file with all available param types:
+Here's a complete `.das.js` file using different controls:
 
 ```javascript
 export default {
@@ -316,15 +341,15 @@ export default {
   params: [
     {
       name: 'title',
-      type: 'text',
+      type: 'string',
       label: 'Product Title'
     },
     {
       name: 'description',
-      type: 'text',
+      type: 'string',
+      control: 'textarea',
       label: 'Description',
-      variant: 'textarea',
-      rows: 4
+      numberOfRows: 4
     },
     {
       name: 'price',
@@ -335,24 +360,25 @@ export default {
       name: 'inStock',
       type: 'boolean',
       label: 'In Stock',
-      variant: 'checkbox'
+      control: 'checkbox'
     },
     {
       name: 'featured',
       type: 'boolean',
       label: 'Featured Product',
-      variant: 'toggle'
+      control: 'toggle'
     },
     {
       name: 'size',
-      type: 'select',
+      type: 'string',
+      control: 'select',
       label: 'Size',
-      variant: 'dropdown',
       options: ['small', 'medium', 'large']
     },
     {
       name: 'color',
-      type: 'color',
+      type: 'string',
+      control: 'color',
       label: 'Background Color'
     },
     {
@@ -362,17 +388,20 @@ export default {
     },
     {
       name: 'availableFrom',
-      type: 'time',
+      type: 'string',
+      control: 'time',
       label: 'Available From'
     },
     {
       name: 'lastUpdated',
-      type: 'datetime',
+      type: 'string',
+      control: 'datetime',
       label: 'Last Updated'
     },
     {
       name: 'discount',
-      type: 'range',
+      type: 'number',
+      control: 'range',
       label: 'Discount %',
       min: 0,
       max: 100,
