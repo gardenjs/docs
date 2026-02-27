@@ -2,7 +2,7 @@
 
 An "example" - other tools call this "story" - refers to a single state or variation of an UI component that you want to showcase. "Examples" are used to document and demonstrate how a component looks and behaves in different scenarios or states. Each "example" represents a specific use case or variant of the component. "Examples" are created somewhere in the source directory or directly next to the component itself in the **D**escription **A**nd **S**pecification file ***.das.js**.
 
-To make your components interactive and testable with different property values, you can also add <a href="/docs/get-started/params">params</a> to create UI controls in the Gardenjs panel.
+To make your components interactive and testable with different property values, you can also add <a href="/docs/get-started/parameters">params</a> to create UI controls in the Gardenjs panel.
 
 ## Create the description and specification file
 
