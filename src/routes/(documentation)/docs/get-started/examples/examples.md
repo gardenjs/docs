@@ -122,6 +122,6 @@ export default {
 
 ## Interactive controls with params
 
-In addition to static examples, you can add interactive controls to your components using <a href="/docs/get-started/params">params</a>. Params create input fields in the Gardenjs panel that allow you to dynamically modify component properties without changing code. This is especially useful for testing different property combinations and states.
+In addition to static examples, you can add interactive controls to your components using <a href="/docs/get-started/parameters">params</a>. Params create input fields in the Gardenjs panel that allow you to dynamically modify component properties without changing code. This is especially useful for testing different property combinations and states.
 
-Learn more about available param types and how to use them in the <a href="/docs/get-started/params">params documentation</a>.
+Learn more about available param types and how to use them in the <a href="/docs/get-started/parameters">params documentation</a>.
