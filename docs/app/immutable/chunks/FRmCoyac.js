@@ -1,0 +1,1 @@
+import{h as u,i as o,a0 as p,j as t,k as _,C as g,M as i,p as l,s as d,q as m}from"./CEupPios.js";function E(n,r){let s=null,f=t;var a;if(t){s=m;for(var e=_(document.head);e!==null&&(e.nodeType!==g||e.data!==n);)e=i(e);if(e===null)l(!1);else{var y=i(e);e.remove(),d(y)}}t||(a=document.head.appendChild(u()));try{o(()=>r(a),p)}finally{f&&(l(!0),d(s))}}export{E as h};

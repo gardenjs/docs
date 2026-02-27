@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../favicon.svg" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../app/immutable/entry/start.DHhhI313.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/Dr8FynQn.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/CEupPios.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/CMIDK7Qn.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/CDh_woNJ.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/B8YmO6kH.js" rel="modulepreload">
+		<link href="../../app/immutable/entry/app.CBxg9p9h.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/pnisuXHf.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/Dt4-8ENk.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/CRarXud9.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/B65kzyHh.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/lZHtDYTg.js" rel="modulepreload">
+		<link href="../../app/immutable/nodes/0.CwxR0bw8.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/CSAsG_7N.js" rel="modulepreload">
+		<link href="../../app/immutable/nodes/2.DhP3xWFJ.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/DcbHPUAs.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/BYMo6oSq.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/Dr7BpZvk.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/1E64UVaF.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/BS9A4vSO.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/CbHQS5kZ.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/B2vMDuPz.js" rel="modulepreload">
+		<link href="../../app/immutable/nodes/11.wh46McxZ.js" rel="modulepreload">
+		<link href="../../app/immutable/chunks/FRmCoyac.js" rel="modulepreload">
+		<!--uc3nlo--><meta name="description" content="Learn how to use params to create interactive controls in Gardenjs. Gardenjs is the fast component UI explorer for JavaScript frameworks like Svelte, Vue and React."/><!----><title>Params :: Gardenjs Docs</title>
+		<link href="../../app/immutable/assets/Dashedlines.99IpA0Ap.css" rel="stylesheet">
+		<link href="../../app/immutable/assets/Vegetables.C7MWvPUk.css" rel="stylesheet">
+		<link href="../../app/immutable/assets/2.9uVrGdXU.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[--><!----><!--[--><!----><header class="header is-fixed svelte-127pqec"><div class="header_container svelte-127pqec"><div class="navbar svelte-127pqec"><div class="navbar_container svelte-127pqec"><a class="logo svelte-127pqec" href="../../" title="go to start"><picture><source srcset="/app/immutable/assets/logo._q9lGfXd.svg" media="all" data-media="(prefers-color-scheme:light)"/> <img src="/app/immutable/assets/logo_neg.DtgosLCb.svg" alt="Logo" class="svelte-127pqec"/></picture></a> <nav class="navbar_nav svelte-1nys6d4"><ul class="svelte-1nys6d4"><li class="svelte-1nys6d4"><a href="../../docs" title="documentation" class="svelte-1nys6d4">Docs</a></li> <li class="svelte-1nys6d4"><a class="github svelte-1nys6d4" href="https://github.com/rabbitdevelopment/garden" title="Garden Github Repository" target="_blank"><svg class="icon svelte-1nys6d4" role="img" width="32" viewBox="0 0 32 32" height="32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M15.015 0C6.723 0 0 6.894 0 15.398c0 6.803 4.302 12.573 10.27 14.61.75.14 1.025-.334 1.025-.743 0-.365-.013-1.334-.02-2.618-4.178.93-5.059-2.065-5.059-2.065-.683-1.778-1.668-2.252-1.668-2.252-1.362-.955.104-.936.104-.936 1.507.11 2.3 1.587 2.3 1.587 1.34 2.353 3.515 1.673 4.37 1.28.137-.996.525-1.674.954-2.058-3.334-.389-6.84-1.71-6.84-7.61 0-1.681.585-3.056 1.545-4.132-.155-.39-.67-1.955.147-4.075 0 0 1.26-.414 4.13 1.579a14.03 14.03 0 013.76-.518c1.275.005 2.56.176 3.759.518 2.867-1.993 4.126-1.579 4.126-1.579.82 2.12.304 3.685.15 4.075.961 1.076 1.543 2.45 1.543 4.13 0 5.917-3.512 7.218-6.857 7.599.54.476 1.02 1.415 1.02 2.852 0 2.057-.02 3.718-.02 4.223 0 .413.27.891 1.034.741 5.963-2.04 10.261-7.808 10.261-14.608C30.034 6.894 23.31 0 15.015 0"></path></svg> <span>Source</span></a></li> <li class="svelte-1nys6d4"><button id="toggle-mode" class="toggle-mode svelte-1nys6d4" title="Toggle Website Theme" aria-label="Toggle theme"><!--[--><svg class="icon svelte-1nys6d4" role="img" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 009 9 9 9 0 11-9-9z"></path></svg><!--]--></button></li> <!--[--><li class="navicon svelte-1nys6d4"><button class="menu svelte-1nys6d4" title="Expand menu" aria-label="Toggle menu"><svg class="icon svelte-1nys6d4" role="img" width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"></path></svg></button></li><!--]--></ul></nav><!----></div></div> <!--[!--><!--]--></div></header><!----> <div class="mainaside svelte-1o0gz65"><div class="mainaside_container svelte-1o0gz65"><div class="sidebar  svelte-1o0gz65"><div class="sidenav_heading svelte-1nayatz">Documentation</div> <nav class="sidenav svelte-1nayatz"><ul class="svelte-1nayatz"><!--[--><li class="svelte-1nayatz"><span class="sidenav_folder svelte-1nayatz">Overview</span> <ul class="svelte-1nayatz"><!--[--><li class="svelte-1nayatz"><a href="../../docs" class="svelte-1nayatz">Why Gardenjs?</a></li><!--]--></ul></li><li class="svelte-1nayatz"><span class="sidenav_folder svelte-1nayatz">Get Started</span> <ul class="svelte-1nayatz"><!--[--><li class="svelte-1nayatz"><a href="../../docs/get-started/install" class="svelte-1nayatz">Install</a></li><li class="svelte-1nayatz"><a href="../../docs/get-started/install-renderer" class="svelte-1nayatz">Install Renderer Plugin</a></li><li class="svelte-1nayatz"><a href="../../docs/get-started/settings" class="svelte-1nayatz">Settings</a></li><li class="svelte-1nayatz"><a href="../../docs/get-started/examples" class="svelte-1nayatz">Examples</a></li><li class="svelte-1nayatz"><a href="../../docs/get-started/parameters" class="svelte-1nayatz">Parameters</a></li><li class="svelte-1nayatz"><a href="../../docs/get-started/hooks" class="svelte-1nayatz">Hooks</a></li><li class="svelte-1nayatz"><a href="../../docs/get-started/decorators" class="svelte-1nayatz">Decorators</a></li><!--]--></ul></li><li class="svelte-1nayatz"><span class="sidenav_folder svelte-1nayatz">Renderer</span> <ul class="svelte-1nayatz"><!--[--><li class="svelte-1nayatz"><a href="../../docs/renderer" class="svelte-1nayatz">Write New Renderer</a></li><!--]--></ul></li><li class="svelte-1nayatz"><span class="sidenav_folder svelte-1nayatz">Add Notes</span> <ul class="svelte-1nayatz"><!--[--><li class="svelte-1nayatz"><a href="../../docs/notes" class="svelte-1nayatz">Add Notes</a></li><!--]--></ul></li><li class="svelte-1nayatz"><span class="sidenav_folder svelte-1nayatz">What comes next?</span> <ul class="svelte-1nayatz"><!--[--><li class="svelte-1nayatz"><a href="../../docs/roadmap" class="svelte-1nayatz">Roadmap</a></li><!--]--></ul></li><li class="svelte-1nayatz"><span class="sidenav_folder svelte-1nayatz">Known issues</span> <ul class="svelte-1nayatz"><!--[--><li class="svelte-1nayatz"><a href="../../docs/known-issues" class="svelte-1nayatz">Known Issues</a></li><!--]--></ul></li><!--]--></ul></nav><!----></div> <div class="content-wrapper svelte-1o0gz65"><div class="content svelte-1o0gz65"><!--[--><!----><div class="md_file"><h1>Parameters</h1> <p>Parameters are automatically generated from the input data of the examples and are output by default in the Gardenjs panel. This allows you to dynamically adjust the properties of components.
+This chapter explains how the <code>params</code> property in the <code>.das file</code> can be used to make a more specific selection of controls.</p> <p>Learn more about <a href="/docs/get-started/examples">creating examples and .das.js files</a>.</p> <h2>Requirements</h2> <p>Gardenjs ≥ v1.7</p> <h2>Basic Structure</h2> <p>Add a <code>params</code> array to your <code>.das.js</code> file:</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'MyComponent'</span><span class="token punctuation">,</span>
+  file<span class="token operator">:</span> <span class="token string">'./MyComponent.svelte'</span><span class="token punctuation">,</span>
+  examples<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// your examples</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  params<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'title'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Title'</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <h2>Available Controls</h2> <p>Each parameter is rendered in the panel by a <strong>control</strong> (the UI widget). You get a control either by setting a matching <code>type</code> (Gardenjs picks the default control for <code>string</code>, <code>number</code>, <code>boolean</code>, <code>date</code>, <code>array</code>, <code>object</code>) or by setting <code>type</code> and <code>control</code> explicitly. Controls like color, time, datetime, range, and select have no built-in type and always need <code>control</code> plus a suitable <code>type</code> (e.g. <code>type: 'string'</code>, <code>control: 'time'</code>). The following controls are available:</p> <ul><li><a href="#array"><strong>Array</strong></a> - Input for adding/removing list items</li> <li><a href="#boolean"><strong>Boolean</strong></a> - Checkbox or toggle switch</li> <li><a href="#color"><strong>Color</strong></a> - Color picker</li> <li><a href="#date"><strong>Date</strong></a> - Date picker</li> <li><a href="#datetime"><strong>Datetime</strong></a> - Datetime picker</li> <li><a href="#json"><strong>JSON</strong></a> - JSON input (textarea with validation)</li> <li><a href="#number"><strong>Number</strong></a> - Number input field</li> <li><a href="#object"><strong>Object</strong></a> - Key-value pair inputs</li> <li><a href="#object-renderer"><strong>Object Renderer</strong></a> - Complex form for arrays of objects</li> <li><a href="#range"><strong>Range</strong></a> - Range slider</li> <li><a href="#select"><strong>Select</strong></a> - Dropdown menu or radio button group</li> <li><a href="#text--string"><strong>Text / String</strong></a> - Text input field or textarea</li> <li><a href="#time"><strong>Time</strong></a> - Time picker</li></ul> <hr/> <h3 id="array" style="scroll-margin-top: 6rem;">Array</h3> <p>Creates an array input where users can add/remove items.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'tags'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'array'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Tags'</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="boolean" style="scroll-margin-top: 6rem;">Boolean</h3> <p>Creates a checkbox or toggle switch input.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'isActive'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Active'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'checkbox'</span>  <span class="token comment">// 'checkbox' (default) or 'toggle' for switch display</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="color" style="scroll-margin-top: 6rem;">Color</h3> <p>Creates a color picker. Use <code>type: 'string'</code> and <code>control: 'color'</code> (no built-in type for color).</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'bgColor'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'color'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Background Color'</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="date" style="scroll-margin-top: 6rem;">Date</h3> <p>Creates a date picker.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'startDate'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Start Date'</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="datetime" style="scroll-margin-top: 6rem;">Datetime</h3> <p>Creates a datetime picker. Use <code>type: 'string'</code> and <code>control: 'datetime'</code>.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'appointment'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'datetime'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Appointment'</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="number" style="scroll-margin-top: 6rem;">Number</h3> <p>Creates a number input field.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'columns'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'number'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Columns'</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="object" style="scroll-margin-top: 6rem;">Object</h3> <p>Creates key-value pair inputs.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'metadata'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'object'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Metadata'</span><span class="token punctuation">,</span>
+  schema<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    keyDefault<span class="token operator">:</span> <span class="token string">'key'</span><span class="token punctuation">,</span>
+    valueDefault<span class="token operator">:</span> <span class="token string">'value'</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="object-renderer" style="scroll-margin-top: 6rem;">Object Renderer</h3> <p>Creates a complex form for arrays of objects with defined schemas. Perfect for managing lists of structured data.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'items'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'objectrenderer'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Accordion Items'</span><span class="token punctuation">,</span>
+  schema<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    title<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      type<span class="token operator">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Title'</span><span class="token punctuation">,</span>
+      placeholder<span class="token operator">:</span> <span class="token string">'Enter title'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    content<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      type<span class="token operator">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Content'</span><span class="token punctuation">,</span>
+      placeholder<span class="token operator">:</span> <span class="token string">'Enter content'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    priority<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      type<span class="token operator">:</span> <span class="token string">'number'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Priority'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    visible<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      type<span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Visible'</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="range" style="scroll-margin-top: 6rem;">Range</h3> <p>Creates a range slider. Use <code>type: 'number'</code> and <code>control: 'range'</code>.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'opacity'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'number'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'range'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Opacity'</span><span class="token punctuation">,</span>
+  min<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>     <span class="token comment">// Minimum value (default: 0)</span>
+  max<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>     <span class="token comment">// Maximum value (default: 100)</span>
+  step<span class="token operator">:</span> <span class="token number">0.1</span>   <span class="token comment">// Step size (default: 1)</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="select" style="scroll-margin-top: 6rem;">Select</h3> <p>Creates a dropdown menu or radio button group with predefined options. Use <code>type: 'string'</code> and <code>control: 'select'</code> or <code>control: 'radio'</code>.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'size'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'select'</span><span class="token punctuation">,</span>  <span class="token comment">// or 'radio' for radio buttons</span>
+  label<span class="token operator">:</span> <span class="token string">'Size'</span><span class="token punctuation">,</span>
+  options<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'small'</span><span class="token punctuation">,</span> <span class="token string">'medium'</span><span class="token punctuation">,</span> <span class="token string">'large'</span><span class="token punctuation">]</span>  <span class="token comment">// Simple string array</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// With labels and values:</span>
+<span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'variant'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'select'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Variant'</span><span class="token punctuation">,</span>
+  options<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span> label<span class="token operator">:</span> <span class="token string">'Primary'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'primary'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span> label<span class="token operator">:</span> <span class="token string">'Secondary'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'secondary'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span> label<span class="token operator">:</span> <span class="token string">'Danger'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'danger'</span> <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="text--string" style="scroll-margin-top: 6rem;">Text / String</h3> <p>Creates a text input field or textarea. Use <code>type: 'string'</code>; default control is text input, or set <code>control: 'textarea'</code> for multiline.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'title'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Card Title'</span>  <span class="token comment">// default: single-line text; omit control or set control: 'text'</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// Textarea with custom row count:</span>
+<span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'textarea'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Description'</span><span class="token punctuation">,</span>
+  numberOfRows<span class="token operator">:</span> <span class="token number">5</span>  <span class="token comment">// Number of visible rows (default: 4)</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="json" style="scroll-margin-top: 6rem;">JSON</h3> <p>Creates a JSON editor (textarea with validation). In Gardenjs this control is used when <code>type</code> is <code>array</code> or <code>object</code> (no separate <code>type: 'json'</code>). Suitable for structured data or configuration objects.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'config'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'array'</span><span class="token punctuation">,</span>  <span class="token comment">// or type: 'object'</span>
+  label<span class="token operator">:</span> <span class="token string">'Configuration'</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h3 id="time" style="scroll-margin-top: 6rem;">Time</h3> <p>Creates a time picker. Use <code>type: 'string'</code> and <code>control: 'time'</code>.</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'openingTime'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+  control<span class="token operator">:</span> <span class="token string">'time'</span><span class="token punctuation">,</span>
+  label<span class="token operator">:</span> <span class="token string">'Opening Time'</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <hr/> <h2>Properties Reference</h2> <p>Params can be defined by <strong>type</strong> only (Gardenjs picks a default control) or by <strong>type</strong> plus <strong>control</strong> to choose the exact UI. If <code>control</code> is set and valid, it overrides the default for that type.</p> <table><thead><tr><th>Property</th><th>Required</th><th>Used In</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td>Yes</td><td>All</td><td>The property name to bind to.</td></tr><tr><td><code>type</code></td><td>Yes</td><td>All</td><td>Data type. In Gardenjs only these types have a built-in default control: <code>string</code> → text; <code>number</code> → number; <code>boolean</code> → checkbox; <code>date</code> → date; <code>array</code> / <code>object</code> → JSON editor. All other controls (time, datetime, color, range, select, textarea, toggle, radio, etc.) require setting <code>control</code> explicitly, typically with <code>type: 'string'</code> or <code>type: 'number'</code>.</td></tr><tr><td><code>label</code></td><td>No</td><td>All</td><td>Display name in the UI (defaults to <code>name</code>).</td></tr><tr><td><code>control</code></td><td>No</td><td>Optional override</td><td>UI control. Values: <code>text</code>, <code>textarea</code>, <code>checkbox</code>, <code>toggle</code>, <code>number</code>, <code>color</code>, <code>date</code>, <code>time</code>, <code>datetime</code>, <code>array</code>, <code>object</code>, <code>range</code>, <code>select</code>, <code>radio</code>, <code>multiselect</code>, <code>checkboxes</code>. Use to pick variant: boolean → <code>checkbox</code> or <code>toggle</code>; string → <code>text</code>, <code>textarea</code>, <code>date</code>, <code>time</code>, <code>datetime</code>, <code>select</code>, <code>radio</code>; number → <code>number</code> or <code>range</code>; array → <code>array</code>, <code>multiselect</code>, <code>checkboxes</code>.</td></tr><tr><td><code>options</code></td><td>Yes</td><td>select, radio, multiselect, checkboxes</td><td>Array of options (strings or <code>{ label, value }</code> objects).</td></tr><tr><td><code>schema</code></td><td>Yes</td><td>object, objectrenderer</td><td>Defines the structure of nested fields.</td></tr><tr><td><code>placeholder</code></td><td>No</td><td>In schema</td><td>Placeholder text for input fields.</td></tr><tr><td><code>numberOfRows</code></td><td>No</td><td>text (textarea), json</td><td>Number of visible rows in textarea/JSON field (default: 4).</td></tr><tr><td><code>min</code></td><td>No</td><td>range</td><td>Minimum value for range slider (default: 0).</td></tr><tr><td><code>max</code></td><td>No</td><td>range</td><td>Maximum value for range slider (default: 100).</td></tr><tr><td><code>step</code></td><td>No</td><td>range</td><td>Step size for range slider (default: 1).</td></tr></tbody></table> <h2>Complete Example</h2> <p>Here’s a complete <code>.das.js</code> file using different controls:</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">'ProductCard'</span><span class="token punctuation">,</span>
+  file<span class="token operator">:</span> <span class="token string">'./ProductCard.svelte'</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">'A product card component'</span><span class="token punctuation">,</span>
+  
+  examples<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      title<span class="token operator">:</span> <span class="token string">'Default Product'</span><span class="token punctuation">,</span>
+      input<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        title<span class="token operator">:</span> <span class="token string">'Awesome Product'</span><span class="token punctuation">,</span>
+        description<span class="token operator">:</span> <span class="token string">'This is a detailed product description.'</span><span class="token punctuation">,</span>
+        price<span class="token operator">:</span> <span class="token number">29.99</span><span class="token punctuation">,</span>
+        inStock<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        featured<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        size<span class="token operator">:</span> <span class="token string">'medium'</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'#3b82f6'</span><span class="token punctuation">,</span>
+        releaseDate<span class="token operator">:</span> <span class="token string">'2024-01-15'</span><span class="token punctuation">,</span>
+        availableFrom<span class="token operator">:</span> <span class="token string">'09:00'</span><span class="token punctuation">,</span>
+        lastUpdated<span class="token operator">:</span> <span class="token string">'2024-01-15T14:30'</span><span class="token punctuation">,</span>
+        discount<span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+        features<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'Feature 1'</span><span class="token punctuation">,</span> <span class="token string">'Feature 2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        metadata<span class="token operator">:</span> <span class="token punctuation">&#123;</span> brand<span class="token operator">:</span> <span class="token string">'Example'</span><span class="token punctuation">,</span> category<span class="token operator">:</span> <span class="token string">'Electronics'</span> <span class="token punctuation">&#125;</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  
+  params<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'title'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Product Title'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'textarea'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Description'</span><span class="token punctuation">,</span>
+      numberOfRows<span class="token operator">:</span> <span class="token number">4</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'price'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'number'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Price'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'inStock'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'In Stock'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'checkbox'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'featured'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Featured Product'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'toggle'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'size'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'select'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Size'</span><span class="token punctuation">,</span>
+      options<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'small'</span><span class="token punctuation">,</span> <span class="token string">'medium'</span><span class="token punctuation">,</span> <span class="token string">'large'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'color'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'color'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Background Color'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'releaseDate'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Release Date'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'availableFrom'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'time'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Available From'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'lastUpdated'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'datetime'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Last Updated'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'discount'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'number'</span><span class="token punctuation">,</span>
+      control<span class="token operator">:</span> <span class="token string">'range'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Discount %'</span><span class="token punctuation">,</span>
+      min<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      max<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+      step<span class="token operator">:</span> <span class="token number">5</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'features'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'array'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Features'</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'metadata'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'object'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Metadata'</span><span class="token punctuation">,</span>
+      schema<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        keyDefault<span class="token operator">:</span> <span class="token string">'key'</span><span class="token punctuation">,</span>
+        valueDefault<span class="token operator">:</span> <span class="token string">'value'</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      name<span class="token operator">:</span> <span class="token string">'variants'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'objectrenderer'</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token string">'Product Variants'</span><span class="token punctuation">,</span>
+      schema<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        name<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+          type<span class="token operator">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">'Variant Name'</span><span class="token punctuation">,</span>
+          placeholder<span class="token operator">:</span> <span class="token string">'Enter variant name'</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        price<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+          type<span class="token operator">:</span> <span class="token string">'number'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">'Price'</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        available<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+          type<span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">'Available'</span>
+        <span class="token punctuation">&#125;</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span></code><!----></pre><!----></div><!----><!----><!--]--> <div class="vegetables  svelte-1a5ggx9"><img src="/app/immutable/assets/vegetables.oXLyWDBN.svg" alt="Vegetable illustration" class="svelte-1a5ggx9"/></div><!----></div></div></div></div> <footer class="footer has-bt  svelte-g5oxf3"><div class="footer_container svelte-g5oxf3"><div class="footer_copyright svelte-g5oxf3"><div>Gardenjs is released under the <a href="https://github.com/gardenjs/gardenjs?tab=MIT-1-ov-file" target="_blank" title="MIT License" class="svelte-g5oxf3">MIT License</a>.<br/><span class="copyright">©</span> 2026 <a href="https://www.rabbitdevelopment.com" class="svelte-g5oxf3">Rabbit Development</a>. All
+        rights reserved.</div></div> <div class="footer_nav svelte-g5oxf3"><nav><ul class="svelte-g5oxf3"><li class="svelte-g5oxf3"><a href="../../legalnotice" class="svelte-g5oxf3">Legal Notice</a></li> <li class="svelte-g5oxf3"><a href="../../privacypolicy" class="svelte-g5oxf3">Privacy Policy</a></li></ul></nav></div></div></footer><!----> <!--[!--><!--]--><!----><!--]--><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1mpmxdh = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../app/immutable/entry/start.DHhhI313.js"),
+						import("../../app/immutable/entry/app.CBxg9p9h.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 11],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
