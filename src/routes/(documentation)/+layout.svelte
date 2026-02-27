@@ -23,7 +23,7 @@
       },
       { href: '/docs/get-started/settings', label: 'Settings' },
       { href: '/docs/get-started/examples', label: 'Examples' },
-      { href: '/docs/get-started/params', label: 'Params' },
+      { href: '/docs/get-started/parameters', label: 'Parameters' },
       { href: '/docs/get-started/hooks', label: 'Hooks' },
       { href: '/docs/get-started/decorators', label: 'Decorators' },
     ],

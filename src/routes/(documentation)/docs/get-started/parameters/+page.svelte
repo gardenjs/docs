@@ -1,5 +1,5 @@
 <script>
-  import Params from './params.md'
+  import Parameters from './parameters.md'
 </script>
 
 <svelte:head>
@@ -8,5 +8,5 @@
 </svelte:head>
 
 <div class="md_file">
-  <Params />
+  <Parameters />
 </div>

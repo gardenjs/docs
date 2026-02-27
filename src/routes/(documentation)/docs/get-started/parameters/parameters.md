@@ -1,6 +1,7 @@
-# Params
+# Parameters
 
-Params extend the Examples to create interactive controls in the Gardenjs user interface and thus dynamically change component properties. Parameters are defined in the `.das.js` file and create interactive input fields in the Gardenjs panel. They allow you to experiment with the properties of your component in real time.
+Parameters are automatically generated from the input data of the examples and are output by default in the Gardenjs panel. This allows you to dynamically adjust the properties of components.
+This chapter explains how the `params` property in the `.das file` can be used to make a more specific selection of controls.
 
 Learn more about <a href="/docs/get-started/examples">creating examples and .das.js files</a>.
 
@@ -29,11 +30,9 @@ export default {
 }
 ```
 
-If you **do not** define a `params` array, params are generated automatically from the `input` data of your examples. These fields appear in the panel; you can override or extend them by defining a `params` array explicitly when needed.
-
 ## Available Controls
 
-Each param is rendered in the panel by a **control** (the UI widget). You get a control either by setting a matching `type` (Gardenjs picks the default control for `string`, `number`, `boolean`, `date`, `array`, `object`) or by setting `type` and `control` explicitly. Controls like color, time, datetime, range, and select have no built-in type and always need `control` plus a suitable `type` (e.g. `type: 'string'`, `control: 'time'`). The following controls are available:
+Each parameter is rendered in the panel by a **control** (the UI widget). You get a control either by setting a matching `type` (Gardenjs picks the default control for `string`, `number`, `boolean`, `date`, `array`, `object`) or by setting `type` and `control` explicitly. Controls like color, time, datetime, range, and select have no built-in type and always need `control` plus a suitable `type` (e.g. `type: 'string'`, `control: 'time'`). The following controls are available:
 
 - [**Array**](#array) - Input for adding/removing list items
 - [**Boolean**](#boolean) - Checkbox or toggle switch
