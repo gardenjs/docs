@@ -1,6 +1,6 @@
 {
   "name": "gardenjs_docs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "description": "Lightning-fast UI component explorer for JS front-end libraries",
   "repository": "https://github.com/gardenjs/docs",
