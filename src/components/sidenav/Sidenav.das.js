@@ -9,6 +9,7 @@ const getstarted = {
     { href: './', label: 'Install Renderer Plugin' },
     { href: './', label: 'Settings' },
     { href: './', label: 'Examples' },
+    { href: './', label: 'Parameters' },
     { href: './', label: 'Hooks' },
     { href: './', label: 'Decorators' },
   ],
