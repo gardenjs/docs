@@ -120,8 +120,8 @@ export default {
 }
 ```
 
-## Interactive controls with params
+## Interactive controls with parameters
 
-In addition to static examples, you can add interactive controls to your components using <a href="/docs/get-started/parameters">params</a>. Params create input fields in the Gardenjs panel that allow you to dynamically modify component properties without changing code. This is especially useful for testing different property combinations and states.
+Parameters create input fields in the Gardenjs panel so you can change component properties without editing code. **Parameters are generated automatically from the `input` data of your examples** in the `.das.js` file: each example’s `input` keys become panel controls. You can optionally define a `params` array in the `.das.js` file to specify this behaviour (e.g. labels, control types, or extra fields). This is especially useful for testing different property combinations and states.
 
-Learn more about available param types and how to use them in the <a href="/docs/get-started/parameters">params documentation</a>.
+Learn more about available controls and how to configure them in the <a href="/docs/get-started/parameters">parameters documentation</a>.
