@@ -6,20 +6,18 @@ export default {
 
   examples: [
     {
-      title: 'Default (H3 title and text)',
+      title: 'Default',
       input: {
         title: 'This is the card title',
         text: 'This is the text. This is the text. This is the text. This is the text. This is the text.',
-        columns: 2,
       },
     },
     {
-      title: 'Default & yellow background',
+      title: 'Yellow background',
       input: {
         title: 'This is the card title',
         text: 'This is the text. This is the text. This is the text. This is the text. This is the text.',
         bgColor: 'yellow',
-        columns: 2,
       },
     },
     {
@@ -63,6 +61,8 @@ export default {
       control: 'select',
       label: 'Background Color',
       options: ['yellow', 'turquoise'],
+      description:
+        'You can choose between turquoise and yellow. If no background color is set, the background is transparent.',
     },
     {
       name: 'rotation',
@@ -70,6 +70,8 @@ export default {
       control: 'select',
       label: 'Rotation',
       options: ['left', 'right'],
+      description:
+        'The rotation direction of the card. Can be left blank. Only possible if two columns or three columns are selected below.',
     },
   ],
 }

@@ -9,6 +9,7 @@
 
   /**
    * @typedef {Object} Props
+   * @property {string} [variant] – '1'..'7', wählt eine Linie (z. B. für Panel-Select)
    * @property {string} [dashedlines1]
    * @property {string} [dashedlines2]
    * @property {string} [dashedlines3]
@@ -20,6 +21,7 @@
 
   /** @type {Props} */
   let {
+    variant = '',
     dashedlines1 = '',
     dashedlines2 = '',
     dashedlines3 = '',
@@ -28,9 +30,17 @@
     dashedlines6 = '',
     dashedlines7 = '',
   } = $props()
+
+  const show1 = $derived(variant === '1' || dashedlines1)
+  const show2 = $derived(variant === '2' || dashedlines2)
+  const show3 = $derived(variant === '3' || dashedlines3)
+  const show4 = $derived(variant === '4' || dashedlines4)
+  const show5 = $derived(variant === '5' || dashedlines5)
+  const show6 = $derived(variant === '6' || dashedlines6)
+  const show7 = $derived(variant === '7' || dashedlines7)
 </script>
 
-{#if dashedlines1}
+{#if show1}
   <div class="dl-1">
     <div class="grid-helper"></div>
     <div class="small-displays">{@html Dashedline7}</div>
@@ -38,42 +48,42 @@
     <div class="dl_text dl-1_text"><div>This is Gardenjs</div></div>
   </div>
 {:else}
-  {#if dashedlines2}
+  {#if show2}
     <div class="dl dl-2">
       <div></div>
       <div>{@html Dashedline2}</div>
       <div class="dl_text"><div>ROFL</div></div>
     </div>
   {/if}
-  {#if dashedlines3}
+  {#if show3}
     <div class="dl dl-3">
       <div></div>
       <div>{@html Dashedline3}</div>
       <div class="dl_text"><div>Become a gardener</div></div>
     </div>
   {/if}
-  {#if dashedlines4}
+  {#if show4}
     <div class="dl dl-4">
       <div></div>
       <div>{@html Dashedline4}</div>
       <div class="dl_text"><div>Overview</div></div>
     </div>
   {/if}
-  {#if dashedlines5}
+  {#if show5}
     <div class="dl dl-5">
       <div></div>
       <div>{@html Dashedline5}</div>
       <div class="dl_text"><div>If you like Gardenjs</div></div>
     </div>
   {/if}
-  {#if dashedlines6}
+  {#if show6}
     <div class="dl dl-6">
       <div></div>
       <div>{@html Dashedline6}</div>
       <div class="dl_text"><div>Do you have any questions?</div></div>
     </div>
   {/if}
-  {#if dashedlines7}
+  {#if show7}
     <div class="dl dl-7">
       <div></div>
       <div>{@html Dashedline7}</div>

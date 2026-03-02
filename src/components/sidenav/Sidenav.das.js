@@ -45,4 +45,11 @@ export default {
   file: './Sidenav.svelte',
   description: '',
   examples: [{ title: 'Documentation', input: { folders: sidenavFolders } }],
+  params: [
+    {
+      name: 'folders',
+      type: 'array',
+      label: 'Navigation',
+    },
+  ],
 }
