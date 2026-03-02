@@ -11,7 +11,7 @@ Gardenjs &ge; v1.7
 
 ## Basic Structure
 
-Add a `params` array to your `.das.js` file:
+Add a `params` array to your `.das.js` file. For each parameter you can set `name`, `type`, `label`, and optionally a `description` that is shown in the panel next to the control (toggleable by the user).
 
 ```javascript
 export default {
@@ -24,7 +24,8 @@ export default {
     {
       name: 'title',
       type: 'string',
-      label: 'Title'
+      label: 'Title',
+      description: 'The main heading shown above the content.'
     }
   ]
 }
@@ -297,6 +298,7 @@ Params can be defined by **type** only (Gardenjs picks a default control) or by 
 | `name` | Yes | All | The property name to bind to. |
 | `type` | Yes | All | Data type. In Gardenjs only these types have a built-in default control: `string` → text; `number` → number; `boolean` → checkbox; `date` → date; `array` / `object` → JSON editor. All other controls (time, datetime, color, range, select, textarea, toggle, radio, etc.) require setting `control` explicitly, typically with `type: 'string'` or `type: 'number'`. |
 | `label` | No | All | Display name in the UI (defaults to `name`). |
+| `description` | No | All | Optional help text for this parameter. In the panel, an info icon appears next to the label; users can toggle it to show or hide the description. |
 | `control` | No | Optional override | UI control. Values: `text`, `textarea`, `checkbox`, `toggle`, `number`, `color`, `date`, `time`, `datetime`, `array`, `object`, `range`, `select`, `radio`, `multiselect`, `checkboxes`. Use to pick variant: boolean → `checkbox` or `toggle`; string → `text`, `textarea`, `date`, `time`, `datetime`, `select`, `radio`; number → `number` or `range`; array → `array`, `multiselect`, `checkboxes`. |
 | `options` | Yes | select, radio, multiselect, checkboxes | Array of options (strings or `{ label, value }` objects). |
 | `schema` | Yes | object, objectrenderer | Defines the structure of nested fields. |
