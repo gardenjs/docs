@@ -17,7 +17,7 @@
   let haspagetitle = 'has-h1'
 </script>
 
-<div class="chapter {isPagetitle ? haspagetitle : ''}">
+<div class="chapter-intro {isPagetitle ? haspagetitle : ''}">
   {#if pagetitle}
     <h1><span>{pagetitle}</span></h1>
   {:else}
@@ -29,7 +29,7 @@
 </div>
 
 <style lang="scss">
-  .chapter {
+  .chapter-intro {
     text-align: center;
     margin: 2rem 0 1rem;
     &.has-h1 {

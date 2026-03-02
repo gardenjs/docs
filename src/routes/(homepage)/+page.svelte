@@ -1,7 +1,8 @@
 <script>
   import Main from '../../layouts/Main.svelte'
-  import ChapterHead from '../../components/chapter/Chapterhead.svelte'
-  import Chapter from '../../components/chapter/Chapter.svelte'
+  import ChapterIntro from '../../components/chapterintro/Chapterintro.svelte'
+  import Grid from '../../layouts/Grid.svelte'
+  import Card from '../../components/card/Card.svelte'
   import Logogallery from '../../components/logogallery/Logogallery.svelte'
   import Blockquote from '../../components/blockquote/Blockquote.svelte'
   import Accordion from '../../components/accordion/Accordion.svelte'
@@ -136,7 +137,7 @@
 </svelte:head>
 
 <Main hasHeaderhead isWide>
-  <ChapterHead
+  <ChapterIntro
     isPagetitle
     pagetitle="UI component library explorer"
     chaptertext="Gardenjs promotes modular and reusable code, streamlines collaboration between team members and increases overall productivity. Gardenjs is MIT licensed and free."
@@ -148,30 +149,54 @@
     author="John Doe, coder & gardener"
   />
   <Dashedline3 dashedlines3 />
-  <Chapter
+  <ChapterIntro
     title="Why Gardenjs?"
     chaptertext="Gardenjs supports efficient frontend development with its intuitive user interface, easy integration into projects and super-fast execution."
-    columns="2"
-    bgColor="yellow"
-    cards={chapter1cards}
-  ></Chapter>
+  />
+  <Grid columns={2}>
+    {#each chapter1cards as card}
+      <Card
+        bgColor="yellow"
+        columns={2}
+        title={card.title}
+        text={card.text}
+        rotation={card.rotation}
+      />
+    {/each}
+  </Grid>
   <Dashedline4 dashedlines4 />
-  <Chapter
+  <ChapterIntro
     title="Your benefits"
     chaptertext="Gardenjs supports efficient frontend development with its intuitive user interface, easy integration into projects and super-fast execution."
-    columns="3"
-    bgColor="turquoise"
-    cards={chapter2cards}
-  ></Chapter>
+  />
+  <Grid columns={3}>
+    {#each chapter2cards as card}
+      <Card
+        bgColor="turquoise"
+        columns={3}
+        title={card.title}
+        text={card.text}
+        rotation={card.rotation}
+      />
+    {/each}
+  </Grid>
   <Dashedline5 dashedlines5 />
-  <Chapter
+  <ChapterIntro
     title="Would you like to get involved?"
     chaptertext="Gardenjs is published under the MIT license and free to use. We are therefore particularly pleased about your support."
-    columns="2"
-    cards={chapter3cards}
-  ></Chapter>
+  />
+  <Grid columns={2}>
+    {#each chapter3cards as card}
+      <Card
+        columns={2}
+        title={card.title}
+        text={card.text}
+        rotation={card.rotation}
+      />
+    {/each}
+  </Grid>
   <Dashedline6 dashedlines6 />
-  <ChapterHead title="FAQ" />
+  <ChapterIntro title="FAQ" />
   <Accordion items={accordionItems} />
   <Dashedline7 dashedlines7 />
 </Main>
