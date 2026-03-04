@@ -1,3 +1,4 @@
+<a href="https://github.com/gardenjs/gardenjs/actions"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/gardenjs/docs/npm-publish.yml"></a>
 <a href="https://github.com/gardenjs/gardenjs" target="_blank"><img src="https://raw.githubusercontent.com/gardenjs/branding/main/badge/badge_gardenjs.svg"></a>
 
 # Gardenjs website & docs
