@@ -1,15 +1,14 @@
 export default {
   name: 'Card',
   file: './Card.svelte',
-  description:
-    '<b>Note:</b> A decorator is used here for optimized display in Gardenjs: A dashed frame is drawn around the card, and space is added at the top so that the card does not go out of the visible area if it is displayed at an angle.',
-
+  description: './Card.md',
   examples: [
     {
       title: 'Default',
       input: {
         title: 'This is the card title',
         text: 'This is the text. This is the text. This is the text. This is the text. This is the text.',
+        rotation: '',
       },
     },
     {
@@ -18,6 +17,7 @@ export default {
         title: 'This is the card title',
         text: 'This is the text. This is the text. This is the text. This is the text. This is the text.',
         bgColor: 'yellow',
+        rotation: '',
       },
     },
     {
@@ -69,9 +69,25 @@ export default {
       type: 'string',
       control: 'select',
       label: 'Rotation',
-      options: ['left', 'right'],
+      options: [
+        { label: 'None', value: '' },
+        { label: 'Left', value: 'left' },
+        { label: 'Right', value: 'right' },
+      ],
       description:
-        'The rotation direction of the card. Can be left blank. Only possible if two columns or three columns are selected below.',
+        'The rotation direction of the card. Only possible if two or three columns are selected.',
+    },
+    {
+      name: 'columns',
+      type: 'number',
+      label: 'Columns',
+      options: [
+        { label: '1 column', value: 1 },
+        { label: '2 columns', value: 2 },
+        { label: '3 columns', value: 3 },
+      ],
+      description:
+        'The number of columns for the card. Can be set to 2 or 3. Only affects rotation; the actual columns are generated via the grid layout.',
     },
   ],
 }

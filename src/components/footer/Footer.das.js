@@ -1,26 +1,26 @@
 export default {
   name: 'Footer',
   file: './Footer.svelte',
-  description: '',
+  description: './Footer.md',
   examples: [
-    { title: 'Footer homepage', input: { isHome: true } },
-    { title: 'Default (footer for subpages)', input: {} },
-    { title: 'Footer documentation pages', input: { hasBordertop: true } },
+    {
+      title: 'Footer',
+      input: { variant: 'default' },
+    },
   ],
   params: [
     {
-      name: 'isHome',
-      type: 'boolean',
-      label: 'Homepage',
+      name: 'variant',
+      type: 'string',
+      control: 'select',
+      label: 'Footer type',
+      options: [
+        { label: 'Default (subpages)', value: 'default' },
+        { label: 'Homepage', value: 'home' },
+        { label: 'Documentation pages', value: 'docs' },
+      ],
       description:
-        'There are three different types of footers: “Homepage,” “Subpages,” (default) and “Documentation Pages.”',
-    },
-    {
-      name: 'hasBordertop',
-      type: 'boolean',
-      label: 'Border top',
-      description:
-        'Adds a border to the top of the footer. Only used for documentation pages.',
+        'Three mutually exclusive variants: Subpages (default), Homepage, or Documentation (with border top).',
     },
   ],
 }

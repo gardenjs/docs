@@ -5,19 +5,31 @@
 
   /**
    * @typedef {Object} Props
+   * @property {string} [variant]
    * @property {boolean} [hasBordertop]
    * @property {boolean} [isHome]
    */
 
   /** @type {Props} */
-  let { hasBordertop = false, isHome = false } = $props()
+  let { variant = '', hasBordertop = false, isHome = false } = $props()
 
   let bordertop = 'has-bt'
 
   let ifhome = 'is-home'
+
+  const effectiveIsHome = $derived(
+    variant === 'home' ? true : variant ? false : isHome && !hasBordertop
+  )
+  const effectiveHasBordertop = $derived(
+    variant === 'docs' ? true : variant ? false : hasBordertop && !isHome
+  )
 </script>
 
-<footer class="footer {hasBordertop ? bordertop : ''} {isHome ? ifhome : ''}">
+<footer
+  class="footer {effectiveHasBordertop ? bordertop : ''} {effectiveIsHome
+    ? ifhome
+    : ''}"
+>
   <div class="footer_container">
     <div class="footer_copyright">
       <div>

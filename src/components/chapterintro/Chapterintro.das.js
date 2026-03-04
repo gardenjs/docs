@@ -23,7 +23,7 @@ export default {
       name: 'title',
       type: 'string',
       label: 'H2 heading',
-      description: 'Only output if h2 heading is unset.',
+      description: 'Only output if h1 heading is unset.',
     },
     {
       name: 'chaptertext',
