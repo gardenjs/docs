@@ -12,3 +12,7 @@ vite.config.ts.timestamp-*
 
 .garden
 *.sw?
+
+# important for github pages
+docs/CNAME
+docs/sitemap.xml
