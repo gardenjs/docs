@@ -4,8 +4,16 @@ export default {
   description: './Footer.md',
   examples: [
     {
-      title: 'Footer',
+      title: 'Default',
       input: { variant: 'default' },
+    },
+    {
+      title: 'Homepage',
+      input: { variant: 'home' },
+    },
+    {
+      title: 'Documentation',
+      input: { variant: 'docs' },
     },
   ],
   params: [
