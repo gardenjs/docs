@@ -1,5 +1,7 @@
 <a href="https://github.com/gardenjs/gardenjs/actions"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/gardenjs/docs/npm-publish.yml"></a>
 <a href="https://github.com/gardenjs/gardenjs" target="_blank"><img src="https://raw.githubusercontent.com/gardenjs/branding/main/badge/badge_gardenjs.svg"></a>
+<a href="https://gardenjs.org/" target="_blank"><img alt="Gardenjs Website & Docs" src="https://github.com/gardenjs/branding/blob/main/badge/badge_website.svg?raw=true"></a>
+<a href="https://demo.gardenjs.org/" target="_blank"><img alt="Gardenjs Demo" src="https://github.com/gardenjs/branding/blob/main/badge/badge_demo.svg?raw=true"></a>
 
 # Gardenjs website & docs
 
