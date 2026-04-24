@@ -25,11 +25,13 @@ During installation, the configuration file **garden.config.js** is generated in
 | `additional_style_files` | Path |  Add global style files needed for your project, e.g. `'src/assets/scss/base.scss', 'src/assets/scss/main.scss'` |
 | `devices` | `small`: deviceConfig[], `medium`: deviceConfig[], `large`: deviceConfig[] | Set custom device types for each category. |
 | `deviceConfig`| name: String, w: Number, h: Number | Set name, width and height for a device type. |
-| `grid` | `size`: number, `style`: 'dotted' or 'lined', `color`: string | Custom configuration for background grid. |
 | `themes` | `name`: String, `stageBg`: Color, `active`: Boolean | Edit or disable "Themes" depending on whether your app uses themes. Defines a list of display modes of your project to output the components accordingly. |
+| `themes`: `default` | string | Settings for the default theme of the stage where the components are displayed. |
+| `themes`: `extended` | string | Settings for an unlimited number of additional themes for the stage where the components are displayed. Modified values override the values of the default theme. |
 | `themes`: `name` | String | Name of the mode as it appears in the theme navigation. E.g. `name: 'Dark mode'` |
 | `themes`: `stageBg` | String | Sets the background color of the stage for each mode. All common CSS color values can be used as values. E.g. `stageBg: '#101010'` |
-| `themes`: `active` | Boolean | Set the default theme on start: `active: 'true',`. Optionally, if it is empty, the first entry in the list is automatically used as the default. |
+| `themes`: `grid` | `size`: number, `style`: 'dotted' or 'lined', `color`: string | Custom configuration for background grid. |
+| `themes`: `color` | String | Sets the color of the distance measurement element, including the text color of the distance display. |
 | `themeHandler` | Function | The theme handler allows you to select project-specific themes in Gardenjs. |
 
 ## Pagetree

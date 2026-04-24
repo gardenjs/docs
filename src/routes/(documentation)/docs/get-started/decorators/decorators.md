@@ -8,11 +8,19 @@ For this you can define decorators.
 Decorators are component files with one `slot`, where the component should be rendered inside. How a slot is defined depends on the ui framework.
 
 You can define global decorators. These are files with the file extension `das.decorator.[fwk-extension]`.
-If you want to use a decorator only for a specific component, you can set the decorator filename inside the component description.
+If you want to use a decorator only for a specific component, you can set the decorator filenames inside the component description.
+
+```js
+export default {
+  ...
+  decorators: ['path_to_decorator1', 'path_to_decorator2'],
+  examples: ...
+}
+```
 
 If you define more than one decorator, the decorators will be rendered recursively in the order how they are placed in the directory.
 
-```
+```text
 
   decorator1 _______________________________
   |                                         |
