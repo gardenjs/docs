@@ -64,15 +64,6 @@ export default {
   //   'src/assets/scss/main.scss'
   // ],
 
-  // Edit or disable "Themes" depending on whether your app uses themes.
-  // According to your requirements, you may also need to adjust the
-  // "onThemeChange" function below accordingly.
-  themes: [
-    { name: 'light', stageBg: 'white' },
-    { name: 'dark', stageBg: '#121c2b' }, // manually set default active theme on start {active: true, name: 'dark', stageBg: '#101010'},
-    // {name: 'light', stageBg: '#eee'}
-  ],
-
   devices: {
     small: [
       { w: 375, h: 667, name: 'phone' },
@@ -81,6 +72,25 @@ export default {
     ],
     medium: [{ w: 768, h: 1024, name: 'tablet' }],
     large: [{ w: 1440, h: 900, name: 'laptop' }],
+  },
+
+  // Edit or disable "Themes" depending on whether your app uses themes.
+  // According to your requirements, you may also need to adjust the
+  // "onThemeChange" function below accordingly.
+  themes: {
+    default: {
+      name: 'light',
+      stageBg: 'white',
+      grid: {
+        color: 'grey',
+        size: '16', // px
+        style: 'lined', // or 'dotted'
+      },
+    },
+    extended: [
+      // uses default theme as base and overwrites with defined values
+      { name: 'dark', stageBg: '#121c2b' },
+    ],
   },
   themeHandler: onThemeChange,
 }
