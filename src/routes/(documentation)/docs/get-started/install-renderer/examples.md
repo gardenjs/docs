@@ -8,6 +8,8 @@ If you did not select a renderer during the installation, you must now install a
 npm i @gardenjs/render-plugin-svelte
 ```
 
+A third-party renderer for <a href="https://github.com/direct-democracy-solutions/gardenjs-render-plugin-webcomponents" target="_blank">Web Components</a> is currently being developed here.
+
 ## Write a new renderer
 
 If your framework is not included in the list, you must first write a renderer plugin. You can find more information in the chapter [Write new Renderer](/docs/renderer).
