@@ -1,6 +1,8 @@
 # Write a plugin for another framework
 
-Gardenjs currently supports <a href="https://github.com/gardenjs/render-plugin-svelte" target="_blank" title="Go to the Svelte renderer Repository">Svelte</a>, <a href="https://github.com/gardenjs/render-plugin-vue" target="_blank" title="Go to the Vue renderer Repository">Vue</a> and <a href="https://github.com/gardenjs/render-plugin-react" target="_blank" title="Go to the React renderer Repository">React</a> - also in multi-framework projects. In order to make Gardenjs compatible with other frameworks and template languages, a corresponding render must be added as a plugin.
+Gardenjs currently supports <a href="https://github.com/gardenjs/render-plugin-svelte" target="_blank" title="Go to the Svelte renderer Repository">Svelte</a>, <a href="https://github.com/gardenjs/render-plugin-vue" target="_blank" title="Go to the Vue renderer Repository">Vue</a> and <a href="https://github.com/gardenjs/render-plugin-react" target="_blank" title="Go to the React renderer Repository">React</a> - also in multi-framework projects. And a third-party renderer for <a href="https://github.com/direct-democracy-solutions/gardenjs-render-plugin-webcomponents" target="_blank">Web Components</a> is currently being developed here.
+
+In order to make Gardenjs compatible with other frameworks and template languages, a corresponding render must be added as a plugin.
 
 A renderer must export a `create` function which returns an object with two functions: `destroy` and `updateComponent`. The `updateComponent` function accepts an object with following properties:
 
