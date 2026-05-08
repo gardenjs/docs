@@ -78,15 +78,15 @@ export default {
   // According to your requirements, you may also need to adjust the
   // "onThemeChange" function below accordingly.
   themes: {
-    default: {
-      name: 'light',
-      stageBg: 'white',
-      grid: {
-        color: 'grey',
-        size: '16', // px
-        style: 'lined', // or 'dotted'
-      },
-    },
+    // default: {
+    //   name: 'light',
+    //   stageBg: 'white',
+    //   grid: {
+    //     color: 'grey',
+    //     size: '16', // px
+    //     style: 'lined', // or 'dotted'
+    //   },
+    // },
     extended: [
       // uses default theme as base and overwrites with defined values
       { name: 'dark', stageBg: '#121c2b' },
