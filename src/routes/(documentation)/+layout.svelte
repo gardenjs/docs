@@ -28,6 +28,10 @@
       { href: '/docs/get-started/decorators', label: 'Decorators' },
     ],
   }
+  const accessibility = {
+    title: 'Accessibility',
+    items: [{ href: '/docs/accessibility', label: 'Accessibility' }],
+  }
   const renderer = {
     title: 'Renderer',
     items: [{ href: '/docs/renderer', label: 'Write New Renderer' }],
@@ -48,6 +52,7 @@
   const sidenavFolders = [
     overview,
     getstarted,
+    accessibility,
     renderer,
     notes,
     roadmap,

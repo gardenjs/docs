@@ -33,6 +33,7 @@ During installation, the configuration file **garden.config.js** is generated in
 | `themes`: `grid` | `size`: number, `style`: 'dotted' or 'lined', `color`: string | Custom configuration for background grid. |
 | `themes`: `color` | String | Sets the color of the distance measurement element, including the text color of the distance display. |
 | `themeHandler` | Function | The theme handler allows you to select project-specific themes in Gardenjs. |
+| `a11y` | Object | Optional. [Accessibility](/docs/accessibility) scans (axe-core). `disable` defaults to `false`; set `true` to turn scans off. Also: `config`, `options`, `context`. |
 
 ## Pagetree
 
